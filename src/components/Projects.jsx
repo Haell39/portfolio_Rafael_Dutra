@@ -98,7 +98,7 @@ export default function Projects() {
                 {/* Project Thumbnail */}
                 <div
                   style={{
-                    height: "200px",
+                    height: "160px",
                     width: "100%",
                     background: "var(--bg-card-hover)",
                     position: "relative",
@@ -130,7 +130,11 @@ export default function Projects() {
 
                 <div
                   style={{
-                    padding: "var(--space-6)",
+                    padding: "var(--space-5)", // Creating a custom spacing just for this or reuse space-4? Let's use space-4 if likely exists or stick to safe ones.
+                    // Actually variables.css didn't have space-5. Let's use custom 1.25rem or just var(--space-4).
+                    // User said "just a little", maybe 160px image is enough.
+                    // Let's go with var(--space-4) for padding to be tighter.
+                    padding: "var(--space-4)",
                     flex: 1,
                     display: "flex",
                     flexDirection: "column",
@@ -149,7 +153,7 @@ export default function Projects() {
                     style={{
                       color: "var(--text-secondary)",
                       fontSize: "var(--text-base)",
-                      marginBottom: "var(--space-6)",
+                      marginBottom: "var(--space-4)",
                       flex: 1,
                     }}
                   >
