@@ -6,6 +6,7 @@ import { HOVER_SCALE } from "../config/motion";
 import imgHorus from "../assets/projects/horus.png";
 import imgDiagnostic from "../assets/projects/Diagnostic.png";
 import imgAnalytics from "../assets/projects/Analytics.png";
+import imgOpenFinance from "../assets/projects/openfinance.png";
 
 const PROJECTS = [
   {
@@ -31,6 +32,14 @@ const PROJECTS = [
     tags: ["Data Analytics", "Predictive Modeling", "Business Intelligence"],
     image: imgAnalytics,
     link: "https://github.com/Haell39/HR-Analytics",
+  },
+  {
+    title: "OpenFinance Intelligence",
+    description:
+      "Uma plataforma moderna de inteligência em tempo real para visualização de eventos financeiros, políticos e geopolíticos no Brasil. Full-stack e orientada a dados.",
+    tags: ["Full Stack", "Real-time Intelligence", "Finance API", "Dashboard"],
+    image: imgOpenFinance,
+    link: "https://github.com/Haell39/openFinance",
   },
 ];
 
