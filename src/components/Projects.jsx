@@ -68,7 +68,11 @@ export default function Projects() {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                whileHover={{ y: -5, scale: 1.01 }}
+                whileHover={{
+                  y: -5,
+                  scale: 1.01,
+                  borderColor: "var(--accent-hover)",
+                }}
                 style={{
                   borderRadius: "var(--radius-lg)",
                   background: "var(--bg-card)",
@@ -79,6 +83,7 @@ export default function Projects() {
                   display: "flex",
                   flexDirection: "column",
                   textDecoration: "none",
+                  transition: "border-color 0.3s ease",
                 }}
               >
                 {/* Project Thumbnail */}

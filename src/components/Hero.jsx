@@ -104,7 +104,6 @@ export default function Hero() {
           >
             <motion.a
               href="#projects"
-              whileHover={{ scale: HOVER_SCALE }}
               whileTap={{ scale: 0.98 }}
               style={{
                 display: "inline-flex",
@@ -116,6 +115,11 @@ export default function Hero() {
                 borderRadius: "var(--radius-full)",
                 fontWeight: 500,
                 fontSize: "var(--text-sm)",
+                transition: "background 0.3s ease",
+              }}
+              whileHover={{
+                scale: HOVER_SCALE,
+                background: "var(--accent-hover)",
               }}
             >
               Ver Projetos <ArrowRight size={16} />
@@ -135,13 +139,18 @@ export default function Hero() {
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  whileHover={{ scale: 1.1, color: "var(--text-primary)" }}
+                  whileHover={{
+                    scale: 1.1,
+                    color: "var(--accent-hover)",
+                    backgroundColor: "rgba(16, 185, 129, 0.1)",
+                  }}
                   whileTap={{ scale: 0.9 }}
                   style={{
                     padding: "0.75rem",
                     color: "var(--text-secondary)",
                     borderRadius: "var(--radius-full)",
                     background: "rgba(255,255,255,0.03)",
+                    transition: "all 0.3s ease",
                   }}
                 >
                   <Icon size={20} />

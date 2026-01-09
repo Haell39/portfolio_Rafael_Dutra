@@ -32,7 +32,7 @@ export default function Contact() {
 
           <motion.a
             href="mailto:rafaeldutrapro@gmail.com"
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.05, background: "var(--accent-hover)" }}
             whileTap={{ scale: 0.95 }}
             style={{
               display: "inline-block",
@@ -42,6 +42,7 @@ export default function Contact() {
               borderRadius: "var(--radius-full)",
               fontSize: "var(--text-base)",
               fontWeight: 600,
+              transition: "background 0.3s ease",
             }}
           >
             Entrar em Contato

@@ -55,7 +55,10 @@ export default function Navbar() {
             fontWeight: 700,
             color: "var(--text-primary)",
             textDecoration: "none",
+            transition: "color 0.2s",
           }}
+          onMouseEnter={(e) => (e.target.style.color = "var(--accent-hover)")}
+          onMouseLeave={(e) => (e.target.style.color = "var(--text-primary)")}
         >
           RD.
         </a>
@@ -72,7 +75,7 @@ export default function Navbar() {
                 transition: "color 0.2s",
               }}
               onMouseEnter={(e) =>
-                (e.target.style.color = "var(--text-primary)")
+                (e.target.style.color = "var(--accent-hover)")
               }
               onMouseLeave={(e) =>
                 (e.target.style.color = "var(--text-secondary)")

@@ -97,7 +97,7 @@ export default function DataStudent() {
               href="https://tiktok.com/@datastudent" // Placeholder URL, user can update
               target="_blank"
               rel="noopener noreferrer"
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ scale: 1.05, background: "var(--accent-hover)" }}
               whileTap={{ scale: 0.95 }}
               style={{
                 display: "inline-flex",
@@ -110,6 +110,7 @@ export default function DataStudent() {
                 fontSize: "var(--text-base)",
                 fontWeight: 600,
                 marginTop: "var(--space-4)",
+                transition: "background 0.3s ease",
               }}
             >
               Conhecer o Canal <ArrowUpRight size={18} />
