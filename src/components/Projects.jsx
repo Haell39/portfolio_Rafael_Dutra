@@ -74,6 +74,7 @@ export default function Projects() {
           {PROJECTS.map((project, index) => (
             <FadeIn key={index} delay={index * 0.1}>
               <motion.a
+                className="metallic-hover"
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"

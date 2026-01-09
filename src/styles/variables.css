@@ -63,6 +63,42 @@
   100% {
     background-position: 0% 50%;
   }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Premium Metallic Hover Logic */
+.metallic-hover {
+  position: relative;
+  overflow: hidden;
+  /* Ensure z-index allows children to interact if needed, but usually fine */
+}
+
+.metallic-hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(255, 255, 255, 0.05) 40%,
+    /* Very subtle shine */ rgba(255, 255, 255, 0.2) 50%,
+    /* Peak shine */ rgba(255, 255, 255, 0.05) 60%,
+    transparent 100%
+  );
+  transform: skewX(-25deg);
+  transition: none; /* No transition on reset */
+  pointer-events: none;
+  z-index: 10;
+}
+
+.metallic-hover:hover::after {
+  left: 200%;
+  transition: all 0.7s ease; /* Smooth glide across */
 }
 
 .chromatic-tag {

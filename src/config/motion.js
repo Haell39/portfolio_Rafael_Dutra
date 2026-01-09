@@ -5,7 +5,7 @@ const EASE_CUSTOM = [0.16, 1, 0.3, 1];
 
 export const DURATIONS = {
   fast: 0.15,
-  normal: 0.25,
+  normal: 0.4,
   slow: 0.3,
 };
 
