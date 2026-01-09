@@ -4,6 +4,7 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import About from "./components/About";
 import DataStudent from "./components/DataStudent";
+import Certificates from "./components/Certificates";
 import Contact from "./components/Contact";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Hero />
         <Projects />
         <Experience />
+        <Certificates />
         <About />
         <DataStudent />
         <Contact />

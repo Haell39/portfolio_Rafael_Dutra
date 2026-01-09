@@ -10,3 +10,25 @@ HR Analytics: Predição de Rotatividade de Funcionários para Retenção Estrat
 
 Sistema Inteligente de Monitoramento e Detecção de Anomalias em Transmissões de Vídeo: https://github.com/Haell39/horus_ai/tree/main
 --> O Horus AI é um sistema de monitoramento automatizado que detecta falhas técnicas em transmissões de vídeo ao vivo. Três modelos de machine learning analisam o stream simultaneamente — vídeo, áudio e lipsync — identificando anomalias e gerando alertas em tempo real.
+
+Certificados:
+
+EF SET English Certificate 73/100 (C2 Proficient - 2025): https://cert.efset.org/en/KEmJzs
+
+ONE Tech Foundation G8 - Data Science + IA: https://cursos.alura.com.br/user/rafaelsantoshome/program/14/certificate
+
+SQL Advanced: https://www.kaggle.com/learn/certification/raeldata/advanced-sql
+
+Trilha Digital Coders 24 Data Science: https://ada.tech/certificado?code=0d69f303-5f43-ab55-0f28-9e5e8678bb9e
+
+Certificado em Estatística: https://www.escolavirtual.gov.br/documentos/validacao/certificadocheck/WPoM13770255Q1qz#
+
+Análise de dados como suporte à tomada de decisão: https://www.escolavirtual.gov.br/documentos/validacao/validar-documentos?comp_doc=+KAmM13988122oUfK
+
+
+
+
+
+
+
+

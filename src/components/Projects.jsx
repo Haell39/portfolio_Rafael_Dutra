@@ -51,7 +51,7 @@ export default function Projects() {
               marginBottom: "var(--space-12)",
             }}
           >
-            Selected Work
+            Alguns trabalhos meus:
           </h2>
         </FadeIn>
 
