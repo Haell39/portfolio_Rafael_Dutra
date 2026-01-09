@@ -80,7 +80,7 @@ export default function Certificates() {
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+            gridTemplateColumns: "repeat(auto-fit, minmax(350px, 1fr))",
             gap: "var(--space-6)",
           }}
         >
