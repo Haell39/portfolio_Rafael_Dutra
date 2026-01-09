@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowRight, Github, Linkedin, Mail, Phone } from "lucide-react";
 import FadeIn from "./ui/FadeIn";
 import { VARIANTS_CONTAINER, HOVER_SCALE } from "../config/motion";
 
@@ -87,9 +87,9 @@ export default function Hero() {
               lineHeight: 1.6,
             }}
           >
-            Sou um especialista em Machine Learning & Analytics focado em
-            transformar dados complexos em soluções inteligentes e pipelines
-            automatizados.
+            Trabalho com Machine Learning e Analytics para transformar dados
+            complexos em soluções inteligentes, pipelines automatizados e
+            aplicações orientadas a impacto real.
           </p>
         </FadeIn>
 
@@ -132,6 +132,7 @@ export default function Hero() {
                   Icon: Linkedin,
                   href: "https://linkedin.com/in/rafaelsantoshome",
                 },
+                { Icon: Phone, href: "https://wa.me/5581999654790" },
                 { Icon: Mail, href: "mailto:rafaeldutrapro@gmail.com" },
               ].map(({ Icon, href }, i) => (
                 <motion.a

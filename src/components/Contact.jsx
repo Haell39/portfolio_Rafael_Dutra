@@ -31,7 +31,9 @@ export default function Contact() {
           </p>
 
           <motion.a
-            href="mailto:rafaeldutrapro@gmail.com"
+            href="https://linkedin.com/in/rafaelsantoshome"
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ scale: 1.05, background: "var(--accent-hover)" }}
             whileTap={{ scale: 0.95 }}
             style={{

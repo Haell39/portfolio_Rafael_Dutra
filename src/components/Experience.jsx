@@ -13,14 +13,14 @@ const EXPERIENCES = [
     role: "Análise e Desenvolvimento de Sistemas",
     date: "2024 — 2026 (Previsão)",
     description:
-      "Formação acadêmica com foco em Estrutura de Dados, Banco de Dados, Inteligência Artificial e Ciência de Dados.",
+      "Disciplinas relevantes: Estrutura de Dados, Banco de Dados Aplicados, Inteligência Artificial, Ciência de Dados, Residência tecnológica, Projetos de extensão, Lógica Matemática e Algoritmo.",
   },
   {
-    company: "Projetos Acadêmicos",
+    company: "Projetos & Freelance",
     role: "Data Scientist & ML Engineer",
-    date: "2023 — Atualmente",
+    date: "2024 — Atualmente",
     description:
-      "Implementação de soluções de NLP para análise financeira (OpenFinance) e modelos preditivos para diagnósticos médicos e analytics.",
+      "Desenvolvimento de modelos de Machine Learning e análises avançadas para resolução de problemas reais. Criação de pipelines de dados, APIs e aplicações data-driven com Python, SQL e FastAPI. Entrega de soluções escaláveis focadas em automação, eficiência e tomada de decisão.",
   },
 ];
 

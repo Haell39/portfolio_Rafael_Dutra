@@ -25,7 +25,7 @@ const PROJECTS = [
     link: "https://github.com/Haell39/ML-Aplicada-Diagnostico-Clinico",
   },
   {
-    title: "HR Analytics Predictor",
+    title: "HR Analytics",
     description:
       "Modelo preditivo para identificar rotatividade de funcionários. Análise de dados para redução de turnover e retenção estratégica em corporações multinacionais.",
     tags: ["Data Analytics", "Predictive Modeling", "Business Intelligence"],
