@@ -5,19 +5,32 @@ const EASE_CUSTOM = [0.16, 1, 0.3, 1];
 
 export const DURATIONS = {
   fast: 0.15,
-  normal: 0.4,
+  normal: 0.3,
   slow: 0.3,
 };
 
-export const TRANSITION = {
-  duration: DURATIONS.normal,
-  ease: EASE_CUSTOM,
+// Physics-based Spring for "Magical/Natural" feel
+export const TRANSITION_SPRING = {
+  type: "spring",
+  stiffness: 50, // Low stiffness = gentle handling
+  damping: 10, // Critical damping to prevent oscillation
+  mass: 1,
 };
+
+export const TRANSITION = TRANSITION_SPRING;
 
 // Reusable Variants
 export const VARIANTS_FADE_UP = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0 },
+  hidden: {
+    opacity: 0,
+    y: 40, // Increased movement for "grand" entrance
+    willChange: "transform, opacity", // Hardware acceleration hint
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    willChange: "auto",
+  },
 };
 
 export const VARIANTS_CONTAINER = {
