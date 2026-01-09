@@ -1,0 +1,12 @@
+Projetos:
+
+Projeto de Machine Learning Aplicado a Dados de Diagnóstico Médico: https://github.com/Haell39/ML-Aplicada-Diagnostico-Clinico
+--> Este repositório contém um estudo abrangente de Machine Learning aplicado a um dataset de diagnóstico médico. O objetivo é explorar os dados, construir e otimizar modelos de classificação para prever diagnósticos, e realizar agrupamento para descobrir padrões latentes nos dados.
+
+
+HR Analytics: Predição de Rotatividade de Funcionários para Retenção Estratégica: https://github.com/Haell39/HR-Analytics
+--> Bem-vindo ao meu projeto de Ciência de Dados, onde abordo um grande desafio em uma corporação multinacional: a rotatividade de funcionários! 🌍 Desenvolvi um modelo preditivo que identifica quais colaboradores têm maior chance de sair da empresa, permitindo decisões estratégicas para reduzir o turnover, aumentar a retenção e melhorar a satisfação dos funcionários. Utilizando o HR Analytics: Attrition Dataset do Kaggle, explorei os dados, realizei o pré-processamento, treinei múltiplos modelos de Machine Learning e obtive insights acionáveis. 📊
+
+
+Sistema Inteligente de Monitoramento e Detecção de Anomalias em Transmissões de Vídeo: https://github.com/Haell39/horus_ai/tree/main
+--> O Horus AI é um sistema de monitoramento automatizado que detecta falhas técnicas em transmissões de vídeo ao vivo. Três modelos de machine learning analisam o stream simultaneamente — vídeo, áudio e lipsync — identificando anomalias e gerando alertas em tempo real.
