@@ -1,5 +1,12 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Github, Linkedin, Mail, Phone } from "lucide-react";
+import {
+  ArrowRight,
+  Github,
+  Linkedin,
+  Mail,
+  Phone,
+  Download,
+} from "lucide-react";
 import FadeIn from "./ui/FadeIn";
 import { VARIANTS_CONTAINER, HOVER_SCALE } from "../config/motion";
 
@@ -113,7 +120,7 @@ export default function Hero() {
                 color: "var(--bg-primary)",
                 padding: "0.75rem 1.5rem",
                 borderRadius: "var(--radius-full)",
-                fontWeight: 500,
+                fontWeight: 600,
                 fontSize: "var(--text-sm)",
                 transition: "background 0.3s ease",
               }}
@@ -123,6 +130,33 @@ export default function Hero() {
               }}
             >
               Ver Projetos <ArrowRight size={16} />
+            </motion.a>
+
+            <motion.a
+              href="/Rafael_Dutra.pdf"
+              download="Rafael_Dutra_CV.pdf"
+              className="metallic-hover"
+              whileTap={{ scale: 0.98 }}
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "var(--space-2)",
+                background: "var(--bg-card)",
+                border: "1px solid var(--border-subtle)",
+                color: "var(--text-primary)",
+                padding: "0.75rem 1.5rem",
+                borderRadius: "var(--radius-full)",
+                fontWeight: 600,
+                fontSize: "var(--text-sm)",
+                transition: "all 0.3s ease",
+              }}
+              whileHover={{
+                scale: HOVER_SCALE,
+                borderColor: "var(--accent-hover)",
+                color: "var(--accent-hover)",
+              }}
+            >
+              Baixar CV <Download size={16} />
             </motion.a>
 
             <div style={{ display: "flex", gap: "var(--space-2)" }}>
