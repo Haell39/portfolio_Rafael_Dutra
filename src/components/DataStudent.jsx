@@ -76,7 +76,7 @@ export default function DataStudent() {
               Compartilhando conhecimento
               <br />
               <span style={{ color: "var(--text-secondary)" }}>
-                uma aula de cada vez.
+                um post de cada vez.
               </span>
             </h2>
 
@@ -89,8 +89,8 @@ export default function DataStudent() {
               }}
             >
               No <strong>DataStudent</strong>, eu descomplico o mundo da
-              programação e dados. Tutoriais, dicas de carreira e insights sobre
-              tecnologia para quem quer evoluir na área.
+              programação e dados. Publicações, tutoriais, dicas de carreira e insights sobre
+              computação para quem quer evoluir na área.
             </p>
 
             <motion.a
