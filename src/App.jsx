@@ -1,11 +1,14 @@
+import { Suspense, lazy } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import Experience from "./components/Experience";
-import Projects from "./components/Projects";
-import About from "./components/About";
-import DataStudent from "./components/DataStudent";
-import Certificates from "./components/Certificates";
-import Contact from "./components/Contact";
+
+// Lazy Load heavy/below-fold components
+const Projects = lazy(() => import("./components/Projects"));
+const Experience = lazy(() => import("./components/Experience"));
+const Certificates = lazy(() => import("./components/Certificates"));
+const About = lazy(() => import("./components/About"));
+const DataStudent = lazy(() => import("./components/DataStudent"));
+const Contact = lazy(() => import("./components/Contact"));
 
 function App() {
   return (
@@ -13,12 +16,14 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        <Projects />
-        <Experience />
-        <Certificates />
-        <About />
-        <DataStudent />
-        <Contact />
+        <Suspense fallback={null}>
+          <Projects />
+          <Experience />
+          <Certificates />
+          <About />
+          <DataStudent />
+          <Contact />
+        </Suspense>
       </main>
     </div>
   );

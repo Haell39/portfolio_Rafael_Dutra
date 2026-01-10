@@ -89,8 +89,8 @@ export default function DataStudent() {
               }}
             >
               No <strong>DataStudent</strong>, eu descomplico o mundo da
-              programação e dados. Publicações, tutoriais, dicas de carreira e insights sobre
-              computação para quem quer evoluir na área.
+              programação e dos dados. Tutoriais, análises e insights sobre
+              tecnologia e carreira para profissionais em evolução.
             </p>
 
             <motion.a
