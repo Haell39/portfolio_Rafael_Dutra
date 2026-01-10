@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import FadeIn from "./ui/FadeIn";
+import PremiumImage from "./ui/PremiumImage";
 
 // Imports
 import imgEFSET from "../assets/certificates/EFSET.png";
@@ -10,7 +11,7 @@ import imgADA from "../assets/certificates/trilhaADA.png";
 import imgStats from "../assets/certificates/statistic.png";
 import imgAnalise from "../assets/certificates/analisedados.png";
 
-const CERTIFICATES = [
+export const CERTIFICATES = [
   {
     title: "EF SET English Certificate (C2 Proficient)",
     issuer: "EF Standard English Test",
@@ -118,7 +119,7 @@ export default function Certificates() {
                     position: "relative",
                   }}
                 >
-                  <img
+                  <PremiumImage
                     src={cert.image}
                     alt={cert.title}
                     style={{

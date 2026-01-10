@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import FadeIn from "./ui/FadeIn";
+import PremiumImage from "./ui/PremiumImage";
 import { HOVER_SCALE } from "../config/motion";
 
 import imgHorus from "../assets/projects/horus.png";
@@ -8,7 +9,7 @@ import imgDiagnostic from "../assets/projects/Diagnostic.png";
 import imgAnalytics from "../assets/projects/Analytics.png";
 import imgOpenFinance from "../assets/projects/openfinance.png";
 
-const PROJECTS = [
+export const PROJECTS = [
   {
     title: "Horus AI (Monitoramento)",
     description:
@@ -105,7 +106,7 @@ export default function Projects() {
                     position: "relative",
                   }}
                 >
-                  <img
+                  <PremiumImage
                     src={project.image}
                     alt={project.title}
                     style={{
