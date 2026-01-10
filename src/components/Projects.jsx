@@ -4,10 +4,10 @@ import FadeIn from "./ui/FadeIn";
 import PremiumImage from "./ui/PremiumImage";
 import { HOVER_SCALE } from "../config/motion";
 
-import imgHorus from "../assets/projects/horus.png";
-import imgDiagnostic from "../assets/projects/Diagnostic.png";
-import imgAnalytics from "../assets/projects/Analytics.png";
-import imgOpenFinance from "../assets/projects/openfinance.png";
+import imgHorus from "../assets/projects/horus.webp";
+import imgDiagnostic from "../assets/projects/Diagnostic.webp";
+import imgAnalytics from "../assets/projects/Analytics.webp";
+import imgOpenFinance from "../assets/projects/openfinance.webp";
 
 export const PROJECTS = [
   {

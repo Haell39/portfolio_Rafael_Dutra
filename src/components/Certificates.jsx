@@ -4,12 +4,12 @@ import FadeIn from "./ui/FadeIn";
 import PremiumImage from "./ui/PremiumImage";
 
 // Imports
-import imgEFSET from "../assets/certificates/EFSET.png";
-import imgONE from "../assets/certificates/ONE.png";
-import imgSQLK from "../assets/certificates/SQLK.png";
-import imgADA from "../assets/certificates/trilhaADA.png";
-import imgStats from "../assets/certificates/statistic.png";
-import imgAnalise from "../assets/certificates/analisedados.png";
+import imgEFSET from "../assets/certificates/EFSET.webp";
+import imgONE from "../assets/certificates/ONE.webp";
+import imgSQLK from "../assets/certificates/SQLK.webp";
+import imgADA from "../assets/certificates/trilhaADA.webp";
+import imgStats from "../assets/certificates/statistic.webp";
+import imgAnalise from "../assets/certificates/analisedados.webp";
 
 export const CERTIFICATES = [
   {
