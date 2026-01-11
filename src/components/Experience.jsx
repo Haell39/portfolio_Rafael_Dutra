@@ -11,7 +11,7 @@ const EXPERIENCES = [
   {
     company: "FICR - Faculdade Imaculada Conceição do Recife",
     role: "Análise e Desenvolvimento de Sistemas",
-    date: "2024 — 2026 (Previsão)",
+    date: "02/2024 — 2026",
     description:
       "Disciplinas relevantes: Estrutura de Dados, Banco de Dados Aplicados, Inteligência Artificial, Ciência de Dados, Residência tecnológica, Projetos de extensão, Lógica Matemática e Algoritmo.",
   },
