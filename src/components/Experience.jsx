@@ -22,6 +22,13 @@ const EXPERIENCES = [
     description:
       "Desenvolvimento de modelos de Machine Learning e análises avançadas para resolução de problemas reais. Criação de pipelines de dados, APIs e aplicações data-driven com Python, SQL e FastAPI. Entrega de soluções escaláveis focadas em automação, eficiência e tomada de decisão.",
   },
+  {
+    company: "HarvardX",
+    role: "Data Science: Building Machine Learning Models",
+    date: "2024",
+    description:
+      "Construção de sistemas de recomendação e aplicação de algoritmos de Machine Learning. Foco em validação cruzada, regularização e PCA para desenvolvimento de modelos preditivos eficientes.",
+  },
 ];
 
 export default function Experience() {
