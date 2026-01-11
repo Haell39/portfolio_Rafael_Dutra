@@ -39,7 +39,7 @@ export default function Experience() {
               color: "var(--text-primary)",
             }}
           >
-            Experiência
+            Experiência e Educação
           </h2>
         </FadeIn>
 
