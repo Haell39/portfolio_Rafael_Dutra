@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import { Moon, Sun } from "lucide-react";
 
 const LINKS = [
   { name: "Projetos", href: "#projects" },
@@ -12,12 +13,28 @@ const LINKS = [
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [theme, setTheme] = useState("dark"); // Default dark
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
+
+    // Load saved theme
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+      setTheme(savedTheme);
+      document.documentElement.setAttribute("data-theme", savedTheme);
+    }
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const toggleTheme = () => {
+    const newTheme = theme === "dark" ? "light" : "dark";
+    setTheme(newTheme);
+    localStorage.setItem("theme", newTheme);
+    document.documentElement.setAttribute("data-theme", newTheme);
+  };
 
   return (
     <motion.nav
@@ -64,27 +81,49 @@ export default function Navbar() {
           RD.
         </a>
 
-        <div style={{ display: "flex", gap: "1.5rem" }}>
-          {LINKS.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              style={{
-                fontSize: "var(--text-sm)",
-                color: "var(--text-secondary)",
-                fontWeight: 500,
-                transition: "color 0.2s",
-              }}
-              onMouseEnter={(e) =>
-                (e.target.style.color = "var(--accent-hover)")
-              }
-              onMouseLeave={(e) =>
-                (e.target.style.color = "var(--text-secondary)")
-              }
-            >
-              {link.name}
-            </a>
-          ))}
+        <div style={{ display: "flex", alignItems: "center", gap: "2rem" }}>
+          <button
+            onClick={toggleTheme}
+            style={{
+              padding: "0.25rem",
+              borderRadius: "50%",
+              color: "var(--text-secondary)",
+              transition: "all 0.2s",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+            onMouseEnter={(e) => (e.target.style.color = "var(--text-primary)")}
+            onMouseLeave={(e) =>
+              (e.target.style.color = "var(--text-secondary)")
+            }
+            aria-label="Toggle theme"
+          >
+            {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
+          </button>
+
+          <div style={{ display: "flex", gap: "1.5rem" }}>
+            {LINKS.map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                style={{
+                  fontSize: "var(--text-sm)",
+                  color: "var(--text-secondary)",
+                  fontWeight: 500,
+                  transition: "color 0.2s",
+                }}
+                onMouseEnter={(e) =>
+                  (e.target.style.color = "var(--accent-hover)")
+                }
+                onMouseLeave={(e) =>
+                  (e.target.style.color = "var(--text-secondary)")
+                }
+              >
+                {link.name}
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </motion.nav>
