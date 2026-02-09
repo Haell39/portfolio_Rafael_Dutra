@@ -94,7 +94,7 @@ export default function Hero() {
               lineHeight: 1.6,
             }}
           >
-            Trabalho com Salesforce, Machine Learning e Analytics para
+            Trabalho com Machine Learning e Analytics para
             transformar dados complexos em soluções inteligentes, pipelines
             automatizados e aplicações orientadas a impacto real.
           </p>

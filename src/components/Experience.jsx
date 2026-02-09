@@ -2,13 +2,6 @@ import FadeIn from "./ui/FadeIn";
 
 const EXPERIENCES = [
   {
-    company: "Deloitte",
-    role: "Salesforce Developer Bootcamp",
-    date: "19/01/2026 — 31/01/2026",
-    description:
-      "Capacitação intensiva em desenvolvimento Salesforce. Implementação end-to-end de soluções em Sales e Service Cloud, incluindo automações avançadas com Flows, integrações REST via Apex, testes unitários com Mocks e criação de relatórios estratégicos. Desenvolvimento de projetos práticos 'Bug Hunter' e 'ProViver Brasil' focados em boas práticas e escalabilidade.",
-  },
-  {
     company: "Porto Digital / Globo",
     role: "Residência Tecnológica",
     date: "02/2024 — Atualmente",
