@@ -57,57 +57,88 @@ export default function Navbar() {
         justifyContent: "center",
       }}
     >
-      <div
-        style={{
-          backgroundColor: scrolled ? "rgba(24, 24, 27, 0.8)" : "transparent",
-          backdropFilter: scrolled ? "blur(12px)" : "none",
-          border: scrolled
-            ? "1px solid var(--border-subtle)"
-            : "1px solid transparent",
-          borderRadius: "var(--radius-full)",
-          padding: "0.75rem 1.5rem",
-          display: "flex",
-          alignItems: "center",
-          gap: "2rem",
-          transition: "all 0.3s ease",
-        }}
-      >
-        <a
-          href="#"
-          style={{
-            fontWeight: 700,
-            color: "var(--text-primary)",
-            textDecoration: "none",
-            transition: "color 0.2s",
-          }}
-          onMouseEnter={(e) => (e.target.style.color = "var(--accent-hover)")}
-          onMouseLeave={(e) => (e.target.style.color = "var(--text-primary)")}
-        >
+      <style>
+        {`
+          .glass-nav {
+            background-color: transparent;
+            backdrop-filter: none;
+            border: 1px solid transparent;
+            padding: 0.75rem 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            border-radius: var(--radius-full);
+            transition: all 0.3s ease;
+          }
+          
+          .glass-nav.scrolled {
+            background-color: var(--nav-bg-scrolled);
+            backdrop-filter: blur(12px);
+            border-color: var(--border-subtle);
+          }
+
+          .nav-logo {
+            font-weight: 700;
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.2s;
+          }
+          .nav-logo:hover {
+            color: var(--accent-hover);
+          }
+
+          .nav-link {
+            font-size: var(--text-sm);
+            color: var(--text-secondary);
+            font-weight: 500;
+            transition: color 0.2s;
+            text-decoration: none;
+          }
+          .nav-link:hover {
+            color: var(--accent-hover);
+          }
+
+          .nav-btn {
+            padding: 0.25rem;
+            border-radius: 4px;
+            color: var(--text-secondary);
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            background: transparent;
+            border: 1px solid transparent;
+            cursor: pointer;
+            outline: none;
+          }
+          
+          .nav-btn:hover {
+            color: var(--text-primary);
+            border-color: var(--border-subtle);
+          }
+
+          .nav-btn:focus, .nav-btn:focus-visible {
+            outline: none !important;
+            border-color: transparent !important; /* Force no border on click */
+            box-shadow: none !important;
+          }
+
+          /* Specific fix for images inside button to not capture events */
+          .nav-btn img {
+            pointer-events: none;
+          }
+        `}
+      </style>
+      <div className={`glass-nav ${scrolled ? "scrolled" : ""}`}>
+        <a href="#" className="nav-logo">
           RD.
         </a>
 
         <div style={{ display: "flex", alignItems: "center", gap: "1.5rem" }}>
           <button
             onClick={toggleLanguage}
-            style={{
-              padding: "0.25rem",
-              borderRadius: "4px",
-              color: "var(--text-secondary)",
-              transition: "all 0.2s",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontSize: "1.2rem",
-              border: "1px solid transparent",
-            }}
-            onMouseEnter={(e) => {
-              e.target.style.color = "var(--text-primary)";
-              e.target.style.borderColor = "var(--border-subtle)";
-            }}
-            onMouseLeave={(e) => {
-              e.target.style.color = "var(--text-secondary)";
-              e.target.style.borderColor = "transparent";
-            }}
+            className="nav-btn"
             aria-label="Toggle language"
           >
             <img
@@ -121,19 +152,8 @@ export default function Navbar() {
 
           <button
             onClick={toggleTheme}
-            style={{
-              padding: "0.25rem",
-              borderRadius: "50%",
-              color: "var(--text-secondary)",
-              transition: "all 0.2s",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-            onMouseEnter={(e) => (e.target.style.color = "var(--text-primary)")}
-            onMouseLeave={(e) =>
-              (e.target.style.color = "var(--text-secondary)")
-            }
+            className="nav-btn"
+            style={{ borderRadius: "50%" }}
             aria-label="Toggle theme"
           >
             {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
@@ -141,22 +161,7 @@ export default function Navbar() {
 
           <div style={{ display: "flex", gap: "1.5rem" }}>
             {LINKS.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                style={{
-                  fontSize: "var(--text-sm)",
-                  color: "var(--text-secondary)",
-                  fontWeight: 500,
-                  transition: "color 0.2s",
-                }}
-                onMouseEnter={(e) =>
-                  (e.target.style.color = "var(--accent-hover)")
-                }
-                onMouseLeave={(e) =>
-                  (e.target.style.color = "var(--text-secondary)")
-                }
-              >
+              <a key={link.name} href={link.href} className="nav-link">
                 {link.name}
               </a>
             ))}
