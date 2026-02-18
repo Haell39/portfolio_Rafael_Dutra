@@ -1,7 +1,10 @@
 import { motion } from "framer-motion";
 import FadeIn from "./ui/FadeIn";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function Contact() {
+  const { t } = useLanguage();
+
   return (
     <section
       id="contact"
@@ -16,7 +19,7 @@ export default function Contact() {
               fontWeight: 700,
             }}
           >
-            Vamos construir o futuro.
+            {t("contact.title")}
           </h2>
           <p
             style={{
@@ -25,9 +28,7 @@ export default function Contact() {
               marginBottom: "var(--space-8)",
             }}
           >
-            Estou disponível para projetos freelance e novas oportunidades. Se
-            você tem um projeto em mente ou apenas quer dizer oi, sinta-se à
-            vontade para entrar em contato.
+            {t("contact.subtitle")}
           </p>
 
           <motion.a
@@ -47,7 +48,7 @@ export default function Contact() {
               transition: "background 0.3s ease",
             }}
           >
-            Entrar em Contato
+            {t("contact.cta")}
           </motion.a>
         </div>
       </FadeIn>
@@ -59,7 +60,7 @@ export default function Contact() {
           fontSize: "var(--text-sm)",
         }}
       >
-        © {new Date().getFullYear()} Rafael Dutra. Todos os direitos reservados.
+        © {new Date().getFullYear()} Rafael Dutra. {t("contact.footer")}
       </div>
     </section>
   );

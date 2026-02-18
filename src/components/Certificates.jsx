@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import FadeIn from "./ui/FadeIn";
 import PremiumImage from "./ui/PremiumImage";
+import { useLanguage } from "../context/LanguageContext";
 
 // Imports
 import imgEFSET from "../assets/certificates/EFSET.webp";
@@ -14,6 +15,7 @@ import imgAnalise from "../assets/certificates/analisedados.webp";
 export const CERTIFICATES = [
   {
     title: "EF SET English Certificate (C2 Proficient)",
+    titleEn: "EF SET English Certificate (C2 Proficient)",
     issuer: "EF Standard English Test",
     date: "2025",
     link: "https://cert.efset.org/en/KEmJzs",
@@ -21,6 +23,7 @@ export const CERTIFICATES = [
   },
   {
     title: "ONE Tech Foundation G8 - Data Science + IA",
+    titleEn: "ONE Tech Foundation G8 - Data Science + AI",
     issuer: "Alura / Oracle",
     date: "2025",
     link: "https://cursos.alura.com.br/user/rafaelsantoshome/program/14/certificate",
@@ -28,6 +31,7 @@ export const CERTIFICATES = [
   },
   {
     title: "Trilha Digital Coders 24 Data Science",
+    titleEn: "Trilha Digital Coders 24 Data Science",
     issuer: "Ada Tech",
     date: "2024",
     link: "https://ada.tech/certificado?code=0d69f303-5f43-ab55-0f28-9e5e8678bb9e",
@@ -35,6 +39,7 @@ export const CERTIFICATES = [
   },
   {
     title: "SQL Advanced",
+    titleEn: "SQL Advanced",
     issuer: "Kaggle",
     date: "2024",
     link: "https://www.kaggle.com/learn/certification/raeldata/advanced-sql",
@@ -42,6 +47,7 @@ export const CERTIFICATES = [
   },
   {
     title: "Estatística",
+    titleEn: "Statistics",
     issuer: "Escola Virtual Gov",
     date: "2024",
     link: "https://www.escolavirtual.gov.br/documentos/validacao/certificadocheck/WPoM13770255Q1qz#",
@@ -49,6 +55,7 @@ export const CERTIFICATES = [
   },
   {
     title: "Análise de dados para tomada de decisão",
+    titleEn: "Data Analysis for Decision Making",
     issuer: "Escola Virtual Gov",
     date: "2024",
     link: "https://www.escolavirtual.gov.br/documentos/validacao/certificadocheck/KAmM13988122oUfK#",
@@ -57,6 +64,8 @@ export const CERTIFICATES = [
 ];
 
 export default function Certificates() {
+  const { language, t } = useLanguage();
+
   return (
     <section
       id="certificates"
@@ -74,7 +83,7 @@ export default function Certificates() {
               color: "var(--text-primary)",
             }}
           >
-            Certificações & Reconhecimento
+            {t("certificates.title")}
           </h2>
         </FadeIn>
 
@@ -164,7 +173,7 @@ export default function Certificates() {
                       lineHeight: 1.4,
                     }}
                   >
-                    {cert.title}
+                    {language === "pt" ? cert.title : cert.titleEn}
                   </h3>
 
                   <div

@@ -1,4 +1,5 @@
 import FadeIn from "./ui/FadeIn";
+import { useLanguage } from "../context/LanguageContext";
 
 const SKILLS = [
   "Python",
@@ -16,6 +17,8 @@ const SKILLS = [
 ];
 
 export default function About() {
+  const { t } = useLanguage();
+
   return (
     <section id="about" style={{ padding: "var(--space-24) var(--space-4)" }}>
       <div style={{ maxWidth: "var(--container-width)", margin: "0 auto" }}>
@@ -39,7 +42,7 @@ export default function About() {
                   gap: "var(--space-4)",
                 }}
               >
-                Sobre Mim
+                {t("about.title")}
               </h2>
               <div
                 style={{
@@ -51,23 +54,9 @@ export default function About() {
                   gap: "var(--space-4)",
                 }}
               >
-                <p>
-                  Sou estudante de Análise e Desenvolvimento de Sistemas com
-                  experiência prática em Ciência de Dados aplicada a problemas
-                  reais. Minha paixão está em extrair valor de dados através de
-                  análise exploratória, Machine Learning e automação de
-                  pipelines.
-                </p>
-                <p>
-                  Atualmente, participo de projetos desafiadores que envolvem
-                  desde a coleta e tratamento de dados até a visualização e
-                  implementação de modelos preditivos em produção.
-                </p>
-                <p>
-                  Tenho forte base em Python, SQL e frameworks de IA, além de
-                  valorizar o pensamento analítico, o trabalho em equipe e o
-                  aprendizado contínuo.
-                </p>
+                <p>{t("about.p1")}</p>
+                <p>{t("about.p2")}</p>
+                <p>{t("about.p3")}</p>
               </div>
             </div>
 
@@ -83,7 +72,7 @@ export default function About() {
                   gap: "var(--space-4)",
                 }}
               >
-                Minha Stack
+                {t("about.stack_title")}
               </h3>
               <div
                 style={{

@@ -1,9 +1,11 @@
 import { motion } from "framer-motion";
-import { ArrowUpRight, Video } from "lucide-react";
+import { Youtube, ExternalLink } from "lucide-react";
 import FadeIn from "./ui/FadeIn";
 import { HOVER_SCALE } from "../config/motion";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function DataStudent() {
+  const { t } = useLanguage();
   return (
     <section
       id="datastudent"
@@ -30,90 +32,74 @@ export default function DataStudent() {
         }}
       />
 
-      <div
-        style={{
-          maxWidth: "var(--container-width)",
-          margin: "0 auto",
-          position: "relative",
-          zIndex: 1,
-        }}
-      >
+      <div style={{ maxWidth: "800px", margin: "0 auto" }}>
         <FadeIn>
           <div
             style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
+              background: "var(--bg-card)",
+              borderRadius: "var(--radius-xl)",
+              border: "1px solid var(--border-subtle)",
+              padding: "var(--space-8)",
               textAlign: "center",
-              gap: "var(--space-6)",
+              position: "relative",
+              overflow: "hidden",
             }}
+            className="metallic-hover"
           >
             <div
               style={{
                 display: "inline-flex",
-                alignItems: "center",
-                gap: "var(--space-2)",
-                padding: "8px 16px",
-                borderRadius: "var(--radius-full)",
-                background: "rgba(255, 0, 80, 0.1)", // TikTok-ish color hint
-                border: "1px solid rgba(255, 0, 80, 0.2)",
-                color: "#ff0050",
-                fontSize: "var(--text-sm)",
-                fontWeight: 600,
+                padding: "1rem",
+                borderRadius: "50%",
+                background: "rgba(255, 0, 0, 0.1)",
+                color: "#ff0000",
+                marginBottom: "var(--space-6)",
               }}
             >
-              <Video size={16} />
-              <span>@datastudent</span>
+              <Youtube size={32} />
             </div>
 
             <h2
               style={{
-                fontSize: "clamp(2rem, 5vw, 3.5rem)",
-                fontWeight: 700,
-                lineHeight: 1.1,
+                fontSize: "var(--text-2xl)",
+                marginBottom: "var(--space-4)",
+                color: "var(--text-primary)",
               }}
             >
-              Compartilhando conhecimento
-              <br />
-              <span style={{ color: "var(--text-secondary)" }}>
-                um post de cada vez.
-              </span>
+              {t("datastudent.title")}
             </h2>
-
             <p
               style={{
-                fontSize: "var(--text-lg)",
                 color: "var(--text-secondary)",
-                maxWidth: "600px",
-                lineHeight: 1.7,
+                fontSize: "var(--text-lg)",
+                marginBottom: "var(--space-8)",
+                maxWidth: "500px",
+                margin: "0 auto var(--space-8)",
               }}
             >
-              No <strong>DataStudent</strong>, eu descomplico o mundo da
-              programação e dos dados. Tutoriais, análises e insights sobre
-              tecnologia e carreira para profissionais em evolução.
+              {t("datastudent.subtitle")}
             </p>
 
             <motion.a
-              href="https://tiktok.com/@datastudent" // Placeholder URL, user can update
+              href="https://www.youtube.com/@DataStudent"
               target="_blank"
               rel="noopener noreferrer"
-              whileHover={{ scale: 1.05, background: "var(--accent-hover)" }}
-              whileTap={{ scale: 0.95 }}
+              whileHover={{ scale: HOVER_SCALE, background: "#ff0000" }}
+              whileTap={{ scale: 0.98 }}
               style={{
                 display: "inline-flex",
                 alignItems: "center",
                 gap: "var(--space-2)",
-                background: "var(--text-primary)",
-                color: "var(--bg-primary)",
-                padding: "1rem 2rem",
+                background: "#cc0000",
+                color: "white",
+                padding: "0.75rem 1.5rem",
                 borderRadius: "var(--radius-full)",
-                fontSize: "var(--text-base)",
                 fontWeight: 600,
-                marginTop: "var(--space-4)",
+                fontSize: "var(--text-sm)",
                 transition: "background 0.3s ease",
               }}
             >
-              Conhecer o Canal <ArrowUpRight size={18} />
+              {t("datastudent.cta")} <ExternalLink size={16} />
             </motion.a>
           </div>
         </FadeIn>

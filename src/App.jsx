@@ -13,6 +13,8 @@ const About = lazy(() => import("./components/About"));
 const DataStudent = lazy(() => import("./components/DataStudent"));
 const Contact = lazy(() => import("./components/Contact"));
 
+import { LanguageProvider } from "./context/LanguageContext";
+
 function App() {
   // Premium Preloading Strategy (Gentle / Non-Blocking)
   useEffect(() => {
@@ -46,20 +48,22 @@ function App() {
   }, []);
 
   return (
-    <div style={{ position: "relative", overflow: "hidden" }}>
-      <Navbar />
-      <main>
-        <Hero />
-        <Suspense fallback={null}>
-          <Projects />
-          <Experience />
-          <Certificates />
-          <About />
-          <DataStudent />
-          <Contact />
-        </Suspense>
-      </main>
-    </div>
+    <LanguageProvider>
+      <div style={{ position: "relative", overflow: "hidden" }}>
+        <Navbar />
+        <main>
+          <Hero />
+          <Suspense fallback={null}>
+            <Projects />
+            <Experience />
+            <Certificates />
+            <About />
+            <DataStudent />
+            <Contact />
+          </Suspense>
+        </main>
+      </div>
+    </LanguageProvider>
   );
 }
 

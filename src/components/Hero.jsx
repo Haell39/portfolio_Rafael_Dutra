@@ -10,7 +10,11 @@ import {
 import FadeIn from "./ui/FadeIn";
 import { VARIANTS_CONTAINER, HOVER_SCALE } from "../config/motion";
 
+import { useLanguage } from "../context/LanguageContext";
+
 export default function Hero() {
+  const { t } = useLanguage();
+
   return (
     <section
       className="hero-section"
@@ -24,7 +28,7 @@ export default function Hero() {
         overflow: "hidden",
       }}
     >
-      {/* Background Gradient Spot */}
+      {/* ... (background div remains same) ... */}
       <div
         style={{
           position: "absolute",
@@ -62,7 +66,7 @@ export default function Hero() {
               textTransform: "uppercase",
             }}
           >
-            Rafael Dutra
+            {t("hero.role")}
           </h2>
         </FadeIn>
 
@@ -79,8 +83,7 @@ export default function Hero() {
               WebkitTextFillColor: "transparent",
             }}
           >
-            Criando inteligência
-            <br />a partir de dados.
+            {t("hero.title")}
           </h1>
         </FadeIn>
 
@@ -94,9 +97,7 @@ export default function Hero() {
               lineHeight: 1.6,
             }}
           >
-            Trabalho com Machine Learning e Analytics para
-            transformar dados complexos em soluções inteligentes, pipelines
-            automatizados e aplicações orientadas a impacto real.
+            {t("hero.subtitle")}
           </p>
         </FadeIn>
 
@@ -129,7 +130,7 @@ export default function Hero() {
                 background: "var(--accent-hover)",
               }}
             >
-              Ver Projetos <ArrowRight size={16} />
+              {t("hero.cta_projects")} <ArrowRight size={16} />
             </motion.a>
 
             <motion.a
@@ -156,7 +157,7 @@ export default function Hero() {
                 color: "var(--accent-hover)",
               }}
             >
-              Baixar CV <Download size={16} />
+              {t("hero.cta_cv")} <Download size={16} />
             </motion.a>
 
             <div style={{ display: "flex", gap: "var(--space-2)" }}>

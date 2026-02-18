@@ -3,6 +3,7 @@ import { ArrowUpRight } from "lucide-react";
 import FadeIn from "./ui/FadeIn";
 import PremiumImage from "./ui/PremiumImage";
 import { HOVER_SCALE } from "../config/motion";
+import { useLanguage } from "../context/LanguageContext";
 
 import imgHorus from "../assets/projects/horus.webp";
 import imgDiagnostic from "../assets/projects/Diagnostic.webp";
@@ -12,32 +13,44 @@ import imgOpenFinance from "../assets/projects/openfinance.webp";
 export const PROJECTS = [
   {
     title: "Horus AI (Monitoramento)",
+    titleEn: "Horus AI (Monitoring)",
     description:
       "Sistema automatizado que detecta falhas em transmissões ao vivo. Três modelos de ML analisam vídeo, áudio e lipsync simultaneamente para gerar alertas em tempo real.",
+    descriptionEn:
+      "Automated system that detects failures in live broadcasts. Three ML models analyze video, audio, and lipsync simultaneously to generate real-time alerts.",
     tags: ["Computer Vision", "Real-time AI", "Python", "Audio Processing"],
     image: imgHorus,
     link: "https://github.com/Haell39/horus_ai/tree/main",
   },
   {
     title: "ML Diagnóstico Médico",
+    titleEn: "Medical Diagnostic ML",
     description:
       "Estudo abrangente aplicado a datasets médicos. Construção e otimização de modelos de classificação para prever diagnósticos e agrupamento de padrões latentes.",
+    descriptionEn:
+      "Comprehensive study applied to medical datasets. Construction and optimization of classification models to predict diagnoses and clustering of latent patterns.",
     tags: ["Machine Learning", "Data Science", "Classification", "Clustering"],
     image: imgDiagnostic,
     link: "https://github.com/Haell39/ML-Aplicada-Diagnostico-Clinico",
   },
   {
     title: "HR Analytics",
+    titleEn: "HR Analytics",
     description:
       "Modelo preditivo para identificar rotatividade de funcionários. Análise de dados para redução de turnover e retenção estratégica em corporações multinacionais.",
+    descriptionEn:
+      "Predictive model to identify employee turnover. Data analysis for turnover reduction and strategic retention in multinational corporations.",
     tags: ["Data Analytics", "Predictive Modeling", "Business Intelligence"],
     image: imgAnalytics,
     link: "https://github.com/Haell39/HR-Analytics",
   },
   {
     title: "OpenFinance Intelligence",
+    titleEn: "OpenFinance Intelligence",
     description:
       "Uma plataforma moderna de inteligência em tempo real para visualização de eventos financeiros, políticos e geopolíticos no Brasil. Full-stack e orientada a dados.",
+    descriptionEn:
+      "A modern real-time intelligence platform for visualizing financial, political, and geopolitical events in Brazil. Full-stack and data-driven.",
     tags: ["Full Stack", "Real-time Intelligence", "Finance API", "Dashboard"],
     image: imgOpenFinance,
     link: "https://github.com/Haell39/openFinance",
@@ -45,6 +58,8 @@ export const PROJECTS = [
 ];
 
 export default function Projects() {
+  const { language, t } = useLanguage();
+
   return (
     <section
       id="projects"
@@ -61,7 +76,7 @@ export default function Projects() {
               marginBottom: "var(--space-12)",
             }}
           >
-            Alguns trabalhos meus:
+            {t("projects.title")}
           </h2>
         </FadeIn>
 
@@ -132,10 +147,6 @@ export default function Projects() {
 
                 <div
                   style={{
-                    padding: "var(--space-5)", // Creating a custom spacing just for this or reuse space-4? Let's use space-4 if likely exists or stick to safe ones.
-                    // Actually variables.css didn't have space-5. Let's use custom 1.25rem or just var(--space-4).
-                    // User said "just a little", maybe 160px image is enough.
-                    // Let's go with var(--space-4) for padding to be tighter.
                     padding: "var(--space-4)",
                     flex: 1,
                     display: "flex",
@@ -149,7 +160,7 @@ export default function Projects() {
                       color: "var(--text-primary)",
                     }}
                   >
-                    {project.title}
+                    {language === "pt" ? project.title : project.titleEn}
                   </h3>
                   <p
                     style={{
@@ -159,7 +170,9 @@ export default function Projects() {
                       flex: 1,
                     }}
                   >
-                    {project.description}
+                    {language === "pt"
+                      ? project.description
+                      : project.descriptionEn}
                   </p>
 
                   <div

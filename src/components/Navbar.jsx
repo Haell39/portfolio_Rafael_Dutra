@@ -1,19 +1,24 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { Moon, Sun } from "lucide-react";
+import { useLanguage } from "../context/LanguageContext";
 
-const LINKS = [
-  { name: "Projetos", href: "#projects" },
-  { name: "Experiência", href: "#experience" },
-  { name: "Certificados", href: "#certificates" },
-  { name: "Sobre", href: "#about" },
-  { name: "Canal", href: "#datastudent" },
-  { name: "Contato", href: "#contact" },
-];
+import brFlag from "../assets/icons/brasil.png";
+import usFlag from "../assets/icons/usa.png";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [theme, setTheme] = useState("dark"); // Default dark
+  const { language, toggleLanguage, t } = useLanguage();
+
+  const LINKS = [
+    { name: t("navbar.projects"), href: "#projects" },
+    { name: t("navbar.experience"), href: "#experience" },
+    { name: t("navbar.certificates"), href: "#certificates" },
+    { name: t("navbar.about"), href: "#about" },
+    { name: t("navbar.channel"), href: "#datastudent" },
+    { name: t("navbar.contact"), href: "#contact" },
+  ];
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -81,7 +86,39 @@ export default function Navbar() {
           RD.
         </a>
 
-        <div style={{ display: "flex", alignItems: "center", gap: "2rem" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "1.5rem" }}>
+          <button
+            onClick={toggleLanguage}
+            style={{
+              padding: "0.25rem",
+              borderRadius: "4px",
+              color: "var(--text-secondary)",
+              transition: "all 0.2s",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              fontSize: "1.2rem",
+              border: "1px solid transparent",
+            }}
+            onMouseEnter={(e) => {
+              e.target.style.color = "var(--text-primary)";
+              e.target.style.borderColor = "var(--border-subtle)";
+            }}
+            onMouseLeave={(e) => {
+              e.target.style.color = "var(--text-secondary)";
+              e.target.style.borderColor = "transparent";
+            }}
+            aria-label="Toggle language"
+          >
+            <img
+              src={language === "pt" ? usFlag : brFlag}
+              alt={
+                language === "pt" ? "Switch to English" : "Mudar para Português"
+              }
+              style={{ width: "24px", height: "auto", display: "block" }}
+            />
+          </button>
+
           <button
             onClick={toggleTheme}
             style={{
