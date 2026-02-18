@@ -13,7 +13,7 @@ import { VARIANTS_CONTAINER, HOVER_SCALE } from "../config/motion";
 import { useLanguage } from "../context/LanguageContext";
 
 export default function Hero() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   return (
     <section
@@ -134,8 +134,14 @@ export default function Hero() {
             </motion.a>
 
             <motion.a
-              href="/Rafael_Dutra.pdf"
-              download="Rafael_Dutra_Curriculum.pdf"
+              href={
+                language === "pt" ? "/Rafael_Dutra.pdf" : "/Rafael_Dutra_EN.pdf"
+              }
+              download={
+                language === "pt"
+                  ? "Rafael_Dutra_Curriculum.pdf"
+                  : "Rafael_Dutra_Curriculum_EN.pdf"
+              }
               className="metallic-hover"
               whileTap={{ scale: 0.98 }}
               style={{
