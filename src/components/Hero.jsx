@@ -135,7 +135,7 @@ export default function Hero() {
 
             <motion.a
               href="/Rafael_Dutra.pdf"
-              download="Rafael_Dutra_CV.pdf"
+              download="Rafael_Dutra_Curriculum.pdf"
               className="metallic-hover"
               whileTap={{ scale: 0.98 }}
               style={{
