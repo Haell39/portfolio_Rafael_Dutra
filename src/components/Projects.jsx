@@ -45,15 +45,15 @@ export const PROJECTS = [
     link: "https://github.com/Haell39/HR-Analytics",
   },
   {
-    title: "OpenFinance Intelligence",
-    titleEn: "OpenFinance Intelligence",
+    title: "OpenFinance Intel",
+    titleEn: "OpenFinance Intel",
     description:
-      "Uma plataforma moderna de inteligência em tempo real para visualização de eventos financeiros, políticos e geopolíticos no Brasil. Full-stack e orientada a dados.",
+      "Plataforma de Inteligência de Investimentos: IA, NLP e Análise de Sentimento para transformar o caos do mercado em Sinais Acionáveis.",
     descriptionEn:
-      "A modern real-time intelligence platform for visualizing financial, political, and geopolitical events in Brazil. Full-stack and data-driven.",
-    tags: ["Full Stack", "Real-time Intelligence", "Finance API", "Dashboard"],
+      "Investment Intelligence Platform: AI, NLP, and Sentiment Analysis to transform market chaos into Actionable Signals.",
+    tags: ["AI & NLP", "Market Intelligence", "React", "FastAPI", "Docker"],
     image: imgOpenFinance,
-    link: "https://github.com/Haell39/openFinance",
+    link: "https://github.com/Haell39/OpenFinance_Intel",
   },
 ];
 
