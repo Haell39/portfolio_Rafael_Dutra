@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect, useCallback } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { ArrowUpRight, ChevronLeft, ChevronRight } from "lucide-react";
 import FadeIn from "./ui/FadeIn";
 import PremiumImage from "./ui/PremiumImage";
@@ -57,9 +57,8 @@ export const PROJECTS = [
   },
 ];
 
-const CARD_RATIO = 0.264; // center card ≈ 26% of container width
-const GAP = 20; // px gap between cards
-const SWIPE_THRESHOLD = 40; // min px drag to trigger slide
+const CARD_RATIO = 0.264;
+const GAP = 20;
 
 export default function Projects() {
   const { language, t } = useLanguage();
@@ -67,7 +66,6 @@ export default function Projects() {
   const containerRef = useRef(null);
   const [containerWidth, setContainerWidth] = useState(1100);
 
-  // Measure container on mount + resize
   useEffect(() => {
     const measure = () => {
       if (containerRef.current) {
@@ -89,48 +87,23 @@ export default function Projects() {
   );
   const next = useCallback(() => setActive((a) => (a + 1) % total), [total]);
 
-  // ── Mouse / touch drag ──
-  const dragRef = useRef({ startX: null, dragging: false });
-
-  const onPointerDown = useCallback((e) => {
-    // Only primary button
-    if (e.button !== 0) return;
-    e.currentTarget.setPointerCapture(e.pointerId);
-    dragRef.current = { startX: e.clientX, dragging: false };
-  }, []);
-
-  const onPointerMove = useCallback((e) => {
-    if (dragRef.current.startX === null) return;
-    if (Math.abs(e.clientX - dragRef.current.startX) > 5) {
-      dragRef.current.dragging = true;
-    }
-  }, []);
-
-  const onPointerUp = useCallback(
-    (e) => {
-      const { startX } = dragRef.current;
-      if (startX === null) return;
-      const dx = e.clientX - startX;
-      dragRef.current.startX = null;
-      if (Math.abs(dx) >= SWIPE_THRESHOLD) {
-        dx < 0 ? next() : prev();
-      }
-      // Let click handlers check this before resetting
-      setTimeout(() => {
-        dragRef.current.dragging = false;
-      }, 0);
-    },
-    [prev, next],
-  );
-
-  // Compute x position of each card relative to active
   const getOffset = (index) => {
     let off = index - active;
-    // Wrap around for infinite loop
-    if (off > total / 2) off -= total;
-    if (off < -total / 2) off += total;
+    while (off > Math.floor(total / 2)) off -= total;
+    while (off < -Math.floor(total / 2)) off += total;
     return off;
   };
+
+  const prevActiveRef = useRef(active);
+  const getPrevOffset = (index) => {
+    let off = index - prevActiveRef.current;
+    while (off > Math.floor(total / 2)) off -= total;
+    while (off < -Math.floor(total / 2)) off += total;
+    return off;
+  };
+  useEffect(() => {
+    prevActiveRef.current = active;
+  });
 
   const centerX = (containerWidth - cardWidth) / 2;
 
@@ -143,7 +116,81 @@ export default function Projects() {
         overflow: "hidden",
       }}
     >
-      {/* Title sits inside max-width container */}
+      <style>
+        {`
+          .carousel-arrow {
+            position: absolute;
+            top: 50%;
+            z-index: 10;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            cursor: pointer;
+            color: white;
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            background: rgba(16, 185, 129, 0.12);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            box-shadow:
+              0 0 20px rgba(16, 185, 129, 0.15),
+              0 4px 12px rgba(0, 0, 0, 0.3),
+              inset 0 1px 0 rgba(255, 255, 255, 0.08);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            outline: none;
+          }
+
+          .carousel-arrow:hover {
+            background: rgba(16, 185, 129, 0.35);
+            border-color: rgba(16, 185, 129, 0.6);
+            box-shadow:
+              0 0 32px rgba(16, 185, 129, 0.35),
+              0 8px 24px rgba(0, 0, 0, 0.4),
+              inset 0 1px 0 rgba(255, 255, 255, 0.15);
+            transform: translateY(-50%) scale(1.12);
+          }
+
+          .carousel-arrow:active {
+            transform: translateY(-50%) scale(0.95);
+            background: rgba(16, 185, 129, 0.5);
+          }
+
+          .carousel-arrow:focus-visible {
+            outline: none;
+            box-shadow:
+              0 0 0 3px rgba(16, 185, 129, 0.4),
+              0 0 32px rgba(16, 185, 129, 0.35);
+          }
+
+          .carousel-arrow--left {
+            left: clamp(12px, 4%, 48px);
+            transform: translateY(-50%);
+          }
+
+          .carousel-arrow--right {
+            right: clamp(12px, 4%, 48px);
+            transform: translateY(-50%);
+          }
+
+          /* Subtle pulse animation to draw attention */
+          @keyframes arrow-pulse {
+            0%, 100% { box-shadow: 0 0 20px rgba(16,185,129,0.15), 0 4px 12px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.08); }
+            50% { box-shadow: 0 0 28px rgba(16,185,129,0.25), 0 4px 12px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.08); }
+          }
+
+          .carousel-arrow {
+            animation: arrow-pulse 3s ease-in-out infinite;
+          }
+
+          .carousel-arrow:hover {
+            animation: none;
+          }
+        `}
+      </style>
+
+      {/* Title */}
       <div
         style={{
           maxWidth: "var(--container-width)",
@@ -163,30 +210,32 @@ export default function Projects() {
         </FadeIn>
       </div>
 
-      {/* Carousel viewport */}
+      {/* Carousel viewport — no drag handlers */}
       <div
         ref={containerRef}
-        onPointerDown={onPointerDown}
-        onPointerMove={onPointerMove}
-        onPointerUp={onPointerUp}
-        onPointerCancel={onPointerUp}
         style={{
           position: "relative",
           width: "100%",
           overflow: "hidden",
-          touchAction: "pan-y",
-          cursor: "grab",
           height: cardWidth * (9 / 16) + 160,
         }}
       >
-        {/* Render ALL cards with stable keys — framer-motion slides them naturally */}
         {PROJECTS.map((project, index) => {
           const offset = getOffset(index);
+          const prevOffset = getPrevOffset(index);
           const isActive = offset === 0;
           const isPeek = Math.abs(offset) === 1;
           const show = Math.abs(offset) <= 2;
 
+          const isWrapping = Math.abs(offset - prevOffset) > 2;
           const targetX = centerX + offset * (cardWidth + GAP);
+
+          const smoothTransition = {
+            x: { type: "tween", duration: 0.5, ease: [0.32, 0.72, 0, 1] },
+            opacity: { duration: 0.4, ease: "easeInOut" },
+            scale: { duration: 0.4, ease: "easeInOut" },
+          };
+          const instantTransition = { duration: 0 };
 
           return (
             <motion.div
@@ -196,13 +245,8 @@ export default function Projects() {
                 opacity: isActive ? 1 : isPeek ? 0.5 : 0,
                 scale: isActive ? 1 : 0.92,
               }}
-              transition={{
-                x: { type: "tween", duration: 0.5, ease: [0.32, 0.72, 0, 1] },
-                opacity: { duration: 0.4, ease: "easeInOut" },
-                scale: { duration: 0.4, ease: "easeInOut" },
-              }}
+              transition={isWrapping ? instantTransition : smoothTransition}
               onClick={() => {
-                if (dragRef.current.dragging) return;
                 if (!isActive) offset < 0 ? prev() : next();
               }}
               style={{
@@ -252,7 +296,6 @@ export default function Projects() {
                   }}
                 />
 
-                {/* Gradient fade at bottom of image into card body */}
                 <div
                   style={{
                     position: "absolute",
@@ -263,7 +306,6 @@ export default function Projects() {
                   }}
                 />
 
-                {/* External link button — only on active card */}
                 {isActive && (
                   <motion.a
                     href={project.link}
@@ -366,76 +408,22 @@ export default function Projects() {
           );
         })}
 
-        {/* ── LEFT ARROW ── */}
+        {/* ── LEFT ARROW — Premium Emerald Glass ── */}
         <button
-          onPointerDown={(e) => e.stopPropagation()}
           onClick={prev}
+          className="carousel-arrow carousel-arrow--left"
           aria-label="Projeto anterior"
-          style={{
-            position: "absolute",
-            left: "clamp(8px, 3%, 40px)",
-            top: "50%",
-            transform: "translateY(-50%)",
-            zIndex: 10,
-            background: "rgba(0,0,0,0.55)",
-            border: "1px solid rgba(255,255,255,0.12)",
-            borderRadius: "50%",
-            width: 38,
-            height: 38,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            cursor: "pointer",
-            color: "white",
-            backdropFilter: "blur(8px)",
-            transition: "background 0.2s ease, transform 0.15s ease",
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.background = "rgba(16,185,129,0.7)";
-            e.currentTarget.style.transform = "translateY(-50%) scale(1.08)";
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.background = "rgba(0,0,0,0.55)";
-            e.currentTarget.style.transform = "translateY(-50%) scale(1)";
-          }}
         >
-          <ChevronLeft size={22} />
+          <ChevronLeft size={24} strokeWidth={2.5} />
         </button>
 
-        {/* ── RIGHT ARROW ── */}
+        {/* ── RIGHT ARROW — Premium Emerald Glass ── */}
         <button
-          onPointerDown={(e) => e.stopPropagation()}
           onClick={next}
+          className="carousel-arrow carousel-arrow--right"
           aria-label="Próximo projeto"
-          style={{
-            position: "absolute",
-            right: "clamp(8px, 3%, 40px)",
-            top: "50%",
-            transform: "translateY(-50%)",
-            zIndex: 10,
-            background: "rgba(0,0,0,0.55)",
-            border: "1px solid rgba(255,255,255,0.12)",
-            borderRadius: "50%",
-            width: 38,
-            height: 38,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            cursor: "pointer",
-            color: "white",
-            backdropFilter: "blur(8px)",
-            transition: "background 0.2s ease, transform 0.15s ease",
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.background = "rgba(16,185,129,0.7)";
-            e.currentTarget.style.transform = "translateY(-50%) scale(1.08)";
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.background = "rgba(0,0,0,0.55)";
-            e.currentTarget.style.transform = "translateY(-50%) scale(1)";
-          }}
         >
-          <ChevronRight size={22} />
+          <ChevronRight size={24} strokeWidth={2.5} />
         </button>
       </div>
 
