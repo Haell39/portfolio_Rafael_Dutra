@@ -118,6 +118,25 @@ export default function Projects() {
     >
       <style>
         {`
+          .project-title {
+            font-size: var(--text-lg);
+            line-height: 1.3;
+            margin: 0;
+            font-weight: 600;
+            background: linear-gradient(90deg, var(--text-primary) 0%, #10b981 40%, #34d399 50%, var(--text-primary) 60%, var(--text-primary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            background-size: 300% 100%;
+            animation: title-shimmer 4s ease-in-out infinite;
+          }
+
+          @keyframes title-shimmer {
+            0% { background-position: 100% 50%; }
+            50% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+          }
+
           .carousel-arrow {
             position: absolute;
             top: 50%;
@@ -247,7 +266,11 @@ export default function Projects() {
               }}
               transition={isWrapping ? instantTransition : smoothTransition}
               onClick={() => {
-                if (!isActive) offset < 0 ? prev() : next();
+                if (isActive) {
+                  window.open(project.link, "_blank", "noopener,noreferrer");
+                } else {
+                  offset < 0 ? prev() : next();
+                }
               }}
               style={{
                 position: "absolute",
@@ -256,7 +279,7 @@ export default function Projects() {
                 width: cardWidth,
                 borderRadius: "var(--radius-xl)",
                 overflow: "hidden",
-                cursor: isActive ? "default" : "pointer",
+                cursor: "pointer",
                 background: "var(--bg-card)",
                 border: `1px solid ${
                   isActive ? "var(--border-highlight)" : "var(--border-subtle)"
@@ -352,21 +375,14 @@ export default function Projects() {
                   flex: 1,
                 }}
               >
-                <h3
-                  style={{
-                    fontSize: "var(--text-lg)",
-                    color: "var(--text-primary)",
-                    lineHeight: 1.3,
-                    margin: 0,
-                  }}
-                >
+                <h3 className="project-title">
                   {language === "pt" ? project.title : project.titleEn}
                 </h3>
 
                 <p
                   style={{
                     color: "var(--text-secondary)",
-                    fontSize: "var(--text-xs)",
+                    fontSize: "var(--text-sm)",
                     lineHeight: 1.6,
                     margin: 0,
                     flex: 1,
