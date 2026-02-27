@@ -236,7 +236,7 @@ export default function Projects() {
           position: "relative",
           width: "100%",
           overflow: "hidden",
-          height: cardWidth * (9 / 16) + 160,
+          height: cardWidth * (9 / 16) + 210,
         }}
       >
         {PROJECTS.map((project, index) => {
