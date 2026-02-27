@@ -259,6 +259,7 @@ export default function Projects() {
           return (
             <motion.div
               key={index}
+              className={isActive ? "metallic-hover" : ""}
               animate={{
                 x: targetX,
                 opacity: isActive ? 1 : isPeek ? 0.5 : 0,
