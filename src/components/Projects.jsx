@@ -12,8 +12,8 @@ import imgOpenFinance from "../assets/projects/openfinance.webp";
 
 export const PROJECTS = [
   {
-    title: "Horus AI (Monitoramento)",
-    titleEn: "Horus AI (Monitoring)",
+    title: "Horus AI",
+    titleEn: "Horus AI",
     description:
       "Sistema automatizado que detecta falhas em transmissões ao vivo. Três modelos de ML analisam vídeo, áudio e lipsync simultaneamente para gerar alertas em tempo real.",
     descriptionEn:
