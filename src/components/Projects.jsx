@@ -368,6 +368,7 @@ export default function Projects() {
 
         {/* ── LEFT ARROW ── */}
         <button
+          onPointerDown={(e) => e.stopPropagation()}
           onClick={prev}
           aria-label="Projeto anterior"
           style={{
@@ -403,6 +404,7 @@ export default function Projects() {
 
         {/* ── RIGHT ARROW ── */}
         <button
+          onPointerDown={(e) => e.stopPropagation()}
           onClick={next}
           aria-label="Próximo projeto"
           style={{
