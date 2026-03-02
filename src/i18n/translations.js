@@ -41,7 +41,7 @@ export const translations = {
     },
     datastudent: {
       title: "Canal DataStudent",
-      subtitle: "Compartilhando conhecimento sobre Dados, IA e Tecnologia.",
+      subtitle: "Compartilhando conhecimento sobre Programação, Dados e IA",
       cta: "Visitar Canal",
     },
   },
@@ -87,7 +87,7 @@ export const translations = {
     },
     datastudent: {
       title: "DataStudent Channel",
-      subtitle: "Sharing knowledge about Data, AI, and Technology.",
+      subtitle: "Sharing knowledge about Programming, Data, and AI.",
       cta: "Visit Channel",
     },
   },

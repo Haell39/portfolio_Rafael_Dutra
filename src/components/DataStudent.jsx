@@ -1,8 +1,21 @@
 import { motion } from "framer-motion";
-import { Youtube, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import FadeIn from "./ui/FadeIn";
 import { HOVER_SCALE } from "../config/motion";
 import { useLanguage } from "../context/LanguageContext";
+
+// TikTok official logo SVG
+const TikTokIcon = ({ size = 32 }) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.88a8.18 8.18 0 0 0 4.78 1.52V7.0a4.85 4.85 0 0 1-1.01-.31z" />
+  </svg>
+);
 
 export default function DataStudent() {
   const { t } = useLanguage();
@@ -51,12 +64,12 @@ export default function DataStudent() {
                 display: "inline-flex",
                 padding: "1rem",
                 borderRadius: "50%",
-                background: "rgba(255, 0, 0, 0.1)",
-                color: "#ff0000",
+                background: "rgba(254, 44, 85, 0.12)",
+                color: "#fe2c55",
                 marginBottom: "var(--space-6)",
               }}
             >
-              <Youtube size={32} />
+              <TikTokIcon size={32} />
             </div>
 
             <h2
@@ -81,16 +94,16 @@ export default function DataStudent() {
             </p>
 
             <motion.a
-              href="https://www.youtube.com/@DataStudent"
+              href="https://www.tiktok.com/@datastudent"
               target="_blank"
               rel="noopener noreferrer"
-              whileHover={{ scale: HOVER_SCALE, background: "#ff0000" }}
+              whileHover={{ scale: HOVER_SCALE, background: "#fe2c55" }}
               whileTap={{ scale: 0.98 }}
               style={{
                 display: "inline-flex",
                 alignItems: "center",
                 gap: "var(--space-2)",
-                background: "#cc0000",
+                background: "#c4233f",
                 color: "white",
                 padding: "0.75rem 1.5rem",
                 borderRadius: "var(--radius-full)",
