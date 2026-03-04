@@ -11,6 +11,7 @@ import imgSQLK from "../assets/certificates/SQLK.webp";
 import imgADA from "../assets/certificates/trilhaADA.webp";
 import imgStats from "../assets/certificates/statistic.webp";
 import imgAnalise from "../assets/certificates/analisedados.webp";
+import imgPython from "../assets/certificates/Python Course.jpg";
 
 export const CERTIFICATES = [
   {
@@ -60,6 +61,14 @@ export const CERTIFICATES = [
     date: "2024",
     link: "https://www.escolavirtual.gov.br/documentos/validacao/certificadocheck/KAmM13988122oUfK#",
     image: imgAnalise,
+  },
+  {
+    title: "Python",
+    titleEn: "Python",
+    issuer: "Kaggle",
+    date: "2024",
+    link: "https://www.kaggle.com/learn/certification/raeldata/python",
+    image: imgPython,
   },
 ];
 
