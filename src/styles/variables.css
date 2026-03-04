@@ -55,6 +55,8 @@
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
   --shadow-lg: 0 20px 25px -5px rgb(0 0 0 / 0.15);
+
+  --radius-full: 999px;
 }
 
 [data-theme="light"] {
@@ -192,4 +194,21 @@ button {
   border: none;
   font: inherit;
   cursor: pointer;
+}
+
+/* ─── Mobile Responsiveness ─── */
+@media (max-width: 768px) {
+  :root {
+    --space-24: 3rem;
+    --space-12: 2rem;
+    --space-8: 1.25rem;
+    --text-2xl: 1.25rem;
+  }
+
+  [data-theme="light"] {
+    --space-24: 3rem;
+    --space-12: 2rem;
+    --space-8: 1.25rem;
+    --text-2xl: 1.25rem;
+  }
 }

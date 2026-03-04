@@ -108,6 +108,7 @@ export default function Hero() {
               gap: "var(--space-4)",
               justifyContent: "center",
               alignItems: "center",
+              flexWrap: "wrap",
             }}
           >
             <motion.a

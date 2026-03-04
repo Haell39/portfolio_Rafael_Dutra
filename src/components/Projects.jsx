@@ -57,7 +57,6 @@ export const PROJECTS = [
   },
 ];
 
-const CARD_RATIO = 0.264;
 const GAP = 20;
 
 export default function Projects() {
@@ -65,6 +64,10 @@ export default function Projects() {
   const [active, setActive] = useState(0);
   const containerRef = useRef(null);
   const [containerWidth, setContainerWidth] = useState(1100);
+
+  // Responsive card ratio: larger on mobile
+  const isMobile = containerWidth < 768;
+  const CARD_RATIO = isMobile ? 0.82 : 0.264;
 
   useEffect(() => {
     const measure = () => {
@@ -86,6 +89,21 @@ export default function Projects() {
     [total],
   );
   const next = useCallback(() => setActive((a) => (a + 1) % total), [total]);
+
+  // Touch swipe support for mobile
+  const touchRef = useRef({ startX: 0 });
+  const onTouchStart = useCallback((e) => {
+    touchRef.current.startX = e.touches[0].clientX;
+  }, []);
+  const onTouchEnd = useCallback(
+    (e) => {
+      const dx = e.changedTouches[0].clientX - touchRef.current.startX;
+      if (Math.abs(dx) > 50) {
+        dx < 0 ? next() : prev();
+      }
+    },
+    [next, prev],
+  );
 
   const getOffset = (index) => {
     let off = index - active;
@@ -193,6 +211,19 @@ export default function Projects() {
             transform: translateY(-50%);
           }
 
+          @media (max-width: 768px) {
+            .carousel-arrow {
+              width: 36px;
+              height: 36px;
+            }
+            .carousel-arrow--left {
+              left: 6px;
+            }
+            .carousel-arrow--right {
+              right: 6px;
+            }
+          }
+
           /* Subtle pulse animation to draw attention */
           @keyframes arrow-pulse {
             0%, 100% { box-shadow: 0 0 20px rgba(16,185,129,0.15), 0 4px 12px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.08); }
@@ -229,14 +260,16 @@ export default function Projects() {
         </FadeIn>
       </div>
 
-      {/* Carousel viewport — no drag handlers */}
+      {/* Carousel viewport — touch swipe for mobile */}
       <div
         ref={containerRef}
+        onTouchStart={onTouchStart}
+        onTouchEnd={onTouchEnd}
         style={{
           position: "relative",
           width: "100%",
           overflow: "hidden",
-          height: cardWidth * (9 / 16) + 210,
+          height: cardWidth * (9 / 16) + (isMobile ? 240 : 210),
         }}
       >
         {PROJECTS.map((project, index) => {
@@ -244,7 +277,7 @@ export default function Projects() {
           const prevOffset = getPrevOffset(index);
           const isActive = offset === 0;
           const isPeek = Math.abs(offset) === 1;
-          const show = Math.abs(offset) <= 2;
+          const show = isMobile ? Math.abs(offset) <= 1 : Math.abs(offset) <= 2;
 
           const isWrapping = Math.abs(offset - prevOffset) > 2;
           const targetX = centerX + offset * (cardWidth + GAP);
