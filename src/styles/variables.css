@@ -61,11 +61,11 @@
 
 [data-theme="light"] {
   /* Colors - Light Mode Premium (Softened) */
-  --bg-primary: #f8f9fb;
-  --bg-secondary: #f1f3f7;
-  --bg-card: #ffffff;
-  --bg-card-hover: #eef1f6;
-  --nav-bg-scrolled: rgba(248, 249, 251, 0.85);
+  --bg-primary: #cdd4de;
+  --bg-secondary: #c2c9d5;
+  --bg-card: #d8dee8;
+  --bg-card-hover: #bcc4d0;
+  --nav-bg-scrolled: rgba(205, 212, 222, 0.92);
 
   --text-primary: #1a1a2e;
   --text-secondary: #3d4663;
