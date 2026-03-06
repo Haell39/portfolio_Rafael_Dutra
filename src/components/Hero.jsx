@@ -8,6 +8,7 @@ import {
   Download,
 } from "lucide-react";
 import FadeIn from "./ui/FadeIn";
+import ParticleNetwork from "./ui/ParticleNetwork";
 import { VARIANTS_CONTAINER, HOVER_SCALE } from "../config/motion";
 
 import { useLanguage } from "../context/LanguageContext";
@@ -28,21 +29,8 @@ export default function Hero() {
         overflow: "hidden",
       }}
     >
-      {/* ... (background div remains same) ... */}
-      <div
-        style={{
-          position: "absolute",
-          top: "-20%",
-          left: "50%",
-          transform: "translateX(-50%)",
-          width: "600px",
-          height: "600px",
-          background:
-            "radial-gradient(circle, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0) 70%)",
-          pointerEvents: "none",
-          zIndex: 0,
-        }}
-      />
+      {/* Canvas particle network background */}
+      <ParticleNetwork />
 
       <motion.div
         variants={VARIANTS_CONTAINER}
