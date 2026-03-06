@@ -66,7 +66,8 @@ export default function Hero() {
               letterSpacing: "-0.03em",
               lineHeight: 1.1,
               marginBottom: "var(--space-6)",
-              background: "linear-gradient(to bottom right, #fff, #a1a1aa)",
+              background:
+                "linear-gradient(to bottom right, var(--text-primary), var(--text-tertiary))",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
             }}

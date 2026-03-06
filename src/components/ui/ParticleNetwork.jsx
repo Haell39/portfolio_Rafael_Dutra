@@ -29,11 +29,9 @@ export default function ParticleNetwork() {
       const isDark =
         document.documentElement.getAttribute("data-theme") !== "light";
       return {
-        particle: isDark
-          ? "rgba(16, 185, 129, 0.5)"
-          : "rgba(16, 185, 129, 0.35)",
-        line: isDark ? "rgba(16, 185, 129," : "rgba(5, 150, 105,",
-        glow: isDark ? "rgba(16, 185, 129, 0.06)" : "rgba(16, 185, 129, 0.04)",
+        particle: isDark ? "rgba(16, 185, 129, 0.5)" : "rgba(5, 150, 105, 0.7)",
+        line: isDark ? "rgba(16, 185, 129," : "rgba(5, 120, 90,",
+        glow: isDark ? "rgba(16, 185, 129, 0.06)" : "rgba(5, 150, 105, 0.1)",
       };
     };
 
