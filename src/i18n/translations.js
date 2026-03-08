@@ -14,7 +14,7 @@ export const translations = {
       kicker: "Inteligência Artificial que Gera Valor",
       title: "Você não precisa de mais dados.",
       subtitle_highlight:
-        "Precisa de inteligência que faz seu negócio crescer.",
+        "Precisa da inteligência que faz seu negócio crescer.",
       subtitle:
         "Transformo dados complexos em modelos preditivos, automações e dashboards que geram resultados reais.",
       cta_projects: "Ver Projetos",
@@ -124,7 +124,7 @@ export const translations = {
     hero: {
       kicker: "Artificial Intelligence That Drives Value",
       title: "You don't need more data.",
-      subtitle_highlight: "You need intelligence to grow your business.",
+      subtitle_highlight: "You need the intelligence to grow your business.",
       subtitle:
         "I transform complex data into predictive models, automations, and dashboards that generate real results.",
       cta_projects: "View Projects",
@@ -235,7 +235,7 @@ export const translations = {
       kicker: "Inteligencia Artificial que Genera Valor",
       title: "No necesitas más datos.",
       subtitle_highlight:
-        "Necesitas inteligencia para hacer crecer tu negocio.",
+        "Necesitas la inteligencia para hacer crecer tu negocio.",
       subtitle:
         "Transformo datos complejos en modelos predictivos, automatizaciones y dashboards que generan resultados reales.",
       cta_projects: "Ver Proyectos",
