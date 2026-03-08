@@ -92,17 +92,15 @@ export default function Solutions() {
                 <div
                   style={{
                     background: "var(--bg-card)",
-                    padding: "2.5rem 2rem",
+                    padding: "var(--space-8)",
                     borderRadius: "24px",
                     border: "1px solid var(--border-subtle)",
-                    height: "100%",
                     display: "flex",
                     flexDirection: "column",
                     gap: "var(--space-6)",
                     transition: "all 0.35s cubic-bezier(0.16, 1, 0.3, 1)",
                     cursor: "default",
                     position: "relative",
-                    overflow: "hidden",
                   }}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.transform = "translateY(-6px)";
