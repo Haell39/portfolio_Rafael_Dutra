@@ -78,13 +78,35 @@ export default function Hero() {
               letterSpacing: "-0.02em",
               lineHeight: 1.2,
               marginBottom: "var(--space-6)",
-              background:
-                "linear-gradient(to right, var(--accent-primary), var(--accent-secondary))",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
+              color: "var(--text-primary)",
             }}
           >
-            {t("hero.subtitle_highlight")}
+            {(() => {
+              const full = t("hero.subtitle_highlight");
+              const words = [
+                t("hero.highlight_word"),
+                t("hero.highlight_word2"),
+              ].filter(Boolean);
+              const marks = [];
+              for (const w of words) {
+                const idx = full.toLowerCase().indexOf(w.toLowerCase());
+                if (idx !== -1) marks.push({ start: idx, end: idx + w.length });
+              }
+              marks.sort((a, b) => a.start - b.start);
+              const result = [];
+              let cursor = 0;
+              for (const { start, end } of marks) {
+                if (cursor < start) result.push(full.slice(cursor, start));
+                result.push(
+                  <span key={start} className="hero-highlight">
+                    {full.slice(start, end)}
+                  </span>,
+                );
+                cursor = end;
+              }
+              if (cursor < full.length) result.push(full.slice(cursor));
+              return result.length ? result : full;
+            })()}
           </h2>
         </FadeIn>
 

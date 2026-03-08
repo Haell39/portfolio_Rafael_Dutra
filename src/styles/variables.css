@@ -100,6 +100,31 @@
   }
 }
 
+@keyframes hero-shimmer {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}
+
+.hero-highlight {
+  background: linear-gradient(
+    90deg,
+    #10b981 0%,
+    #34d399 30%,
+    #6ee7b7 50%,
+    #34d399 70%,
+    #10b981 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: hero-shimmer 3s linear infinite;
+}
+
 /* Premium Metallic Hover Logic */
 .metallic-hover {
   position: relative;

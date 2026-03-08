@@ -15,6 +15,8 @@ export const translations = {
       title: "Você não precisa de mais dados.",
       subtitle_highlight:
         "Precisa da inteligência que faz seu negócio crescer.",
+      highlight_word: "inteligência",
+      highlight_word2: "crescer",
       subtitle:
         "Transformo dados complexos em modelos preditivos, automações e dashboards que geram resultados reais.",
       cta_projects: "Ver Projetos",
@@ -125,6 +127,8 @@ export const translations = {
       kicker: "Artificial Intelligence That Drives Value",
       title: "You don't need more data.",
       subtitle_highlight: "You need the intelligence to grow your business.",
+      highlight_word: "intelligence",
+      highlight_word2: "grow",
       subtitle:
         "I transform complex data into predictive models, automations, and dashboards that generate real results.",
       cta_projects: "View Projects",
@@ -236,6 +240,8 @@ export const translations = {
       title: "No necesitas más datos.",
       subtitle_highlight:
         "Necesitas la inteligencia para hacer crecer tu negocio.",
+      highlight_word: "inteligencia",
+      highlight_word2: "crecer",
       subtitle:
         "Transformo datos complejos en modelos predictivos, automatizaciones y dashboards que generan resultados reales.",
       cta_projects: "Ver Proyectos",
