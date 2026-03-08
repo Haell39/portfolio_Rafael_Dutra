@@ -81,63 +81,66 @@ export default function Solutions() {
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-            gap: "var(--space-8)",
+            gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+            gap: "2rem",
           }}
         >
           {items.map((index) => {
             const Icon = ICON_MAP[index];
             return (
-              <FadeIn key={index} delay={index * 0.1}>
+              <FadeIn
+                key={index}
+                delay={index * 0.1}
+                style={{ display: "flex", flexDirection: "column" }}
+              >
                 <div
                   style={{
                     background: "var(--bg-card)",
-                    padding: "var(--space-8)",
-                    borderRadius: "24px",
+                    padding: "2rem",
+                    borderRadius: "16px",
                     border: "1px solid var(--border-subtle)",
+                    flex: 1,
                     display: "flex",
                     flexDirection: "column",
-                    gap: "var(--space-6)",
+                    gap: "var(--space-4)",
                     transition: "all 0.35s cubic-bezier(0.16, 1, 0.3, 1)",
                     cursor: "default",
                     position: "relative",
+                    zIndex: 0,
                   }}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.transform = "translateY(-6px)";
                     e.currentTarget.style.borderColor = "var(--accent-primary)";
                     e.currentTarget.style.boxShadow =
                       "0 20px 40px -12px rgba(16, 185, 129, 0.15)";
+                    e.currentTarget.style.zIndex = "1";
                   }}
                   onMouseLeave={(e) => {
                     e.currentTarget.style.transform = "translateY(0)";
                     e.currentTarget.style.borderColor = "var(--border-subtle)";
                     e.currentTarget.style.boxShadow = "none";
+                    e.currentTarget.style.zIndex = "0";
                   }}
                 >
                   <div
                     style={{
-                      width: "48px",
-                      height: "48px",
-                      borderRadius: "12px",
-                      background: "var(--bg-primary)",
                       display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      border: "1px solid var(--border-highlight)",
+                      flexDirection: "column",
+                      gap: "1rem",
                     }}
                   >
-                    <Icon size={24} color="var(--accent-primary)" />
-                  </div>
-                  <div>
                     <h3
                       style={{
-                        fontSize: "var(--text-xl)",
+                        fontSize: "1.125rem",
                         fontWeight: 700,
                         color: "var(--text-primary)",
-                        marginBottom: "var(--space-2)",
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "0.75rem",
                         letterSpacing: "-0.01em",
                       }}
                     >
+                      <Icon size={20} color="var(--accent-primary)" />
                       {t(`solutions.items.${index}.title`)}
                     </h3>
                     <p

@@ -1,12 +1,21 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { TRANSITION, VARIANTS_FADE_UP } from "../../config/motion";
 
-export default function FadeIn({ children, delay = 0, className = "" }) {
+export default function FadeIn({
+  children,
+  delay = 0,
+  className = "",
+  style = {},
+}) {
   const shouldReduceMotion = useReducedMotion();
 
   // If user prefers reduced motion, render static content
   if (shouldReduceMotion) {
-    return <div className={className}>{children}</div>;
+    return (
+      <div className={className} style={style}>
+        {children}
+      </div>
+    );
   }
 
   return (
@@ -17,6 +26,7 @@ export default function FadeIn({ children, delay = 0, className = "" }) {
       transition={{ ...TRANSITION, delay }}
       variants={VARIANTS_FADE_UP}
       className={className}
+      style={style}
     >
       {children}
     </motion.div>
