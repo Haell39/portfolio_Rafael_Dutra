@@ -13,10 +13,9 @@ export function LanguageProvider({ children }) {
     }
   }, []);
 
-  const toggleLanguage = () => {
-    const newLanguage = language === "pt" ? "en" : "pt";
-    setLanguage(newLanguage);
-    localStorage.setItem("language", newLanguage);
+  const changeLanguage = (lang) => {
+    setLanguage(lang);
+    localStorage.setItem("language", lang);
   };
 
   const t = (key) => {
@@ -35,7 +34,7 @@ export function LanguageProvider({ children }) {
   };
 
   return (
-    <LanguageContext.Provider value={{ language, toggleLanguage, t }}>
+    <LanguageContext.Provider value={{ language, changeLanguage, t }}>
       {children}
     </LanguageContext.Provider>
   );

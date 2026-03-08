@@ -10,8 +10,10 @@ import { PROJECTS } from "./components/Projects"; // Import data for preloading
 import { CERTIFICATES } from "./components/Certificates"; // Import data for preloading
 
 const About = lazy(() => import("./components/About"));
+const Solutions = lazy(() => import("./components/Solutions"));
+const Process = lazy(() => import("./components/Process"));
 const DataStudent = lazy(() => import("./components/DataStudent"));
-const Contact = lazy(() => import("./components/Contact"));
+const Footer = lazy(() => import("./components/Footer"));
 
 import { LanguageProvider } from "./context/LanguageContext";
 
@@ -54,12 +56,14 @@ function App() {
         <main>
           <Hero />
           <Suspense fallback={null}>
+            <Solutions />
+            <Process />
             <Projects />
             <Experience />
             <Certificates />
             <About />
             <DataStudent />
-            <Contact />
+            <Footer />
           </Suspense>
         </main>
       </div>

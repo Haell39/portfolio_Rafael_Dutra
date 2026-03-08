@@ -5,20 +5,23 @@ import { useLanguage } from "../context/LanguageContext";
 
 import brFlag from "../assets/icons/brasil.png";
 import usFlag from "../assets/icons/usa.png";
+import esFlag from "../assets/icons/espanha.png";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [theme, setTheme] = useState("dark");
   const [menuOpen, setMenuOpen] = useState(false);
-  const { language, toggleLanguage, t } = useLanguage();
+  const { language, changeLanguage, t } = useLanguage();
 
   const LINKS = [
+    { name: t("navbar.solutions"), href: "#solutions" },
+    { name: t("navbar.process"), href: "#process" },
     { name: t("navbar.projects"), href: "#projects" },
     { name: t("navbar.experience"), href: "#experience" },
     { name: t("navbar.certificates"), href: "#certificates" },
     { name: t("navbar.about"), href: "#about" },
     { name: t("navbar.channel"), href: "#datastudent" },
-    { name: t("navbar.contact"), href: "#contact" },
+    { name: t("navbar.contact"), href: "#" },
   ];
 
   useEffect(() => {
@@ -255,21 +258,40 @@ export default function Navbar() {
           </a>
 
           <div style={{ display: "flex", alignItems: "center", gap: "1.5rem" }}>
-            <button
-              onClick={toggleLanguage}
-              className="nav-btn"
-              aria-label="Toggle language"
-            >
-              <img
-                src={language === "pt" ? usFlag : brFlag}
-                alt={
-                  language === "pt"
-                    ? "Switch to English"
-                    : "Mudar para Português"
-                }
-                style={{ width: "24px", height: "auto", display: "block" }}
-              />
-            </button>
+            <div style={{ display: "flex", gap: "0.25rem" }}>
+              {[
+                { lang: "pt", flag: brFlag, label: "Português" },
+                { lang: "en", flag: usFlag, label: "English" },
+                { lang: "es", flag: esFlag, label: "Español" },
+              ].map(({ lang, flag, label }) => (
+                <button
+                  key={lang}
+                  onClick={() => changeLanguage(lang)}
+                  className="nav-btn"
+                  style={{
+                    opacity: language === lang ? 1 : 0.4,
+                    transform: language === lang ? "scale(1.1)" : "scale(1)",
+                  }}
+                  aria-label={label}
+                >
+                  <img
+                    src={flag}
+                    alt={label}
+                    style={{
+                      width: "22px",
+                      height: "22px",
+                      borderRadius: "50%",
+                      objectFit: "cover",
+                      display: "block",
+                      boxShadow:
+                        language === lang
+                          ? "0 0 8px rgba(16, 185, 129, 0.4)"
+                          : "none",
+                    }}
+                  />
+                </button>
+              ))}
+            </div>
 
             <button
               onClick={toggleTheme}

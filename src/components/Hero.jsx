@@ -48,32 +48,44 @@ export default function Hero() {
             style={{
               color: "var(--accent-primary)",
               fontSize: "var(--text-sm)",
-              fontWeight: 500,
-              letterSpacing: "0.05em",
+              fontWeight: 600,
+              letterSpacing: "0.1em",
               marginBottom: "var(--space-6)",
               textTransform: "uppercase",
             }}
           >
-            {t("hero.role")}
+            {t("hero.kicker")}
           </h2>
         </FadeIn>
 
         <FadeIn delay={0.1}>
           <h1
             style={{
-              fontSize: "clamp(2.5rem, 8vw, 5rem)",
-              fontWeight: 700,
+              fontSize: "clamp(2.5rem, 7vw, 4.5rem)",
+              fontWeight: 800,
               letterSpacing: "-0.03em",
               lineHeight: 1.1,
-              marginBottom: "var(--space-6)",
-              background:
-                "linear-gradient(to bottom right, var(--text-primary), var(--text-tertiary))",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
+              marginBottom: "var(--space-4)",
+              color: "var(--text-primary)",
             }}
           >
             {t("hero.title")}
           </h1>
+          <h2
+            style={{
+              fontSize: "clamp(1.5rem, 4vw, 2.5rem)",
+              fontWeight: 600,
+              letterSpacing: "-0.02em",
+              lineHeight: 1.2,
+              marginBottom: "var(--space-6)",
+              background:
+                "linear-gradient(to right, var(--accent-primary), var(--accent-secondary))",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+            }}
+          >
+            {t("hero.subtitle_highlight")}
+          </h2>
         </FadeIn>
 
         <FadeIn delay={0.2}>
@@ -100,6 +112,32 @@ export default function Hero() {
               flexWrap: "wrap",
             }}
           >
+            <motion.a
+              href="https://wa.me/5581999654790"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileTap={{ scale: 0.98 }}
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "var(--space-2)",
+                background: "#10b981",
+                color: "#ffffff",
+                padding: "0.75rem 1.5rem",
+                borderRadius: "var(--radius-full)",
+                fontWeight: 600,
+                fontSize: "var(--text-sm)",
+                transition: "all 0.3s ease",
+                boxShadow: "0 0 20px rgba(16, 185, 129, 0.3)",
+              }}
+              whileHover={{
+                scale: HOVER_SCALE,
+                boxShadow: "0 0 30px rgba(16, 185, 129, 0.5)",
+              }}
+            >
+              {t("hero.cta_contact")} <Mail size={16} />
+            </motion.a>
+
             <motion.a
               href="#projects"
               whileTap={{ scale: 0.98 }}
