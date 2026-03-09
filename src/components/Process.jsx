@@ -17,7 +17,7 @@ export default function Process() {
     >
       <div style={{ maxWidth: "var(--container-width)", margin: "0 auto" }}>
         <FadeIn>
-          <div style={{ textAlign: "center", marginBottom: "var(--space-20)" }}>
+          <div style={{ textAlign: "center", marginBottom: "7rem" }}>
             <span
               style={{
                 color: "var(--accent-primary)",
