@@ -95,7 +95,9 @@ export default function Footer() {
                   marginBottom: "var(--space-6)",
                 }}
               >
-                Navegação
+                {t("navbar.projects") === "Projetos"
+                  ? "Navega\u00e7\u00e3o"
+                  : "Navigation"}
               </h4>
               <ul
                 style={{
@@ -108,10 +110,14 @@ export default function Footer() {
                 }}
               >
                 {[
-                  { label: "Projetos", href: "#projects" },
-                  { label: "Experiência", href: "#experience" },
-                  { label: "Soluções", href: "#solutions" },
-                  { label: "Sobre", href: "#about" },
+                  { label: t("navbar.projects"), href: "#projects" },
+                  { label: t("navbar.experience"), href: "#experience" },
+                  { label: t("navbar.solutions"), href: "#solutions" },
+                  { label: t("navbar.process"), href: "#process" },
+                  { label: t("navbar.certificates"), href: "#certificates" },
+                  { label: t("navbar.channel"), href: "#datastudent" },
+                  { label: t("navbar.about"), href: "#about" },
+                  { label: t("navbar.contact"), href: "#contact" },
                 ].map((link, i) => (
                   <li key={i}>
                     <a
@@ -193,32 +199,33 @@ export default function Footer() {
         </FadeIn>
 
         {/* Bottom Bar */}
-        <FadeIn delay={0.2}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            flexWrap: "wrap",
+            gap: "var(--space-4)",
+            paddingTop: "var(--space-8)",
+            borderTop: "1px solid var(--border-highlight)",
+            fontSize: "0.85rem",
+            color: "var(--text-secondary)",
+          }}
+        >
+          <div>
+            &copy; {currentYear} Rafael Dutra. {t("contact.footer")}
+          </div>
           <div
             style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-              flexWrap: "wrap",
-              gap: "var(--space-4)",
-              paddingTop: "var(--space-8)",
-              borderTop: "1px solid var(--border-subtle)",
-              fontSize: "0.85rem",
+              fontFamily: "monospace",
+              fontSize: "0.8rem",
+              letterSpacing: "0.08em",
+              color: "var(--text-tertiary)",
             }}
           >
-            <div>
-              &copy; {currentYear} Rafael Dutra. {t("contact.footer")}
-            </div>
-            <div
-              style={{
-                fontFamily: "monospace",
-                color: "var(--border-highlight)",
-              }}
-            >
-              DATA / ML / ENGINNERING
-            </div>
+            DATA / ML / ENGINEERING
           </div>
-        </FadeIn>
+        </div>
       </div>
 
       <style>{`
