@@ -9,6 +9,8 @@ import imgHorus from "../assets/projects/horus.webp";
 import imgDiagnostic from "../assets/projects/Diagnostic.webp";
 import imgAnalytics from "../assets/projects/Analytics.webp";
 import imgOpenFinance from "../assets/projects/openfinance.webp";
+// Placeholder image for the new project until an actual image is provided in assets
+import imgClimaPredict from "../assets/projects/climePredict.webp"; // Using Analytics image as fallback
 
 export const PROJECTS = [
   {
@@ -54,6 +56,23 @@ export const PROJECTS = [
     tags: ["AI & NLP", "Market Intelligence", "React", "FastAPI", "Docker"],
     image: imgOpenFinance,
     link: "https://github.com/Haell39/OpenFinance_Intel",
+  },
+  {
+    title: "ClimaPredict AI",
+    titleEn: "ClimaPredict AI",
+    description:
+      "Modelo preditivo utilizando Regressão Ridge para prever a temperatura máxima diária em Los Angeles baseado em dados históricos (1960-2025).",
+    descriptionEn:
+      "Predictive model using Ridge Regression to forecast daily maximum temperature in Los Angeles based on historical data (1960-2025).",
+    tags: [
+      "Machine Learning",
+      "Data Science",
+      "Python",
+      "Scikit-Learn",
+      "Regression",
+    ],
+    image: imgClimaPredict,
+    link: "https://github.com/Haell39/ClimaPredict_AI",
   },
 ];
 
