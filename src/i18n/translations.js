@@ -112,7 +112,7 @@ export const translations = {
       cta: "Visitar Canal",
     },
     diagnosis: {
-      kicker: "ANÁLISE DE DADOS",
+      kicker: "SEM COMPROMISSO",
       title: "Diagnóstico Estratégico de Dados",
       subtitle:
         "Se sua empresa já possui dados em planilhas, sistemas ou relatórios, é possível extrair insights importantes sobre operação, vendas, comportamento de clientes ou eficiência de processos.",
@@ -269,7 +269,7 @@ export const translations = {
       cta: "Visit Channel",
     },
     diagnosis: {
-      kicker: "DATA ANALYSIS",
+      kicker: "NO OBLIGATION",
       title: "Strategic Data Diagnosis",
       subtitle:
         "If your company already has data in spreadsheets, systems, or reports, it is possible to extract important insights about operations, sales, customer behavior, or process efficiency.",
@@ -427,7 +427,7 @@ export const translations = {
       cta: "Visitar Canal",
     },
     diagnosis: {
-      kicker: "ANÁLISIS DE DATOS",
+      kicker: "SIN COMPROMISO",
       title: "Diagnóstico Estratégico de Datos",
       subtitle:
         "Si tu empresa ya tiene datos en hojas de cálculo, sistemas o informes, es posible extraer insights importantes sobre operaciones, ventas, comportamiento del cliente o eficiencia de procesos.",
