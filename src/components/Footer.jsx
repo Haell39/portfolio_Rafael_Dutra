@@ -1,6 +1,7 @@
 import FadeIn from "./ui/FadeIn";
 import { useLanguage } from "../context/LanguageContext";
-import { Instagram, Linkedin, Github, Mail, Phone } from "lucide-react";
+import { Instagram, Linkedin, Github, Mail, Phone, MessageCircle } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function Footer() {
   const { t } = useLanguage();
@@ -34,11 +35,12 @@ export default function Footer() {
               }}
             >
               <div
+                className="animated-title"
                 style={{
                   fontSize: "1.5rem",
                   fontWeight: 800,
-                  color: "var(--text-primary)",
                   letterSpacing: "-0.05em",
+                  cursor: "default"
                 }}
               >
                 Rafael Dutra
@@ -86,13 +88,14 @@ export default function Footer() {
             {/* Navigation Column */}
             <div>
               <h4
+                className="animated-title"
                 style={{
-                  color: "var(--accent-primary)",
                   fontSize: "var(--text-xs)",
                   fontWeight: 600,
                   letterSpacing: "0.15em",
                   textTransform: "uppercase",
                   marginBottom: "var(--space-6)",
+                  cursor: "default"
                 }}
               >
                 {t("navbar.projects") === "Projetos"
@@ -145,13 +148,14 @@ export default function Footer() {
             {/* Contact Action Column */}
             <div>
               <h4
+                className="animated-title"
                 style={{
-                  color: "var(--accent-primary)",
                   fontSize: "var(--text-xs)",
                   fontWeight: 600,
                   letterSpacing: "0.15em",
                   textTransform: "uppercase",
                   marginBottom: "var(--space-6)",
+                  cursor: "default"
                 }}
               >
                 Vamos Conversar?
@@ -166,34 +170,68 @@ export default function Footer() {
                 Tem um desafio de dados em mente? Entre em contato e veja como
                 modelos preditivos e inteligência artificial podem ajudar.
               </p>
-              <a
-                href="mailto:rafaeldutrapro@gmail.com"
-                style={{
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: "var(--space-2)",
-                  padding: "var(--space-3) var(--space-6)",
-                  background: "transparent",
-                  color: "var(--text-primary)",
-                  border: "1px solid var(--border-highlight)",
-                  borderRadius: "12px",
-                  textDecoration: "none",
-                  fontSize: "var(--text-sm)",
-                  fontWeight: 600,
-                  transition: "all 0.2s",
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.borderColor = "var(--accent-primary)";
-                  e.currentTarget.style.color = "var(--accent-primary)";
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.borderColor = "var(--border-highlight)";
-                  e.currentTarget.style.color = "var(--text-primary)";
-                }}
-              >
-                rafaeldutrapro@gmail.com{" "}
-                <span style={{ marginLeft: 4 }}>↗</span>
-              </a>
+              <div style={{ display: "flex", gap: "var(--space-4)", alignItems: "center", flexWrap: "wrap" }}>
+                <a
+                  href="mailto:rafaeldutrapro@gmail.com"
+                  style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "var(--space-2)",
+                    padding: "var(--space-3) var(--space-6)",
+                    background: "transparent",
+                    color: "var(--text-primary)",
+                    border: "1px solid var(--border-highlight)",
+                    borderRadius: "12px",
+                    textDecoration: "none",
+                    fontSize: "var(--text-sm)",
+                    fontWeight: 600,
+                    transition: "all 0.2s",
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.borderColor = "var(--accent-primary)";
+                    e.currentTarget.style.color = "var(--accent-primary)";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.borderColor = "var(--border-highlight)";
+                    e.currentTarget.style.color = "var(--text-primary)";
+                  }}
+                >
+                  rafaeldutrapro@gmail.com{" "}
+                  <span style={{ marginLeft: 4 }}>↗</span>
+                </a>
+                
+                <a
+                  href="https://wa.me/5581999654790"
+                  target="_blank"
+                  rel="noreferrer"
+                  title="WhatsApp"
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    width: "48px",
+                    height: "48px",
+                    background: "transparent",
+                    color: "var(--text-primary)",
+                    border: "1px solid var(--border-highlight)",
+                    borderRadius: "12px",
+                    textDecoration: "none",
+                    transition: "all 0.2s",
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.borderColor = "#25D366";
+                    e.currentTarget.style.color = "#25D366";
+                    e.currentTarget.style.transform = "translateY(-2px)";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.borderColor = "var(--border-highlight)";
+                    e.currentTarget.style.color = "var(--text-primary)";
+                    e.currentTarget.style.transform = "translateY(0)";
+                  }}
+                >
+                  <MessageCircle size={24} />
+                </a>
+              </div>
             </div>
           </div>
         </FadeIn>
@@ -249,6 +287,27 @@ export default function Footer() {
           color: var(--bg-primary);
           border-color: var(--accent-primary);
           transform: translateY(-2px);
+        }
+
+        .animated-title {
+          background: linear-gradient(
+            90deg, 
+            var(--text-primary) 0%, 
+            var(--accent-hover) 50%, 
+            var(--text-primary) 100%
+          );
+          background-size: 200% auto;
+          color: transparent;
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation: textShine 3s linear infinite;
+        }
+
+        @keyframes textShine {
+          to {
+            background-position: 200% center;
+          }
         }
       `}</style>
     </footer>

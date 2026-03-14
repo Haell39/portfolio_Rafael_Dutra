@@ -1,52 +1,7 @@
 import FadeIn from "./ui/FadeIn";
 import { useLanguage } from "../context/LanguageContext";
 
-const EXPERIENCES = [
-  {
-    company: "Porto Digital / Globo",
-    role: "Residência Tecnológica",
-    roleEn: "Technological Residency",
-    date: "02/2024 — Atualmente",
-    dateEn: "02/2024 — Present",
-    description:
-      "Desenvolvimento de um sistema de IA para análise e reporte de ocorrências em transmissões diárias. Atuação com Machine Learning, coleta de dados, Visão Computacional e pipelines de automação.",
-    descriptionEn:
-      "Development of an AI system for analyzing and reporting incidents in daily broadcasts. Working with Machine Learning, data collection, Computer Vision, and automation pipelines.",
-  },
-  {
-    company: "FICR - Faculdade Imaculada Conceição do Recife",
-    role: "Análise e Desenvolvimento de Sistemas",
-    roleEn: "Systems Analysis and Development",
-    date: "02/2024 — 2026",
-    dateEn: "02/2024 — 2026",
-    description:
-      "Disciplinas relevantes: Estrutura de Dados, Banco de Dados Aplicados, Inteligência Artificial, Ciência de Dados, Residência tecnológica, Projetos de extensão, Lógica Matemática e Algoritmo.",
-    descriptionEn:
-      "Relevant courses: Data Structures, Applied Databases, Artificial Intelligence, Data Science, Technological Residency, Extension Projects, Mathematical Logic, and Algorithms.",
-  },
-  {
-    company: "Projetos & Freelance",
-    role: "Data Scientist & ML",
-    roleEn: "Data Scientist & ML",
-    date: "2025 — Atualmente",
-    dateEn: "2025 — Present",
-    description:
-      "Desenvolvimento de modelos de Machine Learning e análises avançadas para resolução de problemas reais. Criação de pipelines de dados, APIs e aplicações data-driven com Python, Docker, SQL e FastAPI. Entrega de soluções escaláveis focadas em automação, eficiência e tomada de decisão.",
-    descriptionEn:
-      "Development of Machine Learning models and advanced analyses to solve real-world problems. Creation of data pipelines, APIs, and data-driven applications with Python, Docker, SQL, and FastAPI. Delivering scalable solutions focused on automation, efficiency, and decision-making.",
-  },
-  {
-    company: "HarvardX",
-    role: "Data Science: Building Machine Learning Models",
-    roleEn: "Data Science: Building Machine Learning Models",
-    date: "01/2026 - Atualmente",
-    dateEn: "01/2026 - Present",
-    description:
-      "Construção de sistemas de recomendação e aplicação de algoritmos de Machine Learning. Foco em validação cruzada, regularização e PCA para desenvolvimento de modelos preditivos eficientes.",
-    descriptionEn:
-      "Building recommendation systems and applying Machine Learning algorithms. Focus on cross-validation, regularization, and PCA for efficient predictive model development.",
-  },
-];
+
 
 export default function Experience() {
   const { language, t } = useLanguage();
@@ -76,7 +31,7 @@ export default function Experience() {
             gap: "var(--space-12)",
           }}
         >
-          {EXPERIENCES.map((exp, index) => (
+          {Array.isArray(t("experience.items")) && t("experience.items").map((exp, index) => (
             <FadeIn key={index} delay={index * 0.1}>
               <div
                 style={{
@@ -112,7 +67,7 @@ export default function Experience() {
                   }}
                 >
                   <h3 style={{ fontSize: "var(--text-lg)", fontWeight: 600 }}>
-                    {language === "pt" ? exp.role : exp.roleEn}
+                    {exp.role}
                   </h3>
                   <span
                     style={{
@@ -121,7 +76,7 @@ export default function Experience() {
                       fontFamily: "monospace",
                     }}
                   >
-                    {language === "pt" ? exp.date : exp.dateEn}
+                    {exp.date}
                   </span>
                 </div>
 
@@ -143,7 +98,7 @@ export default function Experience() {
                     maxWidth: "600px",
                   }}
                 >
-                  {language === "pt" ? exp.description : exp.descriptionEn}
+                  {exp.description}
                 </p>
               </div>
             </FadeIn>

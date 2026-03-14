@@ -99,6 +99,36 @@ export const translations = {
     },
     experience: {
       title: "Experiência e Educação",
+      items: [
+        {
+          company: "Porto Digital / Globo",
+          role: "Residência Tecnológica",
+          date: "02/2024 — Atualmente",
+          description:
+            "Desenvolvimento de um sistema de IA para análise e reporte de ocorrências em transmissões diárias. Atuação com Machine Learning, coleta de dados, Visão Computacional e pipelines de automação.",
+        },
+        {
+          company: "FICR - Faculdade Imaculada Conceição do Recife",
+          role: "Análise e Desenvolvimento de Sistemas",
+          date: "02/2024 — 2026",
+          description:
+            "Disciplinas relevantes: Estrutura de Dados, Banco de Dados Aplicados, Inteligência Artificial, Ciência de Dados, Residência tecnológica, Projetos de extensão, Lógica Matemática e Algoritmo.",
+        },
+        {
+          company: "Projetos & Freelance",
+          role: "Data Scientist & ML",
+          date: "2025 — Atualmente",
+          description:
+            "Desenvolvimento de modelos de Machine Learning e análises avançadas para resolução de problemas reais. Criação de pipelines de dados, APIs e aplicações data-driven com Python, Docker, SQL e FastAPI. Entrega de soluções escaláveis focadas em automação, eficiência e tomada de decisão.",
+        },
+        {
+          company: "HarvardX",
+          role: "Data Science: Building Machine Learning Models",
+          date: "01/2026 - Atualmente",
+          description:
+            "Construção de sistemas de recomendação e aplicação de algoritmos de Machine Learning. Foco em validação cruzada, regularização e PCA para desenvolvimento de modelos preditivos eficientes.",
+        },
+      ],
     },
     certificates: {
       title: "Certificados",
@@ -256,6 +286,36 @@ export const translations = {
     },
     experience: {
       title: "Experience & Education",
+      items: [
+        {
+          company: "Porto Digital / Globo",
+          role: "Technological Residency",
+          date: "02/2024 — Present",
+          description:
+            "Development of an AI system for analyzing and reporting incidents in daily broadcasts. Working with Machine Learning, data collection, Computer Vision, and automation pipelines.",
+        },
+        {
+          company: "FICR - Faculdade Imaculada Conceição do Recife",
+          role: "Systems Analysis and Development",
+          date: "02/2024 — 2026",
+          description:
+            "Relevant courses: Data Structures, Applied Databases, Artificial Intelligence, Data Science, Technological Residency, Extension Projects, Mathematical Logic, and Algorithms.",
+        },
+        {
+          company: "Projetos & Freelance",
+          role: "Data Scientist & ML",
+          date: "2025 — Present",
+          description:
+            "Development of Machine Learning models and advanced analyses to solve real-world problems. Creation of data pipelines, APIs, and data-driven applications with Python, Docker, SQL, and FastAPI. Delivering scalable solutions focused on automation, efficiency, and decision-making.",
+        },
+        {
+          company: "HarvardX",
+          role: "Data Science: Building Machine Learning Models",
+          date: "01/2026 - Present",
+          description:
+            "Building recommendation systems and applying Machine Learning algorithms. Focus on cross-validation, regularization, and PCA for efficient predictive model development.",
+        },
+      ],
     },
     certificates: {
       title: "Certificates",
@@ -414,6 +474,36 @@ export const translations = {
     },
     experience: {
       title: "Experiencia y Educación",
+      items: [
+        {
+          company: "Porto Digital / Globo",
+          role: "Residencia Tecnológica",
+          date: "02/2024 — Actualmente",
+          description:
+            "Desarrollo de un sistema de IA para análisis y reporte de incidentes en transmisiones diarias. Trabajo con Machine Learning, recopilación de datos, Visión Computacional y pipelines de automatización.",
+        },
+        {
+          company: "FICR - Faculdade Imaculada Conceição do Recife",
+          role: "Análisis y Desarrollo de Sistemas",
+          date: "02/2024 — 2026",
+          description:
+            "Disciplinas relevantes: Estructura de Datos, Bases de Datos Aplicadas, Inteligencia Artificial, Ciencia de Datos, Residencia Tecnológica, Proyectos de extensión, Lógica Matemática y Algoritmos.",
+        },
+        {
+          company: "Proyectos & Freelance",
+          role: "Data Scientist & ML",
+          date: "2025 — Actualmente",
+          description:
+            "Desarrollo de modelos de Machine Learning y análisis avanzados para la resolución de problemas reales. Creación de pipelines de datos, APIs y aplicaciones orientadas a datos con Python, Docker, SQL y FastAPI. Entrega de soluciones escalables centradas en la automatización, eficiencia y toma de decisiones.",
+        },
+        {
+          company: "HarvardX",
+          role: "Data Science: Building Machine Learning Models",
+          date: "01/2026 - Actualmente",
+          description:
+            "Construcción de sistemas de recomendación y aplicación de algoritmos de Machine Learning. Enfoque en validación cruzada, regularización y PCA para el desarrollo de modelos predictivos eficientes.",
+        },
+      ],
     },
     certificates: {
       title: "Certificados",
