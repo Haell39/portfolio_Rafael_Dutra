@@ -41,7 +41,7 @@ export default function Footer() {
                   letterSpacing: "-0.05em",
                 }}
               >
-                RD.
+                Rafael Dutra
               </div>
               <p
                 style={{
