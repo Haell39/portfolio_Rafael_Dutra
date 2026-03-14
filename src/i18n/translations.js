@@ -30,7 +30,7 @@ export const translations = {
       p1: "Nasci da convicção de que dados bem estruturados transformam negócios de verdade. Sou um profissional técnico e obcecado por qualidade, sem jargões, sem enrolação.",
       p2: "Da análise exploratória ao deploy do modelo, cada linha de código é pensada no impacto financeiro e operacional que gerará para você.",
       p3: "Tenho forte base em Python, SQL e frameworks de IA, focando sempre na entrega de valor contínuo e escalável.",
-      stack_title: "🚀 Stacks & Ferramentas",
+      stack_title: "🚀 Stack & Ferramentas",
     },
     solutions: {
       kicker: "Nossas Soluções",
@@ -217,7 +217,7 @@ export const translations = {
       p1: "I was born from the conviction that well-structured data truly transforms businesses. I am a technical professional obsessed with quality, no jargon, no fluff.",
       p2: "From exploratory analysis to model deployment, every line of code is designed with the financial and operational impact it will generate for you in mind.",
       p3: "I have a strong foundation in Python, SQL, and AI frameworks, always focusing on delivering continuous and scalable value.",
-      stack_title: "🚀 Stacks & Tools",
+      stack_title: "🚀 Stack & Tools",
     },
     solutions: {
       kicker: "Our Solutions",
@@ -405,7 +405,7 @@ export const translations = {
       p1: "Nací de la convicción de que los datos bien estructurados transforman empresas de verdad. Soy un profesional técnico y obsesionado con la calidad, sin jerga, sin rodeos.",
       p2: "Desde el análisis exploratorio hasta el despliegue del modelo, cada línea de código está pensada en el impacto financiero y operativo que generará para ti.",
       p3: "Tengo una sólida base en Python, SQL y frameworks de IA, enfocándome siempre en entregar valor continuo y escalable.",
-      stack_title: "🚀 Stacks & Herramientas",
+      stack_title: "🚀 Stack & Herramientas",
     },
     solutions: {
       kicker: "Nuestras Soluciones",
