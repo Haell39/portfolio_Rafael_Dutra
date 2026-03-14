@@ -13,6 +13,8 @@ const About = lazy(() => import("./components/About"));
 const Solutions = lazy(() => import("./components/Solutions"));
 const Process = lazy(() => import("./components/Process"));
 const DataStudent = lazy(() => import("./components/DataStudent"));
+const DiagnosisCTA = lazy(() => import("./components/DiagnosisCTA"));
+const FAQ = lazy(() => import("./components/FAQ"));
 const Footer = lazy(() => import("./components/Footer"));
 
 import { LanguageProvider } from "./context/LanguageContext";
@@ -63,6 +65,8 @@ function App() {
             <Certificates />
             <About />
             <DataStudent />
+            <DiagnosisCTA />
+            <FAQ />
             <Footer />
           </Suspense>
         </main>

@@ -111,6 +111,51 @@ export const translations = {
       subtitle: "Compartilhando conhecimento sobre Programação, Dados e IA",
       cta: "Visitar Canal",
     },
+    diagnosis: {
+      kicker: "ANÁLISE DE DADOS",
+      title: "Diagnóstico Estratégico de Dados",
+      subtitle:
+        "Se sua empresa já possui dados em planilhas, sistemas ou relatórios, é possível extrair insights importantes sobre operação, vendas, comportamento de clientes ou eficiência de processos.",
+      desc: "Após entender o contexto do seu negócio, realizo uma análise exploratória dos seus dados para identificar padrões, gargalos e oportunidades que podem apoiar decisões mais informadas. Você recebe uma visão clara do que seus dados revelam e onde existem oportunidades de melhoria.",
+      cta: "Solicitar Diagnóstico Gratuito",
+      footer: "Sem custo • Sem enrolação • Focado em resultados",
+      list_title: "Exemplos do que pode surgir na análise:",
+      items: [
+        "Padrões de vendas ou comportamento de clientes",
+        "Produtos ou serviços com maior impacto financeiro",
+        "Períodos de maior ou menor desempenho",
+        "Inconsistências ou problemas nos dados",
+        "Oportunidades de melhoria operacional",
+      ],
+    },
+    faq: {
+      kicker: "PERGUNTAS FREQUENTES",
+      title: "Solucionando suas dúvidas",
+      subtitle:
+        "Respostas transparentes sobre nosso modelo de trabalho e inteligência artificial.",
+      items: [
+        {
+          q: "Como meus dados serão processados de forma segura?",
+          a: "A segurança é a base de todo projeto de dados. Assinamos acordos de confidencialidade rigorosos (NDAs). O desenvolvimento e o processamento podem ocorrer integralmente na nuvem da sua própria empresa (AWS, Azure, GCP), garantindo que os dados nunca deixem seu ambiente corporativo controlado.",
+        },
+        {
+          q: "Existem custos mensais após a entrega do projeto?",
+          a: "Não. Diferente de plataformas de assinatura (SaaS) que cobram mensalidades eternas, meu modelo foca na entrega de soluções sob medida onde você é o dono do código. Custos com cloud são cobrados diretamente pela AWS/GCP e, caso queira, podemos firmar um contrato à base de sobanda/retenção apenas para suporte contínuo e evoluções.",
+        },
+        {
+          q: "Quanto tempo demora para desenvolver uma automação ou modelo?",
+          a: "Trabalho com foco na entrega ágil de valor (MVP). Um MVP para validar uma hipótese analítica, automatizar um gargalo ou criar um painel interativo inicial costuma levar poucas semanas de desenvolvimento, com iterações contínuas a partir de feedbacks reais do seu time.",
+        },
+        {
+          q: "Minha equipe atual de TI vai precisar dar manutenção?",
+          a: "Todo o código desenvolvido é entregue empacotado, testado e exaustivamente documentado seguindo boas práticas de engenharia de software prontas para produção. Repasso o conhecimento integralmente e ofereço planos de suporte pós-entrega.",
+        },
+        {
+          q: "O que preciso ter pronto antes de iniciar o projeto?",
+          a: "O principal é ter mapeado a dor de negócio. Na fase gratuita de Diagnóstico, avalio se as bases de dados que sua empresa já possui (seja em planilhas, sistemas legados ou ERPs) já possuem as dimensões e estrutura adequadas para modelarmos as soluções.",
+        },
+      ],
+    },
   },
   en: {
     navbar: {
@@ -222,6 +267,51 @@ export const translations = {
       title: "DataStudent Channel",
       subtitle: "Sharing knowledge about Programming, Data, and AI.",
       cta: "Visit Channel",
+    },
+    diagnosis: {
+      kicker: "DATA ANALYSIS",
+      title: "Strategic Data Diagnosis",
+      subtitle:
+        "If your company already has data in spreadsheets, systems, or reports, it is possible to extract important insights about operations, sales, customer behavior, or process efficiency.",
+      desc: "After understanding your business context, I perform an exploratory analysis of your data to identify patterns, bottlenecks, and opportunities that can support more informed decisions. You get a clear view of what your data reveals and where there are opportunities for improvement.",
+      cta: "Request Free Diagnosis",
+      footer: "No cost • No fluff • Results-focused",
+      list_title: "Examples of what might arise in the analysis:",
+      items: [
+        "Sales patterns or customer behavior",
+        "Products or services with the greatest financial impact",
+        "Periods of highest or lowest performance",
+        "Inconsistencies or issues in the data",
+        "Opportunities for operational improvement",
+      ],
+    },
+    faq: {
+      kicker: "FREQUENTLY ASKED QUESTIONS",
+      title: "Solving your doubts",
+      subtitle:
+        "Transparent answers about our working model and AI technologies.",
+      items: [
+        {
+          q: "How will my data be processed securely?",
+          a: "Security is the foundation of every data project. We sign strict non-disclosure agreements (NDAs). Development and processing can occur entirely within your company's own cloud (AWS, Azure, GCP), ensuring data never leaves your controlled corporate environment.",
+        },
+        {
+          q: "Are there monthly costs after project delivery?",
+          a: "No. Unlike subscription platforms (SaaS) that charge endless monthly fees, my model focuses on delivering custom solutions where you own the code. Cloud costs are billed directly by AWS/GCP, and if desired, a separate contract can be signed solely for ongoing support and evolution.",
+        },
+        {
+          q: "How long does it take to develop an automation or model?",
+          a: "I focus on agile value delivery (MVP). An MVP to validate an analytical hypothesis or create an initial interactive dashboard usually takes a few weeks, with continuous iterations based on real feedback.",
+        },
+        {
+          q: "Will my current IT team need to maintain it?",
+          a: "All code is delivered packaged, tested, and exhaustively documented following production-ready software engineering best practices. I transfer all knowledge and, if preferred, offer post-delivery follow-up and support plans.",
+        },
+        {
+          q: "What do I need ready before starting the project?",
+          a: "The main thing is to have mapped out the business pain point. During the Diagnosis phase, I evaluate if the databases your company already has (whether in spreadsheets, legacy systems, or ERPs) are sufficient, with adequate granularity and quality to model the solutions.",
+        },
+      ],
     },
   },
   es: {
@@ -335,6 +425,51 @@ export const translations = {
       title: "Canal DataStudent",
       subtitle: "Compartiendo conocimiento sobre Programación, Datos e IA.",
       cta: "Visitar Canal",
+    },
+    diagnosis: {
+      kicker: "ANÁLISIS DE DATOS",
+      title: "Diagnóstico Estratégico de Datos",
+      subtitle:
+        "Si tu empresa ya tiene datos en hojas de cálculo, sistemas o informes, es posible extraer insights importantes sobre operaciones, ventas, comportamiento del cliente o eficiencia de procesos.",
+      desc: "Después de entender el contexto de tu negocio, realizo un análisis exploratorio de tus datos para identificar patrones, cuellos de botella y oportunidades que pueden apoyar decisiones más informadas. Recibirás una visión clara de lo que revelan tus datos y dónde hay oportunidades de mejora.",
+      cta: "Solicitar Diagnóstico Gratuito",
+      footer: "Sin costo • Sin rodeos • Enfocado en resultados",
+      list_title: "Ejemplos de lo que puede surgir en el análisis:",
+      items: [
+        "Patrones de ventas o comportamiento del cliente",
+        "Productos o servicios con mayor impacto financiero",
+        "Períodos de mayor o menor rendimiento",
+        "Inconsistencias o problemas en los datos",
+        "Oportunidades de mejora operativa",
+      ],
+    },
+    faq: {
+      kicker: "PREGUNTAS FRECUENTES",
+      title: "Resolviendo tus dudas",
+      subtitle:
+        "Respuestas transparentes sobre nuestro modelo de trabajo y desarrollo de IA.",
+      items: [
+        {
+          q: "¿Cómo se procesarán mis datos de forma segura?",
+          a: "La seguridad es la base de todo proyecto de datos. Firmamos estrictos acuerdos de confidencialidad (NDA). El desarrollo y procesamiento pueden ocurrir íntegramente en la propia nube de tu empresa (AWS, Azure, GCP), garantizando que los datos nunca salgan de su entorno controlado.",
+        },
+        {
+          q: "¿Existen costos mensuales tras la entrega del proyecto?",
+          a: "No. A diferencia de las plataformas de suscripción (SaaS) que cobran tarifas eternas, mi enfoque radica en entregar soluciones personalizadas donde tú eres el dueño del código. Los costos de la nube los facturan directamente AWS/GCP y, si lo deseas, podemos acordar soporte continuo por separado.",
+        },
+        {
+          q: "¿Cuánto tiempo se tarda en desarrollar una IA o panel?",
+          a: "Me enfoco en la entrega ágil de valor (MVP). Un MVP para validar una hipótesis analítica, automatizar una o crear un panel interactivo inicial suele tardar algunas semanas de desarrollo, con iteraciones continuas basadas en feedback real de tu equipo.",
+        },
+        {
+          q: "¿El equipo interno de TI necesita brindarle mantenimiento?",
+          a: "Todo el código se entrega empaquetado, probado y exhaustivamente documentado, siguiendo buenas prácticas listas para producción. Realizo transferencia de conocimientos integral y ofrezco planes de soporte post entrega.",
+        },
+        {
+          q: "¿Qué necesito tener listo antes de iniciar un proyecto de inteligencia?",
+          a: "Lo fundamental es tener determinado el dolor de negocio. En la fase gratuita de Diagnóstico evaluaré si las bases de datos de tu empresa son suficientes con la dimensiones y estructura apropiadas para estructurar las soluciones.",
+        },
+      ],
     },
   },
 };
