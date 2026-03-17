@@ -9,17 +9,19 @@ import imgHorus from "../assets/projects/horus.webp";
 import imgDiagnostic from "../assets/projects/Diagnostic.webp";
 import imgAnalytics from "../assets/projects/Analytics.webp";
 import imgOpenFinance from "../assets/projects/openfinance.webp";
-// Placeholder image for the new project until an actual image is provided in assets
-import imgClimaPredict from "../assets/projects/climePredict.webp"; // Using Analytics image as fallback
+import imgVarejo from "../assets/projects/Varejo.webp";
 
 export const PROJECTS = [
   {
     title: "Horus AI",
     titleEn: "Horus AI",
+    titleEs: "Horus AI",
     description:
       "Sistema automatizado que detecta falhas em transmissões ao vivo. Três modelos de ML analisam vídeo, áudio e lipsync simultaneamente para gerar alertas em tempo real.",
     descriptionEn:
       "Automated system that detects failures in live broadcasts. Three ML models analyze video, audio, and lipsync simultaneously to generate real-time alerts.",
+    descriptionEs:
+      "Sistema automatizado que detecta fallos en transmisiones en vivo. Tres modelos de ML analizan video, audio y lipsync simultáneamente para generar alertas en tiempo real.",
     tags: ["Computer Vision", "Real-time AI", "Python", "Audio Processing"],
     image: imgHorus,
     link: "https://github.com/Haell39/horus_ai/tree/main",
@@ -27,10 +29,13 @@ export const PROJECTS = [
   {
     title: "ML Diagnóstico Médico",
     titleEn: "Medical Diagnostic ML",
+    titleEs: "ML Diagnóstico Médico",
     description:
       "Estudo abrangente aplicado a datasets médicos. Construção e otimização de modelos de classificação para prever diagnósticos e agrupamento de padrões latentes.",
     descriptionEn:
       "Comprehensive study applied to medical datasets. Construction and optimization of classification models to predict diagnoses and clustering of latent patterns.",
+    descriptionEs:
+      "Estudio integral aplicado a conjuntos de datos médicos. Construcción y optimización de modelos de clasificación para predecir diagnósticos y agrupar patrones latentes.",
     tags: ["Machine Learning", "Data Science", "Classification", "Clustering"],
     image: imgDiagnostic,
     link: "https://github.com/Haell39/ML-Aplicada-Diagnostico-Clinico",
@@ -38,10 +43,13 @@ export const PROJECTS = [
   {
     title: "HR Analytics",
     titleEn: "HR Analytics",
+    titleEs: "HR Analytics",
     description:
       "Modelo preditivo para identificar rotatividade de funcionários. Análise de dados para redução de turnover e retenção estratégica em corporações multinacionais.",
     descriptionEn:
       "Predictive model to identify employee turnover. Data analysis for turnover reduction and strategic retention in multinational corporations.",
+    descriptionEs:
+      "Modelo predictivo para identificar la rotación de empleados. Análisis de datos para reducir la rotación y retención estratégica en corporaciones multinacionales.",
     tags: ["Data Analytics", "Predictive Modeling", "Business Intelligence"],
     image: imgAnalytics,
     link: "https://github.com/Haell39/HR-Analytics",
@@ -49,30 +57,30 @@ export const PROJECTS = [
   {
     title: "OpenFinance Intel",
     titleEn: "OpenFinance Intel",
+    titleEs: "OpenFinance Intel",
     description:
       "Plataforma de Inteligência de Investimentos: IA, NLP e Análise de Sentimento para transformar o caos do mercado em Sinais Acionáveis.",
     descriptionEn:
       "Investment Intelligence Platform: AI, NLP, and Sentiment Analysis to transform market chaos into Actionable Signals.",
+    descriptionEs:
+      "Plataforma de Inteligencia de Inversiones: IA, PLN y Análisis de Sentimientos para transformar el caos del mercado en señales accionables.",
     tags: ["AI & NLP", "Market Intelligence", "React", "FastAPI", "Docker"],
     image: imgOpenFinance,
     link: "https://github.com/Haell39/OpenFinance_Intel",
   },
   {
-    title: "ClimaPredict AI",
-    titleEn: "ClimaPredict AI",
+    title: "Inteligência de Varejo",
+    titleEn: "Retail Intelligence",
+    titleEs: "Inteligencia de Retail",
     description:
-      "Modelo preditivo utilizando Regressão Ridge para prever a temperatura máxima diária em Los Angeles baseado em dados históricos (1960-2025).",
+      "Análise do e-commerce brasileiro (Olist + IPCA/IBGE) para identificar os principais drivers de vendas, satisfação e eficiência logística.",
     descriptionEn:
-      "Predictive model using Ridge Regression to forecast daily maximum temperature in Los Angeles based on historical data (1960-2025).",
-    tags: [
-      "Machine Learning",
-      "Data Science",
-      "Python",
-      "Scikit-Learn",
-      "Regression",
-    ],
-    image: imgClimaPredict,
-    link: "https://github.com/Haell39/ClimaPredict_AI",
+      "Analysis of Brazilian e-commerce (Olist + IPCA/IBGE) to identify key drivers of sales, satisfaction, and logistical efficiency.",
+    descriptionEs:
+      "Análisis del comercio electrónico brasileño (Olist + IPCA/IBGE) para identificar factores clave de ventas, satisfacción y eficiencia logística.",
+    tags: ["Data Analysis", "Machine Learning", "Logistics", "Retail"],
+    image: imgVarejo,
+    link: "https://github.com/Haell39/inteligencia-varejo-dinamica-consumo",
   },
 ];
 
@@ -429,7 +437,11 @@ export default function Projects() {
                 }}
               >
                 <h3 className="project-title">
-                  {language === "pt" ? project.title : project.titleEn}
+                  {language === "pt"
+                    ? project.title
+                    : language === "es"
+                      ? project.titleEs || project.titleEn
+                      : project.titleEn}
                 </h3>
 
                 <p
@@ -447,7 +459,9 @@ export default function Projects() {
                 >
                   {language === "pt"
                     ? project.description
-                    : project.descriptionEn}
+                    : language === "es"
+                      ? project.descriptionEs || project.descriptionEn
+                      : project.descriptionEn}
                 </p>
 
                 <div
