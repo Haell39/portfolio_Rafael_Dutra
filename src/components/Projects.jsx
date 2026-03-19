@@ -25,6 +25,7 @@ export const PROJECTS = [
     tags: ["Computer Vision", "Real-time AI", "Python", "Audio Processing"],
     image: imgHorus,
     link: "https://github.com/Haell39/horus_ai/tree/main",
+    linkLive: null,
   },
   {
     title: "ML Diagnóstico Médico",
@@ -39,6 +40,7 @@ export const PROJECTS = [
     tags: ["Machine Learning", "Data Science", "Classification", "Clustering"],
     image: imgDiagnostic,
     link: "https://github.com/Haell39/ML-Aplicada-Diagnostico-Clinico",
+    linkLive: null,
   },
   {
     title: "HR Analytics",
@@ -53,6 +55,7 @@ export const PROJECTS = [
     tags: ["Data Analytics", "Predictive Modeling", "Business Intelligence"],
     image: imgAnalytics,
     link: "https://github.com/Haell39/HR-Analytics",
+    linkLive: null,
   },
   {
     title: "OpenFinance Intel",
@@ -67,6 +70,7 @@ export const PROJECTS = [
     tags: ["AI & NLP", "Market Intelligence", "React", "FastAPI", "Docker"],
     image: imgOpenFinance,
     link: "https://github.com/Haell39/OpenFinance_Intel",
+    linkLive: null,
   },
   {
     title: "Inteligência de Varejo",
@@ -81,6 +85,7 @@ export const PROJECTS = [
     tags: ["Data Analysis", "Machine Learning", "Logistics", "Retail"],
     image: imgVarejo,
     link: "https://github.com/Haell39/inteligencia-varejo-dinamica-consumo",
+    linkLive: "https://inteligenciavarejodeploy.netlify.app/",
   },
 ];
 
@@ -264,6 +269,38 @@ export default function Projects() {
           .carousel-arrow:hover {
             animation: none;
           }
+
+          .live-button-animated {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 6px 12px;
+            border-radius: 999px; /* Pill shape for elegance */
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-decoration: none;
+            color: white; /* Consistently white on the strong colored background */
+            /* Strong reddish purple to bright fuchsia/rose */
+            background: linear-gradient(90deg, #be185d 0%, #c026d3 50%, #be185d 100%);
+            background-size: 200% auto;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            animation: button-shimmer 3s linear infinite;
+            box-shadow: 0 4px 12px rgba(190, 24, 93, 0.3);
+          }
+
+          .live-button-animated:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(192, 38, 211, 0.5);
+            color: white;
+          }
+
+          @keyframes button-shimmer {
+            0% { background-position: 200% center; }
+            100% { background-position: 0% center; }
+          }
         `}
       </style>
 
@@ -429,10 +466,10 @@ export default function Projects() {
               {/* ── CONTENT AREA ── */}
               <div
                 style={{
-                  padding: "var(--space-4) var(--space-5) var(--space-5)",
+                  padding: "var(--space-4) var(--space-5)",
                   display: "flex",
                   flexDirection: "column",
-                  gap: "var(--space-2)",
+                  gap: "var(--space-1)",
                   flex: 1,
                 }}
               >
@@ -444,15 +481,96 @@ export default function Projects() {
                       : project.titleEn}
                 </h3>
 
+                {/* ── BUTTONS AREA ── */}
+                <div
+                  style={{
+                    display: "flex",
+                    gap: "var(--space-3)",
+                    marginTop: "var(--space-1)",
+                    marginBottom: "var(--space-1)",
+                  }}
+                >
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
+                    style={{
+                      flex: 1,
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      padding: "6px 12px",
+                      borderRadius: "999px",
+                      border: "1px solid var(--border-subtle)",
+                      background: "rgba(255, 255, 255, 0.03)",
+                      backdropFilter: "blur(8px)",
+                      WebkitBackdropFilter: "blur(8px)",
+                      color: "var(--text-primary)",
+                      fontSize: "0.75rem",
+                      fontWeight: 500,
+                      letterSpacing: "0.05em",
+                      textDecoration: "none",
+                      transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.background = "var(--bg-card-hover)";
+                      e.currentTarget.style.transform = "translateY(-2px)";
+                      e.currentTarget.style.borderColor = "var(--border-highlight)";
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.background = "rgba(255, 255, 255, 0.03)";
+                      e.currentTarget.style.transform = "translateY(0)";
+                      e.currentTarget.style.borderColor = "var(--border-subtle)";
+                    }}
+                  >
+                    {language === "pt" ? "Ver código" : language === "es" ? "Ver código" : "View Code"}
+                  </a>
+
+                  {project.linkLive ? (
+                    <a
+                      href={project.linkLive}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      className="live-button-animated"
+                    >
+                      {language === "pt" ? "Ver no ar" : language === "es" ? "Ver en vivo" : "View Live"}
+                    </a>
+                  ) : (
+                    <div
+                      style={{
+                        flex: 1,
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        padding: "6px 12px",
+                        borderRadius: "999px",
+                        border: "1px solid var(--border-subtle)",
+                        background: "var(--bg-card)",
+                        color: "var(--text-tertiary)",
+                        fontSize: "0.75rem",
+                        fontWeight: 500,
+                        letterSpacing: "0.05em",
+                        cursor: "not-allowed",
+                        opacity: 0.7,
+                      }}
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                        {language === "pt" ? "Em breve" : language === "es" ? "Próximamente" : "Coming soon"}
+                    </div>
+                  )}
+                </div>
+
                 <p
                   style={{
                     color: "var(--text-secondary)",
                     fontSize: "var(--text-sm)",
-                    lineHeight: 1.6,
+                    lineHeight: 1.5,
                     margin: 0,
                     flex: 1,
                     display: "-webkit-box",
-                    WebkitLineClamp: 3,
+                    WebkitLineClamp: 2,
                     WebkitBoxOrient: "vertical",
                     overflow: "hidden",
                   }}
@@ -469,7 +587,7 @@ export default function Projects() {
                     display: "flex",
                     flexWrap: "wrap",
                     gap: "var(--space-1)",
-                    marginTop: "var(--space-1)",
+                    marginTop: "4px",
                   }}
                 >
                   {project.tags.map((tag) => (
