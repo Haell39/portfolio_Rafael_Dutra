@@ -47,11 +47,11 @@ export const PROJECTS = [
     titleEn: "HR Analytics",
     titleEs: "HR Analytics",
     description:
-      "Análise e predição da rotatividade de funcionários: O turnover é um dos maiores desafios corporativos. Utilizando XGBoost (92.6% F1-Score), este projeto identifica colaboradores com alto risco de saída e revela os principais motores da perda de talentos.",
+      "Análise e predição da rotatividade de funcionários: O turnover é um dos maiores desafios corporativos. Através de Machine Learning, este projeto identifica colaboradores com alto risco de saída e revela os principais motores da perda de talentos.",
     descriptionEn:
-      "Employee turnover analysis and prediction: Turnover is a major corporate challenge. Using XGBoost (92.6% F1-Score), this project identifies high-risk employees and reveals the main drivers of talent loss.",
+      "Employee turnover analysis and prediction: Turnover is a major corporate challenge. Using Machine Learning, this project identifies high-risk employees and reveals the main drivers of talent loss.",
     descriptionEs:
-      "Análisis y predicción de la rotación de empleados: El turnover es un gran desafío corporativo. Usando XGBoost (92.6% F1-Score), este proyecto identifica empleados de alto riesgo y revela los principales motores de la pérdida de talento.",
+      "Análisis y predicción de la rotación de empleados: El turnover es un gran desafío corporativo. A través de Machine Learning, este proyecto identifica empleados de alto riesgo y revela los principales motores de la pérdida de talento.",
     tags: ["Data Analytics", "Predictive Modeling", "Business Intelligence"],
     image: imgAnalytics,
     link: "https://github.com/Haell39/HR-Analytics",
