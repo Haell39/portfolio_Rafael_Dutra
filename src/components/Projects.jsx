@@ -55,7 +55,7 @@ export const PROJECTS = [
     tags: ["Data Analytics", "Predictive Modeling", "Business Intelligence"],
     image: imgAnalytics,
     link: "https://github.com/Haell39/HR-Analytics",
-    linkLive: null,
+    linkLive: "https://rafaeldutra-hr-analytics.netlify.app/",
   },
   {
     title: "OpenFinance Intel",
