@@ -192,14 +192,8 @@ export default function Hero() {
             </motion.a>
 
             <motion.a
-              href={
-                language === "pt" ? "/Rafael_Dutra.pdf" : "/Rafael_Dutra_EN.pdf"
-              }
-              download={
-                language === "pt"
-                  ? "Rafael_Dutra_Curriculum.pdf"
-                  : "Rafael_Dutra_Curriculum_EN.pdf"
-              }
+              href={t("hero.cv_path")}
+              download={t("hero.cv_filename")}
               className="metallic-hover"
               whileTap={{ scale: 0.98 }}
               style={{
