@@ -21,8 +21,8 @@ export const translations = {
         "Transformo dados complexos em modelos preditivos, automações e dashboards que geram resultados reais.",
       cta_projects: "Ver Projetos",
       cta_cv: "Baixar CV",
-      cv_path: "/Rafael_Dutra_CV.pdf",
-      cv_filename: "Rafael_Dutra_CV.pdf",
+      cv_path: "/Rafael_Dutra_Desenvolvedor_IA.pdf",
+      cv_filename: "Rafael_Dutra_Desenvolvedor_IA.pdf",
       cta_contact: "Fale Comigo",
     },
     about: {
