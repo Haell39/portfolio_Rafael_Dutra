@@ -21,12 +21,7 @@ const ICON_MAP = [
 export default function Solutions() {
   const { t, language } = useLanguage();
 
-  // We need to access the array of items. Since our translation system
-  // might return the array directly if we have a smart getter, or we
-  // might need to fall back. Assuming t() just gets the string normally,
-  // we'll fetch the items from the raw object if needed, or by index.
-  // Actually, a robust way is to just use indices 0-5.
-  const items = [0, 1, 2, 3, 4, 5];
+  const items = [0, 1, 2, 3];
 
   return (
     <section

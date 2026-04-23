@@ -37,58 +37,50 @@ export const translations = {
     solutions: {
       kicker: "Minhas Soluções",
       title: "Soluções em Dados",
-      subtitle: "Engenharia e Modelagem Avançada para sua Empresa",
+      subtitle: "Extraindo inteligência e valor dos dados",
       items: [
         {
-          title: "Machine Learning",
-          desc: "Modelos preditivos que antecipam tendências e automatizam decisões complexas de negócio.",
+          title: "Análise Exploratória",
+          desc: "Investigação aprofundada para identificar padrões, comportamentos e oportunidades de negócio.",
         },
         {
-          title: "Engenharia de Dados",
-          desc: "Pipelines robustos e escaláveis para coletar, limpar e unificar dados de múltiplas fontes.",
+          title: "Ciência de Dados",
+          desc: "Aplico técnicas de estatística e machine learning para criar soluções preditivas e apoiar a tomada de decisão.",
         },
         {
           title: "Dashboards & BI",
-          desc: "Painéis interativos que transformam tabelas confusas em insights visuais acionáveis em tempo real.",
+          desc: "Painéis visuais e interativos que transformam tabelas confusas em respostas claras e rápidas.",
         },
         {
           title: "Automação de Processos",
-          desc: "Scripts inteligentes que eliminam tarefas manuais repetitivas, poupando tempo e recursos vitais.",
-        },
-        {
-          title: "Análise Estatística",
-          desc: "Testes A/B e inferência para validar hipóteses e guiar decisões baseadas em fatos, não intuições.",
-        },
-        {
-          title: "Deploy de Modelos",
-          desc: "Colocamos a IA em produção, criando APIs seguras para integrar os modelos aos seus sistemas.",
+          desc: "Scripts inteligentes em Python que eliminam tarefas manuais repetitivas, poupando seu tempo precioso.",
         },
       ],
     },
     process: {
-      kicker: "• COMO FUNCIONA •",
-      title: "Da estratégia ao modelo em produção",
-      subtitle: "Um processo ágil, transparente e 100% focado no seu negócio.",
+      kicker: "COMO FUNCIONA",
+      title: "Da pergunta ao insight de valor",
+      subtitle: "Um processo prático, transparente e 100% focado no seu problema de negócio.",
       items: [
         {
           step: "01",
-          title: "Alinhamento & Escopo",
-          desc: "Mergulhamos no seu problema de negócio para entender as dores, as bases de dados disponíveis e definir métricas claras de sucesso.",
+          title: "Entendimento do Problema",
+          desc: "Mergulho no seu contexto para entender as perguntas de negócio e definir o que precisamos descobrir.",
         },
         {
           step: "02",
           title: "Análise Exploratória",
-          desc: "Investigamos profundamente seus dados, tratando inconsistências e descobrindo padrões ocultos que guiarão a modelagem.",
+          desc: "Investigo os dados disponíveis, limpando inconsistências e buscando os padrões que contam a história do problema.",
         },
         {
           step: "03",
-          title: "Modelagem & Testes",
-          desc: "Desenvolvemos robôs, dashboards ou algoritmos preditivos, com validação estatística rigorosa para garantir precisão no mundo real.",
+          title: "Modelagem e Insights",
+          desc: "Aplico técnicas de análise e machine learning para gerar respostas baseadas em fatos e não opiniões.",
         },
         {
           step: "04",
-          title: "Entrega & Operação",
-          desc: "Colocamos a solução para rodar no seu ambiente, garantindo integração suave e fornecendo documentação completa para uso imediato.",
+          title: "Entrega e Impacto",
+          desc: "Apresento os resultados de forma muito focada na tomada de decisão, com relatórios fluídos rápidos ou painéis visuais.",
         },
       ],
     },
@@ -189,23 +181,23 @@ export const translations = {
       items: [
         {
           q: "Como meus dados serão processados de forma segura?",
-          a: "A segurança é a base de todo projeto de dados. Assinamos acordos de confidencialidade rigorosos (NDAs). O desenvolvimento e o processamento podem ocorrer integralmente na nuvem da sua própria empresa (AWS, Azure, GCP), garantindo que os dados nunca deixem seu ambiente corporativo controlado.",
+          a: "Trabalho com total confidencialidade. Dependendo da sensibilidade, os dados nunca saem do seu ambiente local ou processamos usando metodologias seguras, sempre respeitando a sua privacidade e a LGPD.",
         },
         {
           q: "Existem custos mensais após a entrega do projeto?",
-          a: "Não. Diferente de plataformas de assinatura (SaaS) que cobram mensalidades eternas, meu modelo foca na entrega de soluções sob medida onde você é o dono do código. Custos com cloud são cobrados diretamente pela AWS/GCP e, caso queira, podemos firmar um contrato à base de sobanda/retenção apenas para suporte contínuo e evoluções.",
+          a: "Não trabalhamos com mensalidades atreladas. O escopo foca em resolver o seu problema entregando o projeto fechado e os devidos relatórios ou scripts elaborados para o seu controle.",
         },
         {
-          q: "Quanto tempo demora para desenvolver uma automação ou modelo?",
-          a: "Trabalho com foco na entrega ágil de valor (MVP). Um MVP para validar uma hipótese analítica, automatizar um gargalo ou criar um painel interativo inicial costuma levar poucas semanas de desenvolvimento, com iterações contínuas a partir de feedbacks reais do seu time.",
+          q: "Quanto tempo demora para desenvolver uma análise ou modelo?",
+          a: "Trabalho focado na entrega rápida de resultados ou relatórios para ajudar no seu problema. Uma análise exploratória geralmente já traz respostas focadas e de alto valor na primeira semana de desenvolvimento.",
         },
         {
-          q: "Minha equipe atual de TI vai precisar dar manutenção?",
-          a: "Todo o código desenvolvido é entregue empacotado, testado e exaustivamente documentado seguindo boas práticas de engenharia de software prontas para produção. Repasso o conhecimento integralmente e ofereço planos de suporte pós-entrega.",
+          q: "Minha equipe vai precisar dar manutenção pesada e diária?",
+          a: "Eu entrego tudo em formatos que priorizam a facilidade de uso, geralmente em cadernos explicativos ou painéis dinâmicos super simples para se analisar ao bater do olho.",
         },
         {
           q: "O que preciso ter pronto antes de iniciar o projeto?",
-          a: "O principal é ter mapeado a dor de negócio. Na fase gratuita de Diagnóstico, avalio se as bases de dados que sua empresa já possui (seja em planilhas, sistemas legados ou ERPs) já possuem as dimensões e estrutura adequadas para modelarmos as soluções.",
+          a: "Apenas ter a dúvida que está incomodando o seu negócio e ter acessos ou envio dos dados já coletados (em qualquer lugar: sistemas ou até velhas planilhas de venda). Ajudo a entender se já podemos iniciar.",
         },
       ],
     },
@@ -247,58 +239,50 @@ export const translations = {
     solutions: {
       kicker: "My Solutions",
       title: "Data Solutions",
-      subtitle: "Advanced Engineering and Modeling for your Company",
+      subtitle: "Extracting intelligence and value from data",
       items: [
         {
-          title: "Machine Learning",
-          desc: "Predictive models that anticipate trends and automate complex business decisions.",
+          title: "Exploratory Analysis",
+          desc: "Deep investigation to identify patterns, behaviors, and business opportunities.",
         },
         {
-          title: "Data Engineering",
-          desc: "Robust, scalable pipelines to collect, clean, and unify data from multiple sources.",
+          title: "Data Science",
+          desc: "Applying statistics and machine learning to create predictive solutions and support decision making.",
         },
         {
           title: "Dashboards & BI",
-          desc: "Interactive panels that translate confusing tables into actionable visual insights in real time.",
+          desc: "Visual and interactive panels that turn confusing tables into clear, fast answers.",
         },
         {
           title: "Process Automation",
-          desc: "Intelligent scripts that eliminate repetitive manual tasks, saving vital time and resources.",
-        },
-        {
-          title: "Statistical Analysis",
-          desc: "A/B testing and inference to validate hypotheses and guide fact-based decisions rather than intuition.",
-        },
-        {
-          title: "Model Deployment",
-          desc: "We put AI into production, creating secure APIs to integrate models seamlessly into your systems.",
+          desc: "Intelligent Python scripts that eliminate repetitive manual tasks, saving your precious time.",
         },
       ],
     },
     process: {
-      kicker: "• HOW IT WORKS •",
-      title: "From strategy to production model",
-      subtitle: "An agile, transparent process 100% focused on your business.",
+      kicker: "HOW IT WORKS",
+      title: "From question to valuable insight",
+      subtitle: "A practical, transparent process 100% focused on your business problem.",
       items: [
         {
           step: "01",
-          title: "Alignment & Scoping",
-          desc: "We dive deep into your business problem to understand pain points, available datasets, and define clear success metrics.",
+          title: "Problem Understanding",
+          desc: "I dive into your context to understand business questions and define what we need to figure out.",
         },
         {
           step: "02",
           title: "Exploratory Analysis",
-          desc: "We thoroughly investigate your data, handling inconsistencies and discovering hidden patterns that will guide the modeling.",
+          desc: "I investigate available data, cleaning inconsistencies and looking for patterns that tell the problem's story.",
         },
         {
           step: "03",
-          title: "Modeling & Testing",
-          desc: "We develop bots, dashboards, or predictive algorithms, with rigorous statistical validation to ensure real-world accuracy.",
+          title: "Modeling and Insights",
+          desc: "I apply data analysis and machine learning techniques to generate facts-driven answers, rather than opinions.",
         },
         {
           step: "04",
-          title: "Delivery & Operation",
-          desc: "We deploy the solution in your environment, ensuring smooth integration and providing full documentation for immediate use.",
+          title: "Delivery and Impact",
+          desc: "Results are presented focused heavily on decision making, with quick, fluid reports or visual panels.",
         },
       ],
     },
@@ -458,58 +442,50 @@ export const translations = {
     solutions: {
       kicker: "Mis Soluciones",
       title: "Soluciones de Datos",
-      subtitle: "Ingeniería y Modelado Avanzado para tu Empresa",
+      subtitle: "Extrayendo inteligencia y valor de los datos",
       items: [
         {
-          title: "Machine Learning",
-          desc: "Modelos predictivos que anticipan tendencias y automatizan decisiones comerciales complejas.",
+          title: "Análisis Exploratorio",
+          desc: "Investigación profunda para identificar patrones, comportamientos y oportunidades de negocio.",
         },
         {
-          title: "Ingeniería de Datos",
-          desc: "Pipelines robustos y escalables para recolectar, limpiar y unificar datos de múltiples fuentes.",
+          title: "Ciencia de Datos",
+          desc: "Aplico estadística y machine learning para crear soluciones predictivas y respaldar la toma de decisiones.",
         },
         {
           title: "Dashboards & BI",
-          desc: "Paneles interactivos que transforman tablas confusas en insights visuales accionables en tiempo real.",
+          desc: "Paneles visuales e interactivos que transforman tablas confusas en respuestas rápidas y claras.",
         },
         {
           title: "Automatización de Procesos",
-          desc: "Scripts inteligentes que eliminan tareas manuales repetitivas, ahorrando tiempo y recursos vitales.",
-        },
-        {
-          title: "Análisis Estadístico",
-          desc: "Pruebas A/B e inferencia para validar hipótesis y guiar decisiones basadas en hechos, no en intuiciones.",
-        },
-        {
-          title: "Deploy de Modelos",
-          desc: "Ponemos la IA en producción, creando APIs seguras para integrar los modelos sin problemas en sus sistemas.",
+          desc: "Scripts inteligentes en Python que eliminan tareas manuales repetitivas, ahorrando un tiempo precioso.",
         },
       ],
     },
     process: {
-      kicker: "• CÓMO FUNCIONA •",
-      title: "De la estrategia al modelo en producción",
-      subtitle: "Un proceso ágil, transparente y 100% enfocado en tu negocio.",
+      kicker: "CÓMO FUNCIONA",
+      title: "De la pregunta al insight de valor",
+      subtitle: "Un proceso práctico, transparente y 100% enfocado en tu problema.",
       items: [
         {
           step: "01",
-          title: "Alineación & Alcance",
-          desc: "Nos sumergimos en el problema de negocio para entender los puntos de dolor, las fuentes de datos y definir las métricas de éxito.",
+          title: "Entendimiento del Problema",
+          desc: "Me sumerjo en el contexto para comprender las preguntas de negocio y definir lo que debemos descubrir.",
         },
         {
           step: "02",
           title: "Análisis Exploratorio",
-          desc: "Investigamos los datos a fondo, tratando inconsistencias y descubriendo patrones ocultos que guiarán el modelado.",
+          desc: "Investigo los datos disponibles para identificar y limpiar inconsistencias y los patrones que cuentan la historia del problema.",
         },
         {
           step: "03",
-          title: "Modelado & Pruebas",
-          desc: "Desarrollamos algoritmos predictivos, bots o dashboards, con validación estadística rigurosa para garantizar su precisión.",
+          title: "Modelado e Insights",
+          desc: "Aplico técnicas de análisis de datos e inteligencia artificial para producir respuestas respaldadas en hechos, no opiniones.",
         },
         {
           step: "04",
-          title: "Entrega & Operación",
-          desc: "Implementamos la solución en su entorno, asegurando una integración suave y proporcionando documentación completa.",
+          title: "Entrega e Impacto",
+          desc: "Presento los resultados enfocados en facilitar la toma de decisiones, a través de informes de análisis o visualizaciones dinámicas.",
         },
       ],
     },
@@ -610,23 +586,23 @@ export const translations = {
       items: [
         {
           q: "¿Cómo se procesarán mis datos de forma segura?",
-          a: "La seguridad es la base de todo proyecto de datos. Firmamos estrictos acuerdos de confidencialidad (NDA). El desarrollo y procesamiento pueden ocurrir íntegramente en la propia nube de tu empresa (AWS, Azure, GCP), garantizando que los datos nunca salgan de su entorno controlado.",
+          a: "Trabajo con total confidencialidad. Dependiendo de la sensibilidad, los datos nunca salen de tu entorno local o los procesamos utilizando metodologías seguras, siempre respetando tu privacidad.",
         },
         {
           q: "¿Existen costos mensuales tras la entrega del proyecto?",
-          a: "No. A diferencia de las plataformas de suscripción (SaaS) que cobran tarifas eternas, mi enfoque radica en entregar soluciones personalizadas donde tú eres el dueño del código. Los costos de la nube los facturan directamente AWS/GCP y, si lo deseas, podemos acordar soporte continuo por separado.",
+          a: "No trabajo con suscripciones atadas. El alcance se enfoca en resolver tu problema entregando el proyecto cerrado, con informes o scripts elaborados para tu control.",
         },
         {
-          q: "¿Cuánto tiempo se tarda en desarrollar una IA o panel?",
-          a: "Me enfoco en la entrega ágil de valor (MVP). Un MVP para validar una hipótesis analítica, automatizar una o crear un panel interactivo inicial suele tardar algunas semanas de desarrollo, con iteraciones continuas basadas en feedback real de tu equipo.",
+          q: "¿Cuánto tiempo se tarda en desarrollar un análisis o modelo?",
+          a: "Trabajo enfocado en la entrega rápida de resultados para ayudar con tu problema. Un análisis exploratorio generalmente aporta respuestas enfocadas y de alto valor ya en la primera semana de desarrollo.",
         },
         {
-          q: "¿El equipo interno de TI necesita brindarle mantenimiento?",
-          a: "Todo el código se entrega empaquetado, probado y exhaustivamente documentado, siguiendo buenas prácticas listas para producción. Realizo transferencia de conocimientos integral y ofrezco planes de soporte post entrega.",
+          q: "¿Mi equipo necesitará hacer un mantenimiento diario pesado?",
+          a: "Entrego todo en formatos que priorizan la facilidad de uso, por lo general en cuadernos explicativos o paneles dinámicos muy simples a simple vista.",
         },
         {
-          q: "¿Qué necesito tener listo antes de iniciar un proyecto de inteligencia?",
-          a: "Lo fundamental es tener determinado el dolor de negocio. En la fase gratuita de Diagnóstico evaluaré si las bases de datos de tu empresa son suficientes con la dimensiones y estructura apropiadas para estructurar las soluciones.",
+          q: "¿Qué necesito tener listo antes de iniciar el proyecto?",
+          a: "Solo tener la duda de negocio y acceso a los datos ya recopilados, ya sea en sistemas o informes antiguos. Yo te ayudo a entender el contexto desde allí.",
         },
       ],
     },
