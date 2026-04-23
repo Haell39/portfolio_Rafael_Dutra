@@ -113,13 +113,13 @@ export default function Footer() {
                 }}
               >
                 {[
-                  { label: t("navbar.projects"), href: "#projects" },
+                  { label: t("navbar.about"), href: "#about" },
+                  { label: t("navbar.network"), href: "#network" },
                   { label: t("navbar.experience"), href: "#experience" },
+                  { label: t("navbar.projects"), href: "#projects" },
                   { label: t("navbar.solutions"), href: "#solutions" },
                   { label: t("navbar.process"), href: "#process" },
                   { label: t("navbar.certificates"), href: "#certificates" },
-                  { label: t("navbar.channel"), href: "#datastudent" },
-                  { label: t("navbar.about"), href: "#about" },
                   { label: t("navbar.contact"), href: "#contact" },
                 ].map((link, i) => (
                   <li key={i}>

@@ -14,14 +14,14 @@ export default function Navbar() {
   const { language, changeLanguage, t } = useLanguage();
 
   const LINKS = [
+    { name: t("navbar.about"), href: "#about" },
+    { name: t("navbar.network"), href: "#network" },
+    { name: t("navbar.experience"), href: "#experience" },
+    { name: t("navbar.projects"), href: "#projects" },
     { name: t("navbar.solutions"), href: "#solutions" },
     { name: t("navbar.process"), href: "#process" },
-    { name: t("navbar.projects"), href: "#projects" },
-    { name: t("navbar.experience"), href: "#experience" },
     { name: t("navbar.certificates"), href: "#certificates" },
-    { name: t("navbar.about"), href: "#about" },
-    { name: t("navbar.channel"), href: "#datastudent" },
-    { name: t("navbar.contact"), href: "#" },
+    { name: t("navbar.contact"), href: "#contact" },
   ];
 
   useEffect(() => {

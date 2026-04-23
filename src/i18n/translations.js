@@ -7,7 +7,7 @@ export const translations = {
       experience: "Experiência",
       certificates: "Certificados",
       about: "Sobre",
-      channel: "Canal",
+      network: "Ecossistema",
       contact: "Contato",
     },
     hero: {
@@ -138,10 +138,31 @@ export const translations = {
     projects: {
       title: "Projetos em Destaque",
     },
-    datastudent: {
-      title: "Canal DataStudent",
-      subtitle: "Compartilhando conhecimento sobre Programação, Dados e IA",
-      cta: "Visitar Canal",
+    network: {
+      kicker: "CONEXÕES & INICIATIVAS",
+      title: "Meu Ecossistema",
+      subtitle:
+        "Muito além do código. Construindo produtos, compartilhando conhecimento e vivenciando o mercado na prática.",
+      kodika: {
+        name: "KódiKa Tech",
+        type: "// Laboratório de Software",
+        desc: "Iniciativa autônoma e em equipe, construindo soluções coletivas sob medida de IA e Dados para acelerar negócios reais.",
+      },
+      residencia: {
+        name: "Residência Tecnológica",
+        type: "// Porto Digital & FICR",
+        desc: "Imersão prática desenvolvendo habilidades através de desafios reais lançados por empresas do parque tecnológico.",
+      },
+      datastudent: {
+        name: "DataStudent",
+        type: "// Criação de Conteúdo",
+        desc: "Compartilhando conhecimento sobre Programação, Dados e IA no TikTok de forma didática.",
+      },
+      github: {
+        name: "GitHub",
+        type: "// Open Source",
+        desc: "Onde desenvolvo publicamente e armazeno o código-fonte de experimentações e projetos.",
+      },
     },
     diagnosis: {
       kicker: "SEM COMPROMISSO",
@@ -197,7 +218,7 @@ export const translations = {
       experience: "Experience",
       certificates: "Certificates",
       about: "About",
-      channel: "Channel",
+      network: "Ecosystem",
       contact: "Contact",
     },
     hero: {
@@ -327,10 +348,31 @@ export const translations = {
     projects: {
       title: "Featured Projects",
     },
-    datastudent: {
-      title: "DataStudent Channel",
-      subtitle: "Sharing knowledge about Programming, Data, and AI.",
-      cta: "Visit Channel",
+    network: {
+      kicker: "CONNECTIONS & INITIATIVES",
+      title: "My Ecosystem",
+      subtitle:
+        "Far beyond code. Building products, sharing knowledge, and experiencing the market in practice.",
+      kodika: {
+        name: "KódiKa Tech",
+        type: "// Software Laboratory",
+        desc: "Autonomous and team-based initiative building collective custom AI and Data solutions to accelerate real businesses.",
+      },
+      residencia: {
+        name: "Tech Residency",
+        type: "// Porto Digital & FICR",
+        desc: "Practical immersion developing skills through real challenges from companies in the tech park.",
+      },
+      datastudent: {
+        name: "DataStudent",
+        type: "// Content Creation",
+        desc: "Sharing knowledge about Programming, Data, and AI on TikTok in an accessible way.",
+      },
+      github: {
+        name: "GitHub",
+        type: "// Open Source",
+        desc: "Where I build in public and store the source code for my technical experiments.",
+      },
     },
     diagnosis: {
       kicker: "NO OBLIGATION",
@@ -386,7 +428,7 @@ export const translations = {
       experience: "Experiencia",
       certificates: "Certificados",
       about: "Sobre Mí",
-      channel: "Canal",
+      network: "Ecosistema",
       contact: "Contacto",
     },
     hero: {
@@ -517,10 +559,31 @@ export const translations = {
     projects: {
       title: "Proyectos Destacados",
     },
-    datastudent: {
-      title: "Canal DataStudent",
-      subtitle: "Compartiendo conocimiento sobre Programación, Datos e IA.",
-      cta: "Visitar Canal",
+    network: {
+      kicker: "CONEXIONES E INICIATIVAS",
+      title: "Mi Ecosistema",
+      subtitle:
+        "Mucho más que código. Construyendo productos, compartiendo conocimiento y viviendo el mercado en la práctica.",
+      kodika: {
+        name: "KódiKa Tech",
+        type: "// Laboratorio de Software",
+        desc: "Iniciativa autónoma y en equipo, construyendo soluciones colectivas a medida de IA y Datos para acelerar negocios reales.",
+      },
+      residencia: {
+        name: "Residencia Tecnológica",
+        type: "// Porto Digital & FICR",
+        desc: "Inmersión práctica desarrollando habilidades a través de retos reales de empresas en el parque tecnológico.",
+      },
+      datastudent: {
+        name: "DataStudent",
+        type: "// Creación de Contenido",
+        desc: "Compartiendo conocimiento sobre Programación, Datos e IA en TikTok de forma didáctica.",
+      },
+      github: {
+        name: "GitHub",
+        type: "// Open Source",
+        desc: "Donde desarrollo públicamente y guardo el código fuente de mis experimentos y proyectos técnicos.",
+      },
     },
     diagnosis: {
       kicker: "SIN COMPROMISO",

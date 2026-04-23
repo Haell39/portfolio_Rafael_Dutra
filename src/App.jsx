@@ -12,7 +12,7 @@ import { CERTIFICATES } from "./components/Certificates"; // Import data for pre
 const About = lazy(() => import("./components/About"));
 const Solutions = lazy(() => import("./components/Solutions"));
 const Process = lazy(() => import("./components/Process"));
-const DataStudent = lazy(() => import("./components/DataStudent"));
+const NetworkNodes = lazy(() => import("./components/NetworkNodes"));
 const DiagnosisCTA = lazy(() => import("./components/DiagnosisCTA"));
 const FAQ = lazy(() => import("./components/FAQ"));
 const Footer = lazy(() => import("./components/Footer"));
@@ -58,13 +58,13 @@ function App() {
         <main>
           <Hero />
           <Suspense fallback={null}>
+            <About />
+            <NetworkNodes />
+            <Experience />
+            <Projects />
             <Solutions />
             <Process />
-            <Projects />
-            <Experience />
             <Certificates />
-            <About />
-            <DataStudent />
             <DiagnosisCTA />
             <FAQ />
             <Footer />
