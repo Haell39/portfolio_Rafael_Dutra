@@ -35,7 +35,7 @@ export const translations = {
       stack_title: "🚀 Stack & Ferramentas",
     },
     solutions: {
-      kicker: "Nossas Soluções",
+      kicker: "Minhas Soluções",
       title: "Soluções em Dados",
       subtitle: "Engenharia e Modelagem Avançada para sua Empresa",
       items: [
@@ -146,12 +146,12 @@ export const translations = {
       kodika: {
         name: "KódiKa Tech",
         type: "// Laboratório de Software",
-        desc: "Iniciativa autônoma e em equipe, construindo soluções coletivas sob medida de IA e Dados para acelerar negócios reais.",
+        desc: "Iniciativa autônoma e em equipe, construindo soluções sob medida de IA e Dados para acelerar negócios reais.",
       },
       residencia: {
         name: "Residência Tecnológica",
         type: "// Porto Digital & FICR",
-        desc: "Imersão prática desenvolvendo habilidades através de desafios reais lançados por empresas do parque tecnológico.",
+        desc: "Imersão prática trabalhando em projetos reais com empresas como Rede Globo, Deloitte, Bradesco e Prefeituras.",
       },
       datastudent: {
         name: "DataStudent",
@@ -185,7 +185,7 @@ export const translations = {
       kicker: "PERGUNTAS FREQUENTES",
       title: "Solucionando suas dúvidas",
       subtitle:
-        "Respostas transparentes sobre nosso modelo de trabalho e inteligência artificial.",
+        "Respostas transparentes sobre meu modelo de trabalho e inteligência artificial.",
       items: [
         {
           q: "Como meus dados serão processados de forma segura?",
@@ -245,7 +245,7 @@ export const translations = {
       stack_title: "🚀 Stack & Tools",
     },
     solutions: {
-      kicker: "Our Solutions",
+      kicker: "My Solutions",
       title: "Data Solutions",
       subtitle: "Advanced Engineering and Modeling for your Company",
       items: [
@@ -356,12 +356,12 @@ export const translations = {
       kodika: {
         name: "KódiKa Tech",
         type: "// Software Laboratory",
-        desc: "Autonomous and team-based initiative building collective custom AI and Data solutions to accelerate real businesses.",
+        desc: "Autonomous and team-based initiative building custom AI and Data solutions to accelerate real businesses.",
       },
       residencia: {
         name: "Tech Residency",
         type: "// Porto Digital & FICR",
-        desc: "Practical immersion developing skills through real challenges from companies in the tech park.",
+        desc: "Practical immersion working on real projects with companies such as Rede Globo, Deloitte, Bradesco, and City Halls.",
       },
       datastudent: {
         name: "DataStudent",
@@ -395,7 +395,7 @@ export const translations = {
       kicker: "FREQUENTLY ASKED QUESTIONS",
       title: "Solving your doubts",
       subtitle:
-        "Transparent answers about our working model and AI technologies.",
+        "Transparent answers about my working model and AI technologies.",
       items: [
         {
           q: "How will my data be processed securely?",
@@ -456,7 +456,7 @@ export const translations = {
       stack_title: "🚀 Stack & Herramientas",
     },
     solutions: {
-      kicker: "Nuestras Soluciones",
+      kicker: "Mis Soluciones",
       title: "Soluciones de Datos",
       subtitle: "Ingeniería y Modelado Avanzado para tu Empresa",
       items: [
@@ -567,12 +567,12 @@ export const translations = {
       kodika: {
         name: "KódiKa Tech",
         type: "// Laboratorio de Software",
-        desc: "Iniciativa autónoma y en equipo, construyendo soluciones colectivas a medida de IA y Datos para acelerar negocios reales.",
+        desc: "Iniciativa autónoma y en equipo, construyendo soluciones a medida de IA y Datos para acelerar negocios reales.",
       },
       residencia: {
         name: "Residencia Tecnológica",
         type: "// Porto Digital & FICR",
-        desc: "Inmersión práctica desarrollando habilidades a través de retos reales de empresas en el parque tecnológico.",
+        desc: "Inmersión práctica trabajando en proyectos reales con empresas como Rede Globo, Deloitte, Bradesco y Ayuntamientos.",
       },
       datastudent: {
         name: "DataStudent",
@@ -606,7 +606,7 @@ export const translations = {
       kicker: "PREGUNTAS FRECUENTES",
       title: "Resolviendo tus dudas",
       subtitle:
-        "Respuestas transparentes sobre nuestro modelo de trabajo y desarrollo de IA.",
+        "Respuestas transparentes sobre mi modelo de trabajo y desarrollo de IA.",
       items: [
         {
           q: "¿Cómo se procesarán mis datos de forma segura?",
