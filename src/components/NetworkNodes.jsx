@@ -13,7 +13,7 @@ export default function NetworkNodes() {
       icon: Terminal,
       color: "#10b981", // Emerald
       bg: "rgba(16, 185, 129, 0.1)",
-      href: "https://kodikatech.netlify.app/",
+      href: "https://kodika.com.br",
       keyPrefix: "kodika",
     },
     {
