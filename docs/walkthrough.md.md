@@ -1,44 +1,140 @@
 # Portfolio Walkthrough
 
-I have successfully built your new **React Portfolio** with a premium, motion-rich design.
+Documento atualizado em 21/05/2026 para refletir o estado atual do portfólio.
 
-## Features Implemented
+## Posicionamento atual
 
-### 🎨 Visual & Design System
-- **Dark Mode Premium**: Deep gray/black backgrounds with subtle aesthetic touches.
-- **Typography**: Uses `Inter` for a clean, professional look.
-- **Glassmorphism**: The Navbar blurs the content behind it for a modern feel.
+O site está orientado para:
 
-### ⚡ Motion & Interactivity
-- **Centralized Motion System**: All animations use a custom "snappy" easing curve (`cubic-bezier(0.16, 1, 0.3, 1)`).
-- **Fade-in Effects**: Sections stagger in smoothly as you scroll.
-- **Micro-interactions**: Hovering over project cards or buttons triggers subtle scale effects (max 1.03x).
+- IA aplicada
+- Machine learning
+- NLP / LLMs
+- Visão computacional
+- Automação
+- Dados e análise como base
 
-### 🧩 Components
-- **Hero**: Strong value proposition with a "Spotlight" gradient background.
-- **Experience**: Timeline layout with impact-focused descriptions.
-- **Projects**: Grid layout with gradient placeholders (ready for your real images).
-- **About**: Two-column layout for bio and tech stack.
-- **Contact**: Simple, direct CTA.
+O tom da copy foi ajustado para parecer forte e profissional, mas sem exagerar senioridade ou prometer mais do que o perfil entrega hoje.
 
-## How to Run
+## Estrutura da landing
 
-1. **Install Dependencies** (if you haven't already):
-   ```bash
-   npm install
-   ```
+Ordem das seções renderizadas em `src/App.jsx`:
 
-2. **Start Development Server**:
-   ```bash
-   npm run dev
-   ```
-   Visit `http://localhost:3000` to see it in action.
+1. `Hero`
+2. `About`
+3. `Network`
+4. `Experience`
+5. `Projects`
+6. `Solutions`
+7. `Process`
+8. `Certificates`
+9. `DiagnosisCTA`
+10. `FAQ`
+11. `Footer`
 
-3. **Build for Production**:
-   ```bash
-   npm run build
-   ```
+Observação:
+O item `Contato` da navbar e do footer aponta para `#hero`, onde está o CTA principal.
 
-## Next Steps
-- Replace the project placeholder gradients in [src/components/Projects.jsx](file:///d:/GitHub%20Desktop/portfolio_Rafael_Dutra/src/components/Projects.jsx) with your real screenshots.
-- Update the `mailto:` link in [src/components/Contact.jsx](file:///d:/GitHub%20Desktop/portfolio_Rafael_Dutra/src/components/Contact.jsx).
+## Onde editar cada coisa
+
+### Textos da interface
+
+Arquivo:
+`src/i18n/translations.js`
+
+Ali ficam:
+
+- Hero
+- About
+- Solutions
+- Process
+- Experience
+- Network
+- Diagnosis CTA
+- FAQ
+- Footer
+- Labels auxiliares da navbar, projetos e certificados
+
+### Projetos e certificados
+
+Arquivo:
+`src/content/portfolioData.js`
+
+Esse arquivo centraliza:
+
+- títulos
+- descrições
+- links
+- imagens
+- tags
+- dados de certificados
+
+Motivo da mudança:
+Antes os arrays ficavam dentro de `Projects.jsx` e `Certificates.jsx`, o que forçava import estático desses componentes no `App.jsx` e enfraquecia o lazy loading. Agora os dados estão separados e o build volta a fazer chunking corretamente para esses componentes.
+
+## Decisões recentes
+
+### 1. Reposicionamento da copy
+
+O conteúdo foi reescrito para enfatizar:
+
+- competência em IA aplicada
+- capacidade prática de construir soluções
+- coerência com um perfil forte em evolução
+- atratividade para recrutadores e potenciais clientes
+
+Também foi removida qualquer autodesqualificação explícita na hero.
+
+### 2. Timeline de experiência
+
+A experiência da `FourDevs` foi colocada no topo da seção `Experience`, com foco em:
+
+- educação e segurança
+- computer vision
+- classificação
+- reconhecimento de padrões
+- pipelines de IA
+- exposição via API em produção
+
+A entrada `Projetos & Freelance / Data Scientist & ML` foi removida conforme solicitado.
+
+### 3. Internacionalização complementar
+
+Além da copy principal, foram alinhados:
+
+- labels do footer
+- botões de projeto
+- label de emissão dos certificados
+- labels de acessibilidade da navbar e do carrossel de projetos
+
+## SEO básico atual
+
+Arquivo:
+`index.html`
+
+Estado atual:
+
+- `lang="pt-BR"`
+- `title` alinhado ao posicionamento de IA aplicada
+- `meta description` atualizada
+
+## Comandos úteis
+
+Desenvolvimento:
+
+```bash
+npm run dev
+```
+
+Build:
+
+```bash
+npm run build
+```
+
+## Fonte de referência de conteúdo
+
+Arquivo:
+`docs/instrucoes.txt`
+
+Uso:
+serve como base manual para projetos e certificados, mas a fonte operacional da interface agora é `src/content/portfolioData.js`.

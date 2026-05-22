@@ -297,7 +297,7 @@ export default function Navbar() {
               onClick={toggleTheme}
               className="nav-btn"
               style={{ borderRadius: "50%" }}
-              aria-label="Toggle theme"
+              aria-label={t("navbar.toggle_theme")}
             >
               {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
             </button>
@@ -315,7 +315,7 @@ export default function Navbar() {
             <button
               className="nav-hamburger"
               onClick={() => setMenuOpen(true)}
-              aria-label="Abrir menu"
+              aria-label={t("navbar.open_menu")}
             >
               <Menu size={22} />
             </button>
@@ -349,7 +349,7 @@ export default function Navbar() {
               <button
                 className="mobile-close"
                 onClick={() => setMenuOpen(false)}
-                aria-label="Fechar menu"
+                aria-label={t("navbar.close_menu")}
               >
                 <X size={24} />
               </button>

@@ -1,13 +1,12 @@
 import { Suspense, lazy, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import { PROJECTS, CERTIFICATES } from "./content/portfolioData";
 
 // Lazy Load heavy/below-fold components
 const Projects = lazy(() => import("./components/Projects"));
 const Experience = lazy(() => import("./components/Experience"));
 const Certificates = lazy(() => import("./components/Certificates"));
-import { PROJECTS } from "./components/Projects"; // Import data for preloading
-import { CERTIFICATES } from "./components/Certificates"; // Import data for preloading
 
 const About = lazy(() => import("./components/About"));
 const Solutions = lazy(() => import("./components/Solutions"));

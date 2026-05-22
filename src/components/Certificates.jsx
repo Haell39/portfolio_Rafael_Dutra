@@ -3,74 +3,7 @@ import { ExternalLink } from "lucide-react";
 import FadeIn from "./ui/FadeIn";
 import PremiumImage from "./ui/PremiumImage";
 import { useLanguage } from "../context/LanguageContext";
-
-// Imports
-import imgEFSET from "../assets/certificates/EFSET.webp";
-import imgONE from "../assets/certificates/ONE.webp";
-import imgSQLK from "../assets/certificates/SQLK.webp";
-import imgADA from "../assets/certificates/trilhaADA.webp";
-import imgStats from "../assets/certificates/statistic.webp";
-import imgAnalise from "../assets/certificates/analisedados.webp";
-import imgPython from "../assets/certificates/Python Course.jpg";
-
-export const CERTIFICATES = [
-  {
-    title: "EF SET English Certificate (C2 Proficient)",
-    titleEn: "EF SET English Certificate (C2 Proficient)",
-    issuer: "EF Standard English Test",
-    date: "2025",
-    link: "https://cert.efset.org/en/KEmJzs",
-    image: imgEFSET,
-  },
-  {
-    title: "ONE Tech Foundation G8 - Data Science + IA",
-    titleEn: "ONE Tech Foundation G8 - Data Science + AI",
-    issuer: "Alura / Oracle",
-    date: "2025",
-    link: "https://cursos.alura.com.br/user/rafaelsantoshome/program/14/certificate",
-    image: imgONE,
-  },
-  {
-    title: "Trilha Digital Coders 24 Data Science",
-    titleEn: "Trilha Digital Coders 24 Data Science",
-    issuer: "Ada Tech",
-    date: "2024",
-    link: "https://ada.tech/certificado?code=0d69f303-5f43-ab55-0f28-9e5e8678bb9e",
-    image: imgADA,
-  },
-  {
-    title: "SQL Advanced",
-    titleEn: "SQL Advanced",
-    issuer: "Kaggle",
-    date: "2025",
-    link: "https://www.kaggle.com/learn/certification/raeldata/advanced-sql",
-    image: imgSQLK,
-  },
-  {
-    title: "Estatística",
-    titleEn: "Statistics",
-    issuer: "Escola Virtual Gov",
-    date: "2024",
-    link: "https://www.escolavirtual.gov.br/documentos/validacao/certificadocheck/WPoM13770255Q1qz#",
-    image: imgStats,
-  },
-  {
-    title: "Análise de dados para tomada de decisão",
-    titleEn: "Data Analysis for Decision Making",
-    issuer: "Escola Virtual Gov",
-    date: "2024",
-    link: "https://www.escolavirtual.gov.br/documentos/validacao/certificadocheck/KAmM13988122oUfK#",
-    image: imgAnalise,
-  },
-  {
-    title: "Python",
-    titleEn: "Python",
-    issuer: "Kaggle",
-    date: "2025",
-    link: "https://www.kaggle.com/learn/certification/raeldata/python",
-    image: imgPython,
-  },
-];
+import { CERTIFICATES } from "../content/portfolioData";
 
 export default function Certificates() {
   const { language, t } = useLanguage();
@@ -182,7 +115,11 @@ export default function Certificates() {
                       lineHeight: 1.4,
                     }}
                   >
-                    {language === "pt" ? cert.title : cert.titleEn}
+                    {language === "pt"
+                      ? cert.title
+                      : language === "es"
+                        ? cert.titleEs || cert.titleEn
+                        : cert.titleEn}
                   </h3>
 
                   <div

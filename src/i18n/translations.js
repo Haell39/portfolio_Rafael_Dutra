@@ -9,6 +9,9 @@ export const translations = {
       about: "Sobre",
       network: "Ecossistema",
       contact: "Contato",
+      toggle_theme: "Alternar tema",
+      open_menu: "Abrir menu",
+      close_menu: "Fechar menu",
     },
     hero: {
       kicker: "IA Aplicada • Machine Learning • NLP/LLMs",
@@ -135,6 +138,9 @@ export const translations = {
       cta_code: "Ver repositório",
       cta_live: "Ver demo",
       cta_soon: "Em breve",
+      prev_aria: "Projeto anterior",
+      next_aria: "Próximo projeto",
+      goto_aria: "Ir para projeto",
     },
     network: {
       kicker: "PRODUTO • STARTUP • COMUNIDADE",
@@ -227,6 +233,9 @@ export const translations = {
       about: "About",
       network: "Ecosystem",
       contact: "Contact",
+      toggle_theme: "Toggle theme",
+      open_menu: "Open menu",
+      close_menu: "Close menu",
     },
     hero: {
       kicker: "Applied AI • Machine Learning • NLP/LLMs",
@@ -352,6 +361,9 @@ export const translations = {
       cta_code: "View repository",
       cta_live: "View demo",
       cta_soon: "Coming soon",
+      prev_aria: "Previous project",
+      next_aria: "Next project",
+      goto_aria: "Go to project",
     },
     network: {
       kicker: "PRODUCT • STARTUP • COMMUNITY",
@@ -444,6 +456,9 @@ export const translations = {
       about: "Sobre Mí",
       network: "Ecosistema",
       contact: "Contacto",
+      toggle_theme: "Cambiar tema",
+      open_menu: "Abrir menú",
+      close_menu: "Cerrar menú",
     },
     hero: {
       kicker: "IA Aplicada • Machine Learning • NLP/LLMs",
@@ -570,6 +585,9 @@ export const translations = {
       cta_code: "Ver repositorio",
       cta_live: "Ver demo",
       cta_soon: "Próximamente",
+      prev_aria: "Proyecto anterior",
+      next_aria: "Siguiente proyecto",
+      goto_aria: "Ir al proyecto",
     },
     network: {
       kicker: "PRODUCTO • STARTUP • COMUNIDAD",
