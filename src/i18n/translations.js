@@ -18,7 +18,7 @@ export const translations = {
       highlight_word: "automação",
       highlight_word2: "LLMs",
       subtitle:
-        "Profissional em início de carreira com base sólida em dados e foco em IA aplicada, machine learning, NLP, visão computacional e produtos inteligentes que resolvem problemas de verdade.",
+        "Construo soluções com base sólida em dados e foco em IA aplicada, machine learning, NLP, visão computacional e produtos inteligentes para problemas reais.",
       cta_projects: "Ver Projetos",
       cta_cv: "Baixar CV",
       cv_path: "/Rafael_Dutra_curriculum.pdf",
@@ -29,7 +29,7 @@ export const translations = {
       kicker: "• SOBRE MIM •",
       title: "Não fico só no hype da IA.",
       subtitle_highlight: "Prefiro construir soluções úteis e bem aplicadas.",
-      p1: "Atuo na interseção entre dados, software e inteligência artificial. Sou um profissional júnior, proativo e mão na massa, com forte interesse em transformar estudo em entrega real.",
+      p1: "Atuo na interseção entre dados, software e inteligência artificial. Sou proativo, mão na massa e orientado à entrega, com foco em transformar estudo e experimentação em soluções reais.",
       p2: "Tenho foco especial em machine learning, NLP/LLMs, visão computacional e automação, sempre buscando conectar a parte técnica ao problema de negócio.",
       p3: "Como cofundador de uma iniciativa universitária e participante de projetos práticos, venho construindo repertório em Python, SQL, APIs e produtos orientados por dados e IA.",
       stack_title: "Stack em IA, Dados & Produto",
@@ -97,6 +97,13 @@ export const translations = {
       title: "Experiência, Formação & Iniciativas",
       items: [
         {
+          company: "FourDevs · Estágio",
+          role: "Desenvolvedor de IA Aplicada",
+          date: "04/2026 — Atualmente",
+          description:
+            "Atuação remota no desenvolvimento de soluções de IA aplicadas à educação e segurança. Trabalho com Computer Vision, modelos de classificação, reconhecimento de padrões e pipelines completos de IA, do treinamento à exposição via API em produção.",
+        },
+        {
           company: "Porto Digital / Globo",
           role: "Residência Tecnológica",
           date: "02/2024 — Atualmente",
@@ -109,13 +116,6 @@ export const translations = {
           date: "02/2024 — 2026",
           description:
             "Formação em andamento com base em dados, algoritmos, IA, engenharia de software e projetos práticos orientados a problemas reais.",
-        },
-        {
-          company: "Projetos & Freelance",
-          role: "Data Scientist & ML",
-          date: "2025 — Atualmente",
-          description:
-            "Desenvolvimento de projetos de IA, machine learning e análise de dados, criando pipelines, APIs e aplicações voltadas a automação, produto e tomada de decisão.",
         },
         {
           company: "HarvardX",
@@ -235,7 +235,7 @@ export const translations = {
       highlight_word: "automation",
       highlight_word2: "LLMs",
       subtitle:
-        "Early-career professional with a solid data foundation and a hands-on focus on applied AI, machine learning, NLP, computer vision, and smart products that solve real problems.",
+        "I build solutions grounded in data, with a focus on applied AI, machine learning, NLP, computer vision, and intelligent products for real-world problems.",
       cta_projects: "View Projects",
       cta_cv: "Download CV",
       cv_path: "/Rafael_Dutra_Resume_EN.pdf",
@@ -246,7 +246,7 @@ export const translations = {
       kicker: "• ABOUT ME •",
       title: "I don't chase AI hype.",
       subtitle_highlight: "I prefer building useful, well-applied solutions.",
-      p1: "I work at the intersection of data, software, and artificial intelligence. I am a proactive, hands-on junior professional focused on turning learning into real delivery.",
+      p1: "I work at the intersection of data, software, and artificial intelligence. I am proactive, hands-on, and delivery-oriented, focused on turning learning and experimentation into real solutions.",
       p2: "My main interests are machine learning, NLP/LLMs, computer vision, and automation, always connecting the technical side to the business problem.",
       p3: "As a co-founder of a university initiative and a contributor to practical projects, I have been building experience with Python, SQL, APIs, and data/AI-driven products.",
       stack_title: "AI, Data & Product Stack",
@@ -314,6 +314,13 @@ export const translations = {
       title: "Experience, Education & Initiatives",
       items: [
         {
+          company: "FourDevs · Internship",
+          role: "Applied AI Developer",
+          date: "04/2026 — Present",
+          description:
+            "Working remotely on applied AI solutions for education and safety. Experience with computer vision, classification models, pattern recognition, and end-to-end AI pipelines, from training to production API deployment.",
+        },
+        {
           company: "Porto Digital / Globo",
           role: "Technological Residency",
           date: "02/2024 — Present",
@@ -326,13 +333,6 @@ export const translations = {
           date: "02/2024 — 2026",
           description:
             "Ongoing education grounded in data, algorithms, AI, software engineering, and practical projects built around real-world problems.",
-        },
-        {
-          company: "Projetos & Freelance",
-          role: "Data Scientist & ML",
-          date: "2025 — Present",
-          description:
-            "Developing AI, machine learning, and analytics projects by building pipelines, APIs, and applications focused on automation, product thinking, and decision-making.",
         },
         {
           company: "HarvardX",
@@ -453,7 +453,7 @@ export const translations = {
       highlight_word: "automatización",
       highlight_word2: "LLMs",
       subtitle:
-        "Profesional en etapa inicial de carrera con base sólida en datos y enfoque práctico en IA aplicada, machine learning, NLP, visión computacional y productos inteligentes que resuelven problemas reales.",
+        "Construyo soluciones con base sólida en datos y foco en IA aplicada, machine learning, NLP, visión computacional y productos inteligentes para problemas reales.",
       cta_projects: "Ver Proyectos",
       cta_cv: "Descargar CV",
       cv_path: "/Rafael_Dutra_Curriculo_ES.pdf",
@@ -464,7 +464,7 @@ export const translations = {
       kicker: "• SOBRE MÍ •",
       title: "No persigo solo el hype de la IA.",
       subtitle_highlight: "Prefiero construir soluciones útiles y bien aplicadas.",
-      p1: "Trabajo en la intersección entre datos, software e inteligencia artificial. Soy un profesional junior, proactivo y muy práctico, enfocado en convertir aprendizaje en entregas reales.",
+      p1: "Trabajo en la intersección entre datos, software e inteligencia artificial. Soy proactivo, práctico y orientado a la entrega, con foco en transformar aprendizaje y experimentación en soluciones reales.",
       p2: "Mis principales intereses son machine learning, NLP/LLMs, visión computacional y automatización, siempre conectando la parte técnica con el problema de negocio.",
       p3: "Como cofundador de una iniciativa universitaria y participante en proyectos prácticos, vengo construyendo experiencia en Python, SQL, APIs y productos guiados por datos e IA.",
       stack_title: "Stack en IA, Datos y Producto",
@@ -532,6 +532,13 @@ export const translations = {
       title: "Experiencia, Formación e Iniciativas",
       items: [
         {
+          company: "FourDevs · Prácticas",
+          role: "Desarrollador de IA Aplicada",
+          date: "04/2026 — Actualidad",
+          description:
+            "Trabajo remoto en el desarrollo de soluciones de IA aplicadas a educación y seguridad. Experiencia en computer vision, modelos de clasificación, reconocimiento de patrones y pipelines completos de IA, desde el entrenamiento hasta la exposición vía API en producción.",
+        },
+        {
           company: "Porto Digital / Globo",
           role: "Residencia Tecnológica",
           date: "02/2024 — Actualmente",
@@ -544,13 +551,6 @@ export const translations = {
           date: "02/2024 — 2026",
           description:
             "Formación en curso con base en datos, algoritmos, IA, ingeniería de software y proyectos prácticos orientados a problemas reales.",
-        },
-        {
-          company: "Proyectos & Freelance",
-          role: "Data Scientist & ML",
-          date: "2025 — Actualmente",
-          description:
-            "Desarrollo de proyectos de IA, machine learning y análisis de datos, creando pipelines, APIs y aplicaciones orientadas a automatización, producto y toma de decisiones.",
         },
         {
           company: "HarvardX",
