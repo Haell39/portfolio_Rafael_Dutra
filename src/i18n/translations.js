@@ -24,8 +24,8 @@ export const translations = {
         "Construo soluções com base sólida em dados e foco em IA aplicada, machine learning, NLP, visão computacional e produtos inteligentes para problemas reais.",
       cta_projects: "Ver Projetos",
       cta_cv: "Baixar CV",
-      cv_path: "/Rafael_Dutra_curriculum.pdf",
-      cv_filename: "Rafael_Dutra_curriculum.pdf",
+      cv_path: "/Rafael_Dutra_IA_Aplicada.pdf",
+      cv_filename: "Rafael_Dutra_IA_Aplicada.pdf",
       cta_contact: "Falar sobre um projeto",
     },
     about: {
@@ -247,8 +247,8 @@ export const translations = {
         "I build solutions grounded in data, with a focus on applied AI, machine learning, NLP, computer vision, and intelligent products for real-world problems.",
       cta_projects: "View Projects",
       cta_cv: "Download CV",
-      cv_path: "/Rafael_Dutra_Resume_EN.pdf",
-      cv_filename: "Rafael_Dutra_Resume_EN.pdf",
+      cv_path: "/Rafael_Dutra_Applied_AI_EN.pdf",
+      cv_filename: "Rafael_Dutra_Applied_AI_EN.pdf",
       cta_contact: "Discuss a project",
     },
     about: {
@@ -471,8 +471,8 @@ export const translations = {
         "Construyo soluciones con base sólida en datos y foco en IA aplicada, machine learning, NLP, visión computacional y productos inteligentes para problemas reales.",
       cta_projects: "Ver Proyectos",
       cta_cv: "Descargar CV",
-      cv_path: "/Rafael_Dutra_Curriculo_ES.pdf",
-      cv_filename: "Rafael_Dutra_Curriculo_ES.pdf",
+      cv_path: "/Rafael_Dutra_IA_Aplicada_ES.pdf",
+      cv_filename: "Rafael_Dutra_IA_Aplicada_ES.pdf",
       cta_contact: "Hablar sobre un proyecto",
     },
     about: {
