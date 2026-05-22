@@ -1,7 +1,6 @@
 import FadeIn from "./ui/FadeIn";
 import { useLanguage } from "../context/LanguageContext";
-import { Instagram, Linkedin, Github, Mail, Phone, MessageCircle } from "lucide-react";
-import { motion } from "framer-motion";
+import { Linkedin, Github, Mail, MessageCircle } from "lucide-react";
 
 export default function Footer() {
   const { t } = useLanguage();
@@ -52,9 +51,7 @@ export default function Footer() {
                   maxWidth: "300px",
                 }}
               >
-                Transformando dados complexos em soluções inteligentes e
-                pipelines automatizados preditivos para elevar seu negócio ao
-                próximo nível.
+                {t("footer.brand_blurb")}
               </p>
               <div style={{ display: "flex", gap: "var(--space-4)" }}>
                 <a
@@ -98,9 +95,7 @@ export default function Footer() {
                   cursor: "default"
                 }}
               >
-                {t("navbar.projects") === "Projetos"
-                  ? "Navega\u00e7\u00e3o"
-                  : "Navigation"}
+                {t("footer.nav_title")}
               </h4>
               <ul
                 style={{
@@ -158,7 +153,7 @@ export default function Footer() {
                   cursor: "default"
                 }}
               >
-                Vamos Conversar?
+                {t("footer.contact_title")}
               </h4>
               <p
                 style={{
@@ -167,8 +162,7 @@ export default function Footer() {
                   marginBottom: "var(--space-6)",
                 }}
               >
-                Tem um desafio de dados em mente? Entre em contato e veja como
-                modelos preditivos e inteligência artificial podem ajudar.
+                {t("footer.contact_blurb")}
               </p>
               <div style={{ display: "flex", gap: "var(--space-4)", alignItems: "center", flexWrap: "wrap" }}>
                 <a
@@ -261,7 +255,7 @@ export default function Footer() {
               color: "var(--text-tertiary)",
             }}
           >
-            DATA / ML / ENGINEERING
+            {t("footer.signature")}
           </div>
         </div>
       </div>

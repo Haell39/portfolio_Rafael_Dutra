@@ -203,7 +203,7 @@ export default function Certificates() {
                         color: "var(--text-secondary)",
                       }}
                     >
-                      Emitido em: {cert.date}
+                      {t("certificates.issued_label")}: {cert.date}
                     </p>
                   </div>
                 </div>

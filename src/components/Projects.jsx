@@ -524,7 +524,7 @@ export default function Projects() {
                       e.currentTarget.style.borderColor = "var(--border-subtle)";
                     }}
                   >
-                    {language === "pt" ? "Ver código" : language === "es" ? "Ver código" : "View Code"}
+                    {t("projects.cta_code")}
                   </a>
 
                   {project.linkLive ? (
@@ -535,7 +535,7 @@ export default function Projects() {
                       onClick={(e) => e.stopPropagation()}
                       className="live-button-animated"
                     >
-                      {language === "pt" ? "Ver no ar" : language === "es" ? "Ver en vivo" : "View Live"}
+                      {t("projects.cta_live")}
                     </a>
                   ) : (
                     <div
@@ -557,7 +557,7 @@ export default function Projects() {
                       }}
                       onClick={(e) => e.stopPropagation()}
                     >
-                        {language === "pt" ? "Em breve" : language === "es" ? "Próximamente" : "Coming soon"}
+                        {t("projects.cta_soon")}
                     </div>
                   )}
                 </div>
