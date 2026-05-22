@@ -18,6 +18,7 @@ export default function Footer() {
       <div style={{ maxWidth: "var(--container-width)", margin: "0 auto" }}>
         <FadeIn>
           <div
+            className="footer-grid"
             style={{
               display: "grid",
               gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
@@ -164,8 +165,16 @@ export default function Footer() {
               >
                 {t("footer.contact_blurb")}
               </p>
-              <div style={{ display: "flex", gap: "var(--space-4)", alignItems: "center", flexWrap: "wrap" }}>
+              <div
+                style={{
+                  display: "flex",
+                  gap: "var(--space-4)",
+                  alignItems: "center",
+                  flexWrap: "wrap",
+                }}
+              >
                 <a
+                  className="footer-contact-link"
                   href="mailto:rafaeldutrapro@gmail.com"
                   style={{
                     display: "inline-flex",
@@ -180,6 +189,7 @@ export default function Footer() {
                     fontSize: "var(--text-sm)",
                     fontWeight: 600,
                     transition: "all 0.2s",
+                    maxWidth: "100%",
                   }}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.borderColor = "var(--accent-primary)";
@@ -190,10 +200,12 @@ export default function Footer() {
                     e.currentTarget.style.color = "var(--text-primary)";
                   }}
                 >
-                  rafaeldutrapro@gmail.com{" "}
-                  <span style={{ marginLeft: 4 }}>↗</span>
+                  <span className="footer-contact-link__text">
+                    rafaeldutrapro@gmail.com
+                  </span>
+                  <span style={{ marginLeft: 4, flexShrink: 0 }}>↗</span>
                 </a>
-                
+
                 <a
                   href="https://wa.me/5581999654790"
                   target="_blank"
@@ -232,6 +244,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div
+          className="footer-bottom"
           style={{
             display: "flex",
             justifyContent: "space-between",
@@ -301,6 +314,29 @@ export default function Footer() {
         @keyframes textShine {
           to {
             background-position: 200% center;
+          }
+        }
+
+        .footer-contact-link__text {
+          overflow-wrap: anywhere;
+          word-break: break-word;
+        }
+
+        @media (max-width: 520px) {
+          .footer-grid {
+            grid-template-columns: 1fr;
+          }
+
+          .footer-contact-link {
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+            padding-inline: var(--space-4) !important;
+          }
+
+          .footer-bottom {
+            flex-direction: column;
+            align-items: flex-start !important;
           }
         }
       `}</style>

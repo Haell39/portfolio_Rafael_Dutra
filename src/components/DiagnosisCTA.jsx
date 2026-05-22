@@ -14,14 +14,17 @@ export default function DiagnosisCTA() {
     <section 
       id="diagnosis" 
       style={{ 
-        padding: "var(--space-32) 0",
+        padding: "var(--space-32) var(--space-4)",
         background: "var(--bg-primary)",
         display: "flex",
         justifyContent: "center",
         alignItems: "center"
       }}
     >
-      <div className="container" style={{ maxWidth: "800px", textAlign: "center" }}>
+      <div
+        className="container"
+        style={{ maxWidth: "800px", width: "100%", textAlign: "center" }}
+      >
         <FadeIn style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
           {/* Kicker Badge */}
           <motion.div
@@ -101,6 +104,7 @@ export default function DiagnosisCTA() {
 
           {/* CTA Button */}
           <motion.button
+            className="diagnosis-cta-button"
             onClick={handleWhatsApp}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -117,7 +121,9 @@ export default function DiagnosisCTA() {
               alignItems: "center",
               gap: "12px",
               marginBottom: "var(--space-8)",
-              alignSelf: "center"
+              alignSelf: "center",
+              maxWidth: "100%",
+              justifyContent: "center",
             }}
           >
             {t("diagnosis.cta")}
@@ -136,6 +142,15 @@ export default function DiagnosisCTA() {
           </div>
         </FadeIn>
       </div>
+
+      <style>{`
+        @media (max-width: 480px) {
+          .diagnosis-cta-button {
+            width: 100%;
+            padding-inline: var(--space-4) !important;
+          }
+        }
+      `}</style>
     </section>
   );
 }

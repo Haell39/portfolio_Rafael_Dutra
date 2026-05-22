@@ -18,7 +18,8 @@ const FAQItem = ({ item, isOpen, onClick }) => {
           width: "100%",
           display: "flex",
           justifyContent: "space-between",
-          alignItems: "center",
+          alignItems: "flex-start",
+          gap: "var(--space-3)",
           padding: "var(--space-6) 0",
           background: "transparent",
           border: "none",
@@ -29,10 +30,11 @@ const FAQItem = ({ item, isOpen, onClick }) => {
           textAlign: "left"
         }}
       >
-        <span>{item.q}</span>
+        <span style={{ flex: 1, minWidth: 0 }}>{item.q}</span>
         <motion.div
           animate={{ rotate: isOpen ? 180 : 0 }}
           transition={{ duration: 0.3 }}
+          style={{ flexShrink: 0, marginTop: "2px" }}
         >
           <ChevronDown size={20} color="var(--text-tertiary)" />
         </motion.div>
@@ -77,7 +79,7 @@ export default function FAQ() {
     <section 
       id="faq" 
       style={{ 
-        padding: "var(--space-16) 0 var(--space-32) 0",
+        padding: "var(--space-16) var(--space-4) var(--space-32)",
         background: "var(--bg-primary)",
         display: "flex",
         justifyContent: "center"
@@ -113,7 +115,7 @@ export default function FAQ() {
               background: "var(--bg-primary)",
               border: "1px solid var(--border-highlight)",
               borderRadius: "var(--radius-xl)",
-              padding: "var(--space-8)",
+              padding: "clamp(1rem, 3vw, 2rem)",
               boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)"
             }}
           >

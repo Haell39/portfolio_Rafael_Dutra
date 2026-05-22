@@ -204,6 +204,7 @@ export default function Navbar() {
               display: flex;
               flex-direction: column;
               gap: 0.5rem;
+              overflow-y: auto;
             }
 
             .mobile-menu-drawer .mobile-close {
