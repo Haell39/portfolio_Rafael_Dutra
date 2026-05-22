@@ -120,7 +120,7 @@ export default function Footer() {
                   { label: t("navbar.solutions"), href: "#solutions" },
                   { label: t("navbar.process"), href: "#process" },
                   { label: t("navbar.certificates"), href: "#certificates" },
-                  { label: t("navbar.contact"), href: "#contact" },
+                  { label: t("navbar.contact"), href: "#hero" },
                 ].map((link, i) => (
                   <li key={i}>
                     <a

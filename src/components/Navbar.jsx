@@ -21,7 +21,7 @@ export default function Navbar() {
     { name: t("navbar.solutions"), href: "#solutions" },
     { name: t("navbar.process"), href: "#process" },
     { name: t("navbar.certificates"), href: "#certificates" },
-    { name: t("navbar.contact"), href: "#contact" },
+    { name: t("navbar.contact"), href: "#hero" },
   ];
 
   useEffect(() => {

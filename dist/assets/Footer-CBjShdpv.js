@@ -1,0 +1,49 @@
+import{c as n,u as s,j as e,F as l,G as c,L as d,M as p}from"./index-D7pphvyj.js";/**
+ * @license lucide-react v0.414.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const m=n("MessageCircle",[["path",{d:"M7.9 20A9 9 0 1 0 4 16.1L2 22Z",key:"vv11sd"}]]);function g(){const{t:a}=s(),i=new Date().getFullYear();return e.jsxs("footer",{style:{background:"var(--bg-primary)",borderTop:"1px solid var(--border-subtle)",padding:"var(--space-16) var(--space-4) var(--space-8)",color:"var(--text-secondary)"},children:[e.jsxs("div",{style:{maxWidth:"var(--container-width)",margin:"0 auto"},children:[e.jsx(l,{children:e.jsxs("div",{style:{display:"grid",gridTemplateColumns:"repeat(auto-fit, minmax(280px, 1fr))",gap:"var(--space-12)",marginBottom:"var(--space-16)"},children:[e.jsxs("div",{style:{display:"flex",flexDirection:"column",gap:"var(--space-6)"},children:[e.jsx("div",{className:"animated-title",style:{fontSize:"1.5rem",fontWeight:800,letterSpacing:"-0.05em",cursor:"default"},children:"Rafael Dutra"}),e.jsx("p",{style:{lineHeight:1.6,fontSize:"0.95rem",maxWidth:"300px"},children:"Transformando dados complexos em soluções inteligentes e pipelines automatizados preditivos para elevar seu negócio ao próximo nível."}),e.jsxs("div",{style:{display:"flex",gap:"var(--space-4)"},children:[e.jsx("a",{href:"https://github.com/Haell39",target:"_blank",rel:"noreferrer",className:"social-icon","aria-label":"GitHub",children:e.jsx(c,{size:20})}),e.jsx("a",{href:"https://linkedin.com/in/rafaelsantoshome",target:"_blank",rel:"noreferrer",className:"social-icon","aria-label":"LinkedIn",children:e.jsx(d,{size:20})}),e.jsx("a",{href:"mailto:rafaeldutrapro@gmail.com",className:"social-icon","aria-label":"Email",children:e.jsx(p,{size:20})})]})]}),e.jsxs("div",{children:[e.jsx("h4",{className:"animated-title",style:{fontSize:"var(--text-xs)",fontWeight:600,letterSpacing:"0.15em",textTransform:"uppercase",marginBottom:"var(--space-6)",cursor:"default"},children:a("navbar.projects")==="Projetos"?"Navegação":"Navigation"}),e.jsx("ul",{style:{listStyle:"none",padding:0,margin:0,display:"flex",flexDirection:"column",gap:"var(--space-3)"},children:[{label:a("navbar.about"),href:"#about"},{label:a("navbar.network"),href:"#network"},{label:a("navbar.experience"),href:"#experience"},{label:a("navbar.projects"),href:"#projects"},{label:a("navbar.solutions"),href:"#solutions"},{label:a("navbar.process"),href:"#process"},{label:a("navbar.certificates"),href:"#certificates"},{label:a("navbar.contact"),href:"#contact"}].map((r,o)=>e.jsx("li",{children:e.jsx("a",{href:r.href,style:{color:"var(--text-secondary)",textDecoration:"none",fontSize:"0.95rem",transition:"color 0.2s"},onMouseEnter:t=>t.currentTarget.style.color="var(--text-primary)",onMouseLeave:t=>t.currentTarget.style.color="var(--text-secondary)",children:r.label})},o))})]}),e.jsxs("div",{children:[e.jsx("h4",{className:"animated-title",style:{fontSize:"var(--text-xs)",fontWeight:600,letterSpacing:"0.15em",textTransform:"uppercase",marginBottom:"var(--space-6)",cursor:"default"},children:"Vamos Conversar?"}),e.jsx("p",{style:{lineHeight:1.6,fontSize:"0.95rem",marginBottom:"var(--space-6)"},children:"Tem um desafio de dados em mente? Entre em contato e veja como modelos preditivos e inteligência artificial podem ajudar."}),e.jsxs("div",{style:{display:"flex",gap:"var(--space-4)",alignItems:"center",flexWrap:"wrap"},children:[e.jsxs("a",{href:"mailto:rafaeldutrapro@gmail.com",style:{display:"inline-flex",alignItems:"center",gap:"var(--space-2)",padding:"var(--space-3) var(--space-6)",background:"transparent",color:"var(--text-primary)",border:"1px solid var(--border-highlight)",borderRadius:"12px",textDecoration:"none",fontSize:"var(--text-sm)",fontWeight:600,transition:"all 0.2s"},onMouseEnter:r=>{r.currentTarget.style.borderColor="var(--accent-primary)",r.currentTarget.style.color="var(--accent-primary)"},onMouseLeave:r=>{r.currentTarget.style.borderColor="var(--border-highlight)",r.currentTarget.style.color="var(--text-primary)"},children:["rafaeldutrapro@gmail.com"," ",e.jsx("span",{style:{marginLeft:4},children:"↗"})]}),e.jsx("a",{href:"https://wa.me/5581999654790",target:"_blank",rel:"noreferrer",title:"WhatsApp",style:{display:"flex",alignItems:"center",justifyContent:"center",width:"48px",height:"48px",background:"transparent",color:"var(--text-primary)",border:"1px solid var(--border-highlight)",borderRadius:"12px",textDecoration:"none",transition:"all 0.2s"},onMouseEnter:r=>{r.currentTarget.style.borderColor="#25D366",r.currentTarget.style.color="#25D366",r.currentTarget.style.transform="translateY(-2px)"},onMouseLeave:r=>{r.currentTarget.style.borderColor="var(--border-highlight)",r.currentTarget.style.color="var(--text-primary)",r.currentTarget.style.transform="translateY(0)"},children:e.jsx(m,{size:24})})]})]})]})}),e.jsxs("div",{style:{display:"flex",justifyContent:"space-between",alignItems:"center",flexWrap:"wrap",gap:"var(--space-4)",paddingTop:"var(--space-8)",borderTop:"1px solid var(--border-highlight)",fontSize:"0.85rem",color:"var(--text-secondary)"},children:[e.jsxs("div",{children:["© ",i," Rafael Dutra. ",a("contact.footer")]}),e.jsx("div",{style:{fontFamily:"monospace",fontSize:"0.8rem",letterSpacing:"0.08em",color:"var(--text-tertiary)"},children:"DATA / ML / ENGINEERING"})]})]}),e.jsx("style",{children:`
+        .social-icon {
+          width: 40px;
+          height: 40px;
+          display: flex;
+          alignItems: center;
+          justifyContent: center;
+          background: var(--bg-card);
+          border: 1px solid var(--border-subtle);
+          border-radius: 8px;
+          color: var(--text-secondary);
+          transition: all 0.2s ease;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .social-icon:hover {
+          background: var(--accent-primary);
+          color: var(--bg-primary);
+          border-color: var(--accent-primary);
+          transform: translateY(-2px);
+        }
+
+        .animated-title {
+          background: linear-gradient(
+            90deg, 
+            var(--text-primary) 0%, 
+            var(--accent-hover) 50%, 
+            var(--text-primary) 100%
+          );
+          background-size: 200% auto;
+          color: transparent;
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation: textShine 3s linear infinite;
+        }
+
+        @keyframes textShine {
+          to {
+            background-position: 200% center;
+          }
+        }
+      `})]})}export{g as default};
