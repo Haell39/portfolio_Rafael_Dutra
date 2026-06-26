@@ -2,28 +2,23 @@ import FadeIn from "./ui/FadeIn";
 import { useLanguage } from "../context/LanguageContext";
 import {
   Database,
-  Brain,
   Code2,
   Server,
-  Cloud,
   Terminal,
   BarChart,
   Network,
-  Atom,
   GitBranch,
-  HardDrive,
 } from "lucide-react";
 
 const TECH_STACK = [
-  { name: "Python", icon: Terminal },
   { name: "SQL", icon: Database },
-  { name: "React", icon: Atom },
-  { name: "PyTorch", icon: Brain },
-  { name: "TensorFlow", icon: Network },
-  { name: "FastAPI", icon: Server },
-  { name: "Docker", icon: Cloud },
-  { name: "VPS (Linux)", icon: HardDrive },
+  { name: "Excel", icon: BarChart },
   { name: "Power BI", icon: BarChart },
+  { name: "Power Query", icon: Network },
+  { name: "KPIs de Negócio", icon: Server },
+  { name: "Python", icon: Terminal },
+  { name: "Pandas", icon: Code2 },
+  { name: "ETL", icon: Server },
   { name: "Git & GitHub", icon: GitBranch },
 ];
 

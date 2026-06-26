@@ -6,12 +6,11 @@ Documento atualizado em 21/05/2026 para refletir o estado atual do portfólio.
 
 O site está orientado para:
 
-- IA aplicada
-- Machine learning
-- NLP / LLMs
-- Visão computacional
-- Automação
-- Dados e análise como base
+- análise de dados
+- KPIs de negócio e análise orientada a decisão
+- dashboards, Power BI e visualização
+- SQL, Excel, Python e estruturação de dados
+- IA aplicada como extensão pontual da análise
 
 O tom da copy foi ajustado para parecer forte e profissional, mas sem exagerar senioridade ou prometer mais do que o perfil entrega hoje.
 
@@ -77,9 +76,9 @@ Antes os arrays ficavam dentro de `Projects.jsx` e `Certificates.jsx`, o que for
 
 O conteúdo foi reescrito para enfatizar:
 
-- competência em IA aplicada
-- capacidade prática de construir soluções
-- coerência com um perfil forte em evolução
+- competência em análise de dados
+- capacidade prática de organizar dados e gerar clareza
+- BI, estruturação de dados e IA como extensões naturais
 - atratividade para recrutadores e potenciais clientes
 
 Também foi removida qualquer autodesqualificação explícita na hero.
@@ -114,7 +113,7 @@ Arquivo:
 Estado atual:
 
 - `lang="pt-BR"`
-- `title` alinhado ao posicionamento de IA aplicada
+- `title` alinhado ao posicionamento de análise de dados
 - `meta description` atualizada
 
 ## Comandos úteis
