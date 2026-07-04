@@ -74,7 +74,7 @@ export default function Footer() {
                   <Linkedin size={20} />
                 </a>
                 <a
-                  href="mailto:rafaeldutrapro@gmail.com"
+                  href="mailto:rafaelsantoshome@outlook.com"
                   className="social-icon"
                   aria-label="Email"
                 >
@@ -175,7 +175,7 @@ export default function Footer() {
               >
                 <a
                   className="footer-contact-link"
-                  href="mailto:rafaeldutrapro@gmail.com"
+                  href="mailto:rafaelsantoshome@outlook.com"
                   style={{
                     display: "inline-flex",
                     alignItems: "center",
@@ -201,7 +201,7 @@ export default function Footer() {
                   }}
                 >
                   <span className="footer-contact-link__text">
-                    rafaeldutrapro@gmail.com
+                    rafaelsantoshome@outlook.com
                   </span>
                   <span style={{ marginLeft: 4, flexShrink: 0 }}>↗</span>
                 </a>

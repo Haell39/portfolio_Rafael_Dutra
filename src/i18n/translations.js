@@ -14,29 +14,29 @@ export const translations = {
       close_menu: "Fechar menu",
     },
     hero: {
-      kicker: "Análise de Dados • KPIs • BI",
-      title: "Transformando dados em decisões, performance e crescimento.",
+      kicker: "Analista de Dados • SQL • Power BI • Excel • Python",
+      title: "Transformando dados brutos em análises e dashboards para decisões de negócio.",
       subtitle_highlight:
-        "Da leitura de dados e KPIs ao apoio à decisão orientado por negócio.",
+        "KPIs, performance e contexto para orientar ação.",
       highlight_word: "KPIs",
-      highlight_word2: "negócio",
+      highlight_word2: "ação",
       subtitle:
-        "Atuo com análise de dados orientada a negócio, construção de dashboards e leitura de performance com Python, SQL, Excel e Power BI para acompanhar KPIs, identificar gargalos e apoiar decisões com mais clareza.",
+        "Analista de dados com background em IA aplicada, atuando com SQL, Excel, Power BI e Python para estruturar indicadores, acompanhar performance e apoiar decisões com mais clareza.",
       cta_projects: "Explorar Projetos",
       cta_cv: "Baixar Currículo",
       cv_path: "/Rafael_Dutra_Curriculo.pdf",
       cv_filename: "Rafael_Dutra_Curriculo.pdf",
-      cta_contact: "Conversar sobre indicadores",
+      cta_contact: "Conversar sobre análise de dados",
     },
     about: {
       kicker: "• SOBRE MIM •",
-      title: "Dados, contexto e decisão.",
+      title: "Dados brutos, contexto e decisão.",
       subtitle_highlight:
-        "Gosto de traduzir números em leitura de negócio, prioridade e ação.",
-      p1: "Atuo na interseção entre análise de dados, visualização e entendimento de negócio. Meu foco é transformar bases, planilhas e processos em informação clara para acompanhar performance e apoiar decisão.",
-      p2: "Trabalho com indicadores e vocabulário de negócio como churn, LTV, CAC, ROI, ticket médio, NPS e funil de conversão, conectando métricas ao contexto real da operação.",
-      p3: "Tenho base em SQL, Excel, Power BI, Power Query, Python e storytelling com dados para estruturar análises, dashboards e rotinas que tragam mais clareza, acompanhamento e consistência.",
-      stack_title: "Stack em Análise de Dados & BI",
+        "Transformo informação em análise clara, dashboard e ação de negócio.",
+      p1: "Analista de dados com background em IA aplicada. Transformo dados brutos em análises e dashboards que orientam decisões de negócio com clareza e rigor técnico.",
+      p2: "Atuei no Porto Digital em parceria com a Rede Globo, desenvolvendo sistemas de análise automatizada e trabalhando com o ciclo do dado da ingestão ao impacto no negócio.",
+      p3: "Hoje aplico esse repertório com SQL, Excel, Power BI e Python para estruturar indicadores, acompanhar performance e construir soluções orientadas a dados na KódiKa e em projetos reais.",
+      stack_title: "Stack em Dados, BI & Performance",
     },
     solutions: {
       kicker: "Onde Posso Contribuir",
@@ -91,9 +91,9 @@ export const translations = {
       ],
     },
     contact: {
-      title: "Vamos conversar sobre dados, KPIs e performance.",
+      title: "Vamos conversar sobre análise de dados e decisão de negócio.",
       subtitle:
-        "Se você tem uma operação, base de dados ou rotina que precisa de mais clareza, acompanhamento ou leitura de negócio, posso ajudar a estruturar um primeiro caminho.",
+        "Se você tem uma operação, base de dados ou rotina que precisa de mais clareza, leitura de performance e acompanhamento por indicadores, posso ajudar a estruturar um primeiro caminho.",
       cta: "Conversar no LinkedIn",
       footer: "Todos os direitos reservados.",
     },
@@ -101,25 +101,39 @@ export const translations = {
       title: "Experiência, Formação & Iniciativas",
       items: [
         {
-          company: "FourDevs · Estágio",
-          role: "Desenvolvedor de IA Aplicada",
+          company: "FourDevs",
+          role: "IA Aplicada & Dados",
           date: "04/2026 — Atualmente",
           description:
-            "Atuação remota no desenvolvimento de soluções de IA aplicadas à educação e segurança. Trabalho com Computer Vision, modelos de classificação, reconhecimento de padrões e pipelines completos de IA, do treinamento à exposição via API em produção.",
+            "Atuação na construção de pipelines de dados, da ingestão e tratamento até a exposição estruturada via API em produção, aplicados a modelos de Computer Vision para classificação e reconhecimento de padrões em contextos reais de educação e segurança.",
         },
         {
-          company: "Porto Digital / Globo",
+          company: "Porto Digital",
           role: "Residência Tecnológica",
           date: "02/2024 — Atualmente",
           description:
-            "Atuação em um sistema de IA para análise e reporte de ocorrências em transmissões diárias, com foco em machine learning, coleta de dados, visão computacional e automação.",
+            "Participo do desenvolvimento de projetos inovadores para empresas reais através do Porto Digital, aplicando metodologias ágeis e ferramentas tecnológicas para resolver problemas com foco em entrega, colaboração e impacto.",
+        },
+        {
+          company: "Globo",
+          role: "Residente",
+          date: "06/2025 — 11/2025",
+          description:
+            "Desenvolvimento do Horus AI, sistema de monitoramento com inteligência artificial para detectar anomalias em transmissões de vídeo ao vivo, em parceria com a Rede Globo através da Residência Tecnológica do Porto Digital. Atuei no pipeline de dados, na coleta e no tratamento de vídeo e áudio e no treinamento e avaliação dos modelos, atingindo até 97,6% de acurácia no melhor modelo.",
+        },
+        {
+          company: "Prefeitura de Igarassu",
+          role: "Residente",
+          date: "01/2025 — 06/2025",
+          description:
+            "Desenvolvimento de plataforma para mapeamento e gestão de pessoas em situação de vulnerabilidade social, apoiando a identificação e o acompanhamento de beneficiários de auxílio social com foco em impacto público, organização de informação e entrega prática.",
         },
         {
           company: "FICR - Faculdade Imaculada Conceição do Recife",
           role: "Análise e Desenvolvimento de Sistemas",
-          date: "02/2024 — 2026",
+          date: "02/2024 — 06/2026",
           description:
-            "Formação em andamento com base em dados, algoritmos, IA, engenharia de software e projetos práticos orientados a problemas reais.",
+            "Graduação concluída em junho de 2026, com base em dados, algoritmos, IA, engenharia de software e projetos práticos orientados a problemas reais.",
         },
         {
           company: "HarvardX",
@@ -147,11 +161,11 @@ export const translations = {
       kicker: "PRODUTO • STARTUP • COMUNIDADE",
       title: "Onde estou construindo repertório na prática",
       subtitle:
-        "Projetos, conteúdo e experiências que reforçam minha formação em análise de dados, software, automação e IA aplicada.",
+        "Projetos, conteúdo e experiências que reforçam minha formação em análise de dados, BI e soluções orientadas a negócio.",
       kodika: {
         name: "KódiKa Tech",
         type: "// Laboratório de Software",
-        desc: "Cofundando uma iniciativa universitária para criar soluções de software, dados e IA com mentalidade prática de produto.",
+        desc: "Cofundando uma iniciativa universitária que desenvolve soluções orientadas a dados para clientes reais, com mentalidade prática de produto.",
       },
       residencia: {
         name: "Residência Tecnológica",
@@ -217,11 +231,11 @@ export const translations = {
     footer: {
       nav_title: "Navegação",
       brand_blurb:
-        "Construindo soluções de análise de dados, BI, estruturação de dados e visualização com foco em KPI, contexto e decisão.",
-      contact_title: "Vamos falar de dados, KPIs e performance?",
+        "Análise de dados, BI e dashboards com SQL, Excel, Power BI e Python para traduzir dados em decisão de negócio.",
+      contact_title: "Vamos falar de dados, dashboards e indicadores?",
       contact_blurb:
-        "Se você tem uma oportunidade em análise, dashboards, estruturação de dados ou leitura de negócio, posso ajudar a transformar a demanda em diagnóstico, painel ou primeira solução.",
-      signature: "SQL / BI / KPIs",
+        "Se você precisa acompanhar indicadores, organizar dados ou tirar mais leitura do seu processo, posso ajudar a transformar a demanda em diagnóstico, dashboard ou primeira solução.",
+      signature: "SQL / POWER BI / KPI",
     },
   },
   en: {
@@ -239,29 +253,29 @@ export const translations = {
       close_menu: "Close menu",
     },
     hero: {
-      kicker: "Data Analysis • KPIs • BI",
-      title: "Turning data into decisions, performance, and growth.",
+      kicker: "Data Analyst • SQL • Power BI • Excel • Python",
+      title: "Turning raw data into analysis and dashboards for business decisions.",
       subtitle_highlight:
-        "From data reading and KPIs to business-oriented decision support.",
+        "KPIs, performance, and context to guide action.",
       highlight_word: "KPIs",
-      highlight_word2: "business",
+      highlight_word2: "action",
       subtitle:
-        "I work with business-oriented data analysis, dashboards, and performance tracking through Python, SQL, Excel, and Power BI to monitor KPIs, uncover bottlenecks, and support decisions with more clarity.",
+        "Data analyst with an applied AI background, working with SQL, Excel, Power BI, and Python to structure metrics, track performance, and support clearer decisions.",
       cta_projects: "Explore Projects",
       cta_cv: "Download Resume",
       cv_path: "/Rafael_Dutra_Curriculo.pdf",
       cv_filename: "Rafael_Dutra_Curriculo.pdf",
-      cta_contact: "Talk about metrics",
+      cta_contact: "Talk about data analysis",
     },
     about: {
       kicker: "• ABOUT ME •",
-      title: "Data, context, and decision.",
+      title: "Raw data, context, and decision.",
       subtitle_highlight:
-        "I like turning numbers into business reading, priority, and action.",
-      p1: "I work at the intersection of data analysis, visualization, and business understanding. My focus is turning datasets, spreadsheets, and processes into clear information that supports performance tracking and decision-making.",
-      p2: "I work with business metrics and vocabulary such as churn, LTV, CAC, ROI, average ticket, NPS, and conversion funnel, connecting metrics to the real operating context.",
-      p3: "My foundation includes SQL, Excel, Power BI, Power Query, Python, and data storytelling to structure analyses, dashboards, and routines that improve clarity, follow-up, and consistency.",
-      stack_title: "Data Analysis & BI Stack",
+        "I turn information into clear analysis, dashboards, and business action.",
+      p1: "Data analyst with an applied AI background. I turn raw data into analyses and dashboards that guide business decisions with clarity and technical rigor.",
+      p2: "I worked at Porto Digital in partnership with Rede Globo, building automated analysis systems and handling the data cycle from ingestion to business impact.",
+      p3: "Today I apply that experience with SQL, Excel, Power BI, and Python to structure metrics, track performance, and build data-driven solutions at KódiKa and in real projects.",
+      stack_title: "Data, BI & Performance Stack",
     },
     solutions: {
       kicker: "Where I Can Contribute",
@@ -326,25 +340,39 @@ export const translations = {
       title: "Experience, Education & Initiatives",
       items: [
         {
-          company: "FourDevs · Internship",
-          role: "Applied AI Developer",
+          company: "FourDevs",
+          role: "Applied AI & Data",
           date: "04/2026 — Present",
           description:
-            "Working remotely on applied AI solutions for education and safety. Experience with computer vision, classification models, pattern recognition, and end-to-end AI pipelines, from training to production API deployment.",
+            "Building data pipelines from ingestion and processing to structured production API delivery, applied to computer vision models for classification and pattern recognition in real education and safety contexts.",
         },
         {
-          company: "Porto Digital / Globo",
+          company: "Porto Digital",
           role: "Technological Residency",
           date: "02/2024 — Present",
           description:
-            "Contributing to an AI system for analyzing and reporting incidents in daily broadcasts, with a focus on machine learning, data collection, computer vision, and automation.",
+            "Contributing to innovative projects for real companies through Porto Digital, applying agile methods and technology tools to solve problems with a focus on delivery, collaboration, and impact.",
+        },
+        {
+          company: "Globo",
+          role: "Resident",
+          date: "06/2025 — 11/2025",
+          description:
+            "Worked on Horus AI, a monitoring system designed to detect anomalies in live video broadcasts, in partnership with Rede Globo through Porto Digital's Technological Residency. I handled the data pipeline, video and audio data collection and processing, and model training and evaluation, reaching up to 97.6% accuracy in the best model.",
+        },
+        {
+          company: "Igarassu City Hall",
+          role: "Resident",
+          date: "01/2025 — 06/2025",
+          description:
+            "Developed a platform for mapping and managing people in situations of social vulnerability, supporting the identification and follow-up of social assistance beneficiaries with a focus on public impact, information organization, and practical delivery.",
         },
         {
           company: "FICR - Faculdade Imaculada Conceição do Recife",
           role: "Systems Analysis and Development",
-          date: "02/2024 — 2026",
+          date: "02/2024 — 06/2026",
           description:
-            "Ongoing education grounded in data, algorithms, AI, software engineering, and practical projects built around real-world problems.",
+            "Degree completed in June 2026, grounded in data, algorithms, AI, software engineering, and practical projects built around real-world problems.",
         },
         {
           company: "HarvardX",
@@ -376,7 +404,7 @@ export const translations = {
       kodika: {
         name: "KódiKa Tech",
         type: "// Software Laboratory",
-        desc: "Co-founding a university initiative to build software, data, and AI solutions with a practical product mindset.",
+        desc: "Co-founding a university initiative that develops data-driven solutions for real clients with a practical product mindset.",
       },
       residencia: {
         name: "Tech Residency",
@@ -442,11 +470,11 @@ export const translations = {
     footer: {
       nav_title: "Navigation",
       brand_blurb:
-        "Building solutions in data analysis, BI, data structuring, and visualization with focus on KPIs, context, and decision-making.",
-      contact_title: "Want to talk about data, KPIs, and performance?",
+        "Data analysis, BI, and dashboards with SQL, Excel, Power BI, and Python to turn data into business decisions.",
+      contact_title: "Want to talk about data, dashboards, and metrics?",
       contact_blurb:
-        "If you have an opportunity in analysis, dashboards, data structuring, or business reading, I can help turn it into a diagnosis, panel, or first solution.",
-      signature: "SQL / BI / KPIs",
+        "If you need better indicators, clearer dashboards, or stronger data reading in your process, I can help turn it into a diagnosis, dashboard, or first solution.",
+      signature: "SQL / POWER BI / KPI",
     },
   },
   es: {
@@ -464,29 +492,29 @@ export const translations = {
       close_menu: "Cerrar menú",
     },
     hero: {
-      kicker: "Análisis de Datos • KPIs • BI",
-      title: "Transformando datos en decisiones, desempeño y crecimiento.",
+      kicker: "Analista de Datos • SQL • Power BI • Excel • Python",
+      title: "Transformando datos brutos en análisis y dashboards para decisiones de negocio.",
       subtitle_highlight:
-        "De la lectura de datos y KPIs al apoyo a decisiones orientado al negocio.",
+        "KPIs, desempeño y contexto para orientar acción.",
       highlight_word: "KPIs",
-      highlight_word2: "negocio",
+      highlight_word2: "acción",
       subtitle:
-        "Trabajo con análisis de datos orientado al negocio, construcción de dashboards y lectura de desempeño con Python, SQL, Excel y Power BI para seguir KPIs, identificar cuellos de botella y apoyar decisiones con más claridad.",
+        "Analista de datos con background en IA aplicada, trabajando con SQL, Excel, Power BI y Python para estructurar indicadores, seguir desempeño y apoyar decisiones con más claridad.",
       cta_projects: "Explorar Proyectos",
       cta_cv: "Descargar CV",
       cv_path: "/Rafael_Dutra_Curriculo.pdf",
       cv_filename: "Rafael_Dutra_Curriculo.pdf",
-      cta_contact: "Hablar sobre indicadores",
+      cta_contact: "Hablar sobre análisis de datos",
     },
     about: {
       kicker: "• SOBRE MÍ •",
-      title: "Datos, contexto y decisión.",
+      title: "Datos brutos, contexto y decisión.",
       subtitle_highlight:
-        "Me gusta traducir números en lectura de negocio, prioridad y acción.",
-      p1: "Trabajo en la intersección entre análisis de datos, visualización y entendimiento del negocio. Mi foco es transformar bases, hojas de cálculo y procesos en información clara para seguir desempeño y apoyar decisiones.",
-      p2: "Trabajo con indicadores y vocabulario de negocio como churn, LTV, CAC, ROI, ticket medio, NPS y embudo de conversión, conectando métricas con el contexto real de la operación.",
-      p3: "Tengo base en SQL, Excel, Power BI, Power Query, Python y storytelling con datos para estructurar análisis, dashboards y rutinas que aporten más claridad, seguimiento y consistencia.",
-      stack_title: "Stack en Análisis de Datos & BI",
+        "Transformo información en análisis claro, dashboard y acción de negocio.",
+      p1: "Analista de datos con background en IA aplicada. Transformo datos brutos en análisis y dashboards que orientan decisiones de negocio con claridad y rigor técnico.",
+      p2: "Actué en Porto Digital en alianza con Rede Globo, desarrollando sistemas de análisis automatizado y trabajando con el ciclo del dato desde la ingestión hasta el impacto en el negocio.",
+      p3: "Hoy aplico ese repertorio con SQL, Excel, Power BI y Python para estructurar indicadores, seguir desempeño y construir soluciones orientadas por datos en KódiKa y en proyectos reales.",
+      stack_title: "Stack en Datos, BI y Desempeño",
     },
     solutions: {
       kicker: "Dónde Puedo Contribuir",
@@ -551,25 +579,39 @@ export const translations = {
       title: "Experiencia, Formación e Iniciativas",
       items: [
         {
-          company: "FourDevs · Prácticas",
-          role: "Desarrollador de IA Aplicada",
+          company: "FourDevs",
+          role: "IA Aplicada y Datos",
           date: "04/2026 — Actualidad",
           description:
-            "Trabajo remoto en el desarrollo de soluciones de IA aplicadas a educación y seguridad. Experiencia en computer vision, modelos de clasificación, reconocimiento de patrones y pipelines completos de IA, desde el entrenamiento hasta la exposición vía API en producción.",
+            "Actuación en la construcción de pipelines de datos, desde la ingestión y el tratamiento hasta la exposición estructurada vía API en producción, aplicados a modelos de Computer Vision para clasificación y reconocimiento de patrones en contextos reales de educación y seguridad.",
         },
         {
-          company: "Porto Digital / Globo",
+          company: "Porto Digital",
           role: "Residencia Tecnológica",
-          date: "02/2024 — Actualmente",
+          date: "02/2024 — Actualidad",
           description:
-            "Participación en un sistema de IA para análisis y reporte de incidentes en transmisiones diarias, con foco en machine learning, recopilación de datos, visión computacional y automatización.",
+            "Participo en el desarrollo de proyectos innovadores para empresas reales a través de Porto Digital, aplicando metodologías ágiles y herramientas tecnológicas para resolver problemas con foco en entrega, colaboración e impacto.",
+        },
+        {
+          company: "Globo",
+          role: "Residente",
+          date: "06/2025 — 11/2025",
+          description:
+            "Desarrollo de Horus AI, sistema de monitoreo con inteligencia artificial para detectar anomalías en transmisiones de video en vivo, en alianza con Rede Globo a través de la Residencia Tecnológica de Porto Digital. Actué en el pipeline de datos, en la recolección y el tratamiento de video y audio y en el entrenamiento y la evaluación de los modelos, alcanzando hasta 97,6% de precisión en el mejor modelo.",
+        },
+        {
+          company: "Prefeitura de Igarassu",
+          role: "Residente",
+          date: "01/2025 — 06/2025",
+          description:
+            "Desarrollo de una plataforma para el mapeo y la gestión de personas en situación de vulnerabilidad social, apoyando la identificación y el seguimiento de beneficiarios de ayuda social con foco en impacto público, organización de la información y entrega práctica.",
         },
         {
           company: "FICR - Faculdade Imaculada Conceição do Recife",
           role: "Análisis y Desarrollo de Sistemas",
-          date: "02/2024 — 2026",
+          date: "02/2024 — 06/2026",
           description:
-            "Formación en curso con base en datos, algoritmos, IA, ingeniería de software y proyectos prácticos orientados a problemas reales.",
+            "Carrera concluida en junio de 2026, con base en datos, algoritmos, IA, ingeniería de software y proyectos prácticos orientados a problemas reales.",
         },
         {
           company: "HarvardX",
@@ -601,7 +643,7 @@ export const translations = {
       kodika: {
         name: "KódiKa Tech",
         type: "// Laboratorio de Software",
-        desc: "Cofundando una iniciativa universitaria para crear soluciones de software, datos e IA con mentalidad práctica de producto.",
+        desc: "Cofundando una iniciativa universitaria que desarrolla soluciones orientadas por datos para clientes reales, con mentalidad práctica de producto.",
       },
       residencia: {
         name: "Residencia Tecnológica",
@@ -667,11 +709,11 @@ export const translations = {
     footer: {
       nav_title: "Navegación",
       brand_blurb:
-        "Construyendo soluciones de análisis de datos, BI, estructuración de datos y visualización con foco en KPIs, contexto y decisión.",
-      contact_title: "¿Hablamos de datos, KPIs y desempeño?",
+        "Análisis de datos, BI y dashboards con SQL, Excel, Power BI y Python para traducir datos en decisiones de negocio.",
+      contact_title: "¿Hablamos de datos, dashboards e indicadores?",
       contact_blurb:
-        "Si tienes una oportunidad en análisis, dashboards, estructuración de datos o lectura de negocio, puedo ayudarte a convertirla en diagnóstico, panel o primera solución.",
-      signature: "SQL / BI / KPIs",
+        "Si necesitas seguir indicadores, organizar datos o sacar más lectura de tu proceso, puedo ayudarte a convertir la demanda en diagnóstico, dashboard o primera solución.",
+      signature: "SQL / POWER BI / KPI",
     },
   },
 };

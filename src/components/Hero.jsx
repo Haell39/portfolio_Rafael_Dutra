@@ -227,7 +227,7 @@ export default function Hero() {
                   href: "https://linkedin.com/in/rafaelsantoshome",
                 },
                 { Icon: Phone, href: "https://wa.me/5581999654790" },
-                { Icon: Mail, href: "mailto:rafaeldutrapro@gmail.com" },
+                { Icon: Mail, href: "mailto:rafaelsantoshome@outlook.com" },
               ].map(({ Icon, href }, i) => (
                 <motion.a
                   key={i}
