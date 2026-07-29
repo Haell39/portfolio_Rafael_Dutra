@@ -4,7 +4,7 @@ import { useLanguage } from "../context/LanguageContext";
 
 
 export default function Experience() {
-  const { language, t } = useLanguage();
+  const { t } = useLanguage();
 
   return (
     <section
@@ -100,6 +100,24 @@ export default function Experience() {
                 >
                   {exp.description}
                 </p>
+
+                {Array.isArray(exp.details) && exp.details.length > 0 && (
+                  <ul
+                    style={{
+                      margin: "var(--space-2) 0 0",
+                      paddingLeft: "var(--space-5)",
+                      color: "var(--text-secondary)",
+                      fontSize: "var(--text-sm)",
+                      display: "grid",
+                      gap: "var(--space-2)",
+                      maxWidth: "640px",
+                    }}
+                  >
+                    {exp.details.map((detail, detailIndex) => (
+                      <li key={detailIndex}>{detail}</li>
+                    ))}
+                  </ul>
+                )}
               </div>
             </FadeIn>
           ))}

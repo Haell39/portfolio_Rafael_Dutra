@@ -14,7 +14,7 @@ export const translations = {
       close_menu: "Fechar menu",
     },
     hero: {
-      kicker: "Analista de Dados • SQL • Power BI • Excel • Python",
+      kicker: "Analista de Dados • SQL • Excel • Python",
       title: "Transformando dados brutos em análises e dashboards para decisões de negócio.",
       subtitle_highlight:
         "KPIs, performance e contexto para orientar ação.",
@@ -24,8 +24,8 @@ export const translations = {
         "Analista de dados com background em IA aplicada, atuando com SQL, Excel, Power BI e Python para estruturar indicadores, acompanhar performance e apoiar decisões com mais clareza.",
       cta_projects: "Explorar Projetos",
       cta_cv: "Baixar Currículo",
-      cv_path: "/Rafael_Dutra_Curriculo.pdf",
-      cv_filename: "Rafael_Dutra_Curriculo.pdf",
+      cv_path: "/curriculo_Rafael_Dutra.pdf",
+      cv_filename: "curriculo_Rafael_Dutra.pdf",
       cta_contact: "Conversar sobre análise de dados",
     },
     about: {
@@ -112,21 +112,11 @@ export const translations = {
           role: "Residência Tecnológica",
           date: "02/2024 — Atualmente",
           description:
-            "Participo do desenvolvimento de projetos inovadores para empresas reais através do Porto Digital, aplicando metodologias ágeis e ferramentas tecnológicas para resolver problemas com foco em entrega, colaboração e impacto.",
-        },
-        {
-          company: "Globo",
-          role: "Residente",
-          date: "06/2025 — 11/2025",
-          description:
-            "Desenvolvimento do Horus AI, sistema de monitoramento com inteligência artificial para detectar anomalias em transmissões de vídeo ao vivo, em parceria com a Rede Globo através da Residência Tecnológica do Porto Digital. Atuei no pipeline de dados, na coleta e no tratamento de vídeo e áudio e no treinamento e avaliação dos modelos, atingindo até 97,6% de acurácia no melhor modelo.",
-        },
-        {
-          company: "Prefeitura de Igarassu",
-          role: "Residente",
-          date: "01/2025 — 06/2025",
-          description:
-            "Desenvolvimento de plataforma para mapeamento e gestão de pessoas em situação de vulnerabilidade social, apoiando a identificação e o acompanhamento de beneficiários de auxílio social com foco em impacto público, organização de informação e entrega prática.",
+            "Residência tecnológica voltada ao desenvolvimento de projetos inovadores para empresas e instituições reais, com foco em resolução de problemas, colaboração e entrega orientada a impacto.",
+          details: [
+            "Globo · Horus AI (06/2025 — 11/2025): desenvolvimento de sistema de monitoramento com IA para detectar anomalias em transmissões de vídeo ao vivo, atuando em pipeline de dados, tratamento de vídeo e áudio e avaliação dos modelos, com até 97,6% de acurácia no melhor modelo.",
+            "Prefeitura de Igarassu (01/2025 — 06/2025): desenvolvimento de plataforma para mapeamento e gestão de pessoas em situação de vulnerabilidade social, apoiando a identificação e o acompanhamento de beneficiários de auxílio social.",
+          ],
         },
         {
           company: "FICR - Faculdade Imaculada Conceição do Recife",
@@ -253,7 +243,7 @@ export const translations = {
       close_menu: "Close menu",
     },
     hero: {
-      kicker: "Data Analyst • SQL • Power BI • Excel • Python",
+      kicker: "Data Analyst • SQL • Excel • Python",
       title: "Turning raw data into analysis and dashboards for business decisions.",
       subtitle_highlight:
         "KPIs, performance, and context to guide action.",
@@ -263,8 +253,8 @@ export const translations = {
         "Data analyst with an applied AI background, working with SQL, Excel, Power BI, and Python to structure metrics, track performance, and support clearer decisions.",
       cta_projects: "Explore Projects",
       cta_cv: "Download Resume",
-      cv_path: "/Rafael_Dutra_Curriculo.pdf",
-      cv_filename: "Rafael_Dutra_Curriculo.pdf",
+      cv_path: "/curriculo_Rafael_Dutra.pdf",
+      cv_filename: "curriculo_Rafael_Dutra.pdf",
       cta_contact: "Talk about data analysis",
     },
     about: {
@@ -351,21 +341,11 @@ export const translations = {
           role: "Technological Residency",
           date: "02/2024 — Present",
           description:
-            "Contributing to innovative projects for real companies through Porto Digital, applying agile methods and technology tools to solve problems with a focus on delivery, collaboration, and impact.",
-        },
-        {
-          company: "Globo",
-          role: "Resident",
-          date: "06/2025 — 11/2025",
-          description:
-            "Worked on Horus AI, a monitoring system designed to detect anomalies in live video broadcasts, in partnership with Rede Globo through Porto Digital's Technological Residency. I handled the data pipeline, video and audio data collection and processing, and model training and evaluation, reaching up to 97.6% accuracy in the best model.",
-        },
-        {
-          company: "Igarassu City Hall",
-          role: "Resident",
-          date: "01/2025 — 06/2025",
-          description:
-            "Developed a platform for mapping and managing people in situations of social vulnerability, supporting the identification and follow-up of social assistance beneficiaries with a focus on public impact, information organization, and practical delivery.",
+            "A technological residency focused on building innovative projects for real companies and institutions, with an emphasis on problem-solving, collaboration, and impact-oriented delivery.",
+          details: [
+            "Globo · Horus AI (06/2025 — 11/2025): developed an AI monitoring system to detect anomalies in live video broadcasts, working across the data pipeline, video and audio processing, and model evaluation, reaching up to 97.6% accuracy in the best model.",
+            "Igarassu City Hall (01/2025 — 06/2025): developed a platform to map and manage people in situations of social vulnerability, supporting the identification and follow-up of social assistance beneficiaries.",
+          ],
         },
         {
           company: "FICR - Faculdade Imaculada Conceição do Recife",
@@ -492,7 +472,7 @@ export const translations = {
       close_menu: "Cerrar menú",
     },
     hero: {
-      kicker: "Analista de Datos • SQL • Power BI • Excel • Python",
+      kicker: "Analista de Datos • SQL • Excel • Python",
       title: "Transformando datos brutos en análisis y dashboards para decisiones de negocio.",
       subtitle_highlight:
         "KPIs, desempeño y contexto para orientar acción.",
@@ -502,8 +482,8 @@ export const translations = {
         "Analista de datos con background en IA aplicada, trabajando con SQL, Excel, Power BI y Python para estructurar indicadores, seguir desempeño y apoyar decisiones con más claridad.",
       cta_projects: "Explorar Proyectos",
       cta_cv: "Descargar CV",
-      cv_path: "/Rafael_Dutra_Curriculo.pdf",
-      cv_filename: "Rafael_Dutra_Curriculo.pdf",
+      cv_path: "/curriculo_Rafael_Dutra.pdf",
+      cv_filename: "curriculo_Rafael_Dutra.pdf",
       cta_contact: "Hablar sobre análisis de datos",
     },
     about: {
@@ -590,21 +570,11 @@ export const translations = {
           role: "Residencia Tecnológica",
           date: "02/2024 — Actualidad",
           description:
-            "Participo en el desarrollo de proyectos innovadores para empresas reales a través de Porto Digital, aplicando metodologías ágiles y herramientas tecnológicas para resolver problemas con foco en entrega, colaboración e impacto.",
-        },
-        {
-          company: "Globo",
-          role: "Residente",
-          date: "06/2025 — 11/2025",
-          description:
-            "Desarrollo de Horus AI, sistema de monitoreo con inteligencia artificial para detectar anomalías en transmisiones de video en vivo, en alianza con Rede Globo a través de la Residencia Tecnológica de Porto Digital. Actué en el pipeline de datos, en la recolección y el tratamiento de video y audio y en el entrenamiento y la evaluación de los modelos, alcanzando hasta 97,6% de precisión en el mejor modelo.",
-        },
-        {
-          company: "Prefeitura de Igarassu",
-          role: "Residente",
-          date: "01/2025 — 06/2025",
-          description:
-            "Desarrollo de una plataforma para el mapeo y la gestión de personas en situación de vulnerabilidad social, apoyando la identificación y el seguimiento de beneficiarios de ayuda social con foco en impacto público, organización de la información y entrega práctica.",
+            "Residencia tecnológica orientada al desarrollo de proyectos innovadores para empresas e instituciones reales, con foco en resolución de problemas, colaboración y entrega orientada a impacto.",
+          details: [
+            "Globo · Horus AI (06/2025 — 11/2025): desarrollo de un sistema de monitoreo con IA para detectar anomalías en transmisiones de video en vivo, actuando en el pipeline de datos, en el tratamiento de video y audio y en la evaluación de los modelos, alcanzando hasta 97,6% de precisión en el mejor modelo.",
+            "Prefeitura de Igarassu (01/2025 — 06/2025): desarrollo de una plataforma para el mapeo y la gestión de personas en situación de vulnerabilidad social, apoyando la identificación y el seguimiento de beneficiarios de ayuda social.",
+          ],
         },
         {
           company: "FICR - Faculdade Imaculada Conceição do Recife",
