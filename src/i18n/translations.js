@@ -24,13 +24,14 @@ export const translations = {
       cv_path: "/curriculo_Rafael_Dutra.pdf",
       cv_filename: "curriculo_Rafael_Dutra.pdf",
       availability: "Recife, Brasil · Remoto",
-      panel_eyebrow: "Professional snapshot",
+      panel_eyebrow: "Em números",
+      panel_verified: "experiência comprovada",
       panel_title: "Experiência prática com o ciclo completo do dado.",
       panel_metrics: [
-        { value: "2", label: "cases profissionais" },
-        { value: "2.400+", label: "faces em produção" },
-        { value: "58", label: "testes automatizados" },
-        { value: "3", label: "bancos integrados" },
+        { value: "2.400+", label: "cadastros faciais em produção" },
+        { value: "100+", label: "usuários ativos por dia" },
+        { value: "PRODUÇÃO", label: "solução integrada à operação real" },
+        { value: "END-TO-END", label: "dados → validação → integração → entrega" },
       ],
     },
     cases: {
@@ -95,7 +96,7 @@ export const translations = {
       p2: "Na prática, combino análise de dados e fundamentos de analytics engineering. Trabalho com SQL, PostgreSQL, Power BI, Excel, Python e pipelines de ingestão sem transformar cada problema em uma arquitetura maior do que precisa ser.",
       p3: "Também trago experiência em IA aplicada e APIs em produção, repertório que amplia minha capacidade de lidar com dados não estruturados, integrações e soluções analíticas mais avançadas quando o contexto justifica.",
       stack_title: "Core toolkit",
-      stack: ["SQL", "Power BI", "Excel", "Python", "PostgreSQL", "Power Query", "ETL", "Data Quality", "Git"],
+      stack: ["SQL", "Power BI", "Excel", "Python", "Cloud", "Power Query", "ETL", "Data Quality", "Git"],
     },
     solutions: {
       kicker: "Competências",
@@ -162,13 +163,6 @@ export const translations = {
           description:
             "Graduação concluída com formação em dados, bancos de dados, algoritmos, engenharia de software e projetos aplicados.",
         },
-        {
-          company: "HarvardX",
-          role: "Data Science: Building Machine Learning Models",
-          date: "01/2026 — Atualmente",
-          description:
-            "Estudos aplicados de modelagem, validação, regularização, PCA e sistemas de recomendação.",
-        },
       ],
     },
     projects: {
@@ -199,7 +193,7 @@ export const translations = {
       title: "Escopo e forma de atuação.",
       subtitle: "Respostas diretas para recrutadores, times e potenciais parceiros.",
       items: [
-        { q: "Seu foco principal é análise ou engenharia de dados?", a: "Meu posicionamento principal é em análise de dados e analytics engineering. Consigo trabalhar tanto na leitura e visualização quanto na preparação, validação e integração que tornam essa análise confiável." },
+        { q: "Que tipo de problema de dados você pode ajudar a resolver?", a: "Posso apoiar desde a organização e validação de fontes até análises, KPIs e dashboards para decisão. Quando o problema exige uma base mais confiável, também atuo na integração e preparação dos dados que sustentam essas entregas." },
         { q: "Você trabalha com Power BI e DAX?", a: "Trabalho com Power BI, Power Query, modelagem e construção de dashboards. Em DAX, utilizo medidas compatíveis com o escopo dos projetos e sigo aprofundando a prática, sem me posicionar como especialista avançado." },
         { q: "A experiência com IA ainda faz parte do perfil?", a: "Sim, como repertório complementar. Tenho experiência profissional com Computer Vision e APIs, mas o posicionamento atual prioriza dados, SQL, BI, qualidade e integração." },
         { q: "Os cases apresentados são projetos profissionais?", a: "Sim. Os dois cases em destaque foram desenvolvidos na FourDevs e passaram por etapas reais de implementação, testes e homologação; o reconhecimento facial também opera em produção." },
@@ -224,9 +218,9 @@ export const translations = {
       title_highlight: "From structure to insight.",
       subtitle: "I turn scattered data into consistent foundations, clear analysis, and useful metrics by connecting SQL, Power BI, Python, and Excel to real operations.",
       cta_cases: "View professional cases", cta_cv: "Download resume", cta_contact: "Contact me", cv_path: "/curriculo_Rafael_Dutra.pdf", cv_filename: "curriculo_Rafael_Dutra.pdf", availability: "Recife, Brazil · Remote",
-      panel_eyebrow: "Professional snapshot", panel_title: "Hands-on experience across the full data lifecycle.",
+      panel_eyebrow: "Professional overview", panel_verified: "verified experience", panel_title: "Hands-on experience across the full data lifecycle.",
       panel_metrics: [
-        { value: "2", label: "professional cases" }, { value: "2,400+", label: "faces in production" }, { value: "58", label: "automated tests" }, { value: "3", label: "integrated databases" },
+        { value: "2,400+", label: "facial registrations in production" }, { value: "100+", label: "daily active users" }, { value: "PRODUCTION", label: "solution integrated into real operations" }, { value: "END-TO-END", label: "data → validation → integration → delivery" },
       ],
     },
     cases: {
@@ -241,7 +235,7 @@ export const translations = {
       p1: "My focus is making data usable: understanding operations, organizing sources, validating quality, and building analyses or metrics that support real decisions.",
       p2: "In practice, I combine data analysis and analytics engineering foundations. I work with SQL, PostgreSQL, Power BI, Excel, Python, and ingestion pipelines without making the architecture larger than the problem requires.",
       p3: "I also bring experience with applied AI and production APIs, expanding my ability to handle unstructured data, integrations, and advanced analytical solutions when the context calls for them.",
-      stack_title: "Core toolkit", stack: ["SQL", "Power BI", "Excel", "Python", "PostgreSQL", "Power Query", "ETL", "Data Quality", "Git"],
+      stack_title: "Core toolkit", stack: ["SQL", "Power BI", "Excel", "Python", "Cloud", "Power Query", "ETL", "Data Quality", "Git"],
     },
     solutions: {
       kicker: "Expertise", title: "An analytical foundation connected to what the business needs to see.", subtitle: "Skills built across projects, education, and professional delivery, always keeping scope proportional to the problem.",
@@ -267,7 +261,6 @@ export const translations = {
         { company: "FourDevs", role: "Applied AI & Data Developer · Internship", date: "04/2026 — Present", description: "Building professional services involving data ingestion, validation, integration, and persistence, alongside production Computer Vision solutions. Direct work with APIs, PostgreSQL, testing, Docker, validation, and troubleshooting." },
         { company: "Porto Digital", role: "Technology Residency", date: "02/2024 — Present", description: "Residency focused on real company and public-sector challenges, connecting analysis, software, and collaborative delivery.", details: ["Globo · Horus AI: live broadcast monitoring with video and audio pipelines, reaching up to 97.6% accuracy in the best model.", "Igarassu City Hall: platform for mapping and supporting social assistance beneficiaries."] },
         { company: "FICR", role: "Technology Degree in Systems Analysis and Development", date: "02/2024 — 06/2026", description: "Completed degree covering data, databases, algorithms, software engineering, and applied projects." },
-        { company: "HarvardX", role: "Data Science: Building Machine Learning Models", date: "01/2026 — Present", description: "Applied studies in modeling, validation, regularization, PCA, and recommendation systems." },
       ],
     },
     projects: { kicker: "Technical portfolio", title: "Projects that expand my understanding of data and business.", subtitle: "Independent studies and products used to explore analytics, visualization, modeling, and communication.", cta_code: "Repository", cta_live: "Live project", cta_soon: "Coming soon" },
@@ -276,7 +269,7 @@ export const translations = {
     faq: {
       kicker: "FAQ", title: "Scope and working style.", subtitle: "Direct answers for recruiters, teams, and potential partners.",
       items: [
-        { q: "Is your main focus data analysis or data engineering?", a: "My primary positioning is data analysis and analytics engineering. I can work on both interpretation and visualization, as well as the preparation, validation, and integration that make analysis reliable." },
+        { q: "What kind of data problems can you help solve?", a: "I can support projects from source organization and validation through analysis, KPIs, and decision-ready dashboards. When the problem requires a more reliable foundation, I also work on the integration and preparation that support those deliverables." },
         { q: "Do you work with Power BI and DAX?", a: "I work with Power BI, Power Query, modeling, and dashboard development. With DAX, I use measures aligned with project scope and continue building deeper practice without positioning myself as an advanced specialist." },
         { q: "Is AI still part of your profile?", a: "Yes, as complementary experience. I have professional experience with Computer Vision and APIs, while my current positioning prioritizes data, SQL, BI, quality, and integration." },
         { q: "Are the highlighted cases professional work?", a: "Yes. Both cases were built at FourDevs and went through real implementation, testing, and validation stages; the facial recognition service also runs in production." },
@@ -290,8 +283,8 @@ export const translations = {
       cases: "Casos", about: "Perfil", expertise: "Competencias", experience: "Experiencia", projects: "Proyectos", certificates: "Formación", contact: "Contacto", toggle_theme: "Cambiar tema", open_menu: "Abrir menú", close_menu: "Cerrar menú",
     },
     hero: {
-      kicker: "Analista de Datos | Analytics Engineer", title: "Datos confiables para decisiones que mueven el negocio.", title_highlight: "De la estructura al insight.", subtitle: "Transformo datos dispersos en bases consistentes, análisis claros e indicadores útiles, conectando SQL, Power BI, Python y Excel con la realidad de la operación.", cta_cases: "Ver casos profesionales", cta_cv: "Descargar CV", cta_contact: "Contactarme", cv_path: "/curriculo_Rafael_Dutra.pdf", cv_filename: "curriculo_Rafael_Dutra.pdf", availability: "Recife, Brasil · Remoto", panel_eyebrow: "Professional snapshot", panel_title: "Experiencia práctica en el ciclo completo del dato.",
-      panel_metrics: [{ value: "2", label: "casos profesionales" }, { value: "2.400+", label: "rostros en producción" }, { value: "58", label: "pruebas automatizadas" }, { value: "3", label: "bases integradas" }],
+      kicker: "Analista de Datos | Analytics Engineer", title: "Datos confiables para decisiones que mueven el negocio.", title_highlight: "De la estructura al insight.", subtitle: "Transformo datos dispersos en bases consistentes, análisis claros e indicadores útiles, conectando SQL, Power BI, Python y Excel con la realidad de la operación.", cta_cases: "Ver casos profesionales", cta_cv: "Descargar CV", cta_contact: "Contactarme", cv_path: "/curriculo_Rafael_Dutra.pdf", cv_filename: "curriculo_Rafael_Dutra.pdf", availability: "Recife, Brasil · Remoto", panel_eyebrow: "En números", panel_verified: "experiencia comprobada", panel_title: "Experiencia práctica en el ciclo completo del dato.",
+      panel_metrics: [{ value: "2.400+", label: "registros faciales en producción" }, { value: "100+", label: "usuarios activos por día" }, { value: "PRODUCCIÓN", label: "solución integrada a la operación real" }, { value: "END-TO-END", label: "datos → validación → integración → entrega" }],
     },
     cases: {
       kicker: "Experiencia comprobada", title: "Casos profesionales que pasaron del diseño a la operación real.", subtitle: "Soluciones desarrolladas en FourDevs, con responsabilidad directa en implementación, pruebas, homologación y entrega técnica.", confidentiality: "Alcance técnico presentado sin exponer datos sensibles del cliente.", status_label: "Estado", stack_label: "Stack principal", delivery_label: "Lo que desarrollé", result_label: "Evidencias",
@@ -301,7 +294,7 @@ export const translations = {
       ],
     },
     about: {
-      kicker: "Perfil", title: "Análisis con contexto. Ingeniería con propósito.", subtitle: "Trabajo entre la pregunta de negocio y la capa técnica necesaria para responderla con confianza.", p1: "Mi foco es hacer que los datos sean utilizables: entender la operación, organizar fuentes, validar calidad y construir análisis o indicadores que apoyen decisiones reales.", p2: "En la práctica, combino análisis de datos y fundamentos de analytics engineering. Trabajo con SQL, PostgreSQL, Power BI, Excel, Python y pipelines de ingestión sin hacer la arquitectura más grande que el problema.", p3: "También aporto experiencia en IA aplicada y APIs en producción, ampliando mi capacidad para trabajar con datos no estructurados, integraciones y soluciones analíticas avanzadas cuando el contexto lo requiere.", stack_title: "Core toolkit", stack: ["SQL", "Power BI", "Excel", "Python", "PostgreSQL", "Power Query", "ETL", "Data Quality", "Git"],
+      kicker: "Perfil", title: "Análisis con contexto. Ingeniería con propósito.", subtitle: "Trabajo entre la pregunta de negocio y la capa técnica necesaria para responderla con confianza.", p1: "Mi foco es hacer que los datos sean utilizables: entender la operación, organizar fuentes, validar calidad y construir análisis o indicadores que apoyen decisiones reales.", p2: "En la práctica, combino análisis de datos y fundamentos de analytics engineering. Trabajo con SQL, PostgreSQL, Power BI, Excel, Python y pipelines de ingestión sin hacer la arquitectura más grande que el problema.", p3: "También aporto experiencia en IA aplicada y APIs en producción, ampliando mi capacidad para trabajar con datos no estructurados, integraciones y soluciones analíticas avanzadas cuando el contexto lo requiere.", stack_title: "Core toolkit", stack: ["SQL", "Power BI", "Excel", "Python", "Cloud", "Power Query", "ETL", "Data Quality", "Git"],
     },
     solutions: {
       kicker: "Competencias", title: "Una base analítica conectada con lo que el negocio necesita ver.", subtitle: "Competencias construidas en proyectos, formación y entregas profesionales, manteniendo el alcance proporcional al problema.",
@@ -320,7 +313,6 @@ export const translations = {
         { company: "FourDevs", role: "Desarrollador de IA Aplicada y Datos · Prácticas", date: "04/2026 — Actualidad", description: "Desarrollo de servicios profesionales de ingestión, validación, integración y persistencia de datos, además de soluciones de Computer Vision en producción. Trabajo directo con APIs, PostgreSQL, pruebas, Docker, homologación y troubleshooting." },
         { company: "Porto Digital", role: "Residencia Tecnológica", date: "02/2024 — Actualidad", description: "Residencia orientada a problemas reales de empresas e instituciones, conectando análisis, software y entrega colaborativa.", details: ["Globo · Horus AI: monitoreo de transmisiones en vivo con pipelines de video y audio y hasta 97,6% de precisión en el mejor modelo.", "Municipalidad de Igarassu: plataforma para mapear y acompañar beneficiarios en situación de vulnerabilidad social."] },
         { company: "FICR", role: "Tecnólogo en Análisis y Desarrollo de Sistemas", date: "02/2024 — 06/2026", description: "Grado concluido con formación en datos, bases de datos, algoritmos, ingeniería de software y proyectos aplicados." },
-        { company: "HarvardX", role: "Data Science: Building Machine Learning Models", date: "01/2026 — Actualidad", description: "Estudios aplicados de modelado, validación, regularización, PCA y sistemas de recomendación." },
       ],
     },
     projects: { kicker: "Portafolio técnico", title: "Proyectos que amplían mi lectura de datos y negocio.", subtitle: "Estudios y productos propios para explorar analytics, visualización, modelado y comunicación.", cta_code: "Repositorio", cta_live: "Proyecto online", cta_soon: "Próximamente" },
@@ -328,7 +320,7 @@ export const translations = {
     diagnosis: { kicker: "Próxima conversación", title: "¿Buscas a alguien que conecte datos, contexto y ejecución?", subtitle: "Estoy abierto a oportunidades en análisis de datos, analytics engineering y proyectos que necesiten transformar fuentes dispersas en información confiable.", cta_primary: "Conectar en LinkedIn", cta_secondary: "Enviar un correo", note: "Recife, Brasil · Disponible para trabajo remoto" },
     faq: {
       kicker: "Preguntas frecuentes", title: "Alcance y forma de trabajo.", subtitle: "Respuestas directas para reclutadores, equipos y potenciales socios.", items: [
-        { q: "¿Tu foco principal es análisis o ingeniería de datos?", a: "Mi posicionamiento principal es análisis de datos y analytics engineering. Puedo trabajar tanto en interpretación y visualización como en preparación, validación e integración." },
+        { q: "¿Qué tipo de problemas de datos puedes ayudar a resolver?", a: "Puedo apoyar desde la organización y validación de fuentes hasta análisis, KPIs y dashboards para la toma de decisiones. Cuando el problema exige una base más confiable, también trabajo en la integración y preparación de los datos que sustentan esas entregas." },
         { q: "¿Trabajas con Power BI y DAX?", a: "Trabajo con Power BI, Power Query, modelado y dashboards. En DAX utilizo medidas compatibles con el alcance y sigo profundizando la práctica, sin posicionarme como especialista avanzado." },
         { q: "¿La IA sigue siendo parte de tu perfil?", a: "Sí, como experiencia complementaria. Tengo experiencia profesional en Computer Vision y APIs, mientras el posicionamiento actual prioriza datos, SQL, BI, calidad e integración." },
         { q: "¿Los casos destacados son trabajos profesionales?", a: "Sí. Ambos fueron desarrollados en FourDevs y pasaron por implementación, pruebas y homologación; el reconocimiento facial también opera en producción." },

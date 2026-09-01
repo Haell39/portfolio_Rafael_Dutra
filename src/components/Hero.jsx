@@ -49,7 +49,7 @@ export default function Hero() {
           <motion.aside className="hero-panel surface" whileHover={{ y: -4 }} transition={{ duration: 0.2 }}>
             <div className="hero-panel__top">
               <span className="mono-label">{t("hero.panel_eyebrow")}</span>
-              <span className="live-indicator"><i /> verified work</span>
+              <span className="live-indicator"><i /> {t("hero.panel_verified")}</span>
             </div>
             <h2>{t("hero.panel_title")}</h2>
             <div className="hero-chart" aria-hidden="true">

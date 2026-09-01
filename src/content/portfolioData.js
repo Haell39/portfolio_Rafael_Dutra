@@ -1,7 +1,5 @@
 import imgHorus from "../assets/projects/horus.webp";
-import imgDiagnostic from "../assets/projects/Diagnostic.webp";
 import imgAnalytics from "../assets/projects/Analytics.webp";
-import imgOpenFinance from "../assets/projects/openfinance.webp";
 import imgVarejo from "../assets/projects/Varejo.webp";
 
 import imgEFSET from "../assets/certificates/EFSET.webp";
@@ -65,42 +63,6 @@ export const PROJECTS = [
     tags: ["Python", "Computer Vision", "Audio Processing", "Monitoring"],
     image: imgHorus,
     link: "https://github.com/Haell39/horus_ai/tree/main",
-    linkLive: null,
-  },
-  {
-    title: "ML em Dados Clínicos",
-    titleEn: "ML on Clinical Data",
-    titleEs: "ML en Datos Clínicos",
-    category: "Análise exploratória · Classificação",
-    categoryEn: "Exploratory analysis · Classification",
-    categoryEs: "Análisis exploratorio · Clasificación",
-    description:
-      "Estudo aplicado a dados clínicos, cobrindo exploração, preparação, comparação de modelos de classificação e agrupamento de padrões latentes.",
-    descriptionEn:
-      "Applied study on clinical data covering exploration, preparation, classification model comparison, and clustering of latent patterns.",
-    descriptionEs:
-      "Estudio aplicado a datos clínicos que cubre exploración, preparación, comparación de modelos de clasificación y agrupamiento de patrones latentes.",
-    tags: ["Data Science", "EDA", "Classification", "Clustering"],
-    image: imgDiagnostic,
-    link: "https://github.com/Haell39/ML-Aplicada-Diagnostico-Clinico",
-    linkLive: null,
-  },
-  {
-    title: "OpenFinance Intel",
-    titleEn: "OpenFinance Intel",
-    titleEs: "OpenFinance Intel",
-    category: "Market Intelligence · NLP",
-    categoryEn: "Market Intelligence · NLP",
-    categoryEs: "Market Intelligence · PLN",
-    description:
-      "Produto experimental de inteligência de mercado que organiza eventos financeiros, políticos e geopolíticos e explora NLP e análise de sentimento.",
-    descriptionEn:
-      "Experimental market intelligence product that organizes financial, political, and geopolitical events while exploring NLP and sentiment analysis.",
-    descriptionEs:
-      "Producto experimental de inteligencia de mercado que organiza eventos financieros, políticos y geopolíticos y explora PLN y análisis de sentimiento.",
-    tags: ["NLP", "Market Intelligence", "React", "FastAPI"],
-    image: imgOpenFinance,
-    link: "https://github.com/Haell39/OpenFinance_Intel",
     linkLive: null,
   },
 ];
