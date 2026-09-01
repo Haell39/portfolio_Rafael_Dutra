@@ -1,689 +1,339 @@
 export const translations = {
   pt: {
     navbar: {
-      solutions: "Soluções",
-      process: "Processo",
-      projects: "Projetos",
+      cases: "Cases",
+      about: "Perfil",
+      expertise: "Competências",
       experience: "Experiência",
-      certificates: "Certificados",
-      about: "Sobre",
-      network: "Ecossistema",
+      projects: "Projetos",
+      certificates: "Formação",
       contact: "Contato",
       toggle_theme: "Alternar tema",
       open_menu: "Abrir menu",
       close_menu: "Fechar menu",
     },
     hero: {
-      kicker: "Analista de Dados • SQL • Excel • Python",
-      title: "Transformando dados brutos em análises e dashboards para decisões de negócio.",
-      subtitle_highlight:
-        "KPIs, performance e contexto para orientar ação.",
-      highlight_word: "KPIs",
-      highlight_word2: "ação",
+      kicker: "Analista de Dados | Analytics Engineer",
+      title: "Dados confiáveis para decisões que movem o negócio.",
+      title_highlight: "Da estrutura ao insight.",
       subtitle:
-        "Analista de dados com background em IA aplicada, atuando com SQL, Excel, Power BI e Python para estruturar indicadores, acompanhar performance e apoiar decisões com mais clareza.",
-      cta_projects: "Explorar Projetos",
-      cta_cv: "Baixar Currículo",
+        "Transformo dados dispersos em bases consistentes, análises claras e indicadores úteis, conectando SQL, Power BI, Python e Excel à realidade da operação.",
+      cta_cases: "Ver cases profissionais",
+      cta_cv: "Baixar currículo",
+      cta_contact: "Falar comigo",
       cv_path: "/curriculo_Rafael_Dutra.pdf",
       cv_filename: "curriculo_Rafael_Dutra.pdf",
-      cta_contact: "Conversar sobre análise de dados",
+      availability: "Recife, Brasil · Remoto",
+      panel_eyebrow: "Professional snapshot",
+      panel_title: "Experiência prática com o ciclo completo do dado.",
+      panel_metrics: [
+        { value: "2", label: "cases profissionais" },
+        { value: "2.400+", label: "faces em produção" },
+        { value: "58", label: "testes automatizados" },
+        { value: "3", label: "bancos integrados" },
+      ],
     },
-    about: {
-      kicker: "• SOBRE MIM •",
-      title: "Dados brutos, contexto e decisão.",
-      subtitle_highlight:
-        "Transformo informação em análise clara, dashboard e ação de negócio.",
-      p1: "Analista de dados com background em IA aplicada. Transformo dados brutos em análises e dashboards que orientam decisões de negócio com clareza e rigor técnico.",
-      p2: "Atuei no Porto Digital em parceria com a Rede Globo, desenvolvendo sistemas de análise automatizada e trabalhando com o ciclo do dado da ingestão ao impacto no negócio.",
-      p3: "Hoje aplico esse repertório com SQL, Excel, Power BI e Python para estruturar indicadores, acompanhar performance e construir soluções orientadas a dados na KódiKa e em projetos reais.",
-      stack_title: "Stack em Dados, BI & Performance",
-    },
-    solutions: {
-      kicker: "Onde Posso Contribuir",
-      title: "Análise de Dados, BI e Estruturação com Foco no Negócio",
+    cases: {
+      kicker: "Experiência comprovada",
+      title: "Cases profissionais que saíram do desenho e chegaram à operação.",
       subtitle:
-        "Projetos com foco em KPIs, clareza analítica, visualização e organização da base para apoiar operação e decisão.",
+        "Soluções desenvolvidas na FourDevs, com responsabilidade direta sobre implementação, testes, homologação e entrega técnica.",
+      confidentiality: "Escopo técnico apresentado sem expor dados sensíveis do cliente.",
+      status_label: "Status",
+      stack_label: "Stack principal",
+      delivery_label: "O que desenvolvi",
+      result_label: "Evidências",
       items: [
         {
-          title: "KPIs, Diagnóstico & Negócio",
-          desc: "Analiso dados com foco em retenção, receita, conversão, satisfação e eficiência, transformando métricas em leitura de negócio e prioridade de ação.",
+          number: "01",
+          type: "Computer Vision · Dados em produção",
+          title: "Reconhecimento facial integrado ao fluxo real de acesso",
+          status: "Produção",
+          summary:
+            "Desenvolvi e evoluí um microserviço de reconhecimento facial conectado aos sistemas de uma instituição educacional e ao fluxo de identificação por catracas.",
+          delivery: [
+            "Embeddings ArcFace de 512 dimensões e busca vetorial com pgvector",
+            "APIs de cadastro, atualização, verificação e remoção",
+            "Reconhecimento adaptativo, validação de imagens e mecanismos de fallback",
+            "Homologação, deploy, troubleshooting e suíte automatizada de testes",
+          ],
+          metrics: [
+            { value: "2.400+", label: "faces cadastradas" },
+            { value: "100+", label: "usuários diários" },
+            { value: "58", label: "testes com Pytest" },
+          ],
+          stack: ["Python", "FastAPI", "PostgreSQL", "pgvector", "Docker", "Pytest"],
         },
         {
-          title: "SQL, Excel & Power BI",
-          desc: "Estruturo consultas, análises e dashboards para acompanhar indicadores, comparar períodos, enxergar gargalos e facilitar acompanhamento executivo e operacional.",
+          number: "02",
+          type: "Data Integration · Batch ingestion",
+          title: "Ingestão e roteamento de dados educacionais",
+          status: "Homologado",
+          summary:
+            "Desenvolvi e homologuei um serviço batch que recebe arquivos CSV, valida e normaliza registros e direciona a persistência para bancos PostgreSQL distintos conforme o domínio de negócio.",
+          delivery: [
+            "Contrato de entrada, validação de qualidade e normalização da carga",
+            "Mapeamento CSV para schemas PostgreSQL e roteamento multi-banco",
+            "Idempotência por matrícula, transações em lote e reprocessamento seguro",
+            "Logs estruturados, API Key, testes e validação direta dos resultados em SQL",
+          ],
+          metrics: [
+            { value: "3", label: "bancos validados" },
+            { value: "2", label: "domínios de negócio" },
+            { value: "0", label: "erros internos no ciclo homologado" },
+          ],
+          stack: ["Python", "FastAPI", "SQL", "PostgreSQL", "postgres_fdw", "Docker"],
+        },
+      ],
+    },
+    about: {
+      kicker: "Perfil",
+      title: "Análise com contexto. Engenharia com propósito.",
+      subtitle:
+        "Atuo entre a pergunta de negócio e a camada técnica necessária para respondê-la com confiança.",
+      p1: "Meu foco é tornar dados utilizáveis: entender a operação, organizar fontes, validar qualidade e construir análises ou indicadores que apoiem decisões reais.",
+      p2: "Na prática, combino análise de dados e fundamentos de analytics engineering. Trabalho com SQL, PostgreSQL, Power BI, Excel, Python e pipelines de ingestão sem transformar cada problema em uma arquitetura maior do que precisa ser.",
+      p3: "Também trago experiência em IA aplicada e APIs em produção, repertório que amplia minha capacidade de lidar com dados não estruturados, integrações e soluções analíticas mais avançadas quando o contexto justifica.",
+      stack_title: "Core toolkit",
+      stack: ["SQL", "Power BI", "Excel", "Python", "PostgreSQL", "Power Query", "ETL", "Data Quality", "Git"],
+    },
+    solutions: {
+      kicker: "Competências",
+      title: "Uma base analítica conectada ao que o negócio precisa enxergar.",
+      subtitle:
+        "Competências construídas em projetos, formação e entregas profissionais, sempre com escopo proporcional ao problema.",
+      items: [
+        {
+          title: "SQL & Modelagem Analítica",
+          desc: "Consultas, joins, CTEs, subqueries e window functions para organizar regras, investigar dados e preparar camadas confiáveis de análise em PostgreSQL.",
         },
         {
-          title: "Power Query, ETL & Estruturação",
-          desc: "Organizo, limpo e transformo dados de diferentes fontes para criar bases mais confiáveis e prontas para análise recorrente.",
+          title: "BI & Visualização",
+          desc: "Dashboards e análises com Power BI, Power Query e Excel, priorizando KPIs, comparação de períodos, clareza visual e narrativa para decisão.",
         },
         {
-          title: "Python para Análise & Evolução Analítica",
-          desc: "Uso Python com foco em EDA, agrupamentos, visualização e exploração de padrões, evoluindo a análise quando o problema pede mais profundidade.",
+          title: "Pipelines & Qualidade de Dados",
+          desc: "Ingestão batch, validação, normalização, tipagem, idempotência e integração entre fontes para reduzir ruído antes da análise.",
+        },
+        {
+          title: "Python & Analytics Avançado",
+          desc: "Pandas, exploração, automação e modelagem quando a pergunta exige mais profundidade do que SQL, planilhas ou BI entregam sozinhos.",
         },
       ],
     },
     process: {
-      kicker: "COMO EU TRABALHO",
-      title: "Da pergunta de negócio ao insight acionável",
+      kicker: "Forma de trabalho",
+      title: "Da pergunta ao dado confiável. Do dado à decisão.",
       subtitle:
-        "Um processo orientado por contexto, qualidade dos dados, KPIs e visualização para transformar informação em decisão.",
+        "Um processo objetivo para evitar dashboards sem contexto e pipelines sem finalidade.",
       items: [
-        {
-          step: "01",
-          title: "Objetivo, Contexto e KPIs",
-          desc: "Começo entendendo a meta, o processo e quais indicadores realmente importam para a operação ou para o negócio.",
-        },
-        {
-          step: "02",
-          title: "Extração, Limpeza e Estruturação",
-          desc: "Avalio fontes, consistência e lacunas para limpar a base, organizar tabelas e preparar a análise com mais confiança.",
-        },
-        {
-          step: "03",
-          title: "Análise, Dashboard e Storytelling",
-          desc: "Cruzo dados, testo hipóteses e construo visualizações que ajudam a explicar o problema, o insight e a ação recomendada.",
-        },
-        {
-          step: "04",
-          title: "Entrega, Leitura e Próximos Passos",
-          desc: "Apresento o resultado com clareza e deixo um caminho objetivo para acompanhar indicadores, aprofundar análises ou evoluir a estrutura.",
-        },
+        { step: "01", title: "Contexto", desc: "Entendo a operação, a decisão esperada e os KPIs que realmente representam o problema." },
+        { step: "02", title: "Fundação", desc: "Mapeio fontes, regras, qualidade e granularidade antes de estruturar consultas e transformações." },
+        { step: "03", title: "Análise", desc: "Investigo padrões, comparo cenários e construo uma leitura visual coerente com a pergunta." },
+        { step: "04", title: "Entrega", desc: "Documento premissas, apresento conclusões e deixo próximos passos claros para evolução." },
       ],
     },
-    contact: {
-      title: "Vamos conversar sobre análise de dados e decisão de negócio.",
-      subtitle:
-        "Se você tem uma operação, base de dados ou rotina que precisa de mais clareza, leitura de performance e acompanhamento por indicadores, posso ajudar a estruturar um primeiro caminho.",
-      cta: "Conversar no LinkedIn",
-      footer: "Todos os direitos reservados.",
-    },
     experience: {
-      title: "Experiência, Formação & Iniciativas",
+      kicker: "Trajetória",
+      title: "Experiência, formação e construção prática.",
       items: [
         {
           company: "FourDevs",
-          role: "IA Aplicada & Dados",
+          role: "Desenvolvedor de IA Aplicada & Dados · Estágio",
           date: "04/2026 — Atualmente",
           description:
-            "Atuação na construção de pipelines de dados, da ingestão e tratamento até a exposição estruturada via API em produção, aplicados a modelos de Computer Vision para classificação e reconhecimento de padrões em contextos reais de educação e segurança.",
+            "Desenvolvimento de serviços profissionais envolvendo ingestão, validação, integração e persistência de dados, além de soluções de Computer Vision em produção. Atuação direta em APIs, PostgreSQL, testes, Docker, homologação e troubleshooting.",
         },
         {
           company: "Porto Digital",
           role: "Residência Tecnológica",
           date: "02/2024 — Atualmente",
           description:
-            "Residência tecnológica voltada ao desenvolvimento de projetos inovadores para empresas e instituições reais, com foco em resolução de problemas, colaboração e entrega orientada a impacto.",
+            "Residência orientada a problemas reais de empresas e instituições, conectando análise, software e entrega colaborativa.",
           details: [
-            "Globo · Horus AI (06/2025 — 11/2025): desenvolvimento de sistema de monitoramento com IA para detectar anomalias em transmissões de vídeo ao vivo, atuando em pipeline de dados, tratamento de vídeo e áudio e avaliação dos modelos, com até 97,6% de acurácia no melhor modelo.",
-            "Prefeitura de Igarassu (01/2025 — 06/2025): desenvolvimento de plataforma para mapeamento e gestão de pessoas em situação de vulnerabilidade social, apoiando a identificação e o acompanhamento de beneficiários de auxílio social.",
+            "Globo · Horus AI: sistema de monitoramento de transmissões ao vivo, com pipeline de vídeo e áudio e até 97,6% de acurácia no melhor modelo.",
+            "Prefeitura de Igarassu: plataforma para mapeamento e acompanhamento de beneficiários em situação de vulnerabilidade social.",
           ],
         },
         {
-          company: "FICR - Faculdade Imaculada Conceição do Recife",
-          role: "Análise e Desenvolvimento de Sistemas",
+          company: "FICR",
+          role: "Tecnólogo em Análise e Desenvolvimento de Sistemas",
           date: "02/2024 — 06/2026",
           description:
-            "Graduação concluída em junho de 2026, com base em dados, algoritmos, IA, engenharia de software e projetos práticos orientados a problemas reais.",
+            "Graduação concluída com formação em dados, bancos de dados, algoritmos, engenharia de software e projetos aplicados.",
         },
         {
           company: "HarvardX",
           role: "Data Science: Building Machine Learning Models",
-          date: "01/2026 - Atualmente",
+          date: "01/2026 — Atualmente",
           description:
-            "Estudo aplicado de machine learning com foco em modelagem, validação, regularização, PCA e construção de sistemas de recomendação.",
+            "Estudos aplicados de modelagem, validação, regularização, PCA e sistemas de recomendação.",
         },
       ],
     },
+    projects: {
+      kicker: "Portfólio técnico",
+      title: "Projetos que ampliam minha leitura de dados e negócio.",
+      subtitle: "Estudos e produtos autorais usados para explorar analytics, visualização, modelagem e comunicação de resultados.",
+      cta_code: "Repositório",
+      cta_live: "Projeto online",
+      cta_soon: "Em breve",
+    },
     certificates: {
-      title: "Certificados & Formação Complementar",
+      kicker: "Formação contínua",
+      title: "Certificações selecionadas.",
+      subtitle: "Uma amostra da formação complementar em SQL, análise, estatística, Python e inglês.",
       issued_label: "Emitido em",
     },
-    projects: {
-      title: "Projetos em Análise de Dados, BI & Soluções Aplicadas",
-      cta_code: "Ver repositório",
-      cta_live: "Ver demo",
-      cta_soon: "Em breve",
-      prev_aria: "Projeto anterior",
-      next_aria: "Próximo projeto",
-      goto_aria: "Ir para projeto",
-    },
-    network: {
-      kicker: "PRODUTO • STARTUP • COMUNIDADE",
-      title: "Onde estou construindo repertório na prática",
-      subtitle:
-        "Projetos, conteúdo e experiências que reforçam minha formação em análise de dados, BI e soluções orientadas a negócio.",
-      kodika: {
-        name: "KódiKa Tech",
-        type: "// Laboratório de Software",
-        desc: "Cofundando uma iniciativa universitária que desenvolve soluções orientadas a dados para clientes reais, com mentalidade prática de produto.",
-      },
-      residencia: {
-        name: "Residência Tecnológica",
-        type: "// Porto Digital & FICR",
-        desc: "Experiência prática em projetos reais com empresas e instituições, conectando aprendizado técnico com entrega.",
-      },
-      datastudent: {
-        name: "DataStudent",
-        type: "// Criação de Conteúdo",
-        desc: "Produzindo conteúdo sobre programação, dados, análise e IA aplicada de forma acessível.",
-      },
-      github: {
-        name: "GitHub",
-        type: "// Open Source",
-        desc: "Meu laboratório público para estudos, análises, automações e protótipos orientados por dados.",
-      },
-    },
     diagnosis: {
-      kicker: "CONVERSA INICIAL",
-      title: "Boas decisões começam com um bom diagnóstico de dados",
+      kicker: "Próxima conversa",
+      title: "Procurando alguém que conecte dados, contexto e execução?",
       subtitle:
-        "Se você já tem planilhas, sistemas ou operação rodando, podemos mapear quais KPIs acompanhar, onde estão os gargalos e como transformar dados em acompanhamento e decisão.",
-      desc: "Minha proposta aqui é ser direto: entender o cenário, avaliar a base e identificar uma primeira entrega útil, seja uma análise exploratória, um dashboard, uma estruturação melhor da informação ou uma evolução analítica.",
-      cta: "Quero analisar meu cenário",
-      footer: "Sem exagero • Clareza analítica • Foco no negócio",
-      list_title: "O que podemos identificar nessa primeira análise:",
-      items: [
-        "KPIs mais úteis para acompanhar performance",
-        "Gargalos operacionais e ruídos na base de dados",
-        "Oportunidades de visualização, rotina e acompanhamento",
-        "Ajustes de estruturação para melhorar consistência e leitura",
-        "Próximos passos para análise mais profunda ou evolução técnica",
-      ],
+        "Estou aberto a oportunidades em análise de dados, analytics engineering e projetos que precisem transformar bases dispersas em informação confiável.",
+      cta_primary: "Conversar no LinkedIn",
+      cta_secondary: "Enviar e-mail",
+      note: "Recife, Brasil · Disponível para trabalho remoto",
     },
     faq: {
-      kicker: "PERGUNTAS FREQUENTES",
-      title: "O que posso construir com você",
-      subtitle:
-        "Respostas objetivas sobre escopo, maturidade técnica e como costumo trabalhar.",
+      kicker: "Perguntas frequentes",
+      title: "Escopo e forma de atuação.",
+      subtitle: "Respostas diretas para recrutadores, times e potenciais parceiros.",
       items: [
-        {
-          q: "Você trabalha só com IA?",
-          a: "Não. Meu ponto de partida é análise de dados orientada a negócio. O foco está em KPIs, dashboards, leitura de performance e estruturação da base para apoiar decisão com mais clareza.",
-        },
-        {
-          q: "Como você lida com dados sensíveis?",
-          a: "Prefiro trabalhar com organização, recortes anonimizados e acesso controlado sempre que necessário. Se o caso pedir mais cuidado, começamos com uma validação simples e segura.",
-        },
-        {
-          q: "Você já entrega algo pronto para produção?",
-          a: "Meu foco hoje está em diagnósticos, análises, dashboards e estruturação de dados que já ajudem na rotina e na tomada de decisão. Quando faz sentido, isso pode evoluir para etapas mais robustas.",
-        },
-        {
-          q: "Quanto tempo leva para sair uma primeira entrega?",
-          a: "Depende do escopo, mas normalmente uma análise inicial, um dashboard ou uma primeira leitura de indicadores já pode começar a mostrar valor em pouco tempo.",
-        },
-        {
-          q: "O que você precisa para começar?",
-          a: "Um problema claro, contexto do processo e algum acesso aos dados, planilhas, sistemas ou exemplos reais. Mesmo se ainda estiver tudo desorganizado, posso ajudar a mapear o primeiro passo.",
-        },
+        { q: "Seu foco principal é análise ou engenharia de dados?", a: "Meu posicionamento principal é em análise de dados e analytics engineering. Consigo trabalhar tanto na leitura e visualização quanto na preparação, validação e integração que tornam essa análise confiável." },
+        { q: "Você trabalha com Power BI e DAX?", a: "Trabalho com Power BI, Power Query, modelagem e construção de dashboards. Em DAX, utilizo medidas compatíveis com o escopo dos projetos e sigo aprofundando a prática, sem me posicionar como especialista avançado." },
+        { q: "A experiência com IA ainda faz parte do perfil?", a: "Sim, como repertório complementar. Tenho experiência profissional com Computer Vision e APIs, mas o posicionamento atual prioriza dados, SQL, BI, qualidade e integração." },
+        { q: "Os cases apresentados são projetos profissionais?", a: "Sim. Os dois cases em destaque foram desenvolvidos na FourDevs e passaram por etapas reais de implementação, testes e homologação; o reconhecimento facial também opera em produção." },
       ],
     },
     footer: {
-      nav_title: "Navegação",
-      brand_blurb:
-        "Análise de dados, BI e dashboards com SQL, Excel, Power BI e Python para traduzir dados em decisão de negócio.",
-      contact_title: "Vamos falar de dados, dashboards e indicadores?",
-      contact_blurb:
-        "Se você precisa acompanhar indicadores, organizar dados ou tirar mais leitura do seu processo, posso ajudar a transformar a demanda em diagnóstico, dashboard ou primeira solução.",
-      signature: "SQL / POWER BI / KPI",
+      blurb: "Dados bem estruturados, análises claras e decisões com contexto.",
+      navigation: "Navegação",
+      contact: "Contato",
+      copyright: "Todos os direitos reservados.",
+      signature: "DATA / ANALYTICS / BUSINESS",
     },
   },
+
   en: {
     navbar: {
-      solutions: "Solutions",
-      process: "Process",
-      projects: "Projects",
-      experience: "Experience",
-      certificates: "Certificates",
-      about: "About",
-      network: "Ecosystem",
-      contact: "Contact",
-      toggle_theme: "Toggle theme",
-      open_menu: "Open menu",
-      close_menu: "Close menu",
+      cases: "Cases", about: "Profile", expertise: "Expertise", experience: "Experience", projects: "Projects", certificates: "Learning", contact: "Contact", toggle_theme: "Toggle theme", open_menu: "Open menu", close_menu: "Close menu",
     },
     hero: {
-      kicker: "Data Analyst • SQL • Excel • Python",
-      title: "Turning raw data into analysis and dashboards for business decisions.",
-      subtitle_highlight:
-        "KPIs, performance, and context to guide action.",
-      highlight_word: "KPIs",
-      highlight_word2: "action",
-      subtitle:
-        "Data analyst with an applied AI background, working with SQL, Excel, Power BI, and Python to structure metrics, track performance, and support clearer decisions.",
-      cta_projects: "Explore Projects",
-      cta_cv: "Download Resume",
-      cv_path: "/curriculo_Rafael_Dutra.pdf",
-      cv_filename: "curriculo_Rafael_Dutra.pdf",
-      cta_contact: "Talk about data analysis",
+      kicker: "Data Analyst | Analytics Engineer",
+      title: "Reliable data for decisions that move the business.",
+      title_highlight: "From structure to insight.",
+      subtitle: "I turn scattered data into consistent foundations, clear analysis, and useful metrics by connecting SQL, Power BI, Python, and Excel to real operations.",
+      cta_cases: "View professional cases", cta_cv: "Download resume", cta_contact: "Contact me", cv_path: "/curriculo_Rafael_Dutra.pdf", cv_filename: "curriculo_Rafael_Dutra.pdf", availability: "Recife, Brazil · Remote",
+      panel_eyebrow: "Professional snapshot", panel_title: "Hands-on experience across the full data lifecycle.",
+      panel_metrics: [
+        { value: "2", label: "professional cases" }, { value: "2,400+", label: "faces in production" }, { value: "58", label: "automated tests" }, { value: "3", label: "integrated databases" },
+      ],
+    },
+    cases: {
+      kicker: "Proven experience", title: "Professional cases that moved from design to real operations.", subtitle: "Solutions built at FourDevs, with direct responsibility for implementation, testing, validation, and technical delivery.", confidentiality: "Technical scope presented without exposing sensitive client data.", status_label: "Status", stack_label: "Core stack", delivery_label: "What I built", result_label: "Evidence",
+      items: [
+        { number: "01", type: "Computer Vision · Production data", title: "Facial recognition integrated into a real access workflow", status: "Production", summary: "I built and evolved a facial recognition microservice connected to an educational institution's systems and turnstile identification workflow.", delivery: ["512-dimensional ArcFace embeddings and vector search with pgvector", "Registration, update, verification, and removal APIs", "Adaptive recognition, image validation, and fallback mechanisms", "Validation, deployment, troubleshooting, and automated test suite"], metrics: [{ value: "2,400+", label: "registered faces" }, { value: "100+", label: "daily users" }, { value: "58", label: "Pytest tests" }], stack: ["Python", "FastAPI", "PostgreSQL", "pgvector", "Docker", "Pytest"] },
+        { number: "02", type: "Data Integration · Batch ingestion", title: "Educational data ingestion and routing", status: "Validated", summary: "I built and validated a batch service that receives CSV files, validates and normalizes records, and routes persistence to separate PostgreSQL databases according to the business domain.", delivery: ["Input contract, data quality validation, and load normalization", "CSV-to-PostgreSQL mapping and multi-database routing", "Student-ID idempotency, batch transactions, and safe reprocessing", "Structured logs, API key, tests, and direct SQL result validation"], metrics: [{ value: "3", label: "validated databases" }, { value: "2", label: "business domains" }, { value: "0", label: "internal errors in the validation run" }], stack: ["Python", "FastAPI", "SQL", "PostgreSQL", "postgres_fdw", "Docker"] },
+      ],
     },
     about: {
-      kicker: "• ABOUT ME •",
-      title: "Raw data, context, and decision.",
-      subtitle_highlight:
-        "I turn information into clear analysis, dashboards, and business action.",
-      p1: "Data analyst with an applied AI background. I turn raw data into analyses and dashboards that guide business decisions with clarity and technical rigor.",
-      p2: "I worked at Porto Digital in partnership with Rede Globo, building automated analysis systems and handling the data cycle from ingestion to business impact.",
-      p3: "Today I apply that experience with SQL, Excel, Power BI, and Python to structure metrics, track performance, and build data-driven solutions at KódiKa and in real projects.",
-      stack_title: "Data, BI & Performance Stack",
+      kicker: "Profile", title: "Analysis with context. Engineering with purpose.", subtitle: "I work between the business question and the technical layer required to answer it with confidence.",
+      p1: "My focus is making data usable: understanding operations, organizing sources, validating quality, and building analyses or metrics that support real decisions.",
+      p2: "In practice, I combine data analysis and analytics engineering foundations. I work with SQL, PostgreSQL, Power BI, Excel, Python, and ingestion pipelines without making the architecture larger than the problem requires.",
+      p3: "I also bring experience with applied AI and production APIs, expanding my ability to handle unstructured data, integrations, and advanced analytical solutions when the context calls for them.",
+      stack_title: "Core toolkit", stack: ["SQL", "Power BI", "Excel", "Python", "PostgreSQL", "Power Query", "ETL", "Data Quality", "Git"],
     },
     solutions: {
-      kicker: "Where I Can Contribute",
-      title: "Data Analysis, BI, and Structure with Business Focus",
-      subtitle:
-        "Projects focused on KPIs, analytical clarity, visualization, and better data organization to support operations and decision-making.",
+      kicker: "Expertise", title: "An analytical foundation connected to what the business needs to see.", subtitle: "Skills built across projects, education, and professional delivery, always keeping scope proportional to the problem.",
       items: [
-        {
-          title: "KPIs, Diagnosis & Business Reading",
-          desc: "I analyze data around retention, revenue, conversion, satisfaction, and efficiency, turning metrics into business reading and action priorities.",
-        },
-        {
-          title: "SQL, Excel & Power BI",
-          desc: "I build queries, analyses, and dashboards to track indicators, compare periods, spot bottlenecks, and improve executive and operational follow-up.",
-        },
-        {
-          title: "Power Query, ETL & Structuring",
-          desc: "I clean, transform, and organize data from different sources to create stronger foundations for recurring analysis.",
-        },
-        {
-          title: "Python for Analysis & Analytical Depth",
-          desc: "I use Python for EDA, grouping, visualization, and pattern exploration, deepening the analysis when the problem requires more depth.",
-        },
+        { title: "SQL & Analytical Modeling", desc: "Queries, joins, CTEs, subqueries, and window functions to organize rules, investigate data, and prepare reliable analytical layers in PostgreSQL." },
+        { title: "BI & Visualization", desc: "Dashboards and analyses with Power BI, Power Query, and Excel, prioritizing KPIs, period comparison, visual clarity, and decision-oriented storytelling." },
+        { title: "Pipelines & Data Quality", desc: "Batch ingestion, validation, normalization, typing, idempotency, and source integration to reduce noise before analysis." },
+        { title: "Python & Advanced Analytics", desc: "Pandas, exploration, automation, and modeling when the question requires more depth than SQL, spreadsheets, or BI can deliver alone." },
       ],
     },
     process: {
-      kicker: "HOW I WORK",
-      title: "From business question to actionable insight",
-      subtitle:
-        "A process driven by context, data quality, KPIs, and visualization to turn information into decision support.",
+      kicker: "How I work", title: "From question to reliable data. From data to decision.", subtitle: "A practical process that avoids dashboards without context and pipelines without purpose.",
       items: [
-        {
-          step: "01",
-          title: "Goal, Context, and KPIs",
-          desc: "I start by understanding the target, the process, and which indicators actually matter for the business or the operation.",
-        },
-        {
-          step: "02",
-          title: "Extraction, Cleaning, and Structuring",
-          desc: "I assess sources, consistency, and gaps to clean the foundation, organize tables, and prepare the analysis with more confidence.",
-        },
-        {
-          step: "03",
-          title: "Analysis, Dashboard, and Storytelling",
-          desc: "I cross data, test hypotheses, and build visuals that help explain the problem, the insight, and the recommended action.",
-        },
-        {
-          step: "04",
-          title: "Delivery, Reading, and Next Steps",
-          desc: "I present the result clearly and leave an objective path to monitor indicators, deepen the analysis, or evolve the structure.",
-        },
+        { step: "01", title: "Context", desc: "Understand the operation, expected decision, and KPIs that truly represent the problem." },
+        { step: "02", title: "Foundation", desc: "Map sources, rules, quality, and granularity before structuring queries and transformations." },
+        { step: "03", title: "Analysis", desc: "Investigate patterns, compare scenarios, and build a visual narrative aligned with the question." },
+        { step: "04", title: "Delivery", desc: "Document assumptions, present conclusions, and leave clear next steps for evolution." },
       ],
-    },
-    contact: {
-      title: "Let's talk about data, KPIs, and performance.",
-      subtitle:
-        "If you have an operation, dataset, or routine that needs clearer tracking or stronger business reading, I can help shape a solid first direction.",
-      cta: "Talk on LinkedIn",
-      footer: "All rights reserved.",
     },
     experience: {
-      title: "Experience, Education & Initiatives",
+      kicker: "Journey", title: "Experience, education, and hands-on work.",
       items: [
-        {
-          company: "FourDevs",
-          role: "Applied AI & Data",
-          date: "04/2026 — Present",
-          description:
-            "Building data pipelines from ingestion and processing to structured production API delivery, applied to computer vision models for classification and pattern recognition in real education and safety contexts.",
-        },
-        {
-          company: "Porto Digital",
-          role: "Technological Residency",
-          date: "02/2024 — Present",
-          description:
-            "A technological residency focused on building innovative projects for real companies and institutions, with an emphasis on problem-solving, collaboration, and impact-oriented delivery.",
-          details: [
-            "Globo · Horus AI (06/2025 — 11/2025): developed an AI monitoring system to detect anomalies in live video broadcasts, working across the data pipeline, video and audio processing, and model evaluation, reaching up to 97.6% accuracy in the best model.",
-            "Igarassu City Hall (01/2025 — 06/2025): developed a platform to map and manage people in situations of social vulnerability, supporting the identification and follow-up of social assistance beneficiaries.",
-          ],
-        },
-        {
-          company: "FICR - Faculdade Imaculada Conceição do Recife",
-          role: "Systems Analysis and Development",
-          date: "02/2024 — 06/2026",
-          description:
-            "Degree completed in June 2026, grounded in data, algorithms, AI, software engineering, and practical projects built around real-world problems.",
-        },
-        {
-          company: "HarvardX",
-          role: "Data Science: Building Machine Learning Models",
-          date: "01/2026 - Present",
-          description:
-            "Applied machine learning studies focused on modeling, validation, regularization, PCA, and recommendation system development.",
-        },
+        { company: "FourDevs", role: "Applied AI & Data Developer · Internship", date: "04/2026 — Present", description: "Building professional services involving data ingestion, validation, integration, and persistence, alongside production Computer Vision solutions. Direct work with APIs, PostgreSQL, testing, Docker, validation, and troubleshooting." },
+        { company: "Porto Digital", role: "Technology Residency", date: "02/2024 — Present", description: "Residency focused on real company and public-sector challenges, connecting analysis, software, and collaborative delivery.", details: ["Globo · Horus AI: live broadcast monitoring with video and audio pipelines, reaching up to 97.6% accuracy in the best model.", "Igarassu City Hall: platform for mapping and supporting social assistance beneficiaries."] },
+        { company: "FICR", role: "Technology Degree in Systems Analysis and Development", date: "02/2024 — 06/2026", description: "Completed degree covering data, databases, algorithms, software engineering, and applied projects." },
+        { company: "HarvardX", role: "Data Science: Building Machine Learning Models", date: "01/2026 — Present", description: "Applied studies in modeling, validation, regularization, PCA, and recommendation systems." },
       ],
     },
-    certificates: {
-      title: "Certificates & Continued Learning",
-      issued_label: "Issued in",
-    },
-    projects: {
-      title: "Projects in Data Analysis, BI & Applied Solutions",
-      cta_code: "View repository",
-      cta_live: "View demo",
-      cta_soon: "Coming soon",
-      prev_aria: "Previous project",
-      next_aria: "Next project",
-      goto_aria: "Go to project",
-    },
-    network: {
-      kicker: "PRODUCT • STARTUP • COMMUNITY",
-      title: "Where I build hands-on experience",
-      subtitle:
-        "Projects, content, and experiences shaping my path in data analysis, software, automation, and applied AI.",
-      kodika: {
-        name: "KódiKa Tech",
-        type: "// Software Laboratory",
-        desc: "Co-founding a university initiative that develops data-driven solutions for real clients with a practical product mindset.",
-      },
-      residencia: {
-        name: "Tech Residency",
-        type: "// Porto Digital & FICR",
-        desc: "Hands-on experience in real projects with companies and institutions, connecting technical growth to delivery.",
-      },
-      datastudent: {
-        name: "DataStudent",
-        type: "// Content Creation",
-        desc: "Creating accessible content about programming, data, analytics, and applied AI.",
-      },
-      github: {
-        name: "GitHub",
-        type: "// Open Source",
-        desc: "My public lab for studies, analyses, automations, and data-driven prototypes.",
-      },
-    },
-    diagnosis: {
-      kicker: "FIRST CONVERSATION",
-      title: "Good decisions start with a strong data diagnosis",
-      subtitle:
-        "If you already have spreadsheets, systems, or an operation in place, we can map which KPIs matter, where the bottlenecks are, and how to turn data into follow-up and decision support.",
-      desc: "The goal here is to be direct: understand the context, assess the data foundation, and identify a useful first deliverable, whether that is exploratory analysis, a dashboard, better data structuring, or a stronger analytical routine.",
-      cta: "Assess my scenario",
-      footer: "No hype • Analytical clarity • Business focus",
-      list_title: "What we can identify in this first analysis:",
-      items: [
-        "The most useful KPIs to track performance",
-        "Operational bottlenecks and data quality noise",
-        "Visualization and reporting opportunities",
-        "Structuring adjustments to improve consistency and reading",
-        "Next steps for deeper analysis or technical evolution",
-      ],
-    },
+    projects: { kicker: "Technical portfolio", title: "Projects that expand my understanding of data and business.", subtitle: "Independent studies and products used to explore analytics, visualization, modeling, and communication.", cta_code: "Repository", cta_live: "Live project", cta_soon: "Coming soon" },
+    certificates: { kicker: "Continuous learning", title: "Selected certifications.", subtitle: "A sample of continued learning in SQL, analysis, statistics, Python, and English.", issued_label: "Issued" },
+    diagnosis: { kicker: "Next conversation", title: "Looking for someone who connects data, context, and execution?", subtitle: "I am open to data analysis, analytics engineering, and projects that need to turn scattered sources into reliable information.", cta_primary: "Connect on LinkedIn", cta_secondary: "Send an email", note: "Recife, Brazil · Available for remote work" },
     faq: {
-      kicker: "FREQUENTLY ASKED QUESTIONS",
-      title: "What I can build with you",
-      subtitle:
-        "Straightforward answers about scope, technical maturity, and how I usually work.",
+      kicker: "FAQ", title: "Scope and working style.", subtitle: "Direct answers for recruiters, teams, and potential partners.",
       items: [
-        {
-          q: "Do you only work with AI?",
-          a: "No. My starting point is business-oriented data analysis. The focus is on KPIs, dashboards, performance reading, and stronger data structure to support decisions with more clarity.",
-        },
-        {
-          q: "How do you handle sensitive data?",
-          a: "I prefer working with organized data, anonymized slices, and controlled access whenever necessary. If the case requires extra care, we can start with a simple and safer validation first.",
-        },
-        {
-          q: "Do you already deliver production-ready solutions?",
-          a: "My focus today is on diagnoses, analyses, dashboards, and data structuring that already help routines and decision-making. When it makes sense, that can evolve into more robust stages.",
-        },
-        {
-          q: "How long does it take to get a first delivery?",
-          a: "It depends on the scope, but an initial analysis, a dashboard, or a first KPI reading can usually start showing value fairly quickly.",
-        },
-        {
-          q: "What do you need to get started?",
-          a: "A clear problem, process context, and some access to data, spreadsheets, systems, or real examples. Even if everything is still messy, I can help map the first step.",
-        },
+        { q: "Is your main focus data analysis or data engineering?", a: "My primary positioning is data analysis and analytics engineering. I can work on both interpretation and visualization, as well as the preparation, validation, and integration that make analysis reliable." },
+        { q: "Do you work with Power BI and DAX?", a: "I work with Power BI, Power Query, modeling, and dashboard development. With DAX, I use measures aligned with project scope and continue building deeper practice without positioning myself as an advanced specialist." },
+        { q: "Is AI still part of your profile?", a: "Yes, as complementary experience. I have professional experience with Computer Vision and APIs, while my current positioning prioritizes data, SQL, BI, quality, and integration." },
+        { q: "Are the highlighted cases professional work?", a: "Yes. Both cases were built at FourDevs and went through real implementation, testing, and validation stages; the facial recognition service also runs in production." },
       ],
     },
-    footer: {
-      nav_title: "Navigation",
-      brand_blurb:
-        "Data analysis, BI, and dashboards with SQL, Excel, Power BI, and Python to turn data into business decisions.",
-      contact_title: "Want to talk about data, dashboards, and metrics?",
-      contact_blurb:
-        "If you need better indicators, clearer dashboards, or stronger data reading in your process, I can help turn it into a diagnosis, dashboard, or first solution.",
-      signature: "SQL / POWER BI / KPI",
-    },
+    footer: { blurb: "Well-structured data, clear analysis, and decisions with context.", navigation: "Navigation", contact: "Contact", copyright: "All rights reserved.", signature: "DATA / ANALYTICS / BUSINESS" },
   },
+
   es: {
     navbar: {
-      solutions: "Soluciones",
-      process: "Proceso",
-      projects: "Proyectos",
-      experience: "Experiencia",
-      certificates: "Certificados",
-      about: "Sobre Mí",
-      network: "Ecosistema",
-      contact: "Contacto",
-      toggle_theme: "Cambiar tema",
-      open_menu: "Abrir menú",
-      close_menu: "Cerrar menú",
+      cases: "Casos", about: "Perfil", expertise: "Competencias", experience: "Experiencia", projects: "Proyectos", certificates: "Formación", contact: "Contacto", toggle_theme: "Cambiar tema", open_menu: "Abrir menú", close_menu: "Cerrar menú",
     },
     hero: {
-      kicker: "Analista de Datos • SQL • Excel • Python",
-      title: "Transformando datos brutos en análisis y dashboards para decisiones de negocio.",
-      subtitle_highlight:
-        "KPIs, desempeño y contexto para orientar acción.",
-      highlight_word: "KPIs",
-      highlight_word2: "acción",
-      subtitle:
-        "Analista de datos con background en IA aplicada, trabajando con SQL, Excel, Power BI y Python para estructurar indicadores, seguir desempeño y apoyar decisiones con más claridad.",
-      cta_projects: "Explorar Proyectos",
-      cta_cv: "Descargar CV",
-      cv_path: "/curriculo_Rafael_Dutra.pdf",
-      cv_filename: "curriculo_Rafael_Dutra.pdf",
-      cta_contact: "Hablar sobre análisis de datos",
+      kicker: "Analista de Datos | Analytics Engineer", title: "Datos confiables para decisiones que mueven el negocio.", title_highlight: "De la estructura al insight.", subtitle: "Transformo datos dispersos en bases consistentes, análisis claros e indicadores útiles, conectando SQL, Power BI, Python y Excel con la realidad de la operación.", cta_cases: "Ver casos profesionales", cta_cv: "Descargar CV", cta_contact: "Contactarme", cv_path: "/curriculo_Rafael_Dutra.pdf", cv_filename: "curriculo_Rafael_Dutra.pdf", availability: "Recife, Brasil · Remoto", panel_eyebrow: "Professional snapshot", panel_title: "Experiencia práctica en el ciclo completo del dato.",
+      panel_metrics: [{ value: "2", label: "casos profesionales" }, { value: "2.400+", label: "rostros en producción" }, { value: "58", label: "pruebas automatizadas" }, { value: "3", label: "bases integradas" }],
+    },
+    cases: {
+      kicker: "Experiencia comprobada", title: "Casos profesionales que pasaron del diseño a la operación real.", subtitle: "Soluciones desarrolladas en FourDevs, con responsabilidad directa en implementación, pruebas, homologación y entrega técnica.", confidentiality: "Alcance técnico presentado sin exponer datos sensibles del cliente.", status_label: "Estado", stack_label: "Stack principal", delivery_label: "Lo que desarrollé", result_label: "Evidencias",
+      items: [
+        { number: "01", type: "Computer Vision · Datos en producción", title: "Reconocimiento facial integrado al flujo real de acceso", status: "Producción", summary: "Desarrollé y evolucioné un microservicio de reconocimiento facial conectado a los sistemas de una institución educativa y al flujo de identificación por torniquetes.", delivery: ["Embeddings ArcFace de 512 dimensiones y búsqueda vectorial con pgvector", "APIs de registro, actualización, verificación y eliminación", "Reconocimiento adaptativo, validación de imágenes y mecanismos de fallback", "Homologación, deploy, troubleshooting y suite automatizada de pruebas"], metrics: [{ value: "2.400+", label: "rostros registrados" }, { value: "100+", label: "usuarios diarios" }, { value: "58", label: "pruebas con Pytest" }], stack: ["Python", "FastAPI", "PostgreSQL", "pgvector", "Docker", "Pytest"] },
+        { number: "02", type: "Data Integration · Batch ingestion", title: "Ingestión y enrutamiento de datos educativos", status: "Homologado", summary: "Desarrollé y homologué un servicio batch que recibe archivos CSV, valida y normaliza registros y dirige la persistencia a bases PostgreSQL distintas según el dominio de negocio.", delivery: ["Contrato de entrada, validación de calidad y normalización de la carga", "Mapeo CSV a PostgreSQL y enrutamiento multi-base", "Idempotencia por matrícula, transacciones por lotes y reproceso seguro", "Logs estructurados, API Key, pruebas y validación directa en SQL"], metrics: [{ value: "3", label: "bases validadas" }, { value: "2", label: "dominios de negocio" }, { value: "0", label: "errores internos en el ciclo homologado" }], stack: ["Python", "FastAPI", "SQL", "PostgreSQL", "postgres_fdw", "Docker"] },
+      ],
     },
     about: {
-      kicker: "• SOBRE MÍ •",
-      title: "Datos brutos, contexto y decisión.",
-      subtitle_highlight:
-        "Transformo información en análisis claro, dashboard y acción de negocio.",
-      p1: "Analista de datos con background en IA aplicada. Transformo datos brutos en análisis y dashboards que orientan decisiones de negocio con claridad y rigor técnico.",
-      p2: "Actué en Porto Digital en alianza con Rede Globo, desarrollando sistemas de análisis automatizado y trabajando con el ciclo del dato desde la ingestión hasta el impacto en el negocio.",
-      p3: "Hoy aplico ese repertorio con SQL, Excel, Power BI y Python para estructurar indicadores, seguir desempeño y construir soluciones orientadas por datos en KódiKa y en proyectos reales.",
-      stack_title: "Stack en Datos, BI y Desempeño",
+      kicker: "Perfil", title: "Análisis con contexto. Ingeniería con propósito.", subtitle: "Trabajo entre la pregunta de negocio y la capa técnica necesaria para responderla con confianza.", p1: "Mi foco es hacer que los datos sean utilizables: entender la operación, organizar fuentes, validar calidad y construir análisis o indicadores que apoyen decisiones reales.", p2: "En la práctica, combino análisis de datos y fundamentos de analytics engineering. Trabajo con SQL, PostgreSQL, Power BI, Excel, Python y pipelines de ingestión sin hacer la arquitectura más grande que el problema.", p3: "También aporto experiencia en IA aplicada y APIs en producción, ampliando mi capacidad para trabajar con datos no estructurados, integraciones y soluciones analíticas avanzadas cuando el contexto lo requiere.", stack_title: "Core toolkit", stack: ["SQL", "Power BI", "Excel", "Python", "PostgreSQL", "Power Query", "ETL", "Data Quality", "Git"],
     },
     solutions: {
-      kicker: "Dónde Puedo Contribuir",
-      title: "Análisis de Datos, BI y Estructuración con Foco en el Negocio",
-      subtitle:
-        "Proyectos enfocados en KPIs, claridad analítica, visualización y organización de la base para apoyar operación y decisión.",
+      kicker: "Competencias", title: "Una base analítica conectada con lo que el negocio necesita ver.", subtitle: "Competencias construidas en proyectos, formación y entregas profesionales, manteniendo el alcance proporcional al problema.",
       items: [
-        {
-          title: "KPIs, Diagnóstico y Negocio",
-          desc: "Analizo datos con foco en retención, ingresos, conversión, satisfacción y eficiencia, transformando métricas en lectura de negocio y prioridades de acción.",
-        },
-        {
-          title: "SQL, Excel y Power BI",
-          desc: "Estructuro consultas, análisis y dashboards para seguir indicadores, comparar períodos, detectar cuellos de botella y facilitar el seguimiento ejecutivo y operativo.",
-        },
-        {
-          title: "Power Query, ETL y Estructuración",
-          desc: "Organizo, limpio y transformo datos de diferentes fuentes para crear bases más confiables y listas para análisis recurrente.",
-        },
-        {
-          title: "Python para Análisis y Profundidad Analítica",
-          desc: "Uso Python con foco en EDA, agrupamientos, visualización y exploración de patrones, profundizando el análisis cuando el problema pide más detalle.",
-        },
+        { title: "SQL y Modelado Analítico", desc: "Consultas, joins, CTEs, subqueries y window functions para organizar reglas, investigar datos y preparar capas confiables en PostgreSQL." },
+        { title: "BI y Visualización", desc: "Dashboards y análisis con Power BI, Power Query y Excel, priorizando KPIs, comparación temporal, claridad visual y narrativa para decisiones." },
+        { title: "Pipelines y Calidad de Datos", desc: "Ingestión batch, validación, normalización, tipado, idempotencia e integración de fuentes para reducir ruido antes del análisis." },
+        { title: "Python y Analytics Avanzado", desc: "Pandas, exploración, automatización y modelado cuando la pregunta requiere más profundidad que SQL, hojas de cálculo o BI." },
       ],
     },
     process: {
-      kicker: "CÓMO TRABAJO",
-      title: "De la pregunta de negocio al insight accionable",
-      subtitle:
-        "Un proceso orientado por contexto, calidad de datos, KPIs y visualización para transformar información en apoyo a decisiones.",
-      items: [
-        {
-          step: "01",
-          title: "Objetivo, Contexto y KPIs",
-          desc: "Empiezo entendiendo la meta, el proceso y qué indicadores realmente importan para la operación o para el negocio.",
-        },
-        {
-          step: "02",
-          title: "Extracción, Limpieza y Estructuración",
-          desc: "Evalúo fuentes, consistencia y vacíos para limpiar la base, organizar tablas y preparar el análisis con más confianza.",
-        },
-        {
-          step: "03",
-          title: "Análisis, Dashboard y Storytelling",
-          desc: "Cruzo datos, pruebo hipótesis y construyo visualizaciones que ayudan a explicar el problema, el insight y la acción recomendada.",
-        },
-        {
-          step: "04",
-          title: "Entrega, Lectura y Próximos Pasos",
-          desc: "Presento el resultado con claridad y dejo un camino objetivo para seguir indicadores, profundizar análisis o evolucionar la estructura.",
-        },
-      ],
-    },
-    contact: {
-      title: "Hablemos de datos, KPIs y desempeño.",
-      subtitle:
-        "Si tienes una operación, base de datos o rutina que necesita más claridad, seguimiento o lectura de negocio, puedo ayudarte a estructurar una buena primera dirección.",
-      cta: "Hablar por LinkedIn",
-      footer: "Todos los derechos reservados.",
+      kicker: "Forma de trabajo", title: "De la pregunta al dato confiable. Del dato a la decisión.", subtitle: "Un proceso objetivo para evitar dashboards sin contexto y pipelines sin finalidad.", items: [{ step: "01", title: "Contexto", desc: "Entiendo la operación, la decisión esperada y los KPIs que representan el problema." }, { step: "02", title: "Base", desc: "Mapeo fuentes, reglas, calidad y granularidad antes de estructurar consultas y transformaciones." }, { step: "03", title: "Análisis", desc: "Investigo patrones, comparo escenarios y construyo una narrativa visual coherente con la pregunta." }, { step: "04", title: "Entrega", desc: "Documento supuestos, presento conclusiones y dejo próximos pasos claros." }],
     },
     experience: {
-      title: "Experiencia, Formación e Iniciativas",
-      items: [
-        {
-          company: "FourDevs",
-          role: "IA Aplicada y Datos",
-          date: "04/2026 — Actualidad",
-          description:
-            "Actuación en la construcción de pipelines de datos, desde la ingestión y el tratamiento hasta la exposición estructurada vía API en producción, aplicados a modelos de Computer Vision para clasificación y reconocimiento de patrones en contextos reales de educación y seguridad.",
-        },
-        {
-          company: "Porto Digital",
-          role: "Residencia Tecnológica",
-          date: "02/2024 — Actualidad",
-          description:
-            "Residencia tecnológica orientada al desarrollo de proyectos innovadores para empresas e instituciones reales, con foco en resolución de problemas, colaboración y entrega orientada a impacto.",
-          details: [
-            "Globo · Horus AI (06/2025 — 11/2025): desarrollo de un sistema de monitoreo con IA para detectar anomalías en transmisiones de video en vivo, actuando en el pipeline de datos, en el tratamiento de video y audio y en la evaluación de los modelos, alcanzando hasta 97,6% de precisión en el mejor modelo.",
-            "Prefeitura de Igarassu (01/2025 — 06/2025): desarrollo de una plataforma para el mapeo y la gestión de personas en situación de vulnerabilidad social, apoyando la identificación y el seguimiento de beneficiarios de ayuda social.",
-          ],
-        },
-        {
-          company: "FICR - Faculdade Imaculada Conceição do Recife",
-          role: "Análisis y Desarrollo de Sistemas",
-          date: "02/2024 — 06/2026",
-          description:
-            "Carrera concluida en junio de 2026, con base en datos, algoritmos, IA, ingeniería de software y proyectos prácticos orientados a problemas reales.",
-        },
-        {
-          company: "HarvardX",
-          role: "Data Science: Building Machine Learning Models",
-          date: "01/2026 - Actualmente",
-          description:
-            "Estudio aplicado de machine learning con foco en modelado, validación, regularización, PCA y construcción de sistemas de recomendación.",
-        },
+      kicker: "Trayectoria", title: "Experiencia, formación y construcción práctica.", items: [
+        { company: "FourDevs", role: "Desarrollador de IA Aplicada y Datos · Prácticas", date: "04/2026 — Actualidad", description: "Desarrollo de servicios profesionales de ingestión, validación, integración y persistencia de datos, además de soluciones de Computer Vision en producción. Trabajo directo con APIs, PostgreSQL, pruebas, Docker, homologación y troubleshooting." },
+        { company: "Porto Digital", role: "Residencia Tecnológica", date: "02/2024 — Actualidad", description: "Residencia orientada a problemas reales de empresas e instituciones, conectando análisis, software y entrega colaborativa.", details: ["Globo · Horus AI: monitoreo de transmisiones en vivo con pipelines de video y audio y hasta 97,6% de precisión en el mejor modelo.", "Municipalidad de Igarassu: plataforma para mapear y acompañar beneficiarios en situación de vulnerabilidad social."] },
+        { company: "FICR", role: "Tecnólogo en Análisis y Desarrollo de Sistemas", date: "02/2024 — 06/2026", description: "Grado concluido con formación en datos, bases de datos, algoritmos, ingeniería de software y proyectos aplicados." },
+        { company: "HarvardX", role: "Data Science: Building Machine Learning Models", date: "01/2026 — Actualidad", description: "Estudios aplicados de modelado, validación, regularización, PCA y sistemas de recomendación." },
       ],
     },
-    certificates: {
-      title: "Certificados y Formación Complementaria",
-      issued_label: "Emitido en",
-    },
-    projects: {
-      title: "Proyectos en Análisis de Datos, BI y Soluciones Aplicadas",
-      cta_code: "Ver repositorio",
-      cta_live: "Ver demo",
-      cta_soon: "Próximamente",
-      prev_aria: "Proyecto anterior",
-      next_aria: "Siguiente proyecto",
-      goto_aria: "Ir al proyecto",
-    },
-    network: {
-      kicker: "PRODUCTO • STARTUP • COMUNIDAD",
-      title: "Dónde estoy construyendo experiencia en la práctica",
-      subtitle:
-        "Proyectos, contenido y experiencias que fortalecen mi camino en análisis de datos, software, automatización e IA aplicada.",
-      kodika: {
-        name: "KódiKa Tech",
-        type: "// Laboratorio de Software",
-        desc: "Cofundando una iniciativa universitaria que desarrolla soluciones orientadas por datos para clientes reales, con mentalidad práctica de producto.",
-      },
-      residencia: {
-        name: "Residencia Tecnológica",
-        type: "// Porto Digital & FICR",
-        desc: "Experiencia práctica en proyectos reales con empresas e instituciones, conectando aprendizaje técnico con entrega.",
-      },
-      datastudent: {
-        name: "DataStudent",
-        type: "// Creación de Contenido",
-        desc: "Creando contenido accesible sobre programación, datos, análisis e IA aplicada.",
-      },
-      github: {
-        name: "GitHub",
-        type: "// Open Source",
-        desc: "Mi laboratorio público para estudios, análisis, automatizaciones y prototipos orientados por datos.",
-      },
-    },
-    diagnosis: {
-      kicker: "PRIMERA CONVERSACIÓN",
-      title: "Las buenas decisiones empiezan con un buen diagnóstico de datos",
-      subtitle:
-        "Si ya tienes hojas de cálculo, sistemas u operación en marcha, podemos mapear qué KPIs seguir, dónde están los cuellos de botella y cómo transformar datos en seguimiento y decisión.",
-      desc: "La idea aquí es ser directo: entender el contexto, evaluar la base e identificar una primera entrega útil, ya sea un análisis exploratorio, un dashboard, una mejor estructuración de la información o una evolución analítica.",
-      cta: "Quiero analizar mi escenario",
-      footer: "Sin exagerar • Claridad analítica • Foco en el negocio",
-      list_title: "Lo que podemos identificar en este primer análisis:",
-      items: [
-        "Los KPIs más útiles para seguir desempeño",
-        "Cuellos de botella operativos y ruido en la base de datos",
-        "Oportunidades de visualización, rutina y seguimiento",
-        "Ajustes de estructuración para mejorar consistencia y lectura",
-        "Próximos pasos para análisis más profundo o evolución técnica",
-      ],
-    },
+    projects: { kicker: "Portafolio técnico", title: "Proyectos que amplían mi lectura de datos y negocio.", subtitle: "Estudios y productos propios para explorar analytics, visualización, modelado y comunicación.", cta_code: "Repositorio", cta_live: "Proyecto online", cta_soon: "Próximamente" },
+    certificates: { kicker: "Formación continua", title: "Certificaciones seleccionadas.", subtitle: "Una muestra de formación complementaria en SQL, análisis, estadística, Python e inglés.", issued_label: "Emitido" },
+    diagnosis: { kicker: "Próxima conversación", title: "¿Buscas a alguien que conecte datos, contexto y ejecución?", subtitle: "Estoy abierto a oportunidades en análisis de datos, analytics engineering y proyectos que necesiten transformar fuentes dispersas en información confiable.", cta_primary: "Conectar en LinkedIn", cta_secondary: "Enviar un correo", note: "Recife, Brasil · Disponible para trabajo remoto" },
     faq: {
-      kicker: "PREGUNTAS FRECUENTES",
-      title: "Lo que puedo construir contigo",
-      subtitle:
-        "Respuestas directas sobre alcance, madurez técnica y cómo suelo trabajar.",
-      items: [
-        {
-          q: "¿Trabajas solo con IA?",
-          a: "No. Mi punto de partida es el análisis de datos orientado al negocio. El foco está en KPIs, dashboards, lectura de desempeño y mejor estructura de datos para apoyar decisiones con más claridad.",
-        },
-        {
-          q: "¿Cómo manejas datos sensibles?",
-          a: "Prefiero trabajar con datos organizados, recortes anonimizados y acceso controlado cuando sea necesario. Si el caso requiere más cuidado, podemos empezar con una validación simple y segura.",
-        },
-        {
-          q: "¿Ya entregas soluciones listas para producción?",
-          a: "Mi foco actual está en diagnósticos, análisis, dashboards y estructuración de datos que ya ayuden a la rutina y a la toma de decisiones. Cuando tiene sentido, eso puede evolucionar después a etapas más robustas.",
-        },
-        {
-          q: "¿Cuánto tarda en salir una primera entrega?",
-          a: "Depende del alcance, pero normalmente un análisis inicial, un dashboard o una primera lectura de KPIs ya puede empezar a mostrar valor en poco tiempo.",
-        },
-        {
-          q: "¿Qué necesitas para empezar?",
-          a: "Un problema claro, contexto del proceso y algún acceso a datos, hojas de cálculo, sistemas o ejemplos reales. Incluso si todo sigue desorganizado, puedo ayudar a mapear el primer paso.",
-        },
+      kicker: "Preguntas frecuentes", title: "Alcance y forma de trabajo.", subtitle: "Respuestas directas para reclutadores, equipos y potenciales socios.", items: [
+        { q: "¿Tu foco principal es análisis o ingeniería de datos?", a: "Mi posicionamiento principal es análisis de datos y analytics engineering. Puedo trabajar tanto en interpretación y visualización como en preparación, validación e integración." },
+        { q: "¿Trabajas con Power BI y DAX?", a: "Trabajo con Power BI, Power Query, modelado y dashboards. En DAX utilizo medidas compatibles con el alcance y sigo profundizando la práctica, sin posicionarme como especialista avanzado." },
+        { q: "¿La IA sigue siendo parte de tu perfil?", a: "Sí, como experiencia complementaria. Tengo experiencia profesional en Computer Vision y APIs, mientras el posicionamiento actual prioriza datos, SQL, BI, calidad e integración." },
+        { q: "¿Los casos destacados son trabajos profesionales?", a: "Sí. Ambos fueron desarrollados en FourDevs y pasaron por implementación, pruebas y homologación; el reconocimiento facial también opera en producción." },
       ],
     },
-    footer: {
-      nav_title: "Navegación",
-      brand_blurb:
-        "Análisis de datos, BI y dashboards con SQL, Excel, Power BI y Python para traducir datos en decisiones de negocio.",
-      contact_title: "¿Hablamos de datos, dashboards e indicadores?",
-      contact_blurb:
-        "Si necesitas seguir indicadores, organizar datos o sacar más lectura de tu proceso, puedo ayudarte a convertir la demanda en diagnóstico, dashboard o primera solución.",
-      signature: "SQL / POWER BI / KPI",
-    },
+    footer: { blurb: "Datos bien estructurados, análisis claros y decisiones con contexto.", navigation: "Navegación", contact: "Contacto", copyright: "Todos los derechos reservados.", signature: "DATA / ANALYTICS / BUSINESS" },
   },
 };

@@ -1,77 +1,40 @@
-import { Suspense, lazy, useEffect } from "react";
+import { lazy, Suspense } from "react";
+import { LanguageProvider } from "./context/LanguageContext";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import { PROJECTS, CERTIFICATES } from "./content/portfolioData";
 
-// Lazy Load heavy/below-fold components
-const Projects = lazy(() => import("./components/Projects"));
-const Experience = lazy(() => import("./components/Experience"));
-const Certificates = lazy(() => import("./components/Certificates"));
-
+const ProfessionalCases = lazy(() => import("./components/ProfessionalCases"));
 const About = lazy(() => import("./components/About"));
 const Solutions = lazy(() => import("./components/Solutions"));
+const Experience = lazy(() => import("./components/Experience"));
+const Projects = lazy(() => import("./components/Projects"));
 const Process = lazy(() => import("./components/Process"));
-const NetworkNodes = lazy(() => import("./components/NetworkNodes"));
-const DiagnosisCTA = lazy(() => import("./components/DiagnosisCTA"));
+const Certificates = lazy(() => import("./components/Certificates"));
 const FAQ = lazy(() => import("./components/FAQ"));
+const DiagnosisCTA = lazy(() => import("./components/DiagnosisCTA"));
 const Footer = lazy(() => import("./components/Footer"));
 
-import { LanguageProvider } from "./context/LanguageContext";
-
-function App() {
-  // Premium Preloading Strategy (Gentle / Non-Blocking)
-  useEffect(() => {
-    const allImages = [
-      ...PROJECTS.map((p) => p.image),
-      ...CERTIFICATES.map((c) => c.image),
-    ];
-
-    const loadImage = (index) => {
-      if (index >= allImages.length) return;
-
-      const img = new Image();
-      img.src = allImages[index];
-
-      // Load next only after this one triggers or fails
-      // using idle callback to avoid freezing the UI
-      img.onload = () => scheduleNext(index + 1);
-      img.onerror = () => scheduleNext(index + 1);
-    };
-
-    const scheduleNext = (index) => {
-      if ("requestIdleCallback" in window) {
-        window.requestIdleCallback(() => loadImage(index));
-      } else {
-        setTimeout(() => loadImage(index), 200);
-      }
-    };
-
-    // Initial delay to prioritize LCP (Hero Render)
-    setTimeout(() => scheduleNext(0), 3000);
-  }, []);
-
+export default function App() {
   return (
     <LanguageProvider>
-      <div style={{ position: "relative", overflow: "hidden" }}>
+      <div className="site-shell">
         <Navbar />
         <main>
           <Hero />
           <Suspense fallback={null}>
+            <ProfessionalCases />
             <About />
-            <NetworkNodes />
+            <Solutions />
             <Experience />
             <Projects />
-            <Solutions />
             <Process />
             <Certificates />
-            <DiagnosisCTA />
             <FAQ />
-            <Footer />
+            <DiagnosisCTA />
           </Suspense>
         </main>
+        <Suspense fallback={null}><Footer /></Suspense>
       </div>
     </LanguageProvider>
   );
 }
-
-export default App;

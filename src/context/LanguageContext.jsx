@@ -13,6 +13,11 @@ export function LanguageProvider({ children }) {
     }
   }, []);
 
+  useEffect(() => {
+    const documentLanguages = { pt: "pt-BR", en: "en", es: "es" };
+    document.documentElement.lang = documentLanguages[language] || "pt-BR";
+  }, [language]);
+
   const changeLanguage = (lang) => {
     setLanguage(lang);
     localStorage.setItem("language", lang);
@@ -23,7 +28,7 @@ export function LanguageProvider({ children }) {
     let value = translations[language];
 
     for (const k of keys) {
-      if (value && value[k]) {
+      if (value && value[k] !== undefined) {
         value = value[k];
       } else {
         return key; // Fallback to key if not found

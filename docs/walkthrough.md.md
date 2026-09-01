@@ -1,139 +1,47 @@
 # Portfolio Walkthrough
 
-Documento atualizado em 21/05/2026 para refletir o estado atual do portfólio.
+## Narrativa atual
 
-## Posicionamento atual
+O portfólio comunica Rafael Dutra como Analista de Dados e Analytics Engineer. A narrativa segue esta ordem:
 
-O site está orientado para:
+1. Posicionamento e proposta de valor.
+2. Cases profissionais e resultados comprovados.
+3. Perfil e stack principal.
+4. Competências em SQL, BI, pipelines e Python.
+5. Experiência e formação.
+6. Projetos autorais como extensão do repertório.
+7. Processo de trabalho, certificações e contato.
 
-- análise de dados
-- KPIs de negócio e análise orientada a decisão
-- dashboards, Power BI e visualização
-- SQL, Excel, Python e estruturação de dados
-- IA aplicada como extensão pontual da análise
+## Cases profissionais
 
-O tom da copy foi ajustado para parecer forte e profissional, mas sem exagerar senioridade ou prometer mais do que o perfil entrega hoje.
+O componente `ProfessionalCases.jsx` é a principal prova de experiência. Os textos vêm de `translations.js`; a referência detalhada e os limites de comunicação ficam em `docs/cases_profissionais.md`.
 
-## Estrutura da landing
+Não publicar o arquivo de referência dentro de `public/`, pois o Netlify disponibiliza todo conteúdo dessa pasta diretamente por URL.
 
-Ordem das seções renderizadas em `src/App.jsx`:
+## Identidade visual
 
-1. `Hero`
-2. `About`
-3. `Network`
-4. `Experience`
-5. `Projects`
-6. `Solutions`
-7. `Process`
-8. `Certificates`
-9. `DiagnosisCTA`
-10. `FAQ`
-11. `Footer`
+A direção visual combina:
 
-Observação:
-O item `Contato` da navbar e do footer aponta para `#hero`, onde está o CTA principal.
+- estética editorial de relatórios executivos
+- azul-petróleo como cor principal
+- verde-lima apenas como sinal de status
+- grids discretos e superfícies translúcidas
+- Manrope e IBM Plex Mono
+- tema claro como padrão e tema escuro opcional
 
-## Onde editar cada coisa
+## Manutenção
 
-### Textos da interface
+- Textos: `src/i18n/translations.js`
+- Cases: `src/components/ProfessionalCases.jsx`
+- Projetos e certificados: `src/content/portfolioData.js`
+- Tokens globais: `src/styles/variables.css`
+- Layout responsivo: `src/styles/components.css`
+- SEO: `index.html`, `public/robots.txt` e `public/sitemap.xml`
 
-Arquivo:
-`src/i18n/translations.js`
+## Cuidados de copy
 
-Ali ficam:
-
-- Hero
-- About
-- Solutions
-- Process
-- Experience
-- Network
-- Diagnosis CTA
-- FAQ
-- Footer
-- Labels auxiliares da navbar, projetos e certificados
-
-### Projetos e certificados
-
-Arquivo:
-`src/content/portfolioData.js`
-
-Esse arquivo centraliza:
-
-- títulos
-- descrições
-- links
-- imagens
-- tags
-- dados de certificados
-
-Motivo da mudança:
-Antes os arrays ficavam dentro de `Projects.jsx` e `Certificates.jsx`, o que forçava import estático desses componentes no `App.jsx` e enfraquecia o lazy loading. Agora os dados estão separados e o build volta a fazer chunking corretamente para esses componentes.
-
-## Decisões recentes
-
-### 1. Reposicionamento da copy
-
-O conteúdo foi reescrito para enfatizar:
-
-- competência em análise de dados
-- capacidade prática de organizar dados e gerar clareza
-- BI, estruturação de dados e IA como extensões naturais
-- atratividade para recrutadores e potenciais clientes
-
-Também foi removida qualquer autodesqualificação explícita na hero.
-
-### 2. Timeline de experiência
-
-A experiência da `FourDevs` foi colocada no topo da seção `Experience`, com foco em:
-
-- educação e segurança
-- computer vision
-- classificação
-- reconhecimento de padrões
-- pipelines de IA
-- exposição via API em produção
-
-A entrada `Projetos & Freelance / Data Scientist & ML` foi removida conforme solicitado.
-
-### 3. Internacionalização complementar
-
-Além da copy principal, foram alinhados:
-
-- labels do footer
-- botões de projeto
-- label de emissão dos certificados
-- labels de acessibilidade da navbar e do carrossel de projetos
-
-## SEO básico atual
-
-Arquivo:
-`index.html`
-
-Estado atual:
-
-- `lang="pt-BR"`
-- `title` alinhado ao posicionamento de análise de dados
-- `meta description` atualizada
-
-## Comandos úteis
-
-Desenvolvimento:
-
-```bash
-npm run dev
-```
-
-Build:
-
-```bash
-npm run build
-```
-
-## Fonte de referência de conteúdo
-
-Arquivo:
-`docs/instrucoes.txt`
-
-Uso:
-serve como base manual para projetos e certificados, mas a fonte operacional da interface agora é `src/content/portfolioData.js`.
+- Não usar “junior”, “iniciante” ou equivalentes como autodesqualificação.
+- Não afirmar senioridade ou domínio avançado de DAX.
+- Não transformar o limite configurável de 40.000 registros em métrica processada.
+- Não associar Spark, Kafka, Airflow, streaming ou Data Warehouse aos cases profissionais.
+- Diferenciar claramente trabalhos profissionais de projetos pessoais.

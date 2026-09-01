@@ -1,6 +1,6 @@
 # Rafael Dutra Portfolio
 
-Portfólio em React + Vite com foco em IA aplicada, machine learning, NLP/LLMs, visão computacional, automação e dados.
+Portfólio profissional de Rafael Dutra, posicionado como **Analista de Dados | Analytics Engineer**, com foco em SQL, Power BI, Python, Excel, PostgreSQL e qualidade de dados.
 
 ## Stack
 
@@ -8,8 +8,9 @@ Portfólio em React + Vite com foco em IA aplicada, machine learning, NLP/LLMs, 
 - Vite
 - Framer Motion
 - Lucide React
+- CSS responsivo com temas claro e escuro
 
-## Como rodar
+## Execução
 
 ```bash
 npm install
@@ -22,41 +23,27 @@ Build de produção:
 npm run build
 ```
 
-## Estrutura importante
+## Estrutura de conteúdo
 
-- `src/i18n/translations.js`
-  Conteúdo textual da landing em PT, EN e ES.
+- `src/i18n/translations.js`: copy em português, inglês e espanhol.
+- `src/content/portfolioData.js`: projetos e certificados.
+- `docs/cases_profissionais.md`: fonte interna dos cases profissionais.
+- `src/styles/variables.css`: tokens do design system.
+- `src/styles/components.css`: layout e responsividade das seções.
 
-- `src/content/portfolioData.js`
-  Dados centralizados de projetos e certificados, incluindo imagens e links.
+## Ordem da página
 
-- `src/App.jsx`
-  Ordem das seções e estratégia de preload das imagens.
+1. Hero
+2. Cases profissionais
+3. Perfil
+4. Competências
+5. Experiência
+6. Projetos
+7. Processo
+8. Certificações
+9. FAQ
+10. Contato
 
-- `src/components/`
-  Componentes visuais da landing.
+## Deploy
 
-- `docs/instrucoes.txt`
-  Material de referência para projetos e certificados.
-
-- `docs/walkthrough.md.md`
-  Visão geral da arquitetura atual e decisões recentes.
-
-## Seções atuais
-
-- Hero
-- About
-- Network
-- Experience
-- Projects
-- Solutions
-- Process
-- Certificates
-- Diagnosis CTA
-- FAQ
-- Footer
-
-## Observações
-
-- O item `Contato` da navegação redireciona para a `Hero`, onde está o CTA principal.
-- O conteúdo de projetos e certificados foi separado dos componentes para facilitar manutenção e preservar o lazy loading.
+O site é publicado no Netlify em [rafaeldutra.com](https://rafaeldutra.com). O subdomínio antigo do Netlify redireciona permanentemente para o domínio principal.
