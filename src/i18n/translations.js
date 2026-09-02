@@ -21,8 +21,8 @@ export const translations = {
       cta_cases: "Ver cases profissionais",
       cta_cv: "Baixar currículo",
       cta_contact: "Falar comigo",
-      cv_path: "/curriculo_Rafael_Dutra.pdf",
-      cv_filename: "curriculo_Rafael_Dutra.pdf",
+      cv_path: "/Rafael_Dutra_Dados_IA.pdf",
+      cv_filename: "Rafael_Dutra_Dados_IA.pdf",
       availability: "Recife, Brasil · Remoto",
       panel_eyebrow: "Em números",
       panel_verified: "experiência comprovada",
@@ -217,7 +217,7 @@ export const translations = {
       title: "Reliable data for decisions that move the business.",
       title_highlight: "From structure to insight.",
       subtitle: "I turn scattered data into consistent foundations, clear analysis, and useful metrics by connecting SQL, Power BI, Python, and Excel to real operations.",
-      cta_cases: "View professional cases", cta_cv: "Download resume", cta_contact: "Contact me", cv_path: "/curriculo_Rafael_Dutra.pdf", cv_filename: "curriculo_Rafael_Dutra.pdf", availability: "Recife, Brazil · Remote",
+      cta_cases: "View professional cases", cta_cv: "Download resume", cta_contact: "Contact me", cv_path: "/Rafael_Dutra_Dados_IA.pdf", cv_filename: "Rafael_Dutra_Dados_IA.pdf", availability: "Recife, Brazil · Remote",
       panel_eyebrow: "Professional overview", panel_verified: "verified experience", panel_title: "Hands-on experience across the full data lifecycle.",
       panel_metrics: [
         { value: "2,400+", label: "facial registrations in production" }, { value: "100+", label: "daily active users" }, { value: "PRODUCTION", label: "solution integrated into real operations" }, { value: "END-TO-END", label: "data → validation → integration → delivery" },
@@ -283,7 +283,7 @@ export const translations = {
       cases: "Casos", about: "Perfil", expertise: "Competencias", experience: "Experiencia", projects: "Proyectos", certificates: "Formación", contact: "Contacto", toggle_theme: "Cambiar tema", open_menu: "Abrir menú", close_menu: "Cerrar menú",
     },
     hero: {
-      kicker: "Analista de Datos | Analytics Engineer", title: "Datos confiables para decisiones que mueven el negocio.", title_highlight: "De la estructura al insight.", subtitle: "Transformo datos dispersos en bases consistentes, análisis claros e indicadores útiles, conectando SQL, Power BI, Python y Excel con la realidad de la operación.", cta_cases: "Ver casos profesionales", cta_cv: "Descargar CV", cta_contact: "Contactarme", cv_path: "/curriculo_Rafael_Dutra.pdf", cv_filename: "curriculo_Rafael_Dutra.pdf", availability: "Recife, Brasil · Remoto", panel_eyebrow: "En números", panel_verified: "experiencia comprobada", panel_title: "Experiencia práctica en el ciclo completo del dato.",
+      kicker: "Analista de Datos | Analytics Engineer", title: "Datos confiables para decisiones que mueven el negocio.", title_highlight: "De la estructura al insight.", subtitle: "Transformo datos dispersos en bases consistentes, análisis claros e indicadores útiles, conectando SQL, Power BI, Python y Excel con la realidad de la operación.", cta_cases: "Ver casos profesionales", cta_cv: "Descargar CV", cta_contact: "Contactarme", cv_path: "/Rafael_Dutra_Dados_IA.pdf", cv_filename: "Rafael_Dutra_Dados_IA.pdf", availability: "Recife, Brasil · Remoto", panel_eyebrow: "En números", panel_verified: "experiencia comprobada", panel_title: "Experiencia práctica en el ciclo completo del dato.",
       panel_metrics: [{ value: "2.400+", label: "registros faciales en producción" }, { value: "100+", label: "usuarios activos por día" }, { value: "PRODUCCIÓN", label: "solución integrada a la operación real" }, { value: "END-TO-END", label: "datos → validación → integración → entrega" }],
     },
     cases: {
