@@ -21,7 +21,7 @@ export const translations = {
       cta_cases: "Ver cases profissionais",
       cta_cv: "Baixar currículo",
       cta_contact: "Falar comigo",
-      cv_path: "/Rafael_Dutra_Dados_IA.pdf",
+      cv_path: "/projects/Rafael_Dutra_Dados_IA.pdf",
       cv_filename: "Rafael_Dutra_Dados_IA.pdf",
       availability: "Recife, Brasil · Remoto",
       panel_eyebrow: "Em números",
@@ -163,6 +163,13 @@ export const translations = {
           description:
             "Graduação concluída com formação em dados, bancos de dados, algoritmos, engenharia de software e projetos aplicados.",
         },
+        {
+          company: "PUC Minas",
+          role: "Pós-graduação em Engenharia de Dados",
+          date: "set/2026 — mar/2028",
+          description:
+            "Em andamento, com foco curricular em Python e SQL para engenharia de dados, pipelines ETL/ELT e orquestração, Data Lakes e Data Warehouses, cloud com AWS, Azure e GCP, processamento com Spark e Kafka, governança e qualidade de dados.",
+        },
       ],
     },
     projects: {
@@ -217,7 +224,7 @@ export const translations = {
       title: "Reliable data for decisions that move the business.",
       title_highlight: "From structure to insight.",
       subtitle: "I turn scattered data into consistent foundations, clear analysis, and useful metrics by connecting SQL, Power BI, Python, and Excel to real operations.",
-      cta_cases: "View professional cases", cta_cv: "Download resume", cta_contact: "Contact me", cv_path: "/Rafael_Dutra_Dados_IA.pdf", cv_filename: "Rafael_Dutra_Dados_IA.pdf", availability: "Recife, Brazil · Remote",
+      cta_cases: "View professional cases", cta_cv: "Download resume", cta_contact: "Contact me", cv_path: "/projects/Rafael_Dutra_Dados_IA.pdf", cv_filename: "Rafael_Dutra_Dados_IA.pdf", availability: "Recife, Brazil · Remote",
       panel_eyebrow: "Professional overview", panel_verified: "verified experience", panel_title: "Hands-on experience across the full data lifecycle.",
       panel_metrics: [
         { value: "2,400+", label: "facial registrations in production" }, { value: "100+", label: "daily active users" }, { value: "PRODUCTION", label: "solution integrated into real operations" }, { value: "END-TO-END", label: "data → validation → integration → delivery" },
@@ -261,6 +268,7 @@ export const translations = {
         { company: "FourDevs", role: "Applied AI & Data Developer · Internship", date: "04/2026 — Present", description: "Building professional services involving data ingestion, validation, integration, and persistence, alongside production Computer Vision solutions. Direct work with APIs, PostgreSQL, testing, Docker, validation, and troubleshooting." },
         { company: "Porto Digital", role: "Technology Residency", date: "02/2024 — Present", description: "Residency focused on real company and public-sector challenges, connecting analysis, software, and collaborative delivery.", details: ["Globo · Horus AI: live broadcast monitoring with video and audio pipelines, reaching up to 97.6% accuracy in the best model.", "Igarassu City Hall: platform for mapping and supporting social assistance beneficiaries."] },
         { company: "FICR", role: "Technology Degree in Systems Analysis and Development", date: "02/2024 — 06/2026", description: "Completed degree covering data, databases, algorithms, software engineering, and applied projects." },
+        { company: "PUC Minas", role: "Postgraduate Degree in Data Engineering", date: "Sep/2026 — Mar/2028", description: "In progress, with a curriculum focused on Python and SQL for data engineering, ETL/ELT pipelines and orchestration, Data Lakes and Data Warehouses, cloud platforms including AWS, Azure, and GCP, Spark and Kafka processing, data governance, and data quality." },
       ],
     },
     projects: { kicker: "Technical portfolio", title: "Projects that expand my understanding of data and business.", subtitle: "Independent studies and products used to explore analytics, visualization, modeling, and communication.", cta_code: "Repository", cta_live: "Live project", cta_soon: "Coming soon" },
@@ -283,7 +291,7 @@ export const translations = {
       cases: "Casos", about: "Perfil", expertise: "Competencias", experience: "Experiencia", projects: "Proyectos", certificates: "Formación", contact: "Contacto", toggle_theme: "Cambiar tema", open_menu: "Abrir menú", close_menu: "Cerrar menú",
     },
     hero: {
-      kicker: "Analista de Datos | Analytics Engineer", title: "Datos confiables para decisiones que mueven el negocio.", title_highlight: "De la estructura al insight.", subtitle: "Transformo datos dispersos en bases consistentes, análisis claros e indicadores útiles, conectando SQL, Power BI, Python y Excel con la realidad de la operación.", cta_cases: "Ver casos profesionales", cta_cv: "Descargar CV", cta_contact: "Contactarme", cv_path: "/Rafael_Dutra_Dados_IA.pdf", cv_filename: "Rafael_Dutra_Dados_IA.pdf", availability: "Recife, Brasil · Remoto", panel_eyebrow: "En números", panel_verified: "experiencia comprobada", panel_title: "Experiencia práctica en el ciclo completo del dato.",
+      kicker: "Analista de Datos | Analytics Engineer", title: "Datos confiables para decisiones que mueven el negocio.", title_highlight: "De la estructura al insight.", subtitle: "Transformo datos dispersos en bases consistentes, análisis claros e indicadores útiles, conectando SQL, Power BI, Python y Excel con la realidad de la operación.", cta_cases: "Ver casos profesionales", cta_cv: "Descargar CV", cta_contact: "Contactarme", cv_path: "/projects/Rafael_Dutra_Dados_IA.pdf", cv_filename: "Rafael_Dutra_Dados_IA.pdf", availability: "Recife, Brasil · Remoto", panel_eyebrow: "En números", panel_verified: "experiencia comprobada", panel_title: "Experiencia práctica en el ciclo completo del dato.",
       panel_metrics: [{ value: "2.400+", label: "registros faciales en producción" }, { value: "100+", label: "usuarios activos por día" }, { value: "PRODUCCIÓN", label: "solución integrada a la operación real" }, { value: "END-TO-END", label: "datos → validación → integración → entrega" }],
     },
     cases: {
@@ -313,6 +321,7 @@ export const translations = {
         { company: "FourDevs", role: "Desarrollador de IA Aplicada y Datos · Prácticas", date: "04/2026 — Actualidad", description: "Desarrollo de servicios profesionales de ingestión, validación, integración y persistencia de datos, además de soluciones de Computer Vision en producción. Trabajo directo con APIs, PostgreSQL, pruebas, Docker, homologación y troubleshooting." },
         { company: "Porto Digital", role: "Residencia Tecnológica", date: "02/2024 — Actualidad", description: "Residencia orientada a problemas reales de empresas e instituciones, conectando análisis, software y entrega colaborativa.", details: ["Globo · Horus AI: monitoreo de transmisiones en vivo con pipelines de video y audio y hasta 97,6% de precisión en el mejor modelo.", "Municipalidad de Igarassu: plataforma para mapear y acompañar beneficiarios en situación de vulnerabilidad social."] },
         { company: "FICR", role: "Tecnólogo en Análisis y Desarrollo de Sistemas", date: "02/2024 — 06/2026", description: "Grado concluido con formación en datos, bases de datos, algoritmos, ingeniería de software y proyectos aplicados." },
+        { company: "PUC Minas", role: "Posgrado en Ingeniería de Datos", date: "sep/2026 — mar/2028", description: "En curso, con un plan de estudios enfocado en Python y SQL para ingeniería de datos, pipelines ETL/ELT y orquestación, Data Lakes y Data Warehouses, cloud con AWS, Azure y GCP, procesamiento con Spark y Kafka, gobierno y calidad de datos." },
       ],
     },
     projects: { kicker: "Portafolio técnico", title: "Proyectos que amplían mi lectura de datos y negocio.", subtitle: "Estudios y productos propios para explorar analytics, visualización, modelado y comunicación.", cta_code: "Repositorio", cta_live: "Proyecto online", cta_soon: "Próximamente" },
