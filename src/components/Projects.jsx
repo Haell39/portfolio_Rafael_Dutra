@@ -28,20 +28,27 @@ export default function Projects() {
 
         <div className="projects-grid">
           {PROJECTS.map((project, index) => (
-            <FadeIn key={project.title} delay={index * 0.07} className={index === 0 ? "project-card-wrap project-card-wrap--featured" : "project-card-wrap"}>
-              <article className="project-card surface">
+            <FadeIn key={project.title} delay={index * 0.07} className="project-card-wrap">
+              <article className={`project-card surface${index % 2 ? " project-card--reverse" : ""}`}>
                 <div className="project-card__visual">
                   <PremiumImage
                     src={project.image}
                     alt={localized(project, "title")}
-                    style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                    style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: project.objectPosition || "center" }}
                   />
                   <span className="project-card__index">{String(index + 1).padStart(2, "0")}</span>
                 </div>
                 <div className="project-card__content">
-                  <span className="mono-label">{localized(project, "category")}</span>
+                  <div className="project-card__meta">
+                    <span className="mono-label">{localized(project, "category")}</span>
+                    <span className="project-card__selected">{t("projects.featured_label")}</span>
+                  </div>
                   <h3>{localized(project, "title")}</h3>
                   <p>{localized(project, "description")}</p>
+                  <div className="project-card__path" aria-label={t("projects.flow_label")}>
+                    <span>{t("projects.flow_label")}</span>
+                    <strong>{localized(project, "path")}</strong>
+                  </div>
                   <div className="project-tags">{project.tags.map((tag) => <span className="tag" key={tag}>{tag}</span>)}</div>
                   <div className="project-links">
                     <a href={project.link} target="_blank" rel="noreferrer"><Github size={16} /> {t("projects.cta_code")}</a>

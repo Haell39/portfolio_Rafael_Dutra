@@ -1,6 +1,5 @@
-import imgHorus from "../assets/projects/horus.webp";
-import imgAnalytics from "../assets/projects/Analytics.webp";
 import imgVarejo from "../assets/projects/Varejo.webp";
+import imgPulsoEconomico from "../assets/projects/pulso-economico.png";
 
 import imgEFSET from "../assets/certificates/EFSET.webp";
 import imgONE from "../assets/certificates/ONE.webp";
@@ -12,58 +11,46 @@ import imgPython from "../assets/certificates/Python Course.jpg";
 
 export const PROJECTS = [
   {
-    title: "HR Analytics",
-    titleEn: "HR Analytics",
-    titleEs: "HR Analytics",
-    category: "People Analytics · Retenção",
-    categoryEn: "People Analytics · Retention",
-    categoryEs: "People Analytics · Retención",
+    title: "Pulso Econômico Brasil",
+    titleEn: "Brazil Economic Pulse",
+    titleEs: "Pulso Económico de Brasil",
+    category: "Engenharia de Dados · Analytics Engineering",
+    categoryEn: "Data Engineering · Analytics Engineering",
+    categoryEs: "Ingeniería de Datos · Analytics Engineering",
     description:
-      "Análise de rotatividade com foco nos fatores associados à saída de colaboradores, combinando exploração, visualização e modelagem para apoiar discussões de retenção.",
+      "Plataforma que transforma séries públicas do Banco Central em métricas econômicas documentadas, testadas e prontas para consumo, da ingestão incremental ao dashboard público.",
     descriptionEn:
-      "Employee turnover analysis focused on the factors associated with attrition, combining exploration, visualization, and modeling to support retention discussions.",
+      "A platform that transforms public Central Bank time series into documented, tested, consumption-ready economic metrics, from incremental ingestion to a public dashboard.",
     descriptionEs:
-      "Análisis de rotación centrado en los factores asociados a la salida de empleados, combinando exploración, visualización y modelado para apoyar decisiones de retención.",
-    tags: ["Data Analytics", "Business Intelligence", "Python", "Storytelling"],
-    image: imgAnalytics,
-    link: "https://github.com/Haell39/HR-Analytics",
-    linkLive: "https://rafaeldutra-hr-analytics.netlify.app/",
+      "Plataforma que transforma series públicas del Banco Central en métricas económicas documentadas, probadas y listas para consumo, desde la ingesta incremental hasta el dashboard público.",
+    path: "API BCB → Airflow → Snowflake → dbt → Streamlit",
+    pathEn: "BCB API → Airflow → Snowflake → dbt → Streamlit",
+    pathEs: "API BCB → Airflow → Snowflake → dbt → Streamlit",
+    tags: ["dbt", "Snowflake", "Airflow", "SQL", "Streamlit"],
+    image: imgPulsoEconomico,
+    link: "https://github.com/Haell39/data_pipeline",
+    linkLive: "https://pulso-economico-brasil.streamlit.app/",
   },
   {
     title: "Inteligência de Varejo",
     titleEn: "Retail Intelligence",
     titleEs: "Inteligencia de Retail",
-    category: "E-commerce · Performance",
-    categoryEn: "E-commerce · Performance",
-    categoryEs: "E-commerce · Desempeño",
+    category: "Analytics · E-commerce",
+    categoryEn: "Analytics · E-commerce",
+    categoryEs: "Analytics · E-commerce",
     description:
-      "Análise do e-commerce brasileiro com dados da Olist e IPCA/IBGE para investigar vendas, satisfação do cliente e eficiência logística.",
+      "Case analítico do e-commerce brasileiro que combina dados da Olist e IPCA/IBGE para investigar vendas, satisfação do cliente e eficiência logística.",
     descriptionEn:
-      "Brazilian e-commerce analysis using Olist and IPCA/IBGE data to investigate sales, customer satisfaction, and logistics efficiency.",
+      "Brazilian e-commerce analytics case combining Olist and IPCA/IBGE data to investigate sales, customer satisfaction, and logistics efficiency.",
     descriptionEs:
-      "Análisis del comercio electrónico brasileño con datos de Olist e IPCA/IBGE para investigar ventas, satisfacción y eficiencia logística.",
-    tags: ["Data Analysis", "Retail", "Logistics", "Business KPIs"],
+      "Caso analítico del comercio electrónico brasileño que combina datos de Olist e IPCA/IBGE para investigar ventas, satisfacción y eficiencia logística.",
+    path: "Olist + IBGE → tratamento → análise → visualização",
+    pathEn: "Olist + IBGE → preparation → analysis → visualization",
+    pathEs: "Olist + IBGE → preparación → análisis → visualización",
+    tags: ["Python", "Data Analysis", "Business KPIs", "Storytelling"],
     image: imgVarejo,
     link: "https://github.com/Haell39/inteligencia-varejo-dinamica-consumo",
     linkLive: "https://inteligenciavarejodeploy.netlify.app/",
-  },
-  {
-    title: "Horus AI",
-    titleEn: "Horus AI",
-    titleEs: "Horus AI",
-    category: "Monitoramento · Dados não estruturados",
-    categoryEn: "Monitoring · Unstructured data",
-    categoryEs: "Monitoreo · Datos no estructurados",
-    description:
-      "Sistema de monitoramento que analisa vídeo, áudio e sincronização labial para detectar anomalias em transmissões ao vivo e apoiar resposta operacional.",
-    descriptionEn:
-      "Monitoring system that analyzes video, audio, and lip synchronization to detect anomalies in live broadcasts and support operational response.",
-    descriptionEs:
-      "Sistema de monitoreo que analiza video, audio y sincronización labial para detectar anomalías en transmisiones en vivo y apoyar la respuesta operativa.",
-    tags: ["Python", "Computer Vision", "Audio Processing", "Monitoring"],
-    image: imgHorus,
-    link: "https://github.com/Haell39/horus_ai/tree/main",
-    linkLive: null,
   },
 ];
 

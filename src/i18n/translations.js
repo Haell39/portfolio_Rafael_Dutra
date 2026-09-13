@@ -173,9 +173,11 @@ export const translations = {
       ],
     },
     projects: {
-      kicker: "Portfólio técnico",
-      title: "Projetos que ampliam minha leitura de dados e negócio.",
-      subtitle: "Estudos e produtos autorais usados para explorar analytics, visualização, modelagem e comunicação de resultados.",
+      kicker: "Projetos selecionados",
+      title: "Do dado bruto à decisão de negócio.",
+      subtitle: "Dois projetos complementares que mostram análise orientada a negócio e a construção de uma plataforma de dados ponta a ponta.",
+      featured_label: "Projeto em destaque",
+      flow_label: "Fluxo do projeto",
       cta_code: "Repositório",
       cta_live: "Projeto online",
       cta_soon: "Em breve",
@@ -271,7 +273,7 @@ export const translations = {
         { company: "PUC Minas", role: "Postgraduate Degree in Data Engineering", date: "Sep/2026 — Mar/2028", description: "In progress, with a curriculum focused on Python and SQL for data engineering, ETL/ELT pipelines and orchestration, Data Lakes and Data Warehouses, cloud platforms including AWS, Azure, and GCP, Spark and Kafka processing, data governance, and data quality." },
       ],
     },
-    projects: { kicker: "Technical portfolio", title: "Projects that expand my understanding of data and business.", subtitle: "Independent studies and products used to explore analytics, visualization, modeling, and communication.", cta_code: "Repository", cta_live: "Live project", cta_soon: "Coming soon" },
+    projects: { kicker: "Selected projects", title: "From raw data to business decisions.", subtitle: "Two complementary projects showcasing business-oriented analytics and the delivery of an end-to-end data platform.", featured_label: "Featured project", flow_label: "Project flow", cta_code: "Repository", cta_live: "Live project", cta_soon: "Coming soon" },
     certificates: { kicker: "Continuous learning", title: "Selected certifications.", subtitle: "A sample of continued learning in SQL, analysis, statistics, Python, and English.", issued_label: "Issued" },
     diagnosis: { kicker: "Next conversation", title: "Looking for someone who connects data, context, and execution?", subtitle: "I am open to data analysis, analytics engineering, and projects that need to turn scattered sources into reliable information.", cta_primary: "Connect on LinkedIn", cta_secondary: "Send an email", note: "Recife, Brazil · Available for remote work" },
     faq: {
@@ -324,7 +326,7 @@ export const translations = {
         { company: "PUC Minas", role: "Posgrado en Ingeniería de Datos", date: "sep/2026 — mar/2028", description: "En curso, con un plan de estudios enfocado en Python y SQL para ingeniería de datos, pipelines ETL/ELT y orquestación, Data Lakes y Data Warehouses, cloud con AWS, Azure y GCP, procesamiento con Spark y Kafka, gobierno y calidad de datos." },
       ],
     },
-    projects: { kicker: "Portafolio técnico", title: "Proyectos que amplían mi lectura de datos y negocio.", subtitle: "Estudios y productos propios para explorar analytics, visualización, modelado y comunicación.", cta_code: "Repositorio", cta_live: "Proyecto online", cta_soon: "Próximamente" },
+    projects: { kicker: "Proyectos seleccionados", title: "Del dato bruto a la decisión de negocio.", subtitle: "Dos proyectos complementarios que muestran análisis orientado al negocio y la construcción de una plataforma de datos de punta a punta.", featured_label: "Proyecto destacado", flow_label: "Flujo del proyecto", cta_code: "Repositorio", cta_live: "Proyecto online", cta_soon: "Próximamente" },
     certificates: { kicker: "Formación continua", title: "Certificaciones seleccionadas.", subtitle: "Una muestra de formación complementaria en SQL, análisis, estadística, Python e inglés.", issued_label: "Emitido" },
     diagnosis: { kicker: "Próxima conversación", title: "¿Buscas a alguien que conecte datos, contexto y ejecución?", subtitle: "Estoy abierto a oportunidades en análisis de datos, analytics engineering y proyectos que necesiten transformar fuentes dispersas en información confiable.", cta_primary: "Conectar en LinkedIn", cta_secondary: "Enviar un correo", note: "Recife, Brasil · Disponible para trabajo remoto" },
     faq: {
