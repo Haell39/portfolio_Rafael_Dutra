@@ -36,14 +36,15 @@ export const translations = {
     },
     cases: {
       kicker: "Experiência comprovada",
-      title: "Cases profissionais que saíram do desenho e chegaram à operação.",
+      title: "Cases profissionais de dados, integração e IA aplicada.",
       subtitle:
-        "Soluções desenvolvidas na FourDevs, com responsabilidade direta sobre implementação, testes, homologação e entrega técnica.",
+        "Trabalhos desenvolvidos na FourDevs, com contribuição técnica, evidências e estágio de entrega descritos em cada case.",
       confidentiality: "Escopo técnico apresentado sem expor dados sensíveis do cliente.",
       status_label: "Status",
       stack_label: "Stack principal",
       delivery_label: "O que desenvolvi",
       result_label: "Evidências",
+      details_label: "Explorar decisões e validação técnica",
       items: [
         {
           number: "01",
@@ -85,6 +86,75 @@ export const translations = {
             { value: "0", label: "erros internos no ciclo homologado" },
           ],
           stack: ["Python", "FastAPI", "SQL", "PostgreSQL", "postgres_fdw", "Docker"],
+        },
+        {
+          number: "03",
+          id: "case-ia-multimodal",
+          type: "IA multimodal · Contratos e qualidade de dados",
+          title: "IA multimodal para avaliações pedagógicas e relatórios com validação de dados",
+          status: "Validação local",
+          stage: "local",
+          summary: "Estruturei prompts e contratos JSON para avaliações com imagens e áudios e relatórios pedagógicos, com validadores locais para conferir estrutura, cálculos e consistência dos indicadores.",
+          delivery: [
+            "Prompts, schemas JSON e requests multimodais para cinco módulos pedagógicos",
+            "Seis templates de relatórios consolidados do Giz 360 e modelos de entrada",
+            "Validadores locais e calculadora determinística de referência",
+            "Cenários no Insomnia e rastreabilidade com requests, respostas e SHA-256",
+          ],
+          metrics: [
+            { value: "5", label: "módulos com prompts e schemas" },
+            { value: "6", label: "templates de relatórios 360" },
+            { value: "39", label: "testes locais aprovados · relatórios 360" },
+          ],
+          evidence_note: "Relatórios 360 testados diretamente no Gemini com dados fictícios. Os testes locais verificam contratos e cálculos; não medem precisão pedagógica nem representam homologação ponta a ponta ou operação em produção.",
+          stack: ["Gemini API", "responseSchema", "JSON", "JavaScript / Node.js", "Python", "Insomnia", "Bruno", "Git / GitHub"],
+          details: [
+            {
+              title: "Contexto e problema",
+              paragraphs: [
+                "No ecossistema educacional Giz Virtual / PedagIA, avaliações usam imagens e áudios, e relatórios pedagógicos partem de resultados consolidados.",
+                "O desafio era transformar regras pedagógicas extensas em respostas estruturadas consumíveis por API, preservando critérios, identificadores e consistência dos indicadores.",
+              ],
+            },
+            {
+              title: "Minha contribuição",
+              items: [
+                "Estruturei prompts, schemas JSON e requests multimodais para Desenho, Habilidade, Oralidade, Escrita e Leitura e Fluência.",
+                "Preparei relatórios de turma e revisei relatórios de gestor da Educação Infantil.",
+                "Construí seis templates de relatórios consolidados do Giz 360 e seus modelos de entrada.",
+                "Desenvolvi ferramentas locais para validar a estrutura das respostas e conferir cálculos com uma calculadora determinística de referência.",
+                "Preparei e executei cenários de teste no Insomnia.",
+                "Registrei versões testadas com requests, respostas e hashes SHA-256 para rastreabilidade.",
+                "Apoiei a análise de problemas de integração e a documentação de APIs, com leitura de backends existentes. Minha implementação própria concentrou-se nos prompts, contratos, templates e ferramentas locais de validação.",
+              ],
+            },
+            {
+              title: "Decisões técnicas",
+              ordered: true,
+              items: [
+                "Separei alunos distintos, eventos de aplicação e resultados por objetivo curricular para usar o denominador correto em cada indicador.",
+                "Evitei somar participantes de módulos diferentes como se fossem pessoas distintas.",
+                "Limitei comparações a resultados com escalas e rubricas compatíveis.",
+                "Distingui evidência insuficiente de desempenho baixo: imagem ruim ou áudio inaudível não devem resultar automaticamente em nota baixa.",
+                "Conferi cálculos de forma determinística, além de validar o JSON e revisar a narrativa das respostas de LLMs.",
+                "Preservei a revisão docente e limitei conclusões às evidências disponíveis.",
+              ],
+            },
+            {
+              title: "Validação e evidências",
+              paragraphs: [
+                "Na entrega dos relatórios 360, preparei seis templates e os testei diretamente no Gemini com dados fictícios. Foram aprovados 39 testes locais.",
+                "A validação combinou estrutura JSON, conferência determinística dos cálculos e revisão da narrativa. Os 39 testes são evidência da validação local dessa entrega, sem representar precisão pedagógica ou homologação ponta a ponta.",
+              ],
+            },
+            {
+              title: "Estágio da entrega",
+              paragraphs: [
+                "A entrega compreendeu prompts, contratos, templates e validação local. A integração com o backend e a homologação com dados reais ficaram como etapas posteriores da equipe.",
+                "O trabalho utilizou a API Gemini, sem treinamento de modelos próprios. Não há evidências para atribuir economia de tempo, redução de custos ou ganho de aprendizagem a essa entrega.",
+              ],
+            },
+          ],
         },
       ],
     },
@@ -206,7 +276,7 @@ export const translations = {
         { q: "Que tipo de problema de dados você pode ajudar a resolver?", a: "Posso apoiar desde a organização e validação de fontes até análises, KPIs e dashboards para decisão. Quando o problema exige uma base mais confiável, também atuo na integração e preparação dos dados que sustentam essas entregas." },
         { q: "Você trabalha com Power BI e DAX?", a: "Trabalho com Power BI, Power Query, modelagem e construção de dashboards. Em DAX, utilizo medidas compatíveis com o escopo dos projetos e sigo aprofundando a prática, sem me posicionar como especialista avançado." },
         { q: "A experiência com IA ainda faz parte do perfil?", a: "Sim, como repertório complementar. Tenho experiência profissional com Computer Vision e APIs, mas o posicionamento atual prioriza dados, SQL, BI, qualidade e integração." },
-        { q: "Os cases apresentados são projetos profissionais?", a: "Sim. Os dois cases em destaque foram desenvolvidos na FourDevs e passaram por etapas reais de implementação, testes e homologação; o reconhecimento facial também opera em produção." },
+        { q: "Os cases apresentados são projetos profissionais?", a: "Sim. Os três cases são trabalhos profissionais na FourDevs, com estágios distintos: reconhecimento facial em produção, ingestão cadastral homologada e avaliações e relatórios com IA multimodal em validação local. A integração com o backend e a homologação dos relatórios com dados reais ficaram como etapas posteriores da equipe." },
       ],
     },
     footer: {
@@ -234,10 +304,79 @@ export const translations = {
       ],
     },
     cases: {
-      kicker: "Proven experience", title: "Professional cases that moved from design to real operations.", subtitle: "Solutions built at FourDevs, with direct responsibility for implementation, testing, validation, and technical delivery.", confidentiality: "Technical scope presented without exposing sensitive client data.", status_label: "Status", stack_label: "Core stack", delivery_label: "What I built", result_label: "Evidence",
+      kicker: "Proven experience", title: "Professional cases in data, integration, and applied AI.", subtitle: "Work carried out at FourDevs, with technical contributions, evidence, and delivery stage described for each case.", confidentiality: "Technical scope presented without exposing sensitive client data.", status_label: "Status", stack_label: "Core stack", delivery_label: "What I built", result_label: "Evidence", details_label: "Explore technical decisions and validation",
       items: [
         { number: "01", type: "Computer Vision · Production data", title: "Facial recognition integrated into a real access workflow", status: "Production", summary: "I built and evolved a facial recognition microservice connected to an educational institution's systems and turnstile identification workflow.", delivery: ["512-dimensional ArcFace embeddings and vector search with pgvector", "Registration, update, verification, and removal APIs", "Adaptive recognition, image validation, and fallback mechanisms", "Validation, deployment, troubleshooting, and 58 automated Pytest tests"], metrics: [{ value: "2,721", label: "verifications in recorded history" }, { value: "1,152", label: "distinct users in recorded history" }, { value: "145", label: "verifications/day · Mon–Thu average" }], evidence_note: "Records reviewed in Oct 2026. Rounded average of 145 verifications/day from Oct 26 to 29, 2026 (580 verifications over four days). Oct 30 recorded 8 verifications. The production database holds more than 2,400 facial registrations.", stack: ["Python", "FastAPI", "PostgreSQL", "pgvector", "Docker", "Pytest"] },
         { number: "02", type: "Data Integration · Batch ingestion", title: "Educational data ingestion and routing", status: "Validated", summary: "I built and validated a batch service that receives CSV files, validates and normalizes records, and routes persistence to separate PostgreSQL databases according to the business domain.", delivery: ["Input contract, data quality validation, and load normalization", "CSV-to-PostgreSQL mapping and multi-database routing", "Student-ID idempotency, batch transactions, and safe reprocessing", "Structured logs, API key, tests, and direct SQL result validation"], metrics: [{ value: "3", label: "validated databases" }, { value: "2", label: "business domains" }, { value: "0", label: "internal errors in the validation run" }], stack: ["Python", "FastAPI", "SQL", "PostgreSQL", "postgres_fdw", "Docker"] },
+        {
+          number: "03",
+          id: "case-ia-multimodal",
+          type: "Multimodal AI · Data contracts and quality",
+          title: "Multimodal AI for educational assessments and reports with data validation",
+          status: "Local validation",
+          stage: "local",
+          summary: "I structured prompts and JSON contracts for image and audio assessments and educational reports, with local validators to check structure, calculations, and metric consistency.",
+          delivery: [
+            "Prompts, JSON schemas, and multimodal requests for five educational modules",
+            "Six Giz 360 consolidated report templates and input models",
+            "Local validators and a deterministic reference calculator",
+            "Insomnia test scenarios and traceability through requests, responses, and SHA-256",
+          ],
+          metrics: [
+            { value: "5", label: "modules with prompts and schemas" },
+            { value: "6", label: "360 report templates" },
+            { value: "39", label: "local tests passed · 360 reports" },
+          ],
+          evidence_note: "360 reports tested directly in Gemini with synthetic data. Local tests check contracts and calculations; they do not measure educational accuracy or establish end-to-end acceptance or production operation.",
+          stack: ["Gemini API", "responseSchema", "JSON", "JavaScript / Node.js", "Python", "Insomnia", "Bruno", "Git / GitHub"],
+          details: [
+            {
+              title: "Context and problem",
+              paragraphs: [
+                "In the Giz Virtual / PedagIA educational ecosystem, assessments use images and audio, while educational reports draw on consolidated results.",
+                "The challenge was to turn extensive educational rules into structured API responses while preserving criteria, identifiers, and metric consistency.",
+              ],
+            },
+            {
+              title: "My contribution",
+              items: [
+                "Structured prompts, JSON schemas, and multimodal requests for five modules: Drawing, Skills, Oral Language, Writing, and Reading and Fluency.",
+                "Prepared class reports and reviewed early childhood education manager reports.",
+                "Built six Giz 360 consolidated report templates and their input models.",
+                "Developed local tools to validate response structure and check calculations against a deterministic reference calculator.",
+                "Prepared and executed test scenarios in Insomnia.",
+                "Recorded tested versions through requests, responses, and SHA-256 hashes for traceability.",
+                "Supported integration troubleshooting and API documentation by examining existing backends. My own implementation focused on prompts, contracts, templates, and local validation tools.",
+              ],
+            },
+            {
+              title: "Technical decisions",
+              ordered: true,
+              items: [
+                "Separated distinct students, assessment events, and results by curriculum objective to use the correct denominator for each metric.",
+                "Avoided adding participants across modules as though they were different people.",
+                "Restricted comparisons to results with compatible scales and rubrics.",
+                "Distinguished insufficient evidence from low performance: poor images or inaudible audio should not automatically produce a low score.",
+                "Checked calculations deterministically alongside JSON validation and review of LLM response narratives.",
+                "Preserved teacher review and limited conclusions to the available evidence.",
+              ],
+            },
+            {
+              title: "Validation and evidence",
+              paragraphs: [
+                "For the 360 report delivery, I prepared six templates and tested them directly in Gemini with synthetic data. A total of 39 local tests passed.",
+                "Validation combined JSON structure checks, deterministic calculation checks, and narrative review. The 39 tests demonstrate local validation of this delivery, without establishing educational accuracy or end-to-end acceptance.",
+              ],
+            },
+            {
+              title: "Delivery stage",
+              paragraphs: [
+                "The delivery covered prompts, contracts, templates, and local validation. Backend integration and acceptance testing with real data remained subsequent team steps.",
+                "The work used the Gemini API without training custom models. No evidence supports claims of time savings, cost reductions, or learning improvements from this delivery.",
+              ],
+            },
+          ],
+        },
       ],
     },
     about: {
@@ -283,7 +422,7 @@ export const translations = {
         { q: "What kind of data problems can you help solve?", a: "I can support projects from source organization and validation through analysis, KPIs, and decision-ready dashboards. When the problem requires a more reliable foundation, I also work on the integration and preparation that support those deliverables." },
         { q: "Do you work with Power BI and DAX?", a: "I work with Power BI, Power Query, modeling, and dashboard development. With DAX, I use measures aligned with project scope and continue building deeper practice without positioning myself as an advanced specialist." },
         { q: "Is AI still part of your profile?", a: "Yes, as complementary experience. I have professional experience with Computer Vision and APIs, while my current positioning prioritizes data, SQL, BI, quality, and integration." },
-        { q: "Are the highlighted cases professional work?", a: "Yes. Both cases were built at FourDevs and went through real implementation, testing, and validation stages; the facial recognition service also runs in production." },
+        { q: "Are the highlighted cases professional work?", a: "Yes. All three are professional work at FourDevs, at different stages: facial recognition in production, validated student data ingestion, and multimodal AI assessments and reports with local validation. Backend integration and acceptance testing of the reports with real data remained subsequent team steps." },
       ],
     },
     footer: { blurb: "Well-structured data, clear analysis, and decisions with context.", navigation: "Navigation", contact: "Contact", copyright: "All rights reserved.", signature: "DATA / ANALYTICS / BUSINESS" },
@@ -298,10 +437,79 @@ export const translations = {
       panel_metrics: [{ value: "2.721", label: "verificaciones faciales en el histórico" }, { value: "1.152", label: "usuarios distintos en el histórico" }, { value: "PRODUCCIÓN", label: "solución integrada a la operación real" }, { value: "END-TO-END", label: "datos → validación → integración → entrega" }],
     },
     cases: {
-      kicker: "Experiencia comprobada", title: "Casos profesionales que pasaron del diseño a la operación real.", subtitle: "Soluciones desarrolladas en FourDevs, con responsabilidad directa en implementación, pruebas, homologación y entrega técnica.", confidentiality: "Alcance técnico presentado sin exponer datos sensibles del cliente.", status_label: "Estado", stack_label: "Stack principal", delivery_label: "Lo que desarrollé", result_label: "Evidencias",
+      kicker: "Experiencia comprobada", title: "Casos profesionales de datos, integración e IA aplicada.", subtitle: "Trabajos realizados en FourDevs, con contribuciones técnicas, evidencias y etapa de entrega descritas en cada caso.", confidentiality: "Alcance técnico presentado sin exponer datos sensibles del cliente.", status_label: "Estado", stack_label: "Stack principal", delivery_label: "Lo que desarrollé", result_label: "Evidencias", details_label: "Explorar decisiones y validación técnica",
       items: [
         { number: "01", type: "Computer Vision · Datos en producción", title: "Reconocimiento facial integrado al flujo real de acceso", status: "Producción", summary: "Desarrollé y evolucioné un microservicio de reconocimiento facial conectado a los sistemas de una institución educativa y al flujo de identificación por torniquetes.", delivery: ["Embeddings ArcFace de 512 dimensiones y búsqueda vectorial con pgvector", "APIs de registro, actualización, verificación y eliminación", "Reconocimiento adaptativo, validación de imágenes y mecanismos de fallback", "Homologación, deploy, troubleshooting y 58 pruebas automatizadas con Pytest"], metrics: [{ value: "2.721", label: "verificaciones en el histórico" }, { value: "1.152", label: "usuarios distintos en el histórico" }, { value: "145", label: "verificaciones/día · media lun–jue" }], evidence_note: "Registros consultados en oct/2026. Media redondeada de 145 verificaciones/día del 26 al 29/10/2026 (580 verificaciones en cuatro días). El 30/10 se registraron 8 verificaciones. La base en producción cuenta con más de 2.400 registros faciales.", stack: ["Python", "FastAPI", "PostgreSQL", "pgvector", "Docker", "Pytest"] },
         { number: "02", type: "Data Integration · Batch ingestion", title: "Ingestión y enrutamiento de datos educativos", status: "Homologado", summary: "Desarrollé y homologué un servicio batch que recibe archivos CSV, valida y normaliza registros y dirige la persistencia a bases PostgreSQL distintas según el dominio de negocio.", delivery: ["Contrato de entrada, validación de calidad y normalización de la carga", "Mapeo CSV a PostgreSQL y enrutamiento multi-base", "Idempotencia por matrícula, transacciones por lotes y reproceso seguro", "Logs estructurados, API Key, pruebas y validación directa en SQL"], metrics: [{ value: "3", label: "bases validadas" }, { value: "2", label: "dominios de negocio" }, { value: "0", label: "errores internos en el ciclo homologado" }], stack: ["Python", "FastAPI", "SQL", "PostgreSQL", "postgres_fdw", "Docker"] },
+        {
+          number: "03",
+          id: "case-ia-multimodal",
+          type: "IA multimodal · Contratos y calidad de datos",
+          title: "IA multimodal para evaluaciones pedagógicas e informes con validación de datos",
+          status: "Validación local",
+          stage: "local",
+          summary: "Estructuré prompts y contratos JSON para evaluaciones con imágenes y audio e informes pedagógicos, con validadores locales para comprobar estructura, cálculos y consistencia de los indicadores.",
+          delivery: [
+            "Prompts, schemas JSON y requests multimodales para cinco módulos pedagógicos",
+            "Seis plantillas de informes consolidados de Giz 360 y modelos de entrada",
+            "Validadores locales y calculadora determinística de referencia",
+            "Escenarios en Insomnia y trazabilidad con requests, respuestas y SHA-256",
+          ],
+          metrics: [
+            { value: "5", label: "módulos con prompts y schemas" },
+            { value: "6", label: "plantillas de informes 360" },
+            { value: "39", label: "pruebas locales aprobadas · informes 360" },
+          ],
+          evidence_note: "Informes 360 probados directamente en Gemini con datos ficticios. Las pruebas locales verifican contratos y cálculos; no miden precisión pedagógica ni representan homologación de extremo a extremo u operación en producción.",
+          stack: ["Gemini API", "responseSchema", "JSON", "JavaScript / Node.js", "Python", "Insomnia", "Bruno", "Git / GitHub"],
+          details: [
+            {
+              title: "Contexto y problema",
+              paragraphs: [
+                "En el ecosistema educativo Giz Virtual / PedagIA, las evaluaciones usan imágenes y audio, y los informes pedagógicos parten de resultados consolidados.",
+                "El reto era transformar reglas pedagógicas extensas en respuestas estructuradas consumibles por API, preservando criterios, identificadores y consistencia de los indicadores.",
+              ],
+            },
+            {
+              title: "Mi contribución",
+              items: [
+                "Estructuré prompts, schemas JSON y requests multimodales para Dibujo, Habilidad, Oralidad, Escritura y Lectura y Fluidez.",
+                "Preparé informes de grupo y revisé informes de gestores de Educación Infantil.",
+                "Construí seis plantillas de informes consolidados de Giz 360 y sus modelos de entrada.",
+                "Desarrollé herramientas locales para validar la estructura de las respuestas y comprobar cálculos con una calculadora determinística de referencia.",
+                "Preparé y ejecuté escenarios de prueba en Insomnia.",
+                "Registré versiones probadas con requests, respuestas y hashes SHA-256 para trazabilidad.",
+                "Apoyé el análisis de problemas de integración y la documentación de APIs mediante la lectura de backends existentes. Mi implementación propia se centró en prompts, contratos, plantillas y herramientas locales de validación.",
+              ],
+            },
+            {
+              title: "Decisiones técnicas",
+              ordered: true,
+              items: [
+                "Separé alumnos distintos, eventos de aplicación y resultados por objetivo curricular para usar el denominador correcto en cada indicador.",
+                "Evité sumar participantes de módulos distintos como si fueran personas diferentes.",
+                "Limité las comparaciones a resultados con escalas y rúbricas compatibles.",
+                "Distinguí evidencia insuficiente de desempeño bajo: una imagen de mala calidad o audio inaudible no deben producir automáticamente una nota baja.",
+                "Comprobé cálculos de forma determinística, además de validar el JSON y revisar la narrativa de las respuestas de LLMs.",
+                "Preservé la revisión docente y limité las conclusiones a las evidencias disponibles.",
+              ],
+            },
+            {
+              title: "Validación y evidencias",
+              paragraphs: [
+                "En la entrega de los informes 360, preparé seis plantillas y las probé directamente en Gemini con datos ficticios. Se aprobaron 39 pruebas locales.",
+                "La validación combinó estructura JSON, comprobación determinística de cálculos y revisión de la narrativa. Las 39 pruebas evidencian la validación local de esta entrega, sin representar precisión pedagógica ni homologación de extremo a extremo.",
+              ],
+            },
+            {
+              title: "Etapa de entrega",
+              paragraphs: [
+                "La entrega incluyó prompts, contratos, plantillas y validación local. La integración con el backend y la homologación con datos reales quedaron como etapas posteriores del equipo.",
+                "El trabajo utilizó la API Gemini sin entrenamiento de modelos propios. No hay evidencias para atribuir ahorro de tiempo, reducción de costos o mejoras de aprendizaje a esta entrega.",
+              ],
+            },
+          ],
+        },
       ],
     },
     about: {
@@ -335,7 +543,7 @@ export const translations = {
         { q: "¿Qué tipo de problemas de datos puedes ayudar a resolver?", a: "Puedo apoyar desde la organización y validación de fuentes hasta análisis, KPIs y dashboards para la toma de decisiones. Cuando el problema exige una base más confiable, también trabajo en la integración y preparación de los datos que sustentan esas entregas." },
         { q: "¿Trabajas con Power BI y DAX?", a: "Trabajo con Power BI, Power Query, modelado y dashboards. En DAX utilizo medidas compatibles con el alcance y sigo profundizando la práctica, sin posicionarme como especialista avanzado." },
         { q: "¿La IA sigue siendo parte de tu perfil?", a: "Sí, como experiencia complementaria. Tengo experiencia profesional en Computer Vision y APIs, mientras el posicionamiento actual prioriza datos, SQL, BI, calidad e integración." },
-        { q: "¿Los casos destacados son trabajos profesionales?", a: "Sí. Ambos fueron desarrollados en FourDevs y pasaron por implementación, pruebas y homologación; el reconocimiento facial también opera en producción." },
+        { q: "¿Los casos destacados son trabajos profesionales?", a: "Sí. Los tres casos son trabajos profesionales en FourDevs, con etapas distintas: reconocimiento facial en producción, ingestión de datos homologada y evaluaciones e informes con IA multimodal en validación local. La integración con el backend y la homologación de los informes con datos reales quedaron como etapas posteriores del equipo." },
       ],
     },
     footer: { blurb: "Datos bien estructurados, análisis claros y decisiones con contexto.", navigation: "Navegación", contact: "Contacto", copyright: "Todos los derechos reservados.", signature: "DATA / ANALYTICS / BUSINESS" },

@@ -1,4 +1,4 @@
-import { Check, Database, LockKeyhole } from "lucide-react";
+import { Check, ChevronDown, Database, LockKeyhole } from "lucide-react";
 import FadeIn from "./ui/FadeIn";
 import { useLanguage } from "../context/LanguageContext";
 
@@ -25,14 +25,14 @@ export default function ProfessionalCases() {
         <div className="case-list">
           {Array.isArray(cases) && cases.map((item, caseIndex) => (
             <FadeIn key={item.number} delay={caseIndex * 0.1}>
-              <article className="case-card surface">
+              <article id={item.id} className="case-card surface">
                 <header className="case-card__header">
                   <div className="case-number">{item.number}</div>
                   <div className="case-heading">
                     <span className="mono-label">{item.type}</span>
                     <h3>{item.title}</h3>
                   </div>
-                  <div className="case-status"><i /> {item.status}</div>
+                  <div className="case-status" data-stage={item.stage}><i /> {item.status}</div>
                 </header>
 
                 <div className="case-card__body">
@@ -63,6 +63,30 @@ export default function ProfessionalCases() {
                     </div>
                   </aside>
                 </div>
+                {item.details && (
+                  <details className="case-details">
+                    <summary>
+                      <span>{t("cases.details_label")}</span>
+                      <ChevronDown size={18} aria-hidden="true" />
+                    </summary>
+                    <div className="case-details__content">
+                      {item.details.map((section) => {
+                        const List = section.ordered ? "ol" : "ul";
+                        return (
+                          <section className="case-details__section" key={section.title}>
+                            <h4>{section.title}</h4>
+                            {section.paragraphs?.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+                            {section.items && (
+                              <List>
+                                {section.items.map((entry) => <li key={entry}>{entry}</li>)}
+                              </List>
+                            )}
+                          </section>
+                        );
+                      })}
+                    </div>
+                  </details>
+                )}
               </article>
             </FadeIn>
           ))}

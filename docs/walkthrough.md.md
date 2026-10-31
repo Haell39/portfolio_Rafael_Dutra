@@ -16,6 +16,8 @@ O portfólio comunica Rafael Dutra como Analista de Dados e Analytics Engineer. 
 
 O componente `ProfessionalCases.jsx` é a principal prova de experiência. Os textos vêm de `translations.js`; a referência detalhada e os limites de comunicação ficam em `docs/cases_profissionais.md`.
 
+Os três cards mostram estágios distintos: facial em produção, ingestão homologada e IA multimodal com validação local. O terceiro oferece detalhes expansíveis usando `details`/`summary` nativos, acessíveis por teclado. Os 39 testes locais e seis templates se referem à entrega dos relatórios 360 com dados fictícios; não representam precisão pedagógica ou homologação ponta a ponta.
+
 Não publicar o arquivo de referência dentro de `public/`, pois o Netlify disponibiliza todo conteúdo dessa pasta diretamente por URL.
 
 ## Identidade visual
