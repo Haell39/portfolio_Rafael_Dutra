@@ -56,6 +56,7 @@ export default function ProfessionalCases() {
                         </div>
                       ))}
                     </div>
+                    {item.evidence_note && <p className="case-evidence__note">{item.evidence_note}</p>}
                     <div className="case-stack">
                       <span className="mono-label"><Database size={13} /> {t("cases.stack_label")}</span>
                       <div>{item.stack.map((tech) => <span className="tag" key={tech}>{tech}</span>)}</div>

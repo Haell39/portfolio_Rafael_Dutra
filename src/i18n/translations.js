@@ -28,8 +28,8 @@ export const translations = {
       panel_verified: "experiência comprovada",
       panel_title: "Experiência prática com o ciclo completo do dado.",
       panel_metrics: [
-        { value: "2.400+", label: "cadastros faciais em produção" },
-        { value: "100+", label: "usuários ativos por dia" },
+        { value: "2.721", label: "verificações faciais no histórico" },
+        { value: "1.152", label: "usuários distintos no histórico" },
         { value: "PRODUÇÃO", label: "solução integrada à operação real" },
         { value: "END-TO-END", label: "dados → validação → integração → entrega" },
       ],
@@ -56,13 +56,14 @@ export const translations = {
             "Embeddings ArcFace de 512 dimensões e busca vetorial com pgvector",
             "APIs de cadastro, atualização, verificação e remoção",
             "Reconhecimento adaptativo, validação de imagens e mecanismos de fallback",
-            "Homologação, deploy, troubleshooting e suíte automatizada de testes",
+            "Homologação, deploy, troubleshooting e 58 testes automatizados com Pytest",
           ],
           metrics: [
-            { value: "2.400+", label: "faces cadastradas" },
-            { value: "100+", label: "usuários diários" },
-            { value: "58", label: "testes com Pytest" },
+            { value: "2.721", label: "verificações no histórico" },
+            { value: "1.152", label: "usuários distintos no histórico" },
+            { value: "145", label: "verificações/dia · média seg–qui" },
           ],
+          evidence_note: "Registros consultados em out/2026. Média arredondada de 145 verificações/dia entre 26 e 29/10/2026 (580 verificações em quatro dias). Em 30/10, foram 8 verificações. Base com mais de 2.400 cadastros faciais em produção.",
           stack: ["Python", "FastAPI", "PostgreSQL", "pgvector", "Docker", "Pytest"],
         },
         {
@@ -229,13 +230,13 @@ export const translations = {
       cta_cases: "View professional cases", cta_cv: "Download resume", cta_contact: "Contact me", cv_path: "/projects/Rafael_Dutra_Dados_IA.pdf", cv_filename: "Rafael_Dutra_Dados_IA.pdf", availability: "Recife, Brazil · Remote",
       panel_eyebrow: "Professional overview", panel_verified: "verified experience", panel_title: "Hands-on experience across the full data lifecycle.",
       panel_metrics: [
-        { value: "2,400+", label: "facial registrations in production" }, { value: "100+", label: "daily active users" }, { value: "PRODUCTION", label: "solution integrated into real operations" }, { value: "END-TO-END", label: "data → validation → integration → delivery" },
+        { value: "2,721", label: "facial verifications in recorded history" }, { value: "1,152", label: "distinct users in recorded history" }, { value: "PRODUCTION", label: "solution integrated into real operations" }, { value: "END-TO-END", label: "data → validation → integration → delivery" },
       ],
     },
     cases: {
       kicker: "Proven experience", title: "Professional cases that moved from design to real operations.", subtitle: "Solutions built at FourDevs, with direct responsibility for implementation, testing, validation, and technical delivery.", confidentiality: "Technical scope presented without exposing sensitive client data.", status_label: "Status", stack_label: "Core stack", delivery_label: "What I built", result_label: "Evidence",
       items: [
-        { number: "01", type: "Computer Vision · Production data", title: "Facial recognition integrated into a real access workflow", status: "Production", summary: "I built and evolved a facial recognition microservice connected to an educational institution's systems and turnstile identification workflow.", delivery: ["512-dimensional ArcFace embeddings and vector search with pgvector", "Registration, update, verification, and removal APIs", "Adaptive recognition, image validation, and fallback mechanisms", "Validation, deployment, troubleshooting, and automated test suite"], metrics: [{ value: "2,400+", label: "registered faces" }, { value: "100+", label: "daily users" }, { value: "58", label: "Pytest tests" }], stack: ["Python", "FastAPI", "PostgreSQL", "pgvector", "Docker", "Pytest"] },
+        { number: "01", type: "Computer Vision · Production data", title: "Facial recognition integrated into a real access workflow", status: "Production", summary: "I built and evolved a facial recognition microservice connected to an educational institution's systems and turnstile identification workflow.", delivery: ["512-dimensional ArcFace embeddings and vector search with pgvector", "Registration, update, verification, and removal APIs", "Adaptive recognition, image validation, and fallback mechanisms", "Validation, deployment, troubleshooting, and 58 automated Pytest tests"], metrics: [{ value: "2,721", label: "verifications in recorded history" }, { value: "1,152", label: "distinct users in recorded history" }, { value: "145", label: "verifications/day · Mon–Thu average" }], evidence_note: "Records reviewed in Oct 2026. Rounded average of 145 verifications/day from Oct 26 to 29, 2026 (580 verifications over four days). Oct 30 recorded 8 verifications. The production database holds more than 2,400 facial registrations.", stack: ["Python", "FastAPI", "PostgreSQL", "pgvector", "Docker", "Pytest"] },
         { number: "02", type: "Data Integration · Batch ingestion", title: "Educational data ingestion and routing", status: "Validated", summary: "I built and validated a batch service that receives CSV files, validates and normalizes records, and routes persistence to separate PostgreSQL databases according to the business domain.", delivery: ["Input contract, data quality validation, and load normalization", "CSV-to-PostgreSQL mapping and multi-database routing", "Student-ID idempotency, batch transactions, and safe reprocessing", "Structured logs, API key, tests, and direct SQL result validation"], metrics: [{ value: "3", label: "validated databases" }, { value: "2", label: "business domains" }, { value: "0", label: "internal errors in the validation run" }], stack: ["Python", "FastAPI", "SQL", "PostgreSQL", "postgres_fdw", "Docker"] },
       ],
     },
@@ -294,12 +295,12 @@ export const translations = {
     },
     hero: {
       kicker: "Analista de Datos | Analytics Engineer", title: "Datos confiables para decisiones que mueven el negocio.", title_highlight: "De la estructura al insight.", subtitle: "Transformo datos dispersos en bases consistentes, análisis claros e indicadores útiles, conectando SQL, Power BI, Python y Excel con la realidad de la operación.", cta_cases: "Ver casos profesionales", cta_cv: "Descargar CV", cta_contact: "Contactarme", cv_path: "/projects/Rafael_Dutra_Dados_IA.pdf", cv_filename: "Rafael_Dutra_Dados_IA.pdf", availability: "Recife, Brasil · Remoto", panel_eyebrow: "En números", panel_verified: "experiencia comprobada", panel_title: "Experiencia práctica en el ciclo completo del dato.",
-      panel_metrics: [{ value: "2.400+", label: "registros faciales en producción" }, { value: "100+", label: "usuarios activos por día" }, { value: "PRODUCCIÓN", label: "solución integrada a la operación real" }, { value: "END-TO-END", label: "datos → validación → integración → entrega" }],
+      panel_metrics: [{ value: "2.721", label: "verificaciones faciales en el histórico" }, { value: "1.152", label: "usuarios distintos en el histórico" }, { value: "PRODUCCIÓN", label: "solución integrada a la operación real" }, { value: "END-TO-END", label: "datos → validación → integración → entrega" }],
     },
     cases: {
       kicker: "Experiencia comprobada", title: "Casos profesionales que pasaron del diseño a la operación real.", subtitle: "Soluciones desarrolladas en FourDevs, con responsabilidad directa en implementación, pruebas, homologación y entrega técnica.", confidentiality: "Alcance técnico presentado sin exponer datos sensibles del cliente.", status_label: "Estado", stack_label: "Stack principal", delivery_label: "Lo que desarrollé", result_label: "Evidencias",
       items: [
-        { number: "01", type: "Computer Vision · Datos en producción", title: "Reconocimiento facial integrado al flujo real de acceso", status: "Producción", summary: "Desarrollé y evolucioné un microservicio de reconocimiento facial conectado a los sistemas de una institución educativa y al flujo de identificación por torniquetes.", delivery: ["Embeddings ArcFace de 512 dimensiones y búsqueda vectorial con pgvector", "APIs de registro, actualización, verificación y eliminación", "Reconocimiento adaptativo, validación de imágenes y mecanismos de fallback", "Homologación, deploy, troubleshooting y suite automatizada de pruebas"], metrics: [{ value: "2.400+", label: "rostros registrados" }, { value: "100+", label: "usuarios diarios" }, { value: "58", label: "pruebas con Pytest" }], stack: ["Python", "FastAPI", "PostgreSQL", "pgvector", "Docker", "Pytest"] },
+        { number: "01", type: "Computer Vision · Datos en producción", title: "Reconocimiento facial integrado al flujo real de acceso", status: "Producción", summary: "Desarrollé y evolucioné un microservicio de reconocimiento facial conectado a los sistemas de una institución educativa y al flujo de identificación por torniquetes.", delivery: ["Embeddings ArcFace de 512 dimensiones y búsqueda vectorial con pgvector", "APIs de registro, actualización, verificación y eliminación", "Reconocimiento adaptativo, validación de imágenes y mecanismos de fallback", "Homologación, deploy, troubleshooting y 58 pruebas automatizadas con Pytest"], metrics: [{ value: "2.721", label: "verificaciones en el histórico" }, { value: "1.152", label: "usuarios distintos en el histórico" }, { value: "145", label: "verificaciones/día · media lun–jue" }], evidence_note: "Registros consultados en oct/2026. Media redondeada de 145 verificaciones/día del 26 al 29/10/2026 (580 verificaciones en cuatro días). El 30/10 se registraron 8 verificaciones. La base en producción cuenta con más de 2.400 registros faciales.", stack: ["Python", "FastAPI", "PostgreSQL", "pgvector", "Docker", "Pytest"] },
         { number: "02", type: "Data Integration · Batch ingestion", title: "Ingestión y enrutamiento de datos educativos", status: "Homologado", summary: "Desarrollé y homologué un servicio batch que recibe archivos CSV, valida y normaliza registros y dirige la persistencia a bases PostgreSQL distintas según el dominio de negocio.", delivery: ["Contrato de entrada, validación de calidad y normalización de la carga", "Mapeo CSV a PostgreSQL y enrutamiento multi-base", "Idempotencia por matrícula, transacciones por lotes y reproceso seguro", "Logs estructurados, API Key, pruebas y validación directa en SQL"], metrics: [{ value: "3", label: "bases validadas" }, { value: "2", label: "dominios de negocio" }, { value: "0", label: "errores internos en el ciclo homologado" }], stack: ["Python", "FastAPI", "SQL", "PostgreSQL", "postgres_fdw", "Docker"] },
       ],
     },

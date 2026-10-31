@@ -408,6 +408,7 @@
 
 .case-metrics { margin: 1.2rem 0 2rem; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; }
 .case-metrics .metric-value { font-size: clamp(1.45rem, 2.4vw, 2rem); }
+.case-evidence__note { margin: -0.5rem 0 1.5rem; color: var(--text-secondary); font-size: 0.76rem; line-height: 1.7; }
 .case-stack { padding-top: 1.3rem; border-top: 1px solid var(--border-subtle); }
 .case-stack > span { display: flex; align-items: center; gap: 0.45rem; }
 .case-stack > div { margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.45rem; }
