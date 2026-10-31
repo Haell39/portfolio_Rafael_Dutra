@@ -35,7 +35,7 @@ npm run build
 
 - Reconhecimento facial integrado ao fluxo de acesso: em produção.
 - Ingestão e roteamento de dados educacionais: homologado.
-- IA multimodal para avaliações e relatórios pedagógicos: prompts, contratos JSON e validação local, com seis templates de relatórios 360 e 39 testes locais aprovados. Testes com dados fictícios; integração com o backend e homologação com dados reais ficaram como etapas posteriores da equipe.
+- IA multimodal para avaliações e relatórios pedagógicos: homologado, com prompts, contratos JSON, seis templates de relatórios 360 e 39 testes locais aprovados na validação inicial com dados fictícios. Destaques: NLP com LLMs e Prompt Engineering.
 
 O terceiro card tem detalhes expansíveis sobre problema, contribuição, decisões técnicas, validação e estágio da entrega. O conteúdo é mantido em português, inglês e espanhol em `src/i18n/translations.js`.
 

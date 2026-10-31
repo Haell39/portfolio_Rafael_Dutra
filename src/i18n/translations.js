@@ -92,8 +92,8 @@ export const translations = {
           id: "case-ia-multimodal",
           type: "IA multimodal · Contratos e qualidade de dados",
           title: "IA multimodal para avaliações pedagógicas e relatórios com validação de dados",
-          status: "Validação local",
-          stage: "local",
+          status: "Homologado",
+          stage: "validated",
           summary: "Estruturei prompts e contratos JSON para avaliações com imagens e áudios e relatórios pedagógicos, com validadores locais para conferir estrutura, cálculos e consistência dos indicadores.",
           delivery: [
             "Prompts, schemas JSON e requests multimodais para cinco módulos pedagógicos",
@@ -106,8 +106,8 @@ export const translations = {
             { value: "6", label: "templates de relatórios 360" },
             { value: "39", label: "testes locais aprovados · relatórios 360" },
           ],
-          evidence_note: "Relatórios 360 testados diretamente no Gemini com dados fictícios. Os testes locais verificam contratos e cálculos; não medem precisão pedagógica nem representam homologação ponta a ponta ou operação em produção.",
-          stack: ["Gemini API", "responseSchema", "JSON", "JavaScript / Node.js", "Python", "Insomnia", "Bruno", "Git / GitHub"],
+          evidence_note: "Na validação inicial, os relatórios 360 foram testados diretamente no Gemini com dados fictícios. Os 39 testes locais verificam contratos e cálculos; não medem precisão pedagógica.",
+          stack: ["Gemini API", "responseSchema", "JSON", "NLP com LLMs", "Prompt Engineering", "Python", "Insomnia", "Bruno", "Git / GitHub"],
           details: [
             {
               title: "Contexto e problema",
@@ -144,13 +144,13 @@ export const translations = {
               title: "Validação e evidências",
               paragraphs: [
                 "Na entrega dos relatórios 360, preparei seis templates e os testei diretamente no Gemini com dados fictícios. Foram aprovados 39 testes locais.",
-                "A validação combinou estrutura JSON, conferência determinística dos cálculos e revisão da narrativa. Os 39 testes são evidência da validação local dessa entrega, sem representar precisão pedagógica ou homologação ponta a ponta.",
+                "A validação combinou estrutura JSON, conferência determinística dos cálculos e revisão da narrativa. Os 39 testes são evidência da validação local dessa entrega e não medem precisão pedagógica.",
               ],
             },
             {
               title: "Estágio da entrega",
               paragraphs: [
-                "A entrega compreendeu prompts, contratos, templates e validação local. A integração com o backend e a homologação com dados reais ficaram como etapas posteriores da equipe.",
+                "Case homologado. Minha contribuição compreendeu prompts, contratos, templates e ferramentas locais de validação, além do apoio à integração.",
                 "O trabalho utilizou a API Gemini, sem treinamento de modelos próprios. Não há evidências para atribuir economia de tempo, redução de custos ou ganho de aprendizagem a essa entrega.",
               ],
             },
@@ -276,7 +276,7 @@ export const translations = {
         { q: "Que tipo de problema de dados você pode ajudar a resolver?", a: "Posso apoiar desde a organização e validação de fontes até análises, KPIs e dashboards para decisão. Quando o problema exige uma base mais confiável, também atuo na integração e preparação dos dados que sustentam essas entregas." },
         { q: "Você trabalha com Power BI e DAX?", a: "Trabalho com Power BI, Power Query, modelagem e construção de dashboards. Em DAX, utilizo medidas compatíveis com o escopo dos projetos e sigo aprofundando a prática, sem me posicionar como especialista avançado." },
         { q: "A experiência com IA ainda faz parte do perfil?", a: "Sim, como repertório complementar. Tenho experiência profissional com Computer Vision e APIs, mas o posicionamento atual prioriza dados, SQL, BI, qualidade e integração." },
-        { q: "Os cases apresentados são projetos profissionais?", a: "Sim. Os três cases são trabalhos profissionais na FourDevs, com estágios distintos: reconhecimento facial em produção, ingestão cadastral homologada e avaliações e relatórios com IA multimodal em validação local. A integração com o backend e a homologação dos relatórios com dados reais ficaram como etapas posteriores da equipe." },
+        { q: "Os cases apresentados são projetos profissionais?", a: "Sim. Os três cases são trabalhos profissionais na FourDevs: reconhecimento facial em produção, ingestão cadastral homologada e avaliações e relatórios com IA multimodal também homologados." },
       ],
     },
     footer: {
@@ -313,8 +313,8 @@ export const translations = {
           id: "case-ia-multimodal",
           type: "Multimodal AI · Data contracts and quality",
           title: "Multimodal AI for educational assessments and reports with data validation",
-          status: "Local validation",
-          stage: "local",
+          status: "Validated",
+          stage: "validated",
           summary: "I structured prompts and JSON contracts for image and audio assessments and educational reports, with local validators to check structure, calculations, and metric consistency.",
           delivery: [
             "Prompts, JSON schemas, and multimodal requests for five educational modules",
@@ -327,8 +327,8 @@ export const translations = {
             { value: "6", label: "360 report templates" },
             { value: "39", label: "local tests passed · 360 reports" },
           ],
-          evidence_note: "360 reports tested directly in Gemini with synthetic data. Local tests check contracts and calculations; they do not measure educational accuracy or establish end-to-end acceptance or production operation.",
-          stack: ["Gemini API", "responseSchema", "JSON", "JavaScript / Node.js", "Python", "Insomnia", "Bruno", "Git / GitHub"],
+          evidence_note: "During initial validation, 360 reports were tested directly in Gemini with synthetic data. The 39 local tests check contracts and calculations; they do not measure educational accuracy.",
+          stack: ["Gemini API", "responseSchema", "JSON", "NLP with LLMs", "Prompt Engineering", "Python", "Insomnia", "Bruno", "Git / GitHub"],
           details: [
             {
               title: "Context and problem",
@@ -365,13 +365,13 @@ export const translations = {
               title: "Validation and evidence",
               paragraphs: [
                 "For the 360 report delivery, I prepared six templates and tested them directly in Gemini with synthetic data. A total of 39 local tests passed.",
-                "Validation combined JSON structure checks, deterministic calculation checks, and narrative review. The 39 tests demonstrate local validation of this delivery, without establishing educational accuracy or end-to-end acceptance.",
+                "Validation combined JSON structure checks, deterministic calculation checks, and narrative review. The 39 tests demonstrate local validation of this delivery and do not measure educational accuracy.",
               ],
             },
             {
               title: "Delivery stage",
               paragraphs: [
-                "The delivery covered prompts, contracts, templates, and local validation. Backend integration and acceptance testing with real data remained subsequent team steps.",
+                "The case has passed acceptance testing. My contribution covered prompts, contracts, templates, and local validation tools, alongside integration support.",
                 "The work used the Gemini API without training custom models. No evidence supports claims of time savings, cost reductions, or learning improvements from this delivery.",
               ],
             },
@@ -422,7 +422,7 @@ export const translations = {
         { q: "What kind of data problems can you help solve?", a: "I can support projects from source organization and validation through analysis, KPIs, and decision-ready dashboards. When the problem requires a more reliable foundation, I also work on the integration and preparation that support those deliverables." },
         { q: "Do you work with Power BI and DAX?", a: "I work with Power BI, Power Query, modeling, and dashboard development. With DAX, I use measures aligned with project scope and continue building deeper practice without positioning myself as an advanced specialist." },
         { q: "Is AI still part of your profile?", a: "Yes, as complementary experience. I have professional experience with Computer Vision and APIs, while my current positioning prioritizes data, SQL, BI, quality, and integration." },
-        { q: "Are the highlighted cases professional work?", a: "Yes. All three are professional work at FourDevs, at different stages: facial recognition in production, validated student data ingestion, and multimodal AI assessments and reports with local validation. Backend integration and acceptance testing of the reports with real data remained subsequent team steps." },
+        { q: "Are the highlighted cases professional work?", a: "Yes. All three are professional work at FourDevs: facial recognition in production, validated student data ingestion, and multimodal AI assessments and reports that have also passed acceptance testing." },
       ],
     },
     footer: { blurb: "Well-structured data, clear analysis, and decisions with context.", navigation: "Navigation", contact: "Contact", copyright: "All rights reserved.", signature: "DATA / ANALYTICS / BUSINESS" },
@@ -446,8 +446,8 @@ export const translations = {
           id: "case-ia-multimodal",
           type: "IA multimodal · Contratos y calidad de datos",
           title: "IA multimodal para evaluaciones pedagógicas e informes con validación de datos",
-          status: "Validación local",
-          stage: "local",
+          status: "Homologado",
+          stage: "validated",
           summary: "Estructuré prompts y contratos JSON para evaluaciones con imágenes y audio e informes pedagógicos, con validadores locales para comprobar estructura, cálculos y consistencia de los indicadores.",
           delivery: [
             "Prompts, schemas JSON y requests multimodales para cinco módulos pedagógicos",
@@ -460,8 +460,8 @@ export const translations = {
             { value: "6", label: "plantillas de informes 360" },
             { value: "39", label: "pruebas locales aprobadas · informes 360" },
           ],
-          evidence_note: "Informes 360 probados directamente en Gemini con datos ficticios. Las pruebas locales verifican contratos y cálculos; no miden precisión pedagógica ni representan homologación de extremo a extremo u operación en producción.",
-          stack: ["Gemini API", "responseSchema", "JSON", "JavaScript / Node.js", "Python", "Insomnia", "Bruno", "Git / GitHub"],
+          evidence_note: "En la validación inicial, los informes 360 se probaron directamente en Gemini con datos ficticios. Las 39 pruebas locales verifican contratos y cálculos; no miden precisión pedagógica.",
+          stack: ["Gemini API", "responseSchema", "JSON", "NLP con LLMs", "Prompt Engineering", "Python", "Insomnia", "Bruno", "Git / GitHub"],
           details: [
             {
               title: "Contexto y problema",
@@ -498,13 +498,13 @@ export const translations = {
               title: "Validación y evidencias",
               paragraphs: [
                 "En la entrega de los informes 360, preparé seis plantillas y las probé directamente en Gemini con datos ficticios. Se aprobaron 39 pruebas locales.",
-                "La validación combinó estructura JSON, comprobación determinística de cálculos y revisión de la narrativa. Las 39 pruebas evidencian la validación local de esta entrega, sin representar precisión pedagógica ni homologación de extremo a extremo.",
+                "La validación combinó estructura JSON, comprobación determinística de cálculos y revisión de la narrativa. Las 39 pruebas evidencian la validación local de esta entrega y no miden precisión pedagógica.",
               ],
             },
             {
               title: "Etapa de entrega",
               paragraphs: [
-                "La entrega incluyó prompts, contratos, plantillas y validación local. La integración con el backend y la homologación con datos reales quedaron como etapas posteriores del equipo.",
+                "Caso homologado. Mi contribución incluyó prompts, contratos, plantillas y herramientas locales de validación, además del apoyo a la integración.",
                 "El trabajo utilizó la API Gemini sin entrenamiento de modelos propios. No hay evidencias para atribuir ahorro de tiempo, reducción de costos o mejoras de aprendizaje a esta entrega.",
               ],
             },
@@ -543,7 +543,7 @@ export const translations = {
         { q: "¿Qué tipo de problemas de datos puedes ayudar a resolver?", a: "Puedo apoyar desde la organización y validación de fuentes hasta análisis, KPIs y dashboards para la toma de decisiones. Cuando el problema exige una base más confiable, también trabajo en la integración y preparación de los datos que sustentan esas entregas." },
         { q: "¿Trabajas con Power BI y DAX?", a: "Trabajo con Power BI, Power Query, modelado y dashboards. En DAX utilizo medidas compatibles con el alcance y sigo profundizando la práctica, sin posicionarme como especialista avanzado." },
         { q: "¿La IA sigue siendo parte de tu perfil?", a: "Sí, como experiencia complementaria. Tengo experiencia profesional en Computer Vision y APIs, mientras el posicionamiento actual prioriza datos, SQL, BI, calidad e integración." },
-        { q: "¿Los casos destacados son trabajos profesionales?", a: "Sí. Los tres casos son trabajos profesionales en FourDevs, con etapas distintas: reconocimiento facial en producción, ingestión de datos homologada y evaluaciones e informes con IA multimodal en validación local. La integración con el backend y la homologación de los informes con datos reales quedaron como etapas posteriores del equipo." },
+        { q: "¿Los casos destacados son trabajos profesionales?", a: "Sí. Los tres casos son trabajos profesionales en FourDevs: reconocimiento facial en producción, ingestión de datos homologada y evaluaciones e informes con IA multimodal también homologados." },
       ],
     },
     footer: { blurb: "Datos bien estructurados, análisis claros y decisiones con contexto.", navigation: "Navegación", contact: "Contacto", copyright: "Todos los derechos reservados.", signature: "DATA / ANALYTICS / BUSINESS" },
